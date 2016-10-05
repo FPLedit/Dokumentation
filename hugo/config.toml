@@ -45,18 +45,8 @@ theme = "hugo-material-docs"
 	name   = "Fahrplan"
 	url    = "/"
 	weight = 0
-
-[[menu.main]]
-	name   = "Getting started"
-	url    = "getting-started/"
-	weight = 10
 	
 [[menu.main]]
 	name   = "Fahrpläne bearbeiten"
 	url    = "fahrplaene-bearbeiten/"
 	weight = 10
-
-[[menu.main]]
-	name   = "Roadmap"
-	url    = "roadmap/"
-	weight = 30
