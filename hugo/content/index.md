@@ -1,55 +1,30 @@
 ---
 date: 2016-03-08T21:07:13+01:00
-title: Material for Hugo
+title: Fahrplan
 type: index
 weight: 0
 ---
 
-## Beautiful documentation
+Mit dem Programm „Fahrplan“ kann man Fahrpläne bearbeiten und in verschiedenen Formaten wieder exportieren. Derzeit sind Bild- und Buchfahrpläne möglich.
 
-Material is a theme for [Hugo](https://gohugo.io), a fast and flexible static site generator. It is built using Google's [material design](https://www.google.com/design/spec/material-design/introduction.html)
-guidelines, fully responsive, optimized for touch and pointer devices as well
-as all sorts of screen sizes.
+## Systemvoraussetzungen
 
-![Material Screenshot](/images/screen.png)
+Fahrplan läuft auf allen Systemen auf denen entweder Microsoft .NET (vorinstalliert ab Windows Vista) oder [Mono](http://www.mono-project.com/) installiert ist. Damit sollte dieses Programm auf Windows, Linux und macOS (ungetestet) laufen.
 
-Material is very lightweight – it is built from scratch using Javascript and
-CSS that weighs less than 30kb (minified, gzipped and excluding Google Fonts
-and Analytics). Yet, it is highly customizable and degrades gracefully in older
-browsers.
+## Installation
 
-## Quick start
-
-Install with `git`:
-
-```sh
-git clone git@github.com:digitalcraftsman/hugo-material-docs.git themes/hugo-material-docs
-```
+Zur Installation einfach die ZIP-Datei an eine beliebige Stelle entpacken und die Datei `Fahrplan.exe` mit Doppelklick starten. Zur richtigen Darstellung der Buchfahrpläne wird auch noch die systemweit zu installierende Schrift [DIN 1451 Mittelschrift alt](http://www.peter-wiegel.de/alteDin1451.html) benötigt.
 
 ## Features
 
-- Beautiful, readable and very user-friendly design based on Google's material
-  design guidelines, packed in a full responsive template with a well-defined
-  and [easily customizable color palette]({{< relref "getting-started/index.md#changing-the-color-palette" >}}), great typography, as well as a
-  beautiful search interface and footer.
+- Erstellen und Bearbeiten von Strecken und Fahrplänen.
 
-- Well-tested and optimized Javascript and CSS including a cross-browser
-  fixed/sticky header, a drawer that even works without Javascript using
-  the [checkbox hack](http://tutorialzine.com/2015/08/quick-tip-css-only-dropdowns-with-the-checkbox-hack/) with fallbacks, responsive tables that scroll when
-  the screen is too small and well-defined print styles.
+- Generieren von unterschiedlichen Fahrplantypen, z.B. Buchfahrplänen oder Bildfahrpläne und anschließender Export in verschiedene Dateiformate (z.B. Buchfahrplan als HTML oder Bildfahrplan als Grafik).
 
-- Extra configuration options like a [project logo]({{< relref "getting-started/index.md#adding-a-logo" >}}), links to the authors
-  [GitHub and Twitter accounts]({{< relref "getting-started/index.md#adding-a-github-and-twitter-account" >}}) and display of the amount of stars the
-  project has on GitHub.
+- Möglichkeit der Erweiterung durch Extensions, geschrieben in C#. *Dokumentation dazu folgt*
 
-- Web application capability on iOS – when the page is saved to the homescreen,
-  it behaves and looks like a native application.
+- Import von bestehenden [jTrainGraph](http://kinzigtalbahn.bplaced.net/homepage/programme.html)-Fahrplänen. Aber auch Fahrplanbearbeitung in jTrainGraph und generieren der Ausgabedateien mit Fahrplan ist möglich.
 
-See the [getting started guide]({{< relref "getting-started/index.md" >}}) for instructions how to get
-it up and running.
-
-## Acknowledgements
-
-Last but not least a big thank you to [Martin Donath](https://github.com/squidfunk). He created the original [Material theme](https://github.com/squidfunk/mkdocs-material) for Hugo's companion [MkDocs](http://www.mkdocs.org/). This port wouldn't be possible without him.
-
-Furthermore, thanks to [Steve Francia](https://gihub.com/spf13) for creating Hugo and the [awesome community](https://github.com/spf13/hugo/graphs/contributors) around the project.
+{{< note title="Hinweis" >}}
+Dieses Programm befindet sich unter aktiver Entwicklung und ist in einer Art beta-Phase. Daher können Fehler bei der Benutzung des Programms auftreten. Sie sollten daher ab und zu Sicherheitskopien der Fahrplan-Dateien anlegen, um Datenverlust vorzubeugen.
+{{< /note >}}
