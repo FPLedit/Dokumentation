@@ -17,9 +17,9 @@ Zur Installation einfach die ZIP-Datei an eine beliebige Stelle entpacken und di
 
 ## Features
 
-- Erstellen und Bearbeiten von Strecken und Fahrplänen.
+- [Erstellen und Bearbeiten]({{< relref "fahrplaene-bearbeiten/index.md" >}}) von Strecken und Fahrplänen.
 
-- Generieren von unterschiedlichen Fahrplantypen, z.B. Buchfahrplänen oder Bildfahrpläne und anschließender Export in verschiedene Dateiformate (z.B. Buchfahrplan als HTML oder Bildfahrplan als Grafik).
+- Generieren von unterschiedlichen Fahrplantypen, z.B. Buchfahrplänen oder [Bildfahrplänen]({{< relref "bildfahrplaene/index.md" >}}) und anschließender Export in verschiedene Dateiformate (z.B. Buchfahrplan als HTML oder Bildfahrplan als Grafik).
 
 - Möglichkeit der Erweiterung durch Extensions, geschrieben in C#. *Dokumentation dazu folgt*
 

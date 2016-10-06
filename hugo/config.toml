@@ -50,3 +50,8 @@ theme = "hugo-material-docs"
 	name   = "Fahrpläne bearbeiten"
 	url    = "fahrplaene-bearbeiten/"
 	weight = 10
+	
+[[menu.main]]
+	name   = "Bildfahrpläne"
+	url    = "bildfahrplaene/"
+	weight = 20
