@@ -1,0 +1,5 @@
+# URL normalisieren
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !=fahrplan.manuelhu.de [OR]
+RewriteCond %{ENV:HTTPS} !=on
+RewriteRule (.*) https://fahrplan.manuelhu.de/$1 [R=301,L]
