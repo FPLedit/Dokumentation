@@ -1,12 +1,12 @@
 <?php
 
-$curr = '1.0';
-$url = 'https://fahrplan.manuelhu.de/';
+$curr = '1.0.1';
+$url = 'https://fahrplan.manuelhu.de/download/';
 
 if ( $_GET['ver'] != $curr ) {
 	echo '<?xml version="1.0" encoding="utf-8"?>';
 	echo '<info>';
-	echo '<version>'.$curr.'</version>';
-	echo '<url>'.$url.'</url>';
+	echo '<version>' . $curr . '</version>';
+	echo '<url>' . $url . '</url>';
 	echo '</info>';
 }

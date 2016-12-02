@@ -1,20 +1,19 @@
-baseurl = "https://fahrplan.manuelhu.de/"
+baseurl = "https://fahrplan.manuelhu.de/" #Bei Änderungen download_url anpassen
 languageCode = "de-de"
-title = "Fahrplan"
+title = "FPLedit"
 theme = "hugo-material-docs"
 
 [params]
 	# General information
-	author = "Manuel Huber"
-	description = "Ein simples Programm zum Erstellen von Fahrplänen."
+#	author = "Manuel Huber"
+	description = "Ein einfaches Programm zum Erstellen von Fahrplänen."
 	copyright = "Manuel Huber"
 
-	# Repository
-	#provider = "GitHub"
-	#repo_url = "https://github.com/digitalcraftsman/hugo-material-docs"
+	# Download button
+	download_url = "/download/"
 
-	version = "1.0.0"
-	logo = "images/logo.png"
+	version = "1.0.1"
+	logo = "files/logo.png"
 	favicon = ""
 
 	permalink = "#"
@@ -27,31 +26,49 @@ theme = "hugo-material-docs"
 	highlight_css  = ""
 
 	[params.palette]
-    	primary = "red"
-    	accent  = "teal"
+    	primary = "light-green"
+    	accent  = "lime"
 
     [params.font]
     	text = "Ubuntu"
     	code = "Ubuntu Mono"
 
 
-[social]
-	twitter = "wieslauterbahn"
-	github  = "ManuelHu"
-	email   = "info@manuelhu.de"
+#[social]
+#	twitter = "wieslauterbahn"
+#	github  = "ManuelHu"
+#	email   = "info@manuelhu.de"
 
 
 [[menu.main]]
-	name   = "Fahrplan"
+	name   = "FPLedit"
 	url    = "/"
 	weight = 0
-	
+
+[[menu.main]]
+	name   = "Dokumentation"
+	weight = 2
+	identifier = "doku"
+
+[[menu.main]]
+	name   = "Einführung"
+	url    = "einfuehrung/"
+	weight = 3
+	parent = "doku"
+
 [[menu.main]]
 	name   = "Fahrpläne bearbeiten"
 	url    = "fahrplaene-bearbeiten/"
 	weight = 10
-	
+	parent = "doku"
+
 [[menu.main]]
 	name   = "Bildfahrpläne"
 	url    = "bildfahrplaene/"
 	weight = 20
+	parent = "doku"
+
+[[menu.main]]
+	name   = "Impressum"
+	url    = "https://manuelhu.de/impressum.html"
+	weight = 100

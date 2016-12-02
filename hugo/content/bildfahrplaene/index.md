@@ -26,7 +26,7 @@ Unter dem Menüpunkt `Bildfahrplan > Darstellung anpassen` lässt sich die Darst
 
 {{< figure src="fahrplan-darstellung.png" title="Darstellung fahrplanweit anpassen" >}}
 
-In diesem Fenster lassen sich fast alle Parameter des Bildfahrplans ändern. Die Farben des Hintergrunds und aller Linien lassen sich auf einige vordefinierte Farbwerte ändern, ebenso die Linienstärken. Bei den Schriftarten kann es vorkommen, dass der Bildfahrplan nicht richtig dargestellt wird, , wenn der Fahrplan auf einen anderen Computer geladen wird und dort die entsprechenden Schriftarten nicht vorhanden sind.
+In diesem Fenster lassen sich fast alle Parameter des Bildfahrplans ändern. Die Farben des Hintergrunds und aller Linien lassen sich auf einige vordefinierte Farbwerte ändern, ebenso die Linienstärken. Bei den Schriftarten kann es vorkommen, dass der Bildfahrplan nicht richtig dargestellt wird, wenn der Fahrplan auf einen anderen Computer geladen wird und dort die entsprechenden Schriftarten nicht vorhanden sind.
 
 ### Einzelne Züge anpasssen
 
@@ -37,3 +37,7 @@ Unter dem Menüpunkt `Bildfahrplan > Zugdarstellung anpassen` lassen sich die gl
 ## Drucken und Exportieren
 
 Über `Datei > Speichern unter` lässt sich der Buchfahrplan als Bitmap-datei (.bmp) exportieren. Über `Bildfahrplan > Drucken` kann man den Bildfahrplan ausdrucken, dabei werden die Einstellungen aus dem Einstellungsdialog angewendet.
+
+{{< note title="Hinweis" >}}
+Dieses Programm befindet sich unter aktiver Entwicklung und ist in einer Art beta-Phase. Daher können Fehler bei der Benutzung des Programms auftreten. Sie sollten daher ab und zu Sicherheitskopien der Fahrplan-Dateien anlegen, um Datenverlust vorzubeugen.
+{{< /note >}}
