@@ -1,6 +1,6 @@
 ---
 date: 2016-03-08T21:07:13+01:00
-title: FPLedit
+title: Start
 type: index
 weight: 0
 ---
@@ -9,9 +9,6 @@ Mit dem Programm FPledit kann man Fahrpläne bearbeiten und in verschiedenen For
 
 ## Systemvoraussetzungen
 FPledit läuft auf allen Systemen auf denen entweder Microsoft .NET (vorinstalliert ab Windows Vista) oder [Mono](http://www.mono-project.com/) installiert ist. Damit sollte dieses Programm auf Windows, Linux und macOS (ungetestet) laufen.
-
-## Installation
-Zur Installation einfach die ZIP-Datei an eine beliebige Stelle entpacken und die Datei `FPledit.exe` mit Doppelklick starten. Zur richtigen Darstellung der Buchfahrpläne wird auch noch die systemweit zu installierende Schrift [DIN 1451 Mittelschrift alt](http://www.peter-wiegel.de/alteDin1451.html) benötigt.
 
 ## Features
 - [Erstellen und Bearbeiten]({{< relref "fahrplaene-bearbeiten/index.md" >}}) von Strecken und Fahrplänen.

@@ -14,7 +14,7 @@ Eine kommerzielle Nutzung des Programms bedarf meiner vorherigen Zustimmung.
 Der Autor dieses Programms haftet nicht für Schäden an Soft- oder Hardware oder Vermögensschäden, die durch das Benutzen des Programms entstehen, es sei denn diese beruhen auf einem grob fahrlässigen oder vorsätzlichen Handeln des Autors, seiner Erfüllungsgehilfen oder seiner gesetzlichen Vertreter. Für  Schäden an der Gesundheit, dem Körper oder dem Leben des Nutzers haftet der Autor uneingeschränkt. Ebenso haftet er für die Verletzung von Pflichten, die zur Erreichung des Vertragszwecks von besonderer Bedeutung sind (Kardinalspflichten).
 
 Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
-[Download starten](/files/fpledit-1.0.1.zip)
+[Download starten](/files/fpledit-1.0.1.zip) / [Hinweise zur Installation]({{< relref "einfuehrung/index.md#installation" >}})
 
 ## Changelog
 

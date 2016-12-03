@@ -4,7 +4,7 @@ title: Bildfahrpläne
 weight: 20
 ---
 
-Aus dem erstellten Fahrplan kann jetzt ein Bildfahrplan generiert werden, der die gesamte Strecke abbildet.
+Aus dem erstellten Fahrplan kann jetzt ein Bildfahrplan generiert werden, der die gesamte Strecke abbildet. Diese Funktionen setzen die aktivierte Bildfahrplanerweiterung voraus!
 
 {{< note title="Beispielfahrplan" >}}
 Den in dieser Anleitung erstellten Fahrplan der Strecke Pirmasens Nord - Pirmasens Hbf in der Südpfalz kann man [hier](/files/kbs_672.bfpl) herunterladen.

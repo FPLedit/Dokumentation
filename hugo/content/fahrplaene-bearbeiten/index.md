@@ -4,7 +4,7 @@ title: Fahrpläne bearbeiten
 weight: 10
 ---
 
-Zu den grundlegenden Features von FPLedit gehört das Erstellen und Bearbeiten der Fahrpläne. Dies gliedert sich in drei Bereiche. Zuerst muss die Strecke erstellt werden, danach können Züge hinzugefügt werden und die Fahrpläne bearbeitet werden.
+Zu den grundlegenden Features von FPLedit gehört das Erstellen und Bearbeiten der Fahrpläne. Dies gliedert sich in drei Bereiche. Zuerst muss die Strecke erstellt werden, danach können Züge hinzugefügt werden und die Fahrpläne bearbeitet werden. Diese Funktionen setzen die aktivierte Standarderweiterung voraus.
 
 {{< note title="Beispielfahrplan" >}}
 Den in dieser Anleitung erstellten Fahrplan der Strecke Pirmasens Nord - Pirmasens Hbf in der Südpfalz kann man [hier](/files/kbs_672.bfpl) herunterladen.
@@ -14,7 +14,7 @@ Den in dieser Anleitung erstellten Fahrplan der Strecke Pirmasens Nord - Pirmase
 
 Nachdem man mit `Datei > Neu` einen neuen Fahrplan angelegt hat, kann unter dem Menüpunkt `Bearbeiten > Strecke bearbeiten` die Strecke bearbeitet werden.
 
-{{< figure src="streckenfenster.png" title="Strecke bearbeiten und Station bearbeiten" >}}
+{{< figure src="streckenfenster.png" title="Strecke und Station bearbeiten" >}}
 
 Durch einen Klick auf `Neue Station` kann man durch Eingabe von Bahnhofsnamen und Streckenkilometer einen neuen Bahnhof anlegen, mit `Station bearbeiten` können nachträglich die Eigenschaften einer Station wieder geändert werden. Mit dem Button `Station löschen` löscht man die selektierte Station wieder.
 

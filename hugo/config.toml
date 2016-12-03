@@ -41,7 +41,7 @@ theme = "hugo-material-docs"
 
 
 [[menu.main]]
-	name   = "FPLedit"
+	name   = "Start"
 	url    = "/"
 	weight = 0
 
