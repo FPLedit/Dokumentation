@@ -14,7 +14,7 @@ theme = "hugo-material-docs"
 
 	version = "1.0.1"
 	logo = "files/logo.png"
-	favicon = ""
+	favicon = "files/favicon.ico"
 
 	permalink = "#"
 
