@@ -29,7 +29,7 @@ Eines der Grundkonzepte von FPLedit ist die Erweiterbarkeit. Die Erweiterungen l
 * Die Datei `FPLedit.Shared.dll` ist aber keine Erweiterung sondern Bestandteil des Hauptprogramms!
 
 Erweiterungen können über über das Programm verwaltet werden (`Datei > Erweiterungen`):
-{{< figure src="erweiterungsfester.png" title="Erweiterungsfenster" >}}
+{{< figure src="erweiterungsfenster.png" title="Erweiterungsfenster" >}}
 
 In diesem Dialog können Erweiterungen deaktiviert (`<`) oder aktiviert (`>`) werden. Eigene Erweiterungen können in C# programmiert werden. *Dokumentation dazu folgt*
 

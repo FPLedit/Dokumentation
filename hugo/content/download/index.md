@@ -14,11 +14,15 @@ Eine kommerzielle Nutzung des Programms bedarf meiner vorherigen Zustimmung.
 Der Autor dieses Programms haftet nicht für Schäden an Soft- oder Hardware oder Vermögensschäden, die durch das Benutzen des Programms entstehen, es sei denn diese beruhen auf einem grob fahrlässigen oder vorsätzlichen Handeln des Autors, seiner Erfüllungsgehilfen oder seiner gesetzlichen Vertreter. Für  Schäden an der Gesundheit, dem Körper oder dem Leben des Nutzers haftet der Autor uneingeschränkt. Ebenso haftet er für die Verletzung von Pflichten, die zur Erreichung des Vertragszwecks von besonderer Bedeutung sind (Kardinalspflichten).
 
 Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
-[Download starten](/files/fpledit-1.0.1.zip) / [Hinweise zur Installation]({{< relref "einfuehrung/index.md#installation" >}})
+[Download starten (aktuelle Version 1.0.2)](/files/fpledit-1.0.2.zip) / [Hinweise zur Installation]({{< relref "einfuehrung/index.md#installation" >}})
 
 ## Changelog
 
-### 1.0.1 (vom 2.12.2016; [Download](/files/fpledit-1.0.1.zip))
+### 1.0.2 (vom 4.12.2016; [Download](/files/fpledit-1.0.2.zip))
+* Fehler behoben, bei dem manche jTrainGraph-Fahrpläne nicht importiert werden
+* Beim Updaten springen in den Bearbeitungsdialogen die Listen nicht mehr so viel
+
+### 1.0.1 (vom 2.12.2016)
 * Farben werden jetzt intern hexadezimal gespeichert (#RRGGGBB)
 * Verwaltung von Erweiterungen (siehe Datei > Erweiterungen)
 * Neuer Info-Dialog
