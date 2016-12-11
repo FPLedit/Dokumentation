@@ -16,7 +16,6 @@ disableRSS = true
 
 	logo = "files/logo.png"			# Seitenlogo
 	favicon = "files/favicon.ico"	# Seitenicon
-	permalink = "#"
 
 	custom_css = []
 	custom_js  = []
