@@ -1,0 +1,15 @@
+User-agent: MJ12bot
+User-agent: dotbot
+User-agent: SEOkicks-Robot
+User-agent: AhrefsBot
+User-agent: Yandex
+User-agent: Exabot
+User-agent: metajobbot
+User-agent: SemrushBot
+User-agent: SurveyBot
+User-agent: vebidoobot
+User-agent: SiteExplorer
+User-agent: wotbox
+User-agent: roboto
+User-agent: Baiduspider
+Disallow: /

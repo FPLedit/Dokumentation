@@ -28,7 +28,7 @@
 			<p>Der angeforderte Inhalt konnte leider nicht gefunden werden.</p>
 
 			<aside class="copyright" role="note">
-				{{ with .Site.Params.copyright }}
+				{{ with .Site.Params.author }}
 				&copy; {{ $.Now.Format "2006" }} {{ . }} &ndash;
 				{{ end }}
 				Documentation built with

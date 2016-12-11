@@ -50,11 +50,11 @@
     <link rel="stylesheet" href="{{ .Site.BaseURL }}stylesheets/application.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}stylesheets/temporary.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}stylesheets/palettes.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}{{ with .Site.Params.highlight_css }}{{ . }}{{ else }}stylesheets/highlight/highlight.css{{ end }}">
+    <!--<link rel="stylesheet" href="{{ .Site.BaseURL }}{{ with .Site.Params.highlight_css }}{{ . }}{{ else }}stylesheets/highlight/highlight.css{{ end }}">-->
 
     {{/* set default values if no custom ones are defined */}}
-    {{ $text := or .Site.Params.font.text "Roboto" }}
-    {{ $code := or .Site.Params.font.code "Roboto Mono" }}
+    {{ $text := or .Site.Params.font.text "Ubuntu" }}
+    {{ $code := or .Site.Params.font.code "Ubuntu Mono" }}
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ $text }}:400,700|{{ replace  $code " " "+" | safeURL }}">
     <style>
       body, input {

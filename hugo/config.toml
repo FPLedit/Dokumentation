@@ -3,43 +3,27 @@ languageCode = "de-de"
 title = "FPLedit"
 theme = "hugo-material-docs"
 defaultContentLanguage = "de"
+enableRobotsTXT = true
+disableRSS = true
 
 [params]
 	# General information
-#	author = "Manuel Huber"
+	author = "Manuel Huber"
 	description = "Ein einfaches Programm zum Erstellen von Fahrplänen."
-	copyright = "Manuel Huber"
 
-	# Download button
-	download_url = "/download/"
+	download_url = "/download/"		# URL für Download-Button
+	version = "1.0.3"				# Aktuelle Programmversion
 
-	version = "1.0.3"
-	logo = "files/logo.png"
-	favicon = "files/favicon.ico"
-
+	logo = "files/logo.png"			# Seitenlogo
+	favicon = "files/favicon.ico"	# Seitenicon
 	permalink = "#"
 
-	# Custom assets
 	custom_css = []
 	custom_js  = []
-
-	# Syntax highlighting theme
-	highlight_css  = ""
 
 	[params.palette]
     	primary = "light-green"
     	accent  = "lime"
-
-    [params.font]
-    	text = "Ubuntu"
-    	code = "Ubuntu Mono"
-
-
-#[social]
-#	twitter = "wieslauterbahn"
-#	github  = "ManuelHu"
-#	email   = "info@manuelhu.de"
-
 
 [[menu.main]]
 	name   = "Start"
