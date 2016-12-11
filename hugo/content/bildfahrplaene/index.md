@@ -36,7 +36,7 @@ Unter dem Menüpunkt `Bildfahrplan > Zugdarstellung anpassen` lassen sich die gl
 
 ## Drucken und Exportieren
 
-Über `Datei > Speichern unter` lässt sich der Buchfahrplan als Bitmap-datei (.bmp) exportieren. Über `Bildfahrplan > Drucken` kann man den Bildfahrplan ausdrucken, dabei werden die Einstellungen aus dem Einstellungsdialog angewendet.
+Über `Datei > Speichern unter` lässt sich der Buchfahrplan als PNG-Bilddatei (.png) exportieren. Über `Bildfahrplan > Drucken` kann man den Bildfahrplan ausdrucken, dabei werden die Einstellungen aus dem Einstellungsdialog angewendet.
 
 {{< note title="Hinweis" >}}
 Dieses Programm befindet sich unter aktiver Entwicklung und ist in einer Art beta-Phase. Daher können Fehler bei der Benutzung des Programms auftreten. Sie sollten daher ab und zu Sicherheitskopien der Fahrplan-Dateien anlegen, um Datenverlust vorzubeugen.

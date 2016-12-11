@@ -2,6 +2,7 @@ baseurl = "https://fahrplan.manuelhu.de/" #Bei Änderungen download_url anpassen
 languageCode = "de-de"
 title = "FPLedit"
 theme = "hugo-material-docs"
+defaultContentLanguage = "de"
 
 [params]
 	# General information
@@ -12,7 +13,7 @@ theme = "hugo-material-docs"
 	# Download button
 	download_url = "/download/"
 
-	version = "1.0.2"
+	version = "1.0.3"
 	logo = "files/logo.png"
 	favicon = "files/favicon.ico"
 
