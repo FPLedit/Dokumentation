@@ -19,7 +19,7 @@ FPledit läuft auf allen Systemen, auf denen entweder Microsoft .NET 4.0 (vorins
 
 - Binäres, optimiertes [Dateiformat]({{< relref "dateiformat/index.md" >}}).
 
-- **Rudimentärer** Import von bestehenden [jTrainGraph](http://kinzigtalbahn.bplaced.net/homepage/programme.html)-Fahrplänen. (**Achtung:** Planeinstellungen und Konfigurationen der Züge bzw. Bahnhöfe werden nicht übernommen!)
+<!--- **Rudimentärer** Import von bestehenden [jTrainGraph](http://kinzigtalbahn.bplaced.net/homepage/programme.html)-Fahrplänen. (**Achtung:** Planeinstellungen und Konfigurationen der Züge bzw. Bahnhöfe werden nicht übernommen!)-->
 
 {{< note title="Hinweis" >}}
 Dieses Programm befindet sich unter aktiver Entwicklung und ist in einer Art beta-Phase. Daher können Fehler bei der Benutzung des Programms auftreten. Sie sollten daher ab und zu Sicherheitskopien der Fahrplan-Dateien anlegen, um Datenverlust vorzubeugen.
