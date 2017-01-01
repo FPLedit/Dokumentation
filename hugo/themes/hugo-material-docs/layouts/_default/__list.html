@@ -21,7 +21,7 @@
 		<div class="wrapper">
 			<h1>Pages in {{ .Title | singularize }}</h1>
 
-			{{ range .Data.Pages }}
+			{{ range .Data.RealPages }}
 			<a href="{{ .Permalink }}" title="{{ .Title }}">
 				<h2>{{ .Title }}</h2>
 			</a>
@@ -29,7 +29,6 @@
 			<br>
 			{{ printf "%s" .Summary | markdownify }}
 
-			<hr>
 			{{ end }}
 
 			<aside class="copyright" role="note">
