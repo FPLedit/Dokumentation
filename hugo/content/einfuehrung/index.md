@@ -15,17 +15,17 @@ Das gleiche Verfahren wird auch bei einem Update angewandt. Informationen zur ne
 ## Hauptfenster
 Nach dem Programmstart erscheint zuerst das Haptfenster. Wenn im Menü nur der Menüpunkt `Datei` angezeigt wird, wurde die ZIP-Datei nicht wie oben beschrieben entblockt.
 
-{{< figure src="hauptfenster.png" title="Hauptfenster nach dem ersten Programmstart" >}}
+{{< figure src="hauptfenster.png" title="Hauptfenster nach einigen Aktionen" >}}
 
 Über die verschiedenen Menüs lassen sich die Dialoge der [Erweiterungen](#erweiterungen) aufrufen. Diese werden in den entsprecenden Kapiteln der Dokumentation näher erläutert.
 
 ## Erweiterungen
 Eines der Grundkonzepte von FPLedit ist die Erweiterbarkeit. Die Erweiterungen liegen als DLL-Datei im Programmverzeichnis. Mit dem Programm werden schon einige Erweiterungen mitausgeliefert:
 
-* Standarderweiterung (`FPLedit.AStandard.dll`): Bearbeiten (und Speichern!) von Fahrplandateien (nicht deaktivieren!)
-* Exporter für [Bildfahrpläne]({{< relref "bildfahrplaene/index.md" >}}) (`FPLedit.BildfahrplanExport.dll`)
+* Fahrplan-Editoren (`FPLedit.AStandard.dll`)
 * Exporter für Buchfahrpläne (`FPLedit.BuchfahrplanExport.dll`)
-* Importer für jTrainGraph-Dateien (`FPLedit.JTrainGraphImport.dll`)
+* Importer für alte BFPL-Dateien (`FPLedit.BfplImport.dll`)
+* Starter für jTrainGraph zur Bildfahrplanerstellung (`FPLedit.jTrainGraphStarter`)
 * Die Datei `FPLedit.Shared.dll` ist aber keine Erweiterung sondern Bestandteil des Hauptprogramms!
 
 Erweiterungen können über über das Programm verwaltet werden (`Datei > Erweiterungen`):

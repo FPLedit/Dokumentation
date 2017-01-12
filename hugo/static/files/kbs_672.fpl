@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jTrainGraph_timetable version="008" name="" tMin="240" tMax="1440" d="1111100" bgC="weiß" sFont="font(SansSerif;0;12)" trFont="font(SansSerif;0;12)" hFont="font(SansSerif;0;12)" tFont="font(SansSerif;0;12)" sHor="false" sLine="0" shKm="true" sStation="-1" eStation="-1" cNr="1" exW="-1" exH="-1" shV="true">
+  <stations>
+    <sta name="Pirmasens Nord" km="0.0" cl="schwarz" sh="true" sz="1" sy="0" fpl-vmax="60" />
+    <sta name="Pirmasens Hbf" km="7.0" cl="schwarz" sh="true" sz="1" sy="0" fpl-vmax="30" />
+  </stations>
+  <trains>
+    <ti name="RB 12801" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="0000011" id="" fpl-tfz="642/643">
+      <t a="" d="01:07" />
+      <t a="01:16" d="" />
+    </ti>
+    <ti name="RB 12942" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="0000011" id="" fpl-tfz="642/643">
+      <t a="" d="01:58" />
+      <t a="02:05" d="" />
+    </ti>
+    <ti name="RB 12803" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111100" id="" fpl-tfz="642/643">
+      <t a="" d="06:00" />
+      <t a="06:08" d="" />
+    </ti>
+    <ti name="RB 12805" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111110" id="" fpl-tfz="642/643">
+      <t a="" d="07:11" />
+      <t a="07:19" d="" />
+    </ti>
+    <ti name="RB 12906" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111100" id="" fpl-tfz="642/643">
+      <t a="" d="07:46" />
+      <t a="07:53" d="" />
+    </ti>
+    <ti name="RB 12807" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="642/643">
+      <t a="" d="08:10" />
+      <t a="08:18" d="" />
+    </ti>
+    <ti name="RB 12908" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="642/643">
+      <t a="" d="08:19" />
+      <t a="08:26" d="" />
+    </ti>
+    <ti name="RB 12809" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="642/643">
+      <t a="" d="09:10" />
+      <t a="09:18" d="" />
+    </ti>
+    <ti name="RB 12910" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="642/643">
+      <t a="" d="09:19" />
+      <t a="09:26" d="" />
+    </ti>
+    <ti name="RB 12811" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="642/643">
+      <t a="" d="10:10" />
+      <t a="10:18" d="" />
+    </ti>
+    <ti name="RB 12912" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="642/643">
+      <t a="" d="10:19" />
+      <t a="10:26" d="" />
+    </ti>
+    <ti name="RB 12813" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="642/643">
+      <t a="" d="11:10" />
+      <t a="11:18" d="" />
+    </ti>
+    <ti name="RB 12914" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="642/643">
+      <t a="" d="11:19" />
+      <t a="11:26" d="" />
+    </ti>
+    <ti name="RB 12815" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="642/643">
+      <t a="" d="12:10" />
+      <t a="12:18" d="" />
+    </ti>
+    <ti name="RB 12916" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="642/643">
+      <t a="" d="12:19" />
+      <t a="12:26" d="" />
+    </ti>
+    <ti name="RB 12817" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="642/643">
+      <t a="" d="13:10" />
+      <t a="13:18" d="" />
+    </ti>
+    <ti name="RB 12918" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="642/643">
+      <t a="" d="13:19" />
+      <t a="13:26" d="" />
+    </ti>
+    <ti name="RB 12819" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="642/643">
+      <t a="" d="14:10" />
+      <t a="14:18" d="" />
+    </ti>
+    <ti name="RB 12922" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="642/643">
+      <t a="" d="14:19" />
+      <t a="14:26" d="" />
+    </ti>
+    <ti name="RB 12821" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="642/643">
+      <t a="" d="15:10" />
+      <t a="15:18" d="" />
+    </ti>
+    <ti name="RB 12924" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="" d="15:19" />
+      <t a="15:26" d="" />
+    </ti>
+    <ti name="RB 12823" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="" d="16:10" />
+      <t a="16:18" d="" />
+    </ti>
+    <ti name="RB 12926" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="" d="16:19" />
+      <t a="16:26" d="" />
+    </ti>
+    <ti name="RB 12825" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="" d="17:10" />
+      <t a="17:18" d="" />
+    </ti>
+    <ti name="RB 12928" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="" d="17:19" />
+      <t a="17:26" d="" />
+    </ti>
+    <ti name="RB 12827" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="" d="18:10" />
+      <t a="18:18" d="" />
+    </ti>
+    <ti name="RB 12932" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="" d="18:19" />
+      <t a="18:26" d="" />
+    </ti>
+    <ti name="RB 12829" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="" d="19:10" />
+      <t a="19:18" d="" />
+    </ti>
+    <ti name="RB 12934" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="" d="19:19" />
+      <t a="19:26" d="" />
+    </ti>
+    <ti name="RB 12831" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="" d="20:10" />
+      <t a="20:18" d="" />
+    </ti>
+    <ti name="RB 12936" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="" d="20:19" />
+      <t a="20:26" d="" />
+    </ti>
+    <ti name="RB 12833" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="" d="21:10" />
+      <t a="21:18" d="" />
+    </ti>
+    <ti name="RB 12938" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="" d="21:19" />
+      <t a="21:26" d="" />
+    </ti>
+    <ti name="RB 12940" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="" d="22:19" />
+      <t a="22:26" d="" />
+    </ti>
+    <ti name="RB 12835" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="" d="23:33" />
+      <t a="23:41" d="" />
+    </ti>
+    <ta name="RB 12331" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111100" id="" fpl-tfz="642/643">
+      <t a="04:47" d="" />
+      <t a="" d="04:40" />
+    </ta>
+    <ta name="RB 12901" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111100" id="" fpl-tfz="">
+      <t a="05:22" d="" />
+      <t a="" d="05:15" />
+    </ta>
+    <ta name="RB 12800" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111100" id="" fpl-tfz="">
+      <t a="05:38" d="" />
+      <t a="" d="05:31" />
+    </ta>
+    <ta name="RB 12333" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="0000010" id="" fpl-tfz="">
+      <t a="05:49" d="" />
+      <t a="" d="05:42" />
+    </ta>
+    <ta name="RB 12335" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111100" id="" fpl-tfz="">
+      <t a="05:51" d="" />
+      <t a="" d="05:44" />
+    </ta>
+    <ta name="RB 12903" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111110" id="" fpl-tfz="">
+      <t a="05:59" d="" />
+      <t a="" d="05:52" />
+    </ta>
+    <ta name="RB 12802" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111100" id="" fpl-tfz="">
+      <t a="06:18" d="" />
+      <t a="" d="06:11" />
+    </ta>
+    <ta name="RB 12337" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111100" id="" fpl-tfz="">
+      <t a="06:29" d="" />
+      <t a="" d="06:22" />
+    </ta>
+    <ta name="RB 12806" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111110" id="" fpl-tfz="">
+      <t a="06:47" d="" />
+      <t a="" d="06:40" />
+    </ta>
+    <ta name="RB 12804" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="0000001" id="" fpl-tfz="">
+      <t a="06:48" d="" />
+      <t a="" d="06:41" />
+    </ta>
+    <ta name="RB 12339" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="07:08" d="" />
+      <t a="" d="07:02" />
+    </ta>
+    <ta name="RB 12808/12935" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="07:39" d="" />
+      <t a="" d="07:32" />
+    </ta>
+    <ta name="RB 12810" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="0000001" id="" fpl-tfz="">
+      <t a="07:48" d="" />
+      <t a="" d="07:41" />
+    </ta>
+    <ta name="RB 12341" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="08:08" d="" />
+      <t a="" d="08:02" />
+    </ta>
+    <ta name="RB 12909" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="08:39" d="" />
+      <t a="" d="08:32" />
+    </ta>
+    <ta name="RB 12812" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="08:48" d="" />
+      <t a="" d="08:41" />
+    </ta>
+    <ta name="RB 12346" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="09:08" d="" />
+      <t a="" d="09:02" />
+    </ta>
+    <ta name="RB 12911" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="09:39" d="" />
+      <t a="" d="09:32" />
+    </ta>
+    <ta name="RB 12814" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="09:48" d="" />
+      <t a="" d="09:41" />
+    </ta>
+    <ta name="RB 12347/12345" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="10:08" d="" />
+      <t a="" d="10:02" />
+    </ta>
+    <ta name="RB 12913" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="10:39" d="" />
+      <t a="" d="10:32" />
+    </ta>
+    <ta name="RB 12816" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="10:48" d="" />
+      <t a="" d="10:41" />
+    </ta>
+    <ta name="RB 12351/12349" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="11:08" d="" />
+      <t a="" d="11:02" />
+    </ta>
+    <ta name="RB 12915" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="11:39" d="" />
+      <t a="" d="11:32" />
+    </ta>
+    <ta name="RB 12818" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="11:48" d="" />
+      <t a="" d="11:41" />
+    </ta>
+    <ta name="RB 12353" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="12:08" d="" />
+      <t a="" d="12:02" />
+    </ta>
+    <ta name="RB 12917" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="12:39" d="" />
+      <t a="" d="12:32" />
+    </ta>
+    <ta name="RB 12820" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="12:48" d="" />
+      <t a="" d="12:41" />
+    </ta>
+    <ta name="RB 12355" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="13:08" d="" />
+      <t a="" d="13:02" />
+    </ta>
+    <ta name="RB 12919" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="13:39" d="" />
+      <t a="" d="13:32" />
+    </ta>
+    <ta name="RB 12822" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="12:48" d="" />
+      <t a="" d="12:41" />
+    </ta>
+    <ta name="RB 12357" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="14:08" d="" />
+      <t a="" d="14:02" />
+    </ta>
+    <ta name="RB 12921" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="14:39" d="" />
+      <t a="" d="14:32" />
+    </ta>
+    <ta name="RB 12824" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="14:48" d="" />
+      <t a="" d="14:41" />
+    </ta>
+    <ta name="RB 12361/12359" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="15:08" d="" />
+      <t a="" d="15:02" />
+    </ta>
+    <ta name="RB 12932" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="15:39" d="" />
+      <t a="" d="15:32" />
+    </ta>
+    <ta name="RB 12826" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="15:48" d="" />
+      <t a="" d="15:41" />
+    </ta>
+    <ta name="RB 12366" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="16:08" d="" />
+      <t a="" d="16:02" />
+    </ta>
+    <ta name="RB 12925" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="16:39" d="" />
+      <t a="" d="16:32" />
+    </ta>
+    <ta name="RB 12828" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="16:48" d="" />
+      <t a="" d="16:41" />
+    </ta>
+    <ta name="RB 12363" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="17:08" d="" />
+      <t a="" d="17:02" />
+    </ta>
+    <ta name="RB 12927" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="17:39" d="" />
+      <t a="" d="17:32" />
+    </ta>
+    <ta name="RB 12830" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="17:48" d="" />
+      <t a="" d="17:41" />
+    </ta>
+    <ta name="RB 12365" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="18:08" d="" />
+      <t a="" d="18:02" />
+    </ta>
+    <ta name="RB 12929" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="18:39" d="" />
+      <t a="" d="18:32" />
+    </ta>
+    <ta name="RB 12832" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="18:48" d="" />
+      <t a="" d="18:41" />
+    </ta>
+    <ta name="RB 12369" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="19:08" d="" />
+      <t a="" d="19:02" />
+    </ta>
+    <ta name="RB 12931" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="19:39" d="" />
+      <t a="" d="19:32" />
+    </ta>
+    <ta name="RB 12834" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="19:48" d="" />
+      <t a="" d="19:41" />
+    </ta>
+    <ta name="RB 12373" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="20:08" d="" />
+      <t a="" d="20:02" />
+    </ta>
+    <ta name="RB 12933" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="20:39" d="" />
+      <t a="" d="20:32" />
+    </ta>
+    <ta name="RB 12836" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-tfz="">
+      <t a="20:48" d="" />
+      <t a="" d="20:41" />
+    </ta>
+  </trains>
+</jTrainGraph_timetable>

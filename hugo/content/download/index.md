@@ -4,9 +4,7 @@ title: Download
 weight: 5
 ---
 
-{{< note title="Wichtiger Hinweis" >}}
-FPledit ist ein Projekt, das primär auf (Modell-)Eisenbahnfreunde abzielt. Die Fahrpläne sind nicht nach den Betriebsrichtlinien irgendeiner Bahngesellschaft gestaltet und sind für den Betriebsdienst nicht geeignet!
-{{< /note >}}
+**FPledit ist ein Projekt, das primär auf (Modell-)Eisenbahnfreunde abzielt. Die Fahrpläne sind nicht nach den Betriebsrichtlinien irgendeiner Bahngesellschaft gestaltet und sind für den Betriebsdienst nicht geeignet!**
 
 FPledit darf für den nicht-kommerziellen Gebrauch (dies schließt die Veröffentlichung damit erstellter Fahrpläne auf privaten Websites ausdrücklich ein) kostenlos heruntergeladen und verwendet werden. Die Weitergabe oder Bereitstellung des Programms über eine öffentliche Plattform oder gegen Entgelt ist nur nach vorheriger Zustimmung des Programmautors gestattet. Verweisen Sie bitte stattdessen auf die offizielle Website des Programms.   
 Eine kommerzielle Nutzung des Programms bedarf meiner vorherigen Zustimmung.
@@ -16,11 +14,18 @@ Der Autor dieses Programms haftet nicht für Schäden an Soft- oder Hardware ode
 **Datenschutz:** Bei der programminternen Aktualisierungsüberprüfungsfunktion (`Datei > Info`) wird die IP-Adresse des anfragenden Computers an den Server übermittelt.
 
 Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
-[Download starten (aktuelle Version 1.0.3)](/files/fpledit-1.0.3.zip) / [Hinweise zur Installation]({{< relref "einfuehrung/index.md#installation" >}})
+[Download starten (aktuelle Version 1.1.0)](/files/fpledit-1.1.0.zip) / [Hinweise zur Installation]({{< relref "einfuehrung/index.md#installation" >}})
 
 ## Changelog
 
-### 1.0.3 (vom 11.12.2016; [Download](/files/fpledit-1.0.3.zip))
+### 1.1.0 (vom xx.1.2016; [Download](/files/fpledit-1.1.0.zip))
+* Neues, mit jTrainGraph (**Version >= 2.02**) vollständig kompatibles Dateiformat
+* Entfernen des Bildfahrplan-Moduls, bitte jTrainGraph benutzen!
+* Starter für jTrainGraph, dadurch kann jTrainGraph direkt aus dem Programm heraus gestartet werden (jTrainGraph >= 2.02)
+* Das alte BFPL-Format kann nur noch über `Datei > Importieren` geöffnet werden, `Öffnen` öffnet nur noch das neue Dateiformat
+* Exportieren nur noch über `Datei > Exportieren`, `Speichern (unter)` öffnet nur noch das neue Dateiformat
+
+### 1.0.3 (vom 11.12.2016)
 * Fehler behoben, bei dem Bildfahrpläne im falschen Dateiformat exportiert wurden (jetzt PNG statt BMP)
 * Fehler behoben, bei dem die Stationen im Buchfahrplan falsch herum sortiert wurden
 * Fehler behoben, bei dem auf der Mono-Plattform nicht alle Züge im Bildfahrplan gezeichnet wurden
@@ -36,4 +41,4 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 * Neuer Info-Dialog
 
 ### 1.0.0 (unveröffentlicht)
-* Initiale Version
+* Initiale Version (Editoren, Bildfahrpläne und Buchfahrpläne)

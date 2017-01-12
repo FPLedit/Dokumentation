@@ -4,39 +4,12 @@ title: Bildfahrpläne
 weight: 20
 ---
 
-Aus dem erstellten Fahrplan kann jetzt ein Bildfahrplan generiert werden, der die gesamte Strecke abbildet. Diese Funktionen setzen die aktivierte Bildfahrplanerweiterung voraus!
 
-{{< note title="Beispielfahrplan" >}}
-Den in dieser Anleitung erstellten Fahrplan der Strecke Pirmasens Nord - Pirmasens Hbf in der Südpfalz kann man [hier](/files/kbs_672.bfpl) herunterladen.
-{{< /note >}}
+Das Bildfahrplanmodul wurde in Version 1.1 aus FPLedit entfernt. Bitte nutzen Sie stattdessen [jTrainGraph](http://kinzigtalbahn.bplaced.net/homepage/programme.html), dessen Dateiformat mittlerweile kompatibel mit FPLedit ist. jTrainGraph bietet mehr Einstellungsmöglichkeiten als FPledit und ist ebenso wie FPLedit auf mehreren Plattformen lauffähig. Dazu beötigt es aber ein auf dem System installiertes Java.
 
-## Bildfahrplan anzeigen
+**WICHTIG**: jTrainGraph muss in der Version 2.02 oder höher vorhanden sein, ältere Versionen sind nicht kompatibel!
 
-Den Bildfahrplan kann man mit dem Menü `Bildfahrplan > Anzeigen` anzeigen.
-
-{{< figure src="bildfahrplanfenster.png" title="Bildfahrplan anzeigen" >}}
-
-## Darstellung anpassen
-
-Die Darstellung lässt sich fahrplanweit anpassen und dann pro Zug überschreiben.
-
-### Fahrplanweit anpassen
-
-Unter dem Menüpunkt `Bildfahrplan > Darstellung anpassen` lässt sich die Darstellung konfigurieren.
-
-{{< figure src="fahrplan-darstellung.png" title="Darstellung fahrplanweit anpassen" >}}
-
-In diesem Fenster lassen sich fast alle Parameter des Bildfahrplans ändern. Die Farben des Hintergrunds und aller Linien lassen sich auf einige vordefinierte Farbwerte ändern, ebenso die Linienstärken. Bei den Schriftarten kann es vorkommen, dass der Bildfahrplan nicht richtig dargestellt wird, wenn der Fahrplan auf einen anderen Computer geladen wird und dort die entsprechenden Schriftarten nicht vorhanden sind.
-
-### Einzelne Züge anpasssen
-
-Unter dem Menüpunkt `Bildfahrplan > Zugdarstellung anpassen` lassen sich die globalen Einstellungen für einzelne Züge überschreiben. Dazu gehören die Linienfarbe, die Linienstärke und ob der Zug überhaupt gezeichnet werden soll.
-
-{{< figure src="zuege-darstellung.png" title="Darstellung pro Zug anpassen" >}}
-
-## Drucken und Exportieren
-
-Über `Datei > Speichern unter` lässt sich der Buchfahrplan als PNG-Bilddatei (.png) exportieren. Über `Bildfahrplan > Drucken` kann man den Bildfahrplan ausdrucken, dabei werden die Einstellungen aus dem Einstellungsdialog angewendet.
+Um jTrainGraph direkt aus FPLedit zu starten, benutzen Sie `jTrainGraph > jTrainGraph starten`. Dies speichert automatisch die aktuelle Datei und öffnet diese dann in jTrainGraph. Um die dort geänderten Daten wieder zurückzuübernehmen speichern Sie die Datei in jTrainGraph und schließen anschließend das Fenster. Die geänderten Daten werden wieder geladen.
 
 {{< note title="Hinweis" >}}
 Dieses Programm befindet sich unter aktiver Entwicklung und ist in einer Art beta-Phase. Daher können Fehler bei der Benutzung des Programms auftreten. Sie sollten daher ab und zu Sicherheitskopien der Fahrplan-Dateien anlegen, um Datenverlust vorzubeugen.
