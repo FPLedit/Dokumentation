@@ -1,6 +1,6 @@
 <?php
 
-$curr = '1.0.3';
+$curr = '1.1.0';
 $url = 'https://fahrplan.manuelhu.de/download/';
 
 if ( $_GET['ver'] != $curr ) {
