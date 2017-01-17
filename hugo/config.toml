@@ -53,6 +53,12 @@ disableRSS = true
 	parent = "doku"
 
 [[menu.main]]
+	name   = "Buchfahrpläne"
+	url    = "buchfahrplaene/"
+	weight = 30
+	parent = "doku"
+
+[[menu.main]]
 	name   = "Impressum"
 	url    = "https://manuelhu.de/impressum.html"
 	weight = 100

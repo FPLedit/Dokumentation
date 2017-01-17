@@ -11,7 +11,7 @@ Eine kommerzielle Nutzung des Programms bedarf meiner vorherigen Zustimmung.
 
 Der Autor dieses Programms haftet nicht für Schäden an Soft- oder Hardware oder Vermögensschäden, die durch das Benutzen des Programms entstehen, es sei denn diese beruhen auf einem grob fahrlässigen oder vorsätzlichen Handeln des Autors, seiner Erfüllungsgehilfen oder seiner gesetzlichen Vertreter. Für  Schäden an der Gesundheit, dem Körper oder dem Leben des Nutzers haftet der Autor uneingeschränkt. Ebenso haftet er für die Verletzung von Pflichten, die zur Erreichung des Vertragszwecks von besonderer Bedeutung sind (Kardinalspflichten).
 
-**Datenschutz:** Bei der programminternen Aktualisierungsüberprüfungsfunktion (`Datei > Info`) wird die IP-Adresse des anfragenden Computers an den Server übermittelt.
+**Datenschutz:** Bei der programminternen Aktualisierungsüberprüfungsfunktion (`Hilfe > Info`) wird die IP-Adresse des anfragenden Computers an den Server übermittelt.
 
 Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 [Download starten (aktuelle Version 1.1.0)](/files/fpledit-1.1.0.zip) / [Hinweise zur Installation]({{< relref "einfuehrung/index.md#installation" >}})
@@ -24,6 +24,7 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 * Starter für jTrainGraph, dadurch kann jTrainGraph direkt aus dem Programm heraus gestartet werden (jTrainGraph >= 2.02)
 * Das alte BFPL-Format kann nur noch über `Datei > Importieren` geöffnet werden, `Öffnen` öffnet nur noch das neue Dateiformat
 * Exportieren nur noch über `Datei > Exportieren`, `Speichern (unter)` öffnet nur noch das neue Dateiformat
+* Auswahl aus vorhandenen Triebfahrzeugen
 
 ### 1.0.3 (vom 11.12.2016)
 * Fehler behoben, bei dem Bildfahrpläne im falschen Dateiformat exportiert wurden (jetzt PNG statt BMP)
@@ -37,7 +38,7 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 
 ### 1.0.1 (vom 2.12.2016)
 * Farben werden jetzt intern hexadezimal gespeichert (#RRGGGBB)
-* Verwaltung von Erweiterungen (siehe `Datei > Erweiterungen`)
+* Verwaltung von Erweiterungen (siehe `Hilfe > Erweiterungen`)
 * Neuer Info-Dialog
 
 ### 1.0.0 (unveröffentlicht)

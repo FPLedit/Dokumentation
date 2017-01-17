@@ -10,29 +10,29 @@ Zu den grundlegenden Features von FPLedit gehört das Erstellen und Bearbeiten d
 Den in dieser Anleitung erstellten Fahrplan der Strecke Pirmasens Nord - Pirmasens Hbf in der Südpfalz kann man [hier](/files/kbs_672.fpl) herunterladen.
 {{< /note >}}
 
-## Strecke erstellen
+## Strecke bearbeiten
 
-Nachdem man mit `Datei > Neu` einen neuen Fahrplan angelegt hat, kann unter dem Menüpunkt `Bearbeiten > Strecke bearbeiten` die Strecke bearbeitet werden.
-
-{{< figure src="streckenfenster.png" title="Strecke und Station bearbeiten" >}}
+Nachdem man mit `Datei > Neu` einen neuen Fahrplan angelegt hat, kann unter dem Menüpunkt `Bearbeiten > Strecke bearbeiten` die Strecke bearbeitet werden. Die Strecke enthält alle Bahnhöfe, sie kann aber nur linear (d.h. ohne Veruweigungen oder Ringschlüsse) sein.
 
 Durch einen Klick auf `Neue Station` kann man durch Eingabe von Bahnhofsnamen und Streckenkilometer einen neuen Bahnhof anlegen, mit `Station bearbeiten` können nachträglich die Eigenschaften einer Station wieder geändert werden. Mit dem Button `Station löschen` löscht man die selektierte Station wieder.
+
+![Streckenfenster](streckenfenster.png)
 
 ## Züge anlegen
 
 Wenn eine Strecke angelegt wurde, ist der Menüpunkt `Bearbeiten > Züge bearbeiten` nicht mehr ausgegraut. In diesem Fenster lassen sich die Züge, die auf der Strecke verkehren, bearbeiten.
 
-{{< figure src="zugfenster.png" title="Züge bearbeiten und neuen Zug erstellen" >}}
+Die Züge sind nach Fahrtrichtung geordnet, diese kann nachträglich auch nicht mehr geändert werden! Durch einen Klick auf `Neuer Zug` bei der jeweiligen Fahrtrichtung, öffnet sich ein Fenster in dem man Name, Streckenbezeichnung, Triebfahrzeug und Verkehrstage des Zuges auswählen kann. Den selben Dialog erreicht man auch mit einem Klick auf `Zug bearbeiten`, damit lassen sich dann nachträglich Züge bearbeiten. Das Triebfahrzeug lässt sich aus einer Liste aller in dieser Fahrplandatei verwendeten Triebfahrzeuge auswählen.
 
-Die Züge sind nach Fahrtrichtung geordnet, diese kann nachträglich auch nicht mehr geändert werden! Durch einen Klick auf `Neuer Zug` bei der jeweiligen Fahrtrichtung, öffnet sich ein Fenster in dem man Name, Streckenbezeichnung, Triebfahrzeug und Verkehrstage des Zuges auswählen kann. Den selben Dialog erreicht man auch mit einem Klick auf `Zug bearbeiten`, damit lassen sich dann nachträglich Züge bearbeiten.
+![Zugfenster](zugfenster.png)
 
 ## Fahrplan bearbeiten
 
-Nachdem die Züge angelegt wurden, kann der Fahrplan der einzelnen Züge bearbeitet werden. Dazu öffnet man das Fenster `Bearbeiten > Fahrplan bearbeiten`.
+Nachdem die Züge angelegt wurden, kann der Fahrplan der einzelnen Züge bearbeitet werden. Dazu öffnet man das Fenster `Bearbeiten > Fahrplan bearbeiten`. Hier können die Zeitwerte der Fahrten der Züge bearbeitet werden.
 
-**WICHTIG:** Die Zeitwerte *müssen* im Format `hh:mm` (z.B. 06:16) in die Tabelle eingetragen werden.
+**WICHTIG:** Die Zeitwerte *müssen* im Format `hh:mm` (z.B. 06:16) in die Tabelle eingetragen werden. Das Programm warnt, wenn falsche Werte eingegeben wurden.
 
-{{< figure src="fahrplanfenster.png" title="Fahrplan bearbeiten" >}}
+![Fahrplan bearbeiten](fahrplanfenster.png)
 
 {{< note title="Hinweis" >}}
 Dieses Programm befindet sich unter aktiver Entwicklung und ist in einer Art beta-Phase. Daher können Fehler bei der Benutzung des Programms auftreten. Sie sollten daher ab und zu Sicherheitskopien der Fahrplan-Dateien anlegen, um Datenverlust vorzubeugen.
