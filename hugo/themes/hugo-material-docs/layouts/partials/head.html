@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-  <!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
-  <!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
-  <!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
-  <!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
-  <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
 
   <head {{ with .Site.LanguageCode }}lang="{{ . }}"{{ end }}>
     <meta charset="utf-8">
@@ -11,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
     {{ .Hugo.Generator }}
-
-    {{ with .Site.Params.description }}
+	{{ with .Site.Params.description }}
     <meta name="description" content="{{ . }}">
     {{ end }}
     <link rel="canonical" href="{{ .Permalink }}">
@@ -52,16 +47,12 @@
     <link rel="stylesheet" href="{{ .Site.BaseURL }}stylesheets/palettes.css">
     <!--<link rel="stylesheet" href="{{ .Site.BaseURL }}{{ with .Site.Params.highlight_css }}{{ . }}{{ else }}stylesheets/highlight/highlight.css{{ end }}">-->
 
-    {{/* set default values if no custom ones are defined */}}
-    {{ $text := or .Site.Params.font.text "Ubuntu" }}
-    {{ $code := or .Site.Params.font.code "Ubuntu Mono" }}
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ $text }}:400,700|{{ replace  $code " " "+" | safeURL }}">
     <style>
       body, input {
-        font-family: '{{ $text }}', Helvetica, Arial, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
       }
       pre, code {
-        font-family: '{{ $code }}', 'Courier New', 'Courier', monospace;
+        font-family: 'Courier New', 'Courier', monospace;
       }
     </style>
 
