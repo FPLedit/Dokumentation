@@ -33,14 +33,14 @@
     <style>
       @font-face {
         font-family: 'Icon';
-        src: url('{{ .Site.BaseURL }}fonts/icon.eot?52m981');
-        src: url('{{ .Site.BaseURL }}fonts/icon.eot?#iefix52m981')
+        src: url('{{ .Site.BaseURL }}fonts/icon.eot');
+        src: url('{{ .Site.BaseURL }}fonts/icon.eot?#iefix')
                format('embedded-opentype'),
-             url('{{ .Site.BaseURL }}fonts/icon.woff?52m981')
+             url('{{ .Site.BaseURL }}fonts/icon.woff')
                format('woff'),
-             url('{{ .Site.BaseURL }}fonts/icon.ttf?52m981')
+             url('{{ .Site.BaseURL }}fonts/icon.ttf')
                format('truetype'),
-             url('{{ .Site.BaseURL }}fonts/icon.svg?52m981#icon')
+             url('{{ .Site.BaseURL }}fonts/icon.svg#icon')
                format('svg');
         font-weight: normal;
         font-style: normal;
@@ -68,7 +68,7 @@
     {{ range .Site.Params.custom_css }}
     <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
     {{ end }}
-    <script src="{{ .Site.BaseURL }}javascripts/modernizr.js"></script>
+    <!--<script src="{{ .Site.BaseURL }}javascripts/modernizr.js"></script>-->
 
     {{ with .RSSLink }}
     <link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />

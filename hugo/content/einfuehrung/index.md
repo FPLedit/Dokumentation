@@ -13,14 +13,12 @@ Zur richtigen Darstellung der Buchfahrpläne wird auch noch die systemweit zu in
 Das gleiche Verfahren wird auch bei einem Update angewandt. Informationen zur neuesten Version erhält man im Programm unter `Hilfe > Info > Auf neue Version prüfen`.
 
 ## Hauptfenster
-Nach dem Programmstart erscheint zuerst das Haptfenster. Wenn im Menü nur der Menüpunkt `Datei` angezeigt wird, wurde die ZIP-Datei nicht wie oben beschrieben entblockt.
+Nach dem Programmstart erscheint zuerst das Haptfenster. Wenn im Menü nur der Menüpunkt `Datei` angezeigt wird, wurde die ZIP-Datei nicht wie oben beschrieben entblockt. Über die verschiedenen Menüs lassen sich die Dialoge der [Erweiterungen](#erweiterungen) aufrufen. Diese werden in den entsprecenden Kapiteln der Dokumentation näher erläutert. Im unteren Bereich des Hauptfensters werden Meldungen protokolliert, z.B. Fehler beim Öffnen oder Speichern von Dateien:
 
-{{< figure src="hauptfenster.png" title="Hauptfenster nach einigen Aktionen" >}}
-
-Über die verschiedenen Menüs lassen sich die Dialoge der [Erweiterungen](#erweiterungen) aufrufen. Diese werden in den entsprecenden Kapiteln der Dokumentation näher erläutert.
+![Hauptfenster nach einigen Aktionen](hauptfenster.png)
 
 ## Erweiterungen
-Eines der Grundkonzepte von FPLedit ist die Erweiterbarkeit. Die Erweiterungen liegen als DLL-Datei im Programmverzeichnis. Mit dem Programm werden schon einige Erweiterungen mitausgeliefert:
+Eines der Grundkonzepte von FPLedit ist die Erweiterbarkeit. Erweiterungen fügen Menüs und eigene Dialoge hinzu und stellen zusätzliche Funktionalität bereit. Die Erweiterungen liegen als DLL-Datei im Programmverzeichnis. Mit dem Programm werden schon einige Erweiterungen, die standardmäßig alle aktiviert sind, mitausgeliefert:
 
 * Fahrplan-Editoren (`FPLedit.AStandard.dll`)
 * Exporter für Buchfahrpläne (`FPLedit.BuchfahrplanExport.dll`)
@@ -28,10 +26,9 @@ Eines der Grundkonzepte von FPLedit ist die Erweiterbarkeit. Die Erweiterungen l
 * Starter für jTrainGraph zur Bildfahrplanerstellung (`FPLedit.jTrainGraphStarter`)
 * Die Datei `FPLedit.Shared.dll` ist aber keine Erweiterung sondern Bestandteil des Hauptprogramms!
 
-Erweiterungen können über über das Programm verwaltet werden (`Hilfe > Erweiterungen`):
-{{< figure src="erweiterungsfenster.png" title="Erweiterungsfenster" >}}
+Erweiterungen können über über das Programm verwaltet werden (`Hilfe > Erweiterungen`). In diesem Dialog können Erweiterungen deaktiviert (`<`) oder aktiviert (`>`) werden. Eigene Erweiterungen können in C# programmiert werden. *Dokumentation dazu folgt*
 
-In diesem Dialog können Erweiterungen deaktiviert (`<`) oder aktiviert (`>`) werden. Eigene Erweiterungen können in C# programmiert werden. *Dokumentation dazu folgt*
+![Erweiterungsfenster](erweiterungsfenster.png)
 
 {{< note title="Hinweis" >}}
 Dieses Programm befindet sich unter aktiver Entwicklung und ist in einer Art beta-Phase. Daher können Fehler bei der Benutzung des Programms auftreten. Sie sollten daher ab und zu Sicherheitskopien der Fahrplan-Dateien anlegen, um Datenverlust vorzubeugen.
