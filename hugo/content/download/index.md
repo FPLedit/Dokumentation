@@ -18,7 +18,7 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 
 ## Changelog
 
-### 1.1.0 (vom xx.1.2016; [Download](/files/fpledit-1.1.0.zip))
+### 1.1.0 (vom 23.1.2017; [Download](/files/fpledit-1.1.0.zip))
 * Neues, mit jTrainGraph (**Version >= 2.02**) vollständig kompatibles Dateiformat
 * Entfernen des Bildfahrplan-Moduls, bitte jTrainGraph benutzen!
 * Starter für jTrainGraph, dadurch kann jTrainGraph direkt aus dem Programm heraus gestartet werden (jTrainGraph >= 2.02)

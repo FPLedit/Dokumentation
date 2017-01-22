@@ -28,9 +28,9 @@ Die Züge sind nach Fahrtrichtung geordnet, diese kann nachträglich auch nicht 
 
 ## Fahrplan bearbeiten
 
-Nachdem die Züge angelegt wurden, kann der Fahrplan der einzelnen Züge bearbeitet werden. Dazu öffnet man das Fenster `Bearbeiten > Fahrplan bearbeiten`. Hier können die Zeitwerte der Fahrten der Züge bearbeitet werden.
+Nachdem die Züge angelegt wurden, kann der Fahrplan der einzelnen Züge bearbeitet werden. Dazu öffnet man das Fenster `Bearbeiten > Fahrplan bearbeiten`. Hier können die Fahrtzeiten der Züge bearbeitet werden. Eine Zeile entspricht dabei dem Zug, dessen Name links angezigt wird.
 
-**WICHTIG:** Die Zeitwerte *müssen* im Format `hh:mm` (z.B. 06:16) in die Tabelle eingetragen werden. Das Programm warnt, wenn falsche Werte eingegeben wurden.
+**WICHTIG:** Die Zeitwerte *müssen* im Format `hh:mm` (z.B. 06:16) oder im Format `hhmm` (z.B. 1515 für 15:15) in die Tabelle eingetragen werden. Das Programm warnt, wenn falsche Werte eingegeben wurden.
 
 ![Fahrplan bearbeiten](fahrplanfenster.png)
 

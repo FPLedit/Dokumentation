@@ -30,6 +30,14 @@ Erweiterungen können über über das Programm verwaltet werden (`Hilfe > Erweit
 
 ![Erweiterungsfenster](erweiterungsfenster.png)
 
+## Tastenkombinationen
+
+Einige häufig verwendete Funktionen lassen sich über Tastenkombinationen aufrufen:
+
+* <kbd>Strg+S</kbd>: Datei am aktuellen Ort speichern
+* <kbd>Strg+O</kbd>: Datei öffnen
+* <kbd>Strg+E</kbd>: Aktuelle Datei exportieren
+
 {{< note title="Hinweis" >}}
 Dieses Programm befindet sich unter aktiver Entwicklung und ist in einer Art beta-Phase. Daher können Fehler bei der Benutzung des Programms auftreten. Sie sollten daher ab und zu Sicherheitskopien der Fahrplan-Dateien anlegen, um Datenverlust vorzubeugen.
 {{< /note >}}

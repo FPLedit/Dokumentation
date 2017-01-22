@@ -691,7 +691,7 @@ h1 .article .headerlink {
 }
 .article p>code {
     white-space: nowrap;
-    padding: 2px 4px;
+    padding: 1px;
 }
 .article kbd {
     display: inline-block;
