@@ -5,7 +5,6 @@ theme = "hugo-material-docs"
 defaultContentLanguage = "de"
 enableRobotsTXT = true
 disableRSS = true
-#canonifyURLs = true
 
 [params]
 	# General information
