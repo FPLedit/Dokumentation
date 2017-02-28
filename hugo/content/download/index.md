@@ -14,11 +14,14 @@ Der Autor dieses Programms haftet nicht für Schäden an Soft- oder Hardware ode
 **Datenschutz:** Bei der programminternen Aktualisierungsüberprüfungsfunktion (`Hilfe > Info`) wird die IP-Adresse des anfragenden Computers an den Server übermittelt.
 
 Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
-[Download starten (aktuelle Version 1.1.0)](/files/fpledit-1.1.0.zip) / [Hinweise zur Installation]({{< relref "einfuehrung/index.md#installation" >}})
+[Download starten (aktuelle Version 1.1.1)](/files/fpledit-1.1.1.zip) / [Hinweise zur Installation]({{< relref "einfuehrung/index.md#installation" >}})
 
 ## Changelog
 
-### 1.1.0 (vom 23.1.2017; [Download](/files/fpledit-1.1.0.zip))
+### 1.1.1 (vom 28.2.2017; [Download](/files/fpledit-1.1.1.zip))
+* Fehlermeldung beim Öffnen, wenn mehr Fahrtzeiten als Stationen angegeben sind. Löst ein evetuell auftretendes Missverständnis.
+
+### 1.1.0 (vom 23.1.2017)
 * Neues, mit jTrainGraph (**Version >= 2.02**) vollständig kompatibles Dateiformat
 * Entfernen des Bildfahrplan-Moduls, bitte jTrainGraph benutzen!
 * Starter für jTrainGraph, dadurch kann jTrainGraph direkt aus dem Programm heraus gestartet werden (jTrainGraph >= 2.02)
