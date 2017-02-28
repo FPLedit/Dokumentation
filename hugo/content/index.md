@@ -2,7 +2,7 @@
 date: 2016-03-08T21:07:13+01:00
 title: Start
 type: index
-weight: 0
+weight: 1
 ---
 
 FPLedit ist ein Programm zum Erstellen von Fahrplänen. Dies ist vorallem für betriebsorientierte Modellbahner interessant, die auf ihrer Anlage einen vorbildgetruen Betrieb durchführen wollen.
