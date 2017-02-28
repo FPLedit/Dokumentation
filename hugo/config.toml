@@ -27,7 +27,7 @@ disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS"]
 [[menu.main]]
 	name   = "Start"
 	url    = "/"
-	weight = 0
+	weight = 1
 
 [[menu.main]]
 	name   = "Dokumentation"
