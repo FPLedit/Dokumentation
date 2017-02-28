@@ -19,3 +19,13 @@ Header append Cache-Control "public"
 Header append Vary Accept-Encoding
 Header unset ETag
 FileETag None
+
+# FPL files
+<Files ~ "\.fpl$">
+  # mod_fcgi perl scripts use .fpl, who could know...?
+  RemoveHandler .fpl
+
+  #AddType application/x-fpl .fpl
+  # Download, don't view in browser
+  Header set Content-Disposition attachment
+</Files>
