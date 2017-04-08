@@ -20,6 +20,4 @@ Um CSS direkt auf den Buchfahrplan anwzuwenden, aktivieren Sie die Option `CSS-T
 
 Wenn Sie weitere Fragen für eine spezielle Problemlösung haben, können Sie mich gerne kontaktieren (info[at]manuelhu.de).
 
-{{< note title="Hinweis" >}}
-Dieses Programm befindet sich unter aktiver Entwicklung und ist in einer Art beta-Phase. Daher können Fehler bei der Benutzung des Programms auftreten. Sie sollten daher ab und zu Sicherheitskopien der Fahrplan-Dateien anlegen, um Datenverlust vorzubeugen.
-{{< /note >}}
+{{% beta %}}

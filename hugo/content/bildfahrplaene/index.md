@@ -20,6 +20,4 @@ Die Einstellungen befinden sich unter `jTrainGraph > Einstellungen`. Der java-Pf
 
 Wenn die Konfiguration nicht korrekt erfolgt ist, warnt das Programm sowohl beim Speichern der Einstellungen als auch beim Versuch, jTrainGraph über das Menü zu starten.
 
-{{< note title="Hinweis" >}}
-Dieses Programm befindet sich unter aktiver Entwicklung und ist in einer Art beta-Phase. Daher können Fehler bei der Benutzung des Programms auftreten. Sie sollten daher ab und zu Sicherheitskopien der Fahrplan-Dateien anlegen, um Datenverlust vorzubeugen.
-{{< /note >}}
+{{% beta %}}
