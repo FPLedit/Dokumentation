@@ -14,10 +14,10 @@ FPLedit ist ein Programm zum Erstellen von Fahrplänen. Dies ist vorallem für b
 
 - Möglichkeit der Erweiterung durch Extensions, geschrieben in C#. *Dokumentation dazu folgt*
 
-- Benutzt das Dateiformat des bekannten Bildfahrplanprogramms [jTrainGraph](http://kinzigtalbahn.bplaced.net/homepage/programme.html). Dateien die mit einer jTrainGraph-Programmversion größer oder gleich 2.02 erstellt worden sind, können mit FPLedit geöffnet werden.
+- Benutzt das Dateiformat des bekannten Bildfahrplanprogramms [jTrainGraph](http://kinzigtalbahn.bplaced.net/homepage/programme.html). Dateien die mit einer jTrainGraph-Programmversion größer oder gleich 2.02 erstellt worden sind, können mit FPLedit geöffnet werden (und anschliueßnd auch wieder mit jTrainGraph).
 
 ## Systemvoraussetzungen
-FPledit läuft auf allen Systemen, auf denen entweder Microsoft .NET 4.0 (vorinstalliert ab Windows Vista) oder ein aktuelles [Mono](http://www.mono-project.com/) installiert ist. Damit sollte dieses Programm auf Windows, Linux und macOS (ungetestet) laufen.
+FPledit läuft auf allen Systemen, auf denen entweder Microsoft .NET 4.0 (vorinstalliert ab Windows Vista) oder ein aktuelles [Mono](http://www.mono-project.com/) installiert ist. Damit sollte dieses Programm auf Windows, Linux und macOS (ungetestet) laufen. Auf den nicht-Windows-Systemen sieht aber die Benutzeroberfläche arg gewöhnungsbedürftig aus.
 
 {{< note title="Hinweis" >}}
 Dieses Programm befindet sich unter aktiver Entwicklung und ist in einer Art beta-Phase. Daher können Fehler bei der Benutzung des Programms auftreten. Sie sollten daher ab und zu Sicherheitskopien der Fahrplan-Dateien anlegen, um Datenverlust vorzubeugen.

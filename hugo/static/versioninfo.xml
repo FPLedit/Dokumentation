@@ -1,5 +1,8 @@
+<!-- Version information file for update check. -->
 <?xml version="1.0" encoding="utf-8"?>
-<info>
+<info product="manuelhu:fpledit">
 	<version>1.2.0</version>
 	<url>https://fahrplan.manuelhu.de/download/</url>
+	<!-- Short description: full sentence -->
+	<description>In dieser Version wurde die Anpassbarkeit von Bildfahrplänen erhöht.</description>
 </info>

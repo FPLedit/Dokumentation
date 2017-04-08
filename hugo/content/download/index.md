@@ -11,7 +11,7 @@ Eine kommerzielle Nutzung des Programms bedarf meiner vorherigen Zustimmung.
 
 Der Autor dieses Programms haftet nicht für Schäden an Soft- oder Hardware oder Vermögensschäden, die durch das Benutzen des Programms entstehen, es sei denn diese beruhen auf einem grob fahrlässigen oder vorsätzlichen Handeln des Autors, seiner Erfüllungsgehilfen oder seiner gesetzlichen Vertreter. Für  Schäden an der Gesundheit, dem Körper oder dem Leben des Nutzers haftet der Autor uneingeschränkt. Ebenso haftet er für die Verletzung von Pflichten, die zur Erreichung des Vertragszwecks von besonderer Bedeutung sind (Kardinalspflichten).
 
-**Datenschutz:** Bei der programminternen Aktualisierungsüberprüfungsfunktion (`Hilfe > Info`) wird die IP-Adresse des anfragenden Computers an den Server übermittelt.
+**Datenschutz:** Bei der programminternen Überprüfung auf Aktualisierungen (`Hilfe > Info` oder automatisch beim Programmstart) wird die IP-Adresse des anfragenden Computers an den Server übermittelt. Diese wird anonymisiert in Log-Dateien gespeichert.
 
 Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 [Download starten (aktuelle Version 1.2.0)](/files/fpledit-1.2.0.zip) / [Hinweise zur Installation]({{< relref "einfuehrung/index.md#installation" >}})
@@ -19,10 +19,13 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 ## Changelog
 
 ### 1.2.0 (vom xx.xx.2017; [Download](/files/fpledit-1.2.0.zip))
-* Automatischer Check auf Updates
+* Automatische Überprüfung auf neue Programmversionen beim Programmstart
 * Buchfahrplan: Schriftart anpassen & mit CSS gestalten
+* Geschwindigkeitswechel auf der freien Strecke möglich
 * Zuletzt verwendete Dateien merken
 * Kommentare der Züge bearbeiten
+* Strecke aus anderer Fahrplandatei bzw. Streckendatei laden
+* Ermöglichen der Verknüpfung von fpl-Dateien mit FPLedit, so dass diese mit einem Doppelklick geöffnet werden.
 
 ### 1.1.1 (vom 28.2.2017)
 * Fehlermeldung beim Öffnen, wenn mehr Fahrtzeiten als Stationen angegeben sind. Löst ein evetuell auftretendes Missverständnis.
