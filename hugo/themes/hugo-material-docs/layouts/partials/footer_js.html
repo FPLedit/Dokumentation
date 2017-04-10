@@ -4,10 +4,6 @@
     </script>
 
     <!--<script src="{{ .Site.BaseURL }}javascripts/application.js"></script>-->
-    {{ range .Site.Params.custom_js }}
-    <script src="{{ . | absURL }}"></script>
-    {{ end }}
-
     <script>
       {{ "/* Add headers to scrollspy */" | safeJS }}
       var headers   = document.getElementsByTagName("h2");

@@ -4,10 +4,9 @@ title = "FPLedit"
 theme = "hugo-material-docs"
 defaultContentLanguage = "de"
 enableRobotsTXT = true
-disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS"]
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
-	# General information
 	author = "Manuel Huber"
 	description = "Ein einfaches Programm zum Erstellen von (Buch-)Fahrplänen für Modelleisenbahnen. Kompatibel mit jTrainGraph zu Erstellung von Bildfahrplänen."
 
@@ -17,12 +16,14 @@ disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS"]
 	logo = "files/logo.png"			# Seitenlogo
 	favicon = "files/favicon.ico"	# Seitenicon
 
-	custom_css = []
-	custom_js  = []
-
 	[params.palette]
     	primary = "light-green"
     	accent  = "lime"
+
+[outputs]
+	home = ["HTML"]
+	page = ["HTML"]
+	section = ["HTML"]
 
 [[menu.main]]
 	name   = "Start"

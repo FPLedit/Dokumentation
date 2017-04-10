@@ -19,9 +19,17 @@
 
 	<article class="article">
 		<div class="wrapper">
-			<h1>{{ .Title }} {{ if .IsDraft }} (Draft){{ end }}</h1>
+			<h1>Pages in {{ .Title | singularize }}</h1>
 
-			{{ .Content }}
+			{{ range .Data.RealPages }}
+			<a href="{{ .Permalink }}" title="{{ .Title }}">
+				<h2>{{ .Title }}</h2>
+			</a>
+
+			<br>
+			{{ printf "%s" .Summary | markdownify }}
+
+			{{ end }}
 
 			<aside class="copyright" role="note">
 				{{ with .Site.Params.author }}
@@ -32,10 +40,6 @@
 				using the
 				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
 			</aside>
-
-			<footer class="footer">
-				{{ partial "footer" . }}
-			</footer>
 		</div>
 	</article>
 

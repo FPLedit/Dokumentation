@@ -14,7 +14,7 @@ Der Autor dieses Programms haftet nicht für Schäden an Soft- oder Hardware ode
 **Datenschutz:** Bei der programminternen Überprüfung auf Aktualisierungen (`Hilfe > Info` oder automatisch beim Programmstart) wird die IP-Adresse des anfragenden Computers an den Server übermittelt. Diese wird anonymisiert in Log-Dateien gespeichert.
 
 Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
-[Download starten (aktuelle Version 1.2.0)](/files/fpledit-1.2.0.zip) / [Hinweise zur Installation]({{< relref "einfuehrung/index.md#installation" >}})
+[Download starten (aktuelle Version 1.2.0)](/files/fpledit-1.2.0.zip) / [Hinweise zur Installation](/einfuehrung/#installation)
 
 ## Changelog
 
