@@ -18,7 +18,7 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 
 ## Changelog
 
-### 1.2.0 (vom xx.xx.2017; [Download](/files/fpledit-1.2.0.zip))
+### 1.2.0 (vom 22.5.2017; [Download](/files/fpledit-1.2.0.zip))
 * Automatische Überprüfung auf neue Programmversionen beim Programmstart
 * Buchfahrplan: Schriftart anpassen & mit CSS gestalten
 * Geschwindigkeitswechel auf der freien Strecke möglich

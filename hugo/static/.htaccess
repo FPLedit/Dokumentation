@@ -29,3 +29,6 @@ FileETag None
   # Download, don't view in browser
   Header set Content-Disposition attachment
 </Files>
+
+# Alte Versionsinfo-Datei
+Redirect 301 /versioncheck.php https://fahrplan.manuelhu.de/versioninfo.xml
