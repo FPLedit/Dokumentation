@@ -18,7 +18,7 @@ In den Namen der Geschwindigkeitswechsel können Sonderzeichen verwendet werden,
 | ▽      | Verkürzter Vorsignalabstand             |
 | ┣━╸    | Einfahrt in Stumpfgleis                 |
 
-Dieser Buchfahrplan (generiert mit v1.2.0) ist zwar schon näher am Vorbild, es fehlt aber trotzdem noch einiges bzw. das Format ist stark vereinfacht:
+Dieser Buchfahrplan (generiert mit v1.2.1) ist zwar schon näher am Vorbild, es fehlt aber trotzdem noch einiges bzw. das Format ist stark vereinfacht:
 
 ![Quelle der Daten: Buchfahrplanheft 698/3 - Ersatzfahrplan](buchfahrplan.png)
 

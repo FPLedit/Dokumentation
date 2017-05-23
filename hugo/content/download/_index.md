@@ -14,11 +14,14 @@ Der Autor dieses Programms haftet nicht für Schäden an Soft- oder Hardware ode
 **Datenschutz:** Bei der programminternen Überprüfung auf Aktualisierungen (`Hilfe > Info` oder automatisch beim Programmstart) wird die IP-Adresse des anfragenden Computers an den Server übermittelt. Diese wird anonymisiert in Log-Dateien gespeichert.
 
 Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
-[Download starten (aktuelle Version 1.2.0)](/files/fpledit-1.2.0.zip) / [Hinweise zur Installation](/einfuehrung/#installation)
+[Download starten (aktuelle Version 1.2.1)](/files/fpledit-1.2.1.zip) / [Hinweise zur Installation](/einfuehrung/#installation)
 
 ## Changelog
 
-### 1.2.0 (vom 22.5.2017; [Download](/files/fpledit-1.2.0.zip))
+### 1.2.1 (vom 23.5.2017; [Download](/files/fpledit-1.2.1.zip))
+* Fehler beim Löschen der ersten oder letzten Bahnhöfe behoben
+
+### 1.2.0 (vom 22.5.2017)
 * Automatische Überprüfung auf neue Programmversionen beim Programmstart
 * Buchfahrplan: Schriftart anpassen & mit CSS gestalten
 * Geschwindigkeitswechel auf der freien Strecke möglich

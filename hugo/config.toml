@@ -11,7 +11,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 	description = "Ein einfaches Programm zum Erstellen von (Buch-)Fahrplänen für Modelleisenbahnen. Kompatibel mit jTrainGraph zu Erstellung von Bildfahrplänen."
 
 	download_url = "/download/"		# URL für Download-Button
-	version = "1.2.0"				# Aktuelle Programmversion
+	version = "1.2.1"				# Aktuelle Programmversion
 
 	logo = "files/logo.png"			# Seitenlogo
 	favicon = "files/favicon.ico"	# Seitenicon
