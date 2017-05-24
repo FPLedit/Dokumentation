@@ -2,7 +2,7 @@
   {{ range where .Data.Pages "Kind" "page" }}
   <url>
     <loc>{{ .Permalink }}</loc>
-    <lastmod>{{ safeHTML ( $.Now.Format "2006-01-02" ) }}</lastmod>
+    <lastmod>{{ safeHTML ( now.Format "2006-01-02" ) }}</lastmod>
     <changefreq>monthly</changefreq>{{ if ge .Sitemap.Priority 0.0 }}
     <priority>{{ .Sitemap.Priority }}</priority>{{ end }}
   </url>
