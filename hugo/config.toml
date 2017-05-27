@@ -21,9 +21,15 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
     	accent  = "lime"
 
 [outputs]
-	home = ["HTML"]
+	home = ["HTML", "mod"]
 	page = ["HTML"]
 	section = ["HTML"]
+
+[outputFormats.mod]
+	mediaType = "text/html"
+	baseName = "offline-idx"
+	isHTML = true
+	protocol = "mod://"
 
 [[menu.main]]
 	name   = "Start"

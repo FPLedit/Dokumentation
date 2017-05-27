@@ -1,0 +1,3 @@
+{{ if not .Params.nooffline }}
+<li><a href="#{{ replaceRE "^(/[^/]+)?/([^/]+)/$" "$2" (.Permalink | relURL) }}">{{ .Title }}</a></li>
+{{ end }}

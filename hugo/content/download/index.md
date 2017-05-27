@@ -2,6 +2,7 @@
 date: 2016-03-08T21:07:13+01:00
 title: Download
 weight: 5
+nooffline: true
 ---
 
 **FPledit ist ein Projekt, das primär auf (Modell-)Eisenbahnfreunde abzielt. Die Fahrpläne sind nicht nach den Betriebsrichtlinien irgendeiner Bahngesellschaft gestaltet und sind für den Betriebsdienst nicht geeignet!**
