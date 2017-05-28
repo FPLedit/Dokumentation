@@ -10,7 +10,7 @@ FPLedit ist ein Programm zum Erstellen von Fahrplänen. Dies ist vorallem für b
 ## Features
 - [Erstellen und Bearbeiten](/fahrplaene-bearbeiten/) von Fahrplänen bestehend aus einer Linie und den darauf verkehrenden Zügen.
 
-- Generieren von unterschiedlichen Fahrplantypen, z.B. **Buchfahrplänen** oder Aushangfahrplänen (z.Zt. in Entwicklung) und anschließender Export in verschiedene Dateiformate (z.B. Buchfahrplan als HTML).
+- Generieren von unterschiedlichen Fahrplantypen, z.B. **Buchfahrplänen** oder Aushangfahrplänen (zur Zeit in Entwicklung) und anschließender Export in verschiedene Dateiformate (z.B. Buchfahrplan als HTML).
 <!--- Möglichkeit der Erweiterung durch Extensions, geschrieben in C#. *Dokumentation dazu folgt*-->
 
 - Kompatibilität mit dem bekannten Bildfahrplanprogramm [jTrainGraph](http://kinzigtalbahn.bplaced.net/homepage/programme.html). Dateien die mit einer jTrainGraph-Programmversion größer oder gleich 2.02 erstellt worden sind, können mit FPLedit geöffnet werden (und anschließend auch wieder mit jTrainGraph). Das Generieren von **Bildfahrplänen** ist somit möglich.
