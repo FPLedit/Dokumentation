@@ -37,10 +37,10 @@ Erweiterungen können über über das Programm verwaltet werden (`Hilfe > Erweit
 
 ## Tastenkombinationen
 
-Einige häufig verwendete Funktionen des Hauptprogramms lassen sich über Tastenkombinationen aufrufen:
+Einige häufig verwendete Funktionen des Hauptprogramms lassen sich über Tastenkombinationen im Hauptfenster aufrufen:
 
-* <kbd>Strg+S</kbd>: Datei am aktuellen Ort speichern
-* <kbd>Strg+O</kbd>: Datei öffnen
-* <kbd>Strg+E</kbd>: Aktuelle Datei exportieren
+* <kbd>Strg</kbd>+<kbd>S</kbd>: Datei am aktuellen Ort speichern
+* <kbd>Strg</kbd>+<kbd>O</kbd>: Datei öffnen
+* <kbd>Strg</kbd>+<kbd>E</kbd>: Aktuelle Datei exportieren
 
 {{% beta %}}
