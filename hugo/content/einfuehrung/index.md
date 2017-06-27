@@ -16,11 +16,11 @@ Das gleiche Verfahren wird auch bei einem Update angewandt. Informationen zur ne
 Fahrplandateien (`.fpl`) können mit FPLedit bei Doppelklick geöffnet werden, indem sie per Rechtsmausklick auf die Datei in den `Eigenschaften` auf die Schaltfläche `Ändern` klicken und im anschließenden Dialog die ausführbare Datei von FPLedit (`FPLedit.exe`) auswählen.
 
 ## Hauptfenster
-Nach dem Programmstart erscheint zuerst das Haptfenster. Wenn im Menü nur der Menüpunkt `Datei` angezeigt wird, wurde die ZIP-Datei nicht wie oben beschrieben entblockt. Über die verschiedenen Menüs lassen sich die Dialoge der [Erweiterungen](#erweiterungen) aufrufen. Diese werden in den entsprecenden Kapiteln der Dokumentation näher erläutert. Im unteren Bereich des Hauptfensters werden Meldungen protokolliert, z.B. Fehler beim Öffnen oder Speichern von Dateien:
+Nach dem Programmstart erscheint zuerst das Haptfenster. Wenn im Menü nur der Menüpunkt `Datei` angezeigt wird, wurde die ZIP-Datei nicht wie oben beschrieben entblockt. Über die verschiedenen Menüs lassen sich die Dialoge der [Erweiterungen](#erweiterungen) aufrufen. Diese werden in den entsprechenden Kapiteln der Dokumentation näher erläutert. Im unteren Bereich des Hauptfensters werden Meldungen protokolliert, z.B. Fehler beim Öffnen oder Speichern von Dateien:
 
 ![Hauptfenster nach einigen Aktionen](hauptfenster.png)
 
-Allgemein bieten (fast) alle Dialoge zwei Schaltflächen an, über die der Dialog geschlossen werde kann. Mit `Abbrechen` werden die Änderungen verworfen und mit `Schließen` oder `OK` werden sie zwischengespeichert, so dass sie beim nächsten Speichern in die Datei geschrieben werden können.
+Allgemein bieten (fast) alle Dialoge zwei Schaltflächen an, über die der Dialog geschlossen werde kann. Mit `Abbrechen` werden die Änderungen verworfen und mit `Schließen` oder `OK` werden sie übernommen, so dass sie beim nächsten Speichern in die Datei geschrieben werden können.
 
 ## Erweiterungen
 Eines der Grundkonzepte von FPLedit ist die Erweiterbarkeit. Erweiterungen fügen Menüs und eigene Dialoge hinzu und stellen zusätzliche Funktionalität bereit. Die Erweiterungen liegen als DLL-Datei im Programmverzeichnis. Nahezu alle Programmfunktionen werden über Erweiterungen bereitgestellt. Mit dem Programm werden schon einige Erweiterungen, die standardmäßig alle aktiviert sind, mitausgeliefert:

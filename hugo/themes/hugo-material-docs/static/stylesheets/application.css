@@ -1245,3 +1245,32 @@ h1 .article .headerlink {
     color: #e84e40;
 }
 }
+
+/* Extrahierte styles für Download-Button */
+body.palette-primary-light-green a.downloadbtn {
+	background: #aeea00;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 0 10px 0 6px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 30px;
+	height: 30px;
+	color: #fff;
+	border-radius: 3px;
+	transition: box-shadow .4s, opacity .4s;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+a.downloadbtn .icon {
+	font-size: 18px;
+	vertical-align: -3px;
+}
+
+body.palette-primary-light-green a.downloadbtn:focus, body.palette-primary-light-green a.downloadbtn:hover {
+    box-shadow: 0 4px 7px rgba(0, 0, 0, .23), 0 8px 25px rgba(0, 0, 0, .05);
+    opacity: .8;
+	color: #fff;
+}
+

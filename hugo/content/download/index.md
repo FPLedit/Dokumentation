@@ -14,14 +14,21 @@ Der Autor dieses Programms haftet nicht für Schäden an Soft- oder Hardware ode
 **Datenschutz:** Bei der programminternen Überprüfung auf Aktualisierungen (`Hilfe > Info` oder automatisch beim Programmstart) wird die IP-Adresse des anfragenden Computers an den Server übermittelt. Diese wird anonymisiert in Log-Dateien gespeichert.
 
 Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
-[Download starten (aktuelle Version 1.3.0)](/files/fpledit-1.3.0.zip) / [Hinweise zur Installation](/einfuehrung/#installation)
+
+<a href="/files/fpledit-1.3.0.zip" class="downloadbtn"><i class="icon icon-download"></i> Download starten (aktuelle Version 1.3.0)</a>
+| [Hinweise zur Installation](/einfuehrung/#installation)
 
 ## Changelog
 
-### 1.3.0 (vom xx.xx.2017; [Download](/files/fpledit-1.3.0.zip))
+### 1.3.0 (vom 27.06.2017; [Download](/files/fpledit-1.3.0.zip))
 * Auswahlmöglichkeit zwischen unterschiedlichen Vorlagen für Buchfahrpläne
+* Neues Template für Buchfahrpläne im Zugleitbetrieb: Automatische Erkennung, ob Züge kreuzen oder überholen
+* Trapeztafelfunktion: Für den Zugleitbetrieb-Buchfahrplan kann ausgewählt werden, ob ein Zug vor der Trapeztafel hält.
+* Wellenanzeige zur Verdeutlichung der Streckenneigung im Buchfahrplan
+* Angabe "Zuglaufmeldung durch"
 * Kompatibilität des jTrainGraphStarters mit den jTrainGraph-exe-Dateien
-* Neue Tastaturkürzel in den Dialogen
+* Zusätzliche Tastaturkürzel in den Dialogen
+* Kleine Fehlerbehebungen
 
 ### 1.2.1 (vom 23.5.2017)
 * Fehler beim Löschen der ersten oder letzten Bahnhöfe behoben
