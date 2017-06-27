@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jTrainGraph_timetable version="008" name="" tMin="240" tMax="1440" d="1111100" bgC="weiß" sFont="font(SansSerif;0;12)" trFont="font(SansSerif;0;12)" hFont="font(SansSerif;0;12)" tFont="font(SansSerif;0;12)" sHor="false" sLine="0" shKm="true" sStation="-1" eStation="-1" cNr="1" exW="-1" exH="-1" shV="true">
   <stations>
-    <sta name="Pirmasens Nord" km="0.0" cl="schwarz" sh="true" sz="1" sy="0" fpl-vmax="40" />
-    <sta name="Pirmasens Hbf" km="7.0" cl="schwarz" sh="true" sz="1" sy="0" fpl-vmax="30" />
+    <sta name="Pirmasens Nord" km="0.0" cl="schwarz" sh="true" sz="1" sy="0" fpl-vmax="40" fpl-wl="2" />
+    <sta name="Pirmasens Hbf" km="7.0" cl="schwarz" sh="true" sz="1" sy="0" fpl-vmax="30" fpl-wl="2" />
   </stations>
   <trains>
     <ti name="RB 12801" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="0000011" id="" fpl-tfz="642/643">
@@ -13,7 +13,7 @@
       <t a="" d="01:58" />
       <t a="02:05" d="" />
     </ti>
-    <ti name="RB 12803" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111100" id="" fpl-tfz="642/643">
+    <ti name="RB 12803" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111100" id="" fpl-tfz="642/643" fpl-mbr="" fpl-last="">
       <t a="" d="06:00" />
       <t a="06:08" d="" />
     </ti>
@@ -354,14 +354,14 @@
       <t a="" d="20:41" />
     </ta>
   </trains>
-  <bfpl_attrs lb="1px solid black" b="3px solid black">
-    <p fpl-vmax="80" km="0.6" name="" />
-    <p fpl-vmax="" km="0.2" name="Asig" />
-    <p fpl-vmax="55" km="4.8" name="" />
-    <p fpl-vmax="" km="4.9" name="Evsig ▽" />
-    <p fpl-vmax="60" km="5.3" name="Esig Pirmasens Hbf" />
-    <p fpl-vmax="" km="6.3" name="Zsig" />
-    <p fpl-vmax="" km="5.5" name="Bft Pirmasens" />
+  <bfpl_attrs lb="1px solid black" b="3px solid black" tmpl="$std.BuchfahrplanTemplate" font="">
+    <p fpl-vmax="80" km="0.6" name="" fpl-wl="2" />
+    <p fpl-vmax="" km="0.2" name="Asig" fpl-wl="2" />
+    <p fpl-vmax="55" km="4.8" name="" fpl-wl="2" />
+    <p fpl-vmax="" km="4.9" name="Evsig ▽" fpl-wl="2" />
+    <p fpl-vmax="60" km="5.3" name="Esig Pirmasens Hbf" fpl-wl="2" />
+    <p fpl-vmax="" km="6.3" name="Zsig" fpl-wl="2" />
+    <p fpl-vmax="" km="5.5" name="Bft Pirmasens" fpl-wl="2" />
     <css>
     </css>
   </bfpl_attrs>
