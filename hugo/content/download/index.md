@@ -15,12 +15,16 @@ Der Autor dieses Programms haftet nicht für Schäden an Soft- oder Hardware ode
 
 Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 
-<a href="/files/fpledit-1.3.0.zip" class="downloadbtn"><i class="icon icon-download"></i> Download starten (aktuelle Version 1.3.0)</a>
+<a href="/files/fpledit-{{< version >}}.zip" class="downloadbtn"><i class="icon icon-download"></i> Download starten (aktuelle Version {{< version >}})</a>
 | [Hinweise zur Installation](/einfuehrung/#installation)
 
 ## Changelog
 
-### 1.3.0 (vom 27.06.2017; [Download](/files/fpledit-1.3.0.zip))
+### 1.3.1 (vom 01.07.2017; [Download](/files/fpledit-{{< version >}}.zip))
+* Fehler beim Öffnen von manchen Fahrplandateien behoben
+* Neuer Exporter zum Entfernen aller Spuren von FPLedit aus Fahrplandateien
+
+### 1.3.0 (vom 27.06.2017)
 * Auswahlmöglichkeit zwischen unterschiedlichen Vorlagen für Buchfahrpläne
 * Neues Template für Buchfahrpläne im Zugleitbetrieb: Automatische Erkennung, ob Züge kreuzen oder überholen
 * Trapeztafelfunktion: Für den Zugleitbetrieb-Buchfahrplan kann ausgewählt werden, ob ein Zug vor der Trapeztafel hält.
@@ -42,6 +46,7 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 * Strecke aus anderer Fahrplandatei bzw. Streckendatei laden
 * Ermöglichen der Verknüpfung von fpl-Dateien mit FPLedit, so dass diese mit einem Doppelklick geöffnet werden.
 
+<details><summary>**Ältere Verionshinweise**</summary>
 ### 1.1.1 (vom 28.2.2017)
 * Fehlermeldung beim Öffnen, wenn mehr Fahrtzeiten als Stationen angegeben sind. Löst ein evetuell auftretendes Missverständnis.
 
@@ -70,3 +75,4 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 
 ### 1.0.0 (unveröffentlicht)
 * Initiale Version (Editoren, Bildfahrpläne und Buchfahrpläne)
+</details>
