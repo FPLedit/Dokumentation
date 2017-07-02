@@ -20,7 +20,10 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 
 ## Changelog
 
-### 1.3.1 (vom 01.07.2017; [Download](/files/fpledit-{{< version >}}.zip))
+### 1.3.2 (vom 02.07.2017; [Download](/files/fpledit-{{< version >}}.zip))
+* Absturz beim Starten von FPLedit behoben
+
+### 1.3.1 (vom 01.07.2017)
 * Fehler beim Öffnen von manchen Fahrplandateien behoben
 * Neuer Exporter zum Entfernen aller Spuren von FPLedit aus Fahrplandateien
 
