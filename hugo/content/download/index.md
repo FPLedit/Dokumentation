@@ -20,7 +20,11 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 
 ## Changelog
 
-### 1.3.2 (vom 02.07.2017; [Download](/files/fpledit-{{< version >}}.zip))
+### 1.4.0 (vom xx.xx.2017; [Download](/files/fpledit-{{< version >}}.zip))
+* Neuer Fahrplantyp: Aushangfahrpläne
+* **Achtung:** Die Datei `FPLedit.BuchfahrplanExport.dll` wirde durch `FPLedit.Buchfahrplan.dll` ersetzt!
+
+### 1.3.2 (vom 02.07.2017)
 * Absturz beim Starten von FPLedit behoben
 
 ### 1.3.1 (vom 01.07.2017)

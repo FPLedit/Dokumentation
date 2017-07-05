@@ -26,7 +26,8 @@ Allgemein bieten (fast) alle Dialoge zwei Schaltflächen an, über die der Dialo
 Eines der Grundkonzepte von FPLedit ist die Erweiterbarkeit. Erweiterungen fügen Menüs und eigene Dialoge hinzu und stellen zusätzliche Funktionalität bereit. Die Erweiterungen liegen als DLL-Datei im Programmverzeichnis. Nahezu alle Programmfunktionen werden über Erweiterungen bereitgestellt. Mit dem Programm werden schon einige Erweiterungen, die standardmäßig alle aktiviert sind, mitausgeliefert:
 
 * Fahrplan-Editoren (`FPLedit.AStandard.dll`)
-* Exporter für Buchfahrpläne (`FPLedit.BuchfahrplanExport.dll`)
+* Aushangfahrplan-Modul (`FPLedit.Aushangfahrplan.dll`)
+* Buchfahrplan-Modul (`FPLedit.Buchfahrplan.dll`)
 * Importer für alte BFPL-Dateien (`FPLedit.BfplImport.dll`)
 * Starter für jTrainGraph zur Bildfahrplanerstellung (`FPLedit.jTrainGraphStarter`)
 * Die Datei `FPLedit.Shared.dll` ist aber keine Erweiterung sondern Bestandteil des Hauptprogramms!
