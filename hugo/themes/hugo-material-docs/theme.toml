@@ -3,9 +3,9 @@ license = "MIT"
 licenselink = "https://github.com/digitalcraftsman/hugo-material-docs/blob/master/LICENSE.md"
 description = "A material design theme for documentations."
 homepage = "https://github.com/digitalcraftsman/hugo-material-docs"
-tags = ["material", "documentation", "docs", "google analytics", "responsive"]
+tags = ["material", "documentation", "docs", "responsive"]
 features = ["", ""]
-min_version = 0.15
+min_version = 0.24
 
 [author]
   name = "Digitalcraftsman"

@@ -5,6 +5,8 @@ theme = "hugo-material-docs"
 defaultContentLanguage = "de"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "taxonomyTerm", "section"]
+disableAliases = true
+#navigateToChanged = true
 
 [params]
 	author = "Manuel Huber"
