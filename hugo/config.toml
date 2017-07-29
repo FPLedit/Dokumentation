@@ -24,9 +24,22 @@ disableAliases = true
     	accent  = "teal"
 
 [outputs]
-	home = ["HTML"]
+	home = ["HTML", "LUNR"]
 	page = ["HTML"]
 	section = ["HTML"]
+
+
+[mediaTypes]
+[mediaTypes."text/lunr"]
+	suffix = ""
+	delimiter = ""
+
+[outputFormats]
+[outputFormats.LUNR]
+	mediatype = "text/lunr"
+	baseName = "lunr_idx.js"
+	isPlainText = true
+	notAlternative = true
 
 [[menu.main]]
 	name   = "Start"

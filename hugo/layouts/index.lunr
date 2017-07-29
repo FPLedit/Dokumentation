@@ -1,0 +1,9 @@
+var documents = [
+{{ range where .Data.Pages "Kind" "page" }}
+	{
+		"url": "{{ .Permalink }}",
+		"name": "{{ .Title }}",
+		"text": "{{ .Render "lunr-entry" | htmlEscape }}"
+	},
+{{ end }}
+];

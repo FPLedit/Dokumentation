@@ -264,7 +264,7 @@ hr {
     z-index: 2;
     height: 56px;
     padding: 4px;
-    overflow: hidden;
+	overflow: hidden;
 }
 .ios.standalone .header {
     position: absolute;
@@ -279,7 +279,7 @@ hr {
     display: block;
 }
 .no-js .bar .button-search {
-    display: none;
+    /*display: none;*/
 }
 .bar .path .icon:before {
     vertical-align: -1.5px;
@@ -845,8 +845,8 @@ h1 .article .headerlink {
     transform: translate3d(0, -56px, 0);
 }
 .bar.search .button-reset {
-    -webkit-transform: scale(.5);
-    transform: scale(.5);
+    /*-webkit-transform: scale(.5);
+    transform: scale(.5);*/
     -webkit-transition: opacity .4s cubic-bezier(.1, .7, .1, 1), -webkit-transform .4s cubic-bezier(.1, .7, .1, 1);
     transition: opacity .4s cubic-bezier(.1, .7, .1, 1), -webkit-transform .4s cubic-bezier(.1, .7, .1, 1);
     transition: opacity .4s cubic-bezier(.1, .7, .1, 1), transform .4s cubic-bezier(.1, .7, .1, 1);
@@ -1290,3 +1290,33 @@ blockquote {
 	color: #a4dd00;
 }
 
+/* Suche */
+.header.search-results-open {
+	overflow: visible;
+}
+.search-results:empty {
+	opacity: 0;
+}
+.search-results {
+	background-color: #FFF;
+	color: rgba(0, 0, 0, .95);
+	box-shadow: 2px 2px 2px 1px #222;
+	padding: 10px;
+	font-size: 1rem;
+	opacity: 1;
+	transition: opacity 0.1s;
+	max-height: 70vh;
+	overflow-y: auto;
+}
+.search-results a:hover {
+	color: #00bfa5;
+}
+.search-results div {
+	margin-bottom: 10px;
+}
+.highlight-search {
+	background-color: yellow;
+}
+.bar.search .search-btn-close-visible {
+	opacity: 1;
+}

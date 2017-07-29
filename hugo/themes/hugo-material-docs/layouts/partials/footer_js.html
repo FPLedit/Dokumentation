@@ -1,4 +1,7 @@
-    <script>
+	<script src="{{ .Site.BaseURL }}js/lunr.js"></script>
+	<script src="{{ .Site.BaseURL }}js/search.js"></script>
+
+	<script>
       {{ "/* Add headers to scrollspy */" | safeJS }}
       var headers   = document.getElementsByTagName("h2");
       var scrollspy = document.getElementById('scrollspy');
