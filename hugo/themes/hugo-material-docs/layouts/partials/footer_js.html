@@ -1,10 +1,4 @@
     <script>
-      var base_url = '';
-      var repo_id  = '';
-    </script>
-
-    <!--<script src="{{ .Site.BaseURL }}javascripts/application.js"></script>-->
-    <script>
       {{ "/* Add headers to scrollspy */" | safeJS }}
       var headers   = document.getElementsByTagName("h2");
       var scrollspy = document.getElementById('scrollspy');
@@ -40,9 +34,11 @@
             headers[i].appendChild(a);
         }
       }
-    </script>
+  </script>
 
-    <!--<script src="//gohugo.io/js/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>-->
+	{{ if .Params.needshighlight }}
+	<script src="{{ .Site.BaseURL }}js/hljs.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	{{ end }}
   </body>
 </html>

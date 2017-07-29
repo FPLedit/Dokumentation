@@ -15,8 +15,10 @@
     <meta name="author" content="{{ . }}">
     {{ end }}
 
+	<meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Permalink }}">
     {{ with .Site.Title }}<meta property="og:title" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.description }}<meta property="og:description" content="{{ . }}">{{ end }}
     {{ with .Site.Params.logo }}<meta property="og:image" content="{{ $.Site.BaseURL }}{{ . }}">{{ end }}
     {{ with .Site.Title }}<meta name="apple-mobile-web-app-title" content="{{ . }}">{{ end }}
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -43,9 +45,10 @@
     </style>
 
     <link rel="stylesheet" href="{{ .Site.BaseURL }}stylesheets/application.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}stylesheets/temporary.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}stylesheets/palettes.css">
-    <!--<link rel="stylesheet" href="{{ .Site.BaseURL }}{{ with .Site.Params.highlight_css }}{{ . }}{{ else }}stylesheets/highlight/highlight.css{{ end }}">-->
+	{{ if .Params.needshighlight }}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}stylesheets/highlight.css">
+	{{ end }}
 
     <style>
       body, input {
@@ -55,13 +58,6 @@
         font-family: 'Courier New', 'Courier', monospace;
       }
     </style>
-
-    <!--<script src="{{ .Site.BaseURL }}javascripts/modernizr.js"></script>-->
-
-    <!--{{ with .RSSLink }}
-    <link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
-    <link href="{{ . }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
-    {{ end }}-->
 
   </head>
   <body class="{{ with .Site.Params.palette.primary }}palette-primary-{{ . }}{{end }} {{ with .Site.Params.palette.accent }}palette-accent-{{ .  }}{{ end }}">

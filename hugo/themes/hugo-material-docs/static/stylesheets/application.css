@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: inherit;
 }
 pre {
-    background: rgba(0, 0, 0, .05);
+    background: #eee;
 }
 pre, pre code {
     color: rgba(0, 0, 0, .87);
@@ -1246,6 +1246,11 @@ h1 .article .headerlink {
 }
 }
 
+/*
+ * EIGENE ANPASSUNGEN
+ */
+
+
 /* Extrahierte styles für Download-Button */
 body.palette-primary-light-green a.downloadbtn {
 	background: #aeea00;
@@ -1272,5 +1277,16 @@ body.palette-primary-light-green a.downloadbtn:focus, body.palette-primary-light
     box-shadow: 0 4px 7px rgba(0, 0, 0, .23), 0 8px 25px rgba(0, 0, 0, .05);
     opacity: .8;
 	color: #fff;
+}
+
+blockquote {
+    padding: 0 20px;
+    margin: 0 0 20px;
+    font-size: inherit;
+    border-left: 5px solid #eee;
+}
+
+.palette-primary-light-green div.admonition a {
+	color: #a4dd00;
 }
 
