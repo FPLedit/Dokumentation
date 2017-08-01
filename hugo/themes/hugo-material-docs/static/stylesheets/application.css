@@ -1253,7 +1253,7 @@ h1 .article .headerlink {
 
 /* Extrahierte styles für Download-Button */
 body.palette-primary-light-green a.downloadbtn {
-	background: #aeea00;
+	background: #00bfa5;
 	text-transform: uppercase;
 	display: inline-block;
 	padding: 0 10px 0 6px;

@@ -1,15 +1,16 @@
 ---
 date: 2016-03-08T21:07:13+01:00
 title: Download
-weight: 5
 ---
 
 **FPledit ist ein Projekt, das primär auf (Modell-)Eisenbahnfreunde abzielt. Die Fahrpläne sind nicht nach den Betriebsrichtlinien irgendeiner Bahngesellschaft gestaltet und sind für den Betriebsdienst nicht geeignet!**
 
-FPledit darf für den nicht-kommerziellen Gebrauch (dies schließt die Veröffentlichung damit erstellter Fahrpläne auf privaten Websites ausdrücklich ein) kostenlos heruntergeladen und verwendet werden. Die Weitergabe oder Bereitstellung des Programms über eine öffentliche Plattform oder gegen Entgelt ist nur nach vorheriger Zustimmung des Programmautors gestattet. Verweisen Sie bitte stattdessen auf die offizielle Website des Programms.   
+FPledit darf für den nicht-kommerziellen Gebrauch (dies schließt die Veröffentlichung damit erstellter Fahrpläne auf privaten Websites ausdrücklich ein) kostenlos heruntergeladen und verwendet werden. Die Weitergabe oder Bereitstellung des Programms über eine öffentliche Plattform oder gegen Entgelt ist nur nach vorheriger Zustimmung des Programmautors gestattet. Verweisen Sie bitte stattdessen auf die offizielle Website des Programms.
 Eine kommerzielle Nutzung des Programms bedarf meiner vorherigen Zustimmung.
 
-Der Autor dieses Programms haftet nicht für Schäden an Soft- oder Hardware oder Vermögensschäden, die durch das Benutzen des Programms entstehen, es sei denn diese beruhen auf einem grob fahrlässigen oder vorsätzlichen Handeln des Autors, seiner Erfüllungsgehilfen oder seiner gesetzlichen Vertreter. Für  Schäden an der Gesundheit, dem Körper oder dem Leben des Nutzers haftet der Autor uneingeschränkt. Ebenso haftet er für die Verletzung von Pflichten, die zur Erreichung des Vertragszwecks von besonderer Bedeutung sind (Kardinalspflichten).
+Der Autor dieses Programms haftet nicht für Schäden an Soft- oder Hardware oder Vermögensschäden, die durch das Benutzen des Programms entstehen, es sei denn diese beruhen auf einem grob fahrlässigen oder vorsätzlichen Handeln des Autors, seiner Erfüllungsgehilfen oder seiner gesetzlichen Vertreter. Für Schäden an der Gesundheit, dem Körper oder dem Leben des Nutzers haftet der Autor uneingeschränkt. Ebenso haftet er für die Verletzung von Pflichten, die zur Erreichung des Vertragszwecks von besonderer Bedeutung sind (Kardinalspflichten).
+
+**Sourcecode von FPLedit:** Der Sourcecode von FPLedit darf ebenfalls nach den oben genannten Bestimmungen verwendet werden, damit ist die Veröffentlichung des gesamten, unveränderten Sourcecodes nicht gestattet. Die Verwendung von (Teilen des) Sourcecodes für eigene, auf FPLedit aufbauende Projekte (Erweiterungen) ist ausdrücklich gestattet, solange der oben stehende Copyright-Hinweis auch im neuen Gesamtwerk zu finden ist.
 
 **Datenschutz:** Bei der programminternen Überprüfung auf Aktualisierungen (`Hilfe > Info` oder automatisch beim Programmstart) wird die IP-Adresse des anfragenden Computers an den Server übermittelt. Diese wird anonymisiert in Log-Dateien gespeichert.
 
@@ -18,11 +19,18 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 <a href="/files/fpledit-{{< version >}}.zip" class="downloadbtn"><i class="icon icon-download"></i> Download starten (aktuelle Version {{< version >}})</a>
 | [Hinweise zur Installation](/einfuehrung/#installation)
 
+**Andere Downloadmöglichkeiten:** [Sourcecode](/files/fpledit-{{< version >}}-src.zip)
+
 ## Changelog
 
-### 1.4.0 (vom xx.xx.2017; [Download](/files/fpledit-{{< version >}}.zip))
-* Neuer Fahrplantyp: Aushangfahrpläne
-* **Achtung:** Die Datei `FPLedit.BuchfahrplanExport.dll` wirde durch `FPLedit.Buchfahrplan.dll` ersetzt!
+### 1.4.0 (vom 19.08.2017)
+* Neuer Fahrplantyp: Aushangfahrpläne mit allen von Buchfahrplaänen her gewohnten Features
+* **Achtung:** Die Erweiterung `FPLedit.BuchfahrplanExport.dll` wurde durch `FPLedit.Buchfahrplan.dll` ersetzt! Die alte Datei kann problemlos gelöscht werden.
+* Dateien können vom Dateiexplorer auf das Hauptfenster gezogen werden
+* Listen springen beim Bearbeiten nicht mehr hin und her
+* Neustart bei Änderung der aktivierten Erweiterungen
+* Viele Verbesserungen unter der Haube
+* Erstmalige Veröffentlichung des Sourcecodes
 
 ### 1.3.2 (vom 02.07.2017)
 * Absturz beim Starten von FPLedit behoben
@@ -41,6 +49,7 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 * Zusätzliche Tastaturkürzel in den Dialogen
 * Kleine Fehlerbehebungen
 
+<details><summary>**Ältere Verionshinweise**</summary>
 ### 1.2.1 (vom 23.5.2017)
 * Fehler beim Löschen der ersten oder letzten Bahnhöfe behoben
 
@@ -53,7 +62,6 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 * Strecke aus anderer Fahrplandatei bzw. Streckendatei laden
 * Ermöglichen der Verknüpfung von fpl-Dateien mit FPLedit, so dass diese mit einem Doppelklick geöffnet werden.
 
-<details><summary>**Ältere Verionshinweise**</summary>
 ### 1.1.1 (vom 28.2.2017)
 * Fehlermeldung beim Öffnen, wenn mehr Fahrtzeiten als Stationen angegeben sind. Löst ein evetuell auftretendes Missverständnis.
 

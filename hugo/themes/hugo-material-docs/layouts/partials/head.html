@@ -19,10 +19,7 @@
     <meta property="og:url" content="{{ .Permalink }}">
     {{ with .Site.Title }}<meta property="og:title" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.description }}<meta property="og:description" content="{{ . }}">{{ end }}
-    {{ with .Site.Params.logo }}<meta property="og:image" content="{{ $.Site.BaseURL }}{{ . }}">{{ end }}
-    {{ with .Site.Title }}<meta name="apple-mobile-web-app-title" content="{{ . }}">{{ end }}
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    {{ with .Site.Params.twitter_logo }}<meta property="og:image" content="{{ $.Site.BaseURL }}{{ . }}">{{ end }}
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ $.Site.BaseURL }}{{ with .Site.Params.favicon }}{{ . }}{{ else }}images/favicon.ico{{ end }}">
     <link rel="icon" type="image/x-icon" href="{{ $.Site.BaseURL }}{{ with .Site.Params.favicon }}{{ . }}{{ else }}images/favicon.ico{{ end }}">

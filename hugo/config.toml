@@ -10,17 +10,18 @@ disableAliases = true
 
 [params]
 	author = "Manuel Huber"
-	description = "Ein einfaches Programm zum Erstellen von (Buch-)Fahrplänen für Modelleisenbahnen. Kompatibel mit jTrainGraph zu Erstellung von Bildfahrplänen."
+	description = "Ein einfaches Programm zum Erstellen und Bearbeiten von Buch- und Aushangfahrplänen für Modelleisenbahnen. Kompatibel mit jTrainGraph zu Erstellung von Bildfahrplänen."
 
 	download_url = "/download/"		# URL für Download-Button
 	version = "1.4.0"				# Aktuelle Programmversion
 
-	logo = "files/logo.png"			# Seitenlogo
+	logo = "files/logo.svg"			# Seitenlogo
+	twitter_logo = "files/logo.png" # Logo für Twitter Cards
 	favicon = "files/favicon.ico"	# Seitenicon
 
 	[params.palette]
     	primary = "light-green"
-    	accent  = "lime"
+    	accent  = "teal"
 
 [outputs]
 	home = ["HTML"]
@@ -40,7 +41,7 @@ disableAliases = true
 [[menu.main]]
 	name   = "Einführung"
 	url    = "einfuehrung/"
-	weight = 3
+	weight = 5
 	parent = "doku"
 
 [[menu.main]]
@@ -68,6 +69,12 @@ disableAliases = true
 	parent = "doku"
 
 [[menu.main]]
-	name   = "Impressum"
+	name   = "Erweiterungen entwickeln"
+	url    = "dev/"
+	weight = 50
+	parent = "doku"
+
+[[menu.main]]
+	name   = "Kontakt | Impressum"
 	url    = "https://manuelhu.de/impressum.html"
-	weight = 100
+	weight = 200

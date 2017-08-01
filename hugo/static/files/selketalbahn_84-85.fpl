@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jTrainGraph_timetable version="008" name="Bildfahrplan Strecke Alexisbad - Harzgerode" tMin="511" tMax="1024" d="1111111" bgC="weiß" sFont="font(SansSerif;1;12)" trFont="font(SansSerif;0;12)" hFont="font(SansSerif;0;12)" tFont="font(SansSerif;0;12)" sHor="false" sLine="0" shKm="true" sStation="-1" eStation="-1" cNr="1" exW="200" exH="2625" shV="false">
+  <bfpl_attrs tmpl="$std.ZLBTemplate" font="">
+    <css />
+  </bfpl_attrs>
+  <stations>
+    <sta name="Alexisbad" km="0.0" cl="orange" sh="true" sz="1" sy="0" fpl-vmax="20" fpl-wl="3" />
+    <sta name="Anschl Ziegelwerk" km="2.6" cl="orange" sh="true" sz="1" sy="4" fpl-vmax="20" fpl-wl="3" />
+    <sta name="Harzgerode" km="2.9" cl="orange" sh="true" sz="1" sy="0" fpl-vmax="20" fpl-wl="3" />
+  </stations>
+  <trains>
+    <ti name="69711" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-mbr="" fpl-last="" fpl-tfz="99">
+      <t a="" d="08:31" fpl-tr="0" />
+      <t a="" d="" fpl-tr="0" />
+      <t a="08:41" d="" fpl-tr="0" fpl-zlm="Tf" />
+    </ti>
+    <ti name="14451" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-mbr="" fpl-last="" fpl-tfz="99">
+      <t a="" d="11:40" fpl-tr="0" />
+      <t a="" d="" fpl-tr="0" />
+      <t a="11:50" d="" fpl-tr="0" fpl-zlm="Tf" />
+    </ti>
+    <ti name="69724" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-mbr="" fpl-last="" fpl-tfz="99">
+      <t a="" d="14:15" fpl-tr="0" />
+      <t a="" d="" fpl-tr="0" />
+      <t a="14:25" d="" fpl-tr="0" fpl-zlm="Tf" />
+    </ti>
+    <ti name="14459" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-mbr="" fpl-last="" fpl-tfz="99">
+      <t a="" d="16:23" fpl-tr="0" />
+      <t a="" d="" fpl-tr="0" />
+      <t a="16:33" d="" fpl-tr="0" fpl-zlm="Zf" />
+    </ti>
+    <ti name="14457" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-mbr="" fpl-last="" fpl-tfz="99">
+      <t a="" d="12:25" fpl-tr="0" />
+      <t a="" d="" fpl-tr="0" />
+      <t a="12:35" d="" fpl-tr="0" fpl-zlm="Tf" />
+    </ti>
+    <ti name="69717" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-mbr="" fpl-last="" fpl-tfz="99">
+      <t a="" d="15:22" fpl-tr="0" />
+      <t a="" d="" fpl-tr="0" />
+      <t a="15:32" d="" fpl-tr="0" fpl-zlm="Tf" />
+    </ti>
+    <ta name="69712" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-mbr="" fpl-last="" fpl-tfz="99">
+      <t a="09:00" d="" fpl-tr="0" />
+      <t a="" d="" fpl-tr="0" />
+      <t a="" d="08:50" fpl-tr="0" fpl-zlm="Tf" />
+    </ta>
+    <ta name="69723" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-mbr="" fpl-last="" fpl-tfz="99">
+      <t a="12:55" d="" fpl-tr="0" />
+      <t a="" d="" fpl-tr="0" />
+      <t a="" d="12:45" fpl-tr="0" fpl-zlm="Tf" />
+    </ta>
+    <ta name="14448" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-mbr="" fpl-last="" fpl-tfz="99">
+      <t a="14:43" d="" fpl-tr="0" />
+      <t a="" d="" fpl-tr="0" />
+      <t a="" d="14:33" fpl-tr="0" fpl-zlm="Tf" />
+    </ta>
+    <ta name="69725" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-mbr="" fpl-last="" fpl-tfz="99">
+      <t a="15:59" d="" fpl-tr="0" />
+      <t a="" d="" fpl-tr="0" />
+      <t a="" d="15:49" fpl-tr="0" fpl-zlm="Tf" />
+    </ta>
+    <ta name="69716" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-mbr="" fpl-last="" fpl-tfz="99">
+      <t a="17:04" d="" fpl-tr="0" />
+      <t a="" d="" fpl-tr="0" />
+      <t a="" d="16:47" fpl-tr="0" fpl-zlm="Tf" />
+    </ta>
+    <ta name="14452" cm="" cl="schwarz" sh="true" sz="1" sy="0" d="1111111" id="" fpl-mbr="" fpl-last="" fpl-tfz="99">
+      <t a="12:09" d="" fpl-tr="0" />
+      <t a="" d="" fpl-tr="0" />
+      <t a="" d="11:59" fpl-tr="0" fpl-zlm="Tf" />
+    </ta>
+  </trains>
+  <afpl_attrs tp="^6" sp="" />
+</jTrainGraph_timetable>

@@ -4,7 +4,7 @@ title: CSS-Hilfe
 weight: 35
 ---
 
-Über CSS können die Buchfahrpläne angepasst werden. CSS wird in der Regel für die Webentwicklung zum Gestalten von Websites verwendet. Da die Buchfahrpläne als HTML-Dateien exportiert werden, kommt CSS zum Einsatz. Auf [selfhtml](https://wiki.selfhtml.org/wiki/CSS) gint es eine gute Anleitung zu CSS.
+Über CSS können die Buchfahrpläne angepasst werden. CSS wird in der Regel für die Webentwicklung zum Gestalten von Websites verwendet. Da die Buchfahrpläne als HTML-Dateien exportiert werden, kommt CSS zum Einsatz. Auf [selfhtml](https://wiki.selfhtml.org/wiki/CSS) gibt es eine gute Anleitung zu CSS.
 
 ## Beispiele
 ### Den Zug mit der Nummer RB 12801 ausblenden
