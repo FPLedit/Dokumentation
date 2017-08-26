@@ -124,27 +124,21 @@ pre, pre code {
 .icon-note:before {
     content: "\e611"}
 a {
-    -webkit-transition: color .25s;
     transition: color .25s;
 }
 .overlay {
-    -webkit-transition: opacity .25s, width 0s .25s, height 0s .25s;
     transition: opacity .25s, width 0s .25s, height 0s .25s;
 }
 #toggle-drawer:checked~.overlay, .toggle-drawer .overlay {
-    -webkit-transition: opacity .25s, width 0s, height 0s;
     transition: opacity .25s, width 0s, height 0s;
 }
 .js .header {
-    -webkit-transition: background .6s, color .6s;
     transition: background .6s, color .6s;
 }
 .js .header:before {
-    -webkit-transition: background .6s;
     transition: background .6s;
 }
 .button .icon {
-    -webkit-transition: background .25s;
     transition: background .25s;
 }
 body {
@@ -154,8 +148,6 @@ body {
     body {
     background: #e84e40;
 }
-}.ios body {
-    background: #fff;
 }
 hr {
     border: 0;
@@ -179,9 +171,6 @@ hr {
     box-shadow: 0 1.5px 3px rgba(0, 0, 0, .24), 0 3px 8px rgba(0, 0, 0, .05);
     background: #e84e40;
     color: #fff;
-}
-.ios.standalone .header:before {
-    background: rgba(0, 0, 0, .12);
 }
 .bar .path {
     color: hsla(0, 0%, 100%, .7);
@@ -217,9 +206,6 @@ hr {
 }
 .scrollable .wrapper {
     height: 100%}
-.ios .scrollable .wrapper {
-    margin-bottom: 2px;
-}
 .toggle {
     display: none;
 }
@@ -265,9 +251,6 @@ hr {
     height: 56px;
     padding: 4px;
 	overflow: hidden;
-}
-.ios.standalone .header {
-    position: absolute;
 }
 .bar {
     display: table;
@@ -344,15 +327,12 @@ body, input {
     display: block;
 }
 .project {
-    -webkit-transition: none;
     transition: none;
 }
 .project .logo img {
-    -webkit-transition: box-shadow .4s;
     transition: box-shadow .4s;
 }
 .repo a {
-    -webkit-transition: box-shadow .4s, opacity .4s;
     transition: box-shadow .4s, opacity .4s;
 }
 .drawer .toc a.current, .drawer .toc a:focus, .drawer .toc a:hover {
@@ -363,9 +343,6 @@ body, input {
 }
 .drawer .section {
     color: rgba(0, 0, 0, .54);
-}
-.ios.standalone .project:before {
-    background: rgba(0, 0, 0, .12);
 }
 .project .logo img {
     background: #fff;
@@ -396,10 +373,6 @@ body, input {
     width: 262px;
     font-size: 13px;
     line-height: 1em;
-}
-.ios .drawer {
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
 }
 .drawer .toc li a {
     display: block;
@@ -522,20 +495,10 @@ body, input {
     font-weight: 700;
 }
 pre span {
-    -webkit-transition: color .25s;
     transition: color .25s;
 }
 .copyright a {
-    -webkit-transition: color .25s;
     transition: color .25s;
-}
-.ios.standalone .article {
-    background: -webkit-linear-gradient(top, #fff 50%, #e84e40 0);
-    background: linear-gradient(180deg, #fff 50%, #e84e40 0);
-}
-.ios.standalone .article .wrapper {
-    background: -webkit-linear-gradient(top, #fff 50%, #fff 0);
-    background: linear-gradient(180deg, #fff 50%, #fff 0);
 }
 .article a, .article h1, .article h2 {
     color: #e84e40;
@@ -620,21 +583,6 @@ pre span {
 .article .wrapper {
     padding: 90px 16px 30px;
 }
-.ios.standalone .article {
-    position: absolute;
-    top: 56px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-}
-.ios.standalone .article .wrapper {
-    position: relative;
-    min-height: 100%;
-    padding-top: 60px;
-    margin-bottom: 2px;
-}
 .article h1 {
     font-size: 24px;
     line-height: 1.333334em;
@@ -646,18 +594,10 @@ pre span {
     padding-top: 92px;
     margin-top: -56px;
 }
-.ios.standalone .article h2 {
-    padding-top: 36px;
-    margin: 0;
-}
 .article h3, .article h4 {
     font-size: 14px;
     padding-top: 76px;
     margin-top: -56px;
-}
-.ios.standalone .article h3, .ios.standalone .article h4 {
-    padding-top: 20px;
-    margin-top: 0;
 }
 .article .headerlink {
     float: right;
@@ -835,7 +775,6 @@ h1 .article .headerlink {
 .bar {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    -webkit-transition: opacity .2s cubic-bezier(.75, 0, .25, 1), -webkit-transform .4s cubic-bezier(.75, 0, .25, 1);
     transition: opacity .2s cubic-bezier(.75, 0, .25, 1), -webkit-transform .4s cubic-bezier(.75, 0, .25, 1);
     transition: opacity .2s cubic-bezier(.75, 0, .25, 1), transform .4s cubic-bezier(.75, 0, .25, 1);
     transition: opacity .2s cubic-bezier(.75, 0, .25, 1), transform .4s cubic-bezier(.75, 0, .25, 1), -webkit-transform .4s cubic-bezier(.75, 0, .25, 1);
@@ -847,7 +786,6 @@ h1 .article .headerlink {
 .bar.search .button-reset {
     /*-webkit-transform: scale(.5);
     transform: scale(.5);*/
-    -webkit-transition: opacity .4s cubic-bezier(.1, .7, .1, 1), -webkit-transform .4s cubic-bezier(.1, .7, .1, 1);
     transition: opacity .4s cubic-bezier(.1, .7, .1, 1), -webkit-transform .4s cubic-bezier(.1, .7, .1, 1);
     transition: opacity .4s cubic-bezier(.1, .7, .1, 1), transform .4s cubic-bezier(.1, .7, .1, 1);
     transition: opacity .4s cubic-bezier(.1, .7, .1, 1), transform .4s cubic-bezier(.1, .7, .1, 1), -webkit-transform .4s cubic-bezier(.1, .7, .1, 1);
@@ -956,16 +894,13 @@ h1 .article .headerlink {
     z-index: 4;
 }
 }@media only screen and (max-width:959px) {
-    #toggle-drawer: checked~.overlay, .toggle-drawer .overlay {
+    #toggle-drawer:checked~.overlay, .toggle-drawer .overlay {
     width: 100%;
     height: 100%}
 .drawer {
     -webkit-transform: translate3d(-262px, 0, 0);
     transform: translate3d(-262px, 0, 0);
-    -webkit-transition: -webkit-transform .25s cubic-bezier(.4, 0, .2, 1);
-    transition: -webkit-transform .25s cubic-bezier(.4, 0, .2, 1);
     transition: transform .25s cubic-bezier(.4, 0, .2, 1);
-    transition: transform .25s cubic-bezier(.4, 0, .2, 1), -webkit-transform .25s cubic-bezier(.4, 0, .2, 1);
 }
 .no-csstransforms3d .drawer {
     display: none;
@@ -1010,17 +945,9 @@ h1 .article .headerlink {
     padding-top: 100px;
     margin-top: -64px;
 }
-.ios.standalone .article h2 {
-    padding-top: 28px;
-    margin-top: 8px;
-}
 .article h3, .article h4 {
     padding-top: 84px;
     margin-top: -64px;
-}
-.ios.standalone .article h3, .ios.standalone .article h4 {
-    padding-top: 20px;
-    margin-top: 0;
 }
 .article pre {
     padding: 1.5em 24px;
@@ -1050,51 +977,10 @@ h1 .article .headerlink {
 }
 }
 @media only screen and (min-width:1200px) {
-    .header {
+.header {
     width: 100%}
 .drawer .scrollable .wrapper hr {
     width: 48px;
-}
-}@media only screen and (orientation:portrait) {
-    .ios.standalone .header {
-    height: 76px;
-    padding-top: 24px;
-}
-.ios.standalone .header:before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    width: 100%;
-    height: 20px;
-}
-.ios.standalone .drawer .scrollable {
-    top: 124px;
-}
-.ios.standalone .project {
-    padding-top: 20px;
-}
-.ios.standalone .project:before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    width: 100%;
-    height: 20px;
-}
-.ios.standalone .article {
-    position: absolute;
-    top: 76px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-}@media only screen and (orientation:portrait) and (min-width:720px) {
-    .ios.standalone .header {
-    height: 84px;
-    padding-top: 28px;
 }
 }@media only screen and (max-width:719px) {
     .bar .path {
