@@ -783,6 +783,9 @@ h1 .article .headerlink {
     -webkit-transform: translate3d(0, -56px, 0);
     transform: translate3d(0, -56px, 0);
 }
+.no-csstransforms3d #toggle-search:checked~.header .bar, .toggle-search .bar {
+	transform: none;
+}
 .bar.search .button-reset {
     /*-webkit-transform: scale(.5);
     transform: scale(.5);*/

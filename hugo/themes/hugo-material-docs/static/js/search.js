@@ -5,6 +5,14 @@ var searchField = document.querySelector('.query');
 var header = document.querySelector('.header');
 var results = document.querySelector('.search-results');
 var closeButton = document.querySelector('.bar.search .button-reset');
+var backButton = document.querySelector('.bar.search .button-close');
+
+var ieCompat = function() {
+	if (/MSIE|Edge\/\d./i.test(navigator.userAgent)) {
+		document.querySelector('body').classList.add('no-csstransforms3d');
+		searchButton.removeEventListener('click', focusField);
+	}
+};
 
 // Adds pages and triggers building of index
 var downloadPages = function() {
@@ -102,8 +110,10 @@ var focusField = function() {
 	searchField.select();
 };
 
+addEventListener('load', ieCompat);
 addEventListener('load', downloadPages);
 searchField.addEventListener('keydown', onSearchKeydown);
 searchField.addEventListener('input', onSearchChange);
 closeButton.addEventListener('click', closeResults);
+backButton.addEventListener('click', closeResults);
 searchButton.addEventListener('click', focusField);
