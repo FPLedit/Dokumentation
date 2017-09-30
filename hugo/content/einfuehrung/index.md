@@ -23,10 +23,11 @@ Nach dem Programmstart erscheint zuerst das Haptfenster. Wenn im Menü nur der M
 
 Allgemein bieten (fast) alle Dialoge zwei Schaltflächen an, über die der Dialog geschlossen werde kann. Mit `Abbrechen` werden die Änderungen verworfen und mit `Schließen` oder `OK` werden sie übernommen, so dass sie beim nächsten Speichern in die Datei geschrieben werden können.
 
+Der Menüpunkt `Bearbeiten > Rückgängig` kann die zuletzt angewendete Aktion in der Regel rückgängig machen.
+
 ## Erweiterungen
 Eines der Grundkonzepte von FPLedit ist die Erweiterbarkeit. Erweiterungen fügen Menüs und eigene Dialoge hinzu und stellen zusätzliche Funktionalität bereit. Die Erweiterungen liegen als DLL-Datei im Programmverzeichnis. Nahezu alle Programmfunktionen werden über Erweiterungen bereitgestellt. Mit dem Programm werden schon einige Erweiterungen, die standardmäßig alle aktiviert sind, mitausgeliefert:
 
-* Fahrplan-Editoren (`FPLedit.AStandard.dll`)
 * Aushangfahrplan-Modul (`FPLedit.Aushangfahrplan.dll`)
 * Buchfahrplan-Modul (`FPLedit.Buchfahrplan.dll`)
 * Importer für alte BFPL-Dateien (`FPLedit.BfplImport.dll`)
@@ -44,5 +45,6 @@ Einige häufig verwendete Funktionen des Hauptprogramms lassen sich über Tasten
 * <kbd>Strg</kbd>+<kbd>S</kbd>: Datei am aktuellen Ort speichern
 * <kbd>Strg</kbd>+<kbd>O</kbd>: Datei öffnen
 * <kbd>Strg</kbd>+<kbd>E</kbd>: Aktuelle Datei exportieren
+* <kbd>Strg</kbd>+<kbd>Z</kbd>: Die letzte Aktion rückgängig machen
 
 {{% beta %}}

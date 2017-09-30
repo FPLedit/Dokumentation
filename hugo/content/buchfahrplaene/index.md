@@ -6,7 +6,7 @@ weight: 30
 
 Der ursprüngliche Zweck von FPLedit war die Erstellung von Buchfahrplänen. Die entsprechende Erweiterung muss natürlich aktiviert sein. Zur Zeit wird kein vollständiger Buchfahrplan generiert, an einigen Stellen ist dieser vereinfacht. Das Modul wird aber in den nächsten Versionen noch einige Verbesserungen und Features erhalten.
 
-Um den Buchfahrplan als Vorschau anzuzeigen, verwenden Sie `Buchfahrplan > Anzeigen`. Daneben können über den Menüpunkt `Buchfahrplan > Höchstgeschwindigkeiten ändern` für die einzelenen Bahnhöfe auf der Strecke eine Höchstgeschwindigkeit definieren. Neue Geschwindigkeitswechsel (ohne Bahnhof und Fahrtzeiten) auf der freien Strecke können über die Schaltfläche `Hinzufügen` angelegt werden.
+Um den Buchfahrplan als Vorschau anzuzeigen, verwenden Sie `Vorschau > Buchfahrplan`. Daneben können über den Menüpunkt `Bearbeiten > Höchstgeschwindigkeiten ändern` für die einzelenen Bahnhöfe auf der Strecke eine Höchstgeschwindigkeit definieren. Neue Geschwindigkeitswechsel (ohne Bahnhof und Fahrtzeiten) auf der freien Strecke können über die Schaltfläche `Hinzufügen` angelegt werden.
 
 Daneben können noch die neben einer Station anzuzeigenden Wellenlinien ausgwählt werden. 1 Wellenlinie >= 10 ‰, 2 Wellenlinien >= 20 ‰ usw. Diese werden im Buchfahrplan, wenn auch möglicherweise nicht in allen Vorlagen, angezeigt.
 
@@ -22,18 +22,20 @@ In den Namen der Geschwindigkeitswechsel können Sonderzeichen verwendet werden,
 | ▽      | Verkürzter Vorsignalabstand             |
 | ┣━╸    | Einfahrt in Stumpfgleis                 |
 
-Dieser Buchfahrplan (generiert mit v1.4.0) ist zwar schon recht nah am Vorbild, es fehlt aber trotzdem noch einiges bzw. das Format ist stark vereinfacht:
+Dieser Buchfahrplan (generiert mit v1.5.0) ist zwar schon recht nah am Vorbild, es fehlt aber trotzdem noch einiges bzw. das Format ist stark vereinfacht:
 
 ![Quelle der Daten: Buchfahrplanheft 698/3 - Ersatzfahrplan](bfpl.png)
 
+Unter `Bearbeiten > Filterregeln` können Regeln angelegt werden, nach denen vor der Ausgabe die Züge und Bahnhöfe gefiltert werden. Damit könnten z.B. alle Güterzüge oder Anschlussstellen aus dem Buchfahrplan ausgeblendet werden.
+
 ## Anpassen von Buchfahrplänen
-Unter `Buchfahrplan > Buchfahrplaneinstellungen` kann das Aussehen des Buchfahrplans beeinflusst werden. Die Auswahlmöglichkeit einer Vorlage erlaubt es, die Darstellung des Buchfahrplans schnell an verschiedene Gegebenheiten anzupassen. Eine Erweiterbarkeit ist für die Zukunft vorgesehen.
+Unter `Bearbeiten > Fahrplandarstellung` im Reiter `Buchfahrplan` kann das Aussehen des Buchfahrplans beeinflusst werden. Die Auswahlmöglichkeit einer Vorlage erlaubt es, die Darstellung des Buchfahrplans schnell an verschiedene Gegebenheiten anzupassen.
 
 Die Schriftart, die für die Fahrplan-Darstellung verwendet wird, kann aus allen auf dem System installierten Schriftarten ausgewählt werden. Danaben können noch besondere Werte wie z.B. `serif`, `sans-serif` verwendet werden.
 
-Weiterführend kann die Plandarstellung mit CSS (= Cascading Style Sheets) angepasst werden, da er ja im HTML-Format exportiert wird. Mit CSS können nahezu alle Aspkete der Plandarstellung geändert werden. Zu CSS gibt es auf [dieser Unterseite](css/) aber eine ausführlichere Anleitung.
+Weiterführend kann die Plandarstellung mit CSS (= Cascading Style Sheets) angepasst werden, da er ja im HTML-Format exportiert wird. Mit CSS können nahezu alle Aspekte der Plandarstellung geändert werden. Zur Aktivierung und Verwendung von CSS gibt es auf [dieser Unterseite](/dev/css/) aber eine ausführlichere Anleitung.
 
-![Buchfahrplaneinstellungen](einstellungen.png)
+![Buchfahrplaneinstellungen](bfpl-darstellung.png)
 
 ## Buchfahrpläne exportieren und drucken
 Buchfahrpläne können mit `Datei > Export` als HTML-Datei exportiert werden. Zum Anzeigen dieser Datei wird ein Webbrowser (wie z.B. Firefox) benötigt. Zur Ansicht der HTML-Fahrpläne müssen auch die ausgewählten Schriftarten auf dem Computer installiert sein, eine einfache Weitergabe ist deshalb nicht möglich.

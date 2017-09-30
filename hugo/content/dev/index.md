@@ -1,7 +1,7 @@
 ---
 date: 2017-07-02T18:29:37+02:00
 title: Erweiterungen entwickeln
-weight: 50
+weight: 60
 needshighlight: true
 ---
 
@@ -14,7 +14,7 @@ Die hier beschriebenen Konzepte werden für den gewöhlichen Gebrauch von FPLedi
 {{< /note >}}
 
 
-> **Achtung**: Diese Anleitung ist zur Zeit auf dem Stand von FPLedit Version 1.4.0. Möglicherweise ist sie nicht 100%ig aktuell. In zukünftigen Versionen werden möglicherweise die Programmschnittstellen geändert.
+> **Achtung**: Diese Anleitung ist zur Zeit auf dem Stand von FPLedit Version 1.5.0. Möglicherweise ist sie nicht 100%ig aktuell. In zukünftigen Versionen werden möglicherweise die Programmschnittstellen geändert. In der [Änderungshistorie](changelog/) finden sich weitere Hinweise.
 
 FPLedit basiert auf .NET und ist in der Programmiersprache C# geschrieben, daher ist dies auch die am besten für die Erweiterungsentwicklung geeignete Sprache. Zur Entwicklung mit C# ist die kostenlose Entwicklungsumgebung [Visual Studio Community](https://www.visualstudio.com/de/) von Microsoft gut geeignet, aber auch Alternativen sind verwendbar.
 
@@ -28,14 +28,14 @@ Bevor es hier an die Entwicklung einer eigenen Erweiterung geht, möchte ich hie
 ![Diagramm des Dateiformats](fileformat.png)
 
 ## Hauptklasse definieren
-Die Hauptklasse eines Plugins, in der Regel heißt diese `Plugin`, muss zwingend die Schnittstelle `FPLedit.Shared.IPlugin` implementieren. Damit muss auch zwingend eine Methode `Init` vorhanden sein. Weiterhin muss die Klasse auch ein Attribut in der Form `[Plugin("name")]` aufweisen, damit die Erweiterung von FPLedit erkannt wird. Ein einfaches Plugin sieht dann so aus:
+Die Hauptklasse eines Plugins, in der Regel heißt diese `Plugin`, muss zwingend die Schnittstelle `FPLedit.Shared.IPlugin` implementieren. Damit muss auch zwingend eine Methode `Init` vorhanden sein. Weiterhin muss die Klasse auch ein Attribut in der Form `[Plugin("name", "minVer")]` aufweisen, damit die Erweiterung von FPLedit erkannt wird. `minVer` ist dabei die minimale Version von FPLedit, mit der das Plugin kompatibel ist. Ein einfaches Plugin sieht dann so aus:
 
 ```csharp
 using FPLedit.Shared;
 
 namespace TestPlugin
 {
-    [Plugin("TestPlugin", Author = "Autorenname")]
+    [Plugin("TestPlugin", "1.5.0", Author = "Autorenname")]
     public class Plugin : IPlugin
     {
         public void Init(IInfo info)
@@ -140,9 +140,14 @@ info.FileStateChanged += (s, e) => {
 };
 ```
 
-Der Zustand des `FileState`-Objekts darf nicht verändert werden! Erweiterungen können aber anweisen, dass die aktuelle Datei als verändert markiert wird. Dies führt dann ohne ein darauf folgendes Speichern zum Anzeigen einer Meldung beim Schließen:
+Der Zustand des `FileState`-Objekts darf nicht verändert werden! Erweiterungen können aber anweisen, dass die aktuelle Datei als verändert markiert wird. Dies führt dann ohne ein darauf folgendes Speichern zum Anzeigen einer Meldung beim Schließen des Programms. Vor der Aktion muss aber bereits angewiesen werden, dass die Daten zum späteren eventullen Rückgängig-machen zwischengespeichert werden.
 
 ```csharp
+info.StageUndoStep(Timetable);
+
+// Hier den Fahrplan verändern, z.B.
+Timetable.TTName = "Test123";
+
 // Aktuelle Datei als geändert markieren
 info.SetUnsaved();
 ```
@@ -161,6 +166,9 @@ if (ok)
 else
     info.RestoreTimetable();
 ```
+
+### Dialoge
+> *Diese Funktion ist neu in Version 1.5.0, die Dokumentation muss an dieser Stelle noch ergänzt werden*
 
 ### Log-Ausgaben
 Das `IInfo`-Objekt enthält ein Attribut `Logger`. Darüber können Meldungen in das Textfenster des Hauptprogramms ausgegeben werden:
