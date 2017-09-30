@@ -23,6 +23,14 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 
 ## Changelog
 
+### 1.5.0 (vom 30.09.2017)
+* Neue, vereinheitlichte Dialoge
+* Neuer Fahrplantyp: Tabellenfahrpläne mit allen von Buchfahrplaänen und Aushangfahrplänen her gewohnten Features
+* **Achtung:** Die Erweiterung `FPLedit.AStandard.dll` wurde in das Hauptprogramm integriert! Die alte Datei kann problemlos gelöscht werden.
+* Rückgängig-Funktion (`Bearbeiten > Rückgängig`)
+* Weitere kleine Fehlerbehebungen
+* [API-Änderungen](/dev/changelog/)
+
 ### 1.4.0 (vom 19.08.2017)
 * Neuer Fahrplantyp: Aushangfahrpläne mit allen von Buchfahrplaänen her gewohnten Features
 * **Achtung:** Die Erweiterung `FPLedit.BuchfahrplanExport.dll` wurde durch `FPLedit.Buchfahrplan.dll` ersetzt! Die alte Datei kann problemlos gelöscht werden.

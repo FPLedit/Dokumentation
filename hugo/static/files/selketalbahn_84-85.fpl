@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jTrainGraph_timetable version="008" name="Bildfahrplan Strecke Alexisbad - Harzgerode" tMin="511" tMax="1024" d="1111111" bgC="weiß" sFont="font(SansSerif;1;12)" trFont="font(SansSerif;0;12)" hFont="font(SansSerif;0;12)" tFont="font(SansSerif;0;12)" sHor="false" sLine="0" shKm="true" sStation="-1" eStation="-1" cNr="1" exW="200" exH="2625" shV="false">
-  <bfpl_attrs tmpl="$std.ZLBTemplate" font="">
+  <bfpl_attrs tmpl="$std.ZLBTemplate" font="" tp="" sp="">
     <css />
   </bfpl_attrs>
   <stations>
@@ -71,4 +71,5 @@
     </ta>
   </trains>
   <afpl_attrs tp="^6" sp="" />
+  <kfpl_attrs tp="" sp="^Anschl" />
 </jTrainGraph_timetable>
