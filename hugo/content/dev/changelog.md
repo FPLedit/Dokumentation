@@ -5,6 +5,9 @@ title: API-Changelog
 
 In der Programmierschnittselle ergeben sich in der Versionen immer wieder Änderungen.
 
+### Version 1.5.1
+* keine Änderungen
+
 ### Version 1.5.0
 * Erweiterbarkeit der Benutzeroberfläche:
   * Neue Schnittstellen eingeführt.

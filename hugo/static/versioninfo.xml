@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Version information file for update check. -->
 <info product="manuelhu:fpledit">
-	<version>1.5.0</version>
+	<version>1.5.1</version>
 	<url>https://fahrplan.manuelhu.de/download/</url>
 	<!-- Short description: One full sentence -->
 	<description>Diese Version enthält ein neues Modul zur Generierung von Kursbuch-/Tabellenfahrplänen und einige kleine Verbesserungen.</description>

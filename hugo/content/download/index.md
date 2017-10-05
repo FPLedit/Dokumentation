@@ -23,6 +23,9 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 
 ## Changelog
 
+### 1.5.1 (vom 05.10.2017)
+* Diese Version enthält jetzt auch wirklich das Tabellenfahrplan/Kursbuch-Modul.
+
 ### 1.5.0 (vom 30.09.2017)
 * Neue, vereinheitlichte Dialoge
 * Neuer Fahrplantyp: Tabellenfahrpläne mit allen von Buchfahrplaänen und Aushangfahrplänen her gewohnten Features
