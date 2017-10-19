@@ -2,7 +2,7 @@
 date: 2017-07-02T18:29:37+02:00
 title: Erweiterungen entwickeln
 weight: 60
-needshighlight: true
+#needshighlight: true
 ---
 
 Diese Seite bietet einen kurzen Überblick über die Entwicklung von Erweiterungen für FPLedit.
