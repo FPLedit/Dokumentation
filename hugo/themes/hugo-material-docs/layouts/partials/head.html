@@ -27,19 +27,16 @@
     <style>
       @font-face {
         font-family: 'Icon';
-        src: url('{{ .Site.BaseURL }}fonts/icon.eot');
-        src: url('{{ .Site.BaseURL }}fonts/icon.eot?#iefix') format('embedded-opentype'),
-             url('{{ .Site.BaseURL }}fonts/icon.woff') format('woff'),
-             url('{{ .Site.BaseURL }}fonts/icon.ttf') format('truetype'),
-             url('{{ .Site.BaseURL }}fonts/icon.svg#icon') format('svg');
+        src: url('{{ .Site.BaseURL }}fonts/icon.woff') format('woff');
         font-weight: normal;
         font-style: normal;
       }
     </style>
 
     <link rel="stylesheet" href="{{ .Site.BaseURL }}stylesheets/application.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}stylesheets/palettes.css">
+    <!--<link rel="stylesheet" href="{{ .Site.BaseURL }}stylesheets/palettes.css">-->
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}stylesheets/highlight.css">
+	<link rel="stylesheet" href="{{ $.Site.BaseURL }}stylesheets/palette.css">
   </head>
   <body class="{{ with .Site.Params.palette.primary }}palette-primary-{{ . }}{{end }} {{ with .Site.Params.palette.accent }}palette-accent-{{ .  }}{{ end }}">
 	  <input class="toggle" type="checkbox" id="toggle-drawer" autocomplete="off">

@@ -16,7 +16,7 @@ pygmentsUseClasses = true
 	description = "Ein einfaches Programm zum Erstellen und Bearbeiten von Buch- und Aushangfahrplänen für Modelleisenbahnen. Kompatibel mit jTrainGraph zu Erstellung von Bildfahrplänen."
 
 	download_url = "/download/"		# URL für Download-Button
-	version = "1.5.1"				# Aktuelle Programmversion
+	version = "1.5.2"				# Aktuelle Programmversion
 
 	logo = "files/logo.svg"			# Seitenlogo
 	twitter_logo = "files/logo.png" # Logo für Twitter Cards
