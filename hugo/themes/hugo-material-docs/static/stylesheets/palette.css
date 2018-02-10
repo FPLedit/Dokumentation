@@ -34,3 +34,8 @@ background:#7cb342
 .palette-accent-teal .repo a {
 	background:#00bfa5
 }
+@media only screen and (max-width:959px) {
+	.palette-primary-light-green .drawer .project {
+	    background: #7cb342;
+	}
+}
