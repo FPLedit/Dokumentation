@@ -24,6 +24,16 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 
 ## Changelog
 
+### 2.0.0 (vom xx.xx.2018)
+* Unterstützung von Netzwerk-Fahrplänen
+* Neues Dateiformat für eigene Vorlagen, nur noch ein Texteditor wird zur Erstellung benötigt
+* Das Verschieben von Stationen zwischen andere Stationen erzeugt keine fehlerhaften Dateien mehr
+* Neuer Bearbeitungsmodus für Streckennetzen
+* Kopieren von Zügen (mit Verschiebung um bestimmte Zeit)
+* Verschiedene andere Fehlerbehebungen und Verbesserungen
+* **Achtung:** Die Importfunktion für das alte Bfpl-Binärformat wurde entfernt!
+* Große [API-Änderungen](/dev/changelog/)
+
 ### 1.5.2 (vom 29.10.2017)
 * Diese Version behebt ein Problem, bei dem keine Erweiterungen geladen wurden.
 
@@ -38,6 +48,7 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 * Weitere kleine Fehlerbehebungen
 * [API-Änderungen](/dev/changelog/)
 
+<details><summary>**Ältere Verionshinweise**</summary>
 ### 1.4.0 (vom 19.08.2017)
 * Neuer Fahrplantyp: Aushangfahrpläne mit allen von Buchfahrplaänen her gewohnten Features
 * **Achtung:** Die Erweiterung `FPLedit.BuchfahrplanExport.dll` wurde durch `FPLedit.Buchfahrplan.dll` ersetzt! Die alte Datei kann problemlos gelöscht werden.
@@ -64,7 +75,6 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 * Zusätzliche Tastaturkürzel in den Dialogen
 * Kleine Fehlerbehebungen
 
-<details><summary>**Ältere Verionshinweise**</summary>
 ### 1.2.1 (vom 23.5.2017)
 * Fehler beim Löschen der ersten oder letzten Bahnhöfe behoben
 

@@ -17,13 +17,21 @@ Das gleiche Verfahren wird auch bei einem Update angewandt. Informationen zur ne
 Fahrplandateien (`.fpl`) können mit FPLedit bei Doppelklick geöffnet werden, indem sie per Rechtsmausklick auf die Datei in den `Eigenschaften` auf die Schaltfläche `Ändern` klicken und im anschließenden Dialog die ausführbare Datei von FPLedit (`FPLedit.exe` im Programmverzeichnis) auswählen.
 
 ## Hauptfenster
-Nach dem Programmstart erscheint zuerst das Haptfenster. Wenn im Menü nur der Menüpunkt `Datei` angezeigt wird, wurde die ZIP-Datei nicht wie oben beschrieben entblockt. Über die verschiedenen Menüs lassen sich die Dialoge der [Erweiterungen](#erweiterungen) aufrufen. Diese werden in den entsprechenden Kapiteln der Dokumentation näher erläutert. Im unteren Bereich des Hauptfensters werden Meldungen protokolliert, z.B. Fehler beim Öffnen oder Speichern von Dateien:
+Nach dem Programmstart erscheint zuerst das Haptfenster. Über die verschiedenen Menüs lassen sich die Dialoge der [Erweiterungen](#erweiterungen) aufrufen. Diese werden in den entsprechenden Kapiteln der Dokumentation näher erläutert. Im unteren Bereich des Hauptfensters werden Meldungen protokolliert, z.B. Fehler beim Öffnen oder Speichern von Dateien.
+
+Unter dem Menü ist das Streckennetz-Bearbeitungstool angeordnet. Mit ihm kann das dem Fahrplan zu Grunde liegende Streckennetz erstellt und bearbeitet werden. Zum Bearbeiten des Streckennetzes siehe [Fahrpläne Bearbeiten](/fahrplaene-bearbeiten/).
 
 ![Hauptfenster nach einigen Aktionen](hauptfenster.png)
 
-Allgemein bieten (fast) alle Dialoge zwei Schaltflächen an, über die der Dialog geschlossen werde kann. Mit `Abbrechen` werden die Änderungen verworfen und mit `Schließen` oder `OK` werden sie übernommen, so dass sie beim nächsten Speichern in die Datei geschrieben werden können.
+Der Menüpunkt `Bearbeiten > Rückgängig` können fast alle zuletzt angewendete Aktionen rückgängig gemacht werden.
 
-Der Menüpunkt `Bearbeiten > Rückgängig` kann die zuletzt angewendete Aktion in der Regel rückgängig machen.
+## Netzwerk- oder Linearer Fahrplan?
+Im Menüpunkt `Datei > Neu` gibt es die Auswahlmöglichkeit, ob ein linearer oder ein Netzwerk-Fahrplan angelegt werden soll. Ein späteres Wechseln auf einen anderen Typ ist (zur Zeit) nicht mehr möglich. Daher stellt sich bei jedem neuen Fahrplan die Frage, welcher Typ gewählt werden soll.
+
+* **Lineare Fahrpläne** sind für einfache Modelleisenbahnanlagen mit nur einer unverzweigten Strecke geeignet. Sie haben eine bessere Kompatibilität mit *jTrainGraph* als Netzwerk-Fahrpläne.
+* **Netzwerk-Fahrpläne** sind beispielsweise für Modultreffen oder Modelleisenbahnanlagen mit einem verzweigten Streckennetz geeignet. Lineare Fahrpläne können diese Situationen nicht darstellen. De Kompatibilität mit jTrainGraph ist nicht so gut, vieles kann nur noch in FPLedit bearbeitet werden.
+
+**Hinweis**: Alle mit einer FPLedit Version kleiner 2.0.0 oder mit jTrainGraph erstellten Fahrplandateien sind lineare Fahrpläne!
 
 ## Erweiterungen
 Eines der Grundkonzepte von FPLedit ist die Erweiterbarkeit. Erweiterungen fügen Menüs und eigene Dialoge hinzu und stellen zusätzliche Funktionalität bereit. Die Erweiterungen liegen als DLL-Datei im Programmverzeichnis. Nahezu alle Programmfunktionen werden über Erweiterungen bereitgestellt. Mit dem Programm werden schon einige Erweiterungen, die standardmäßig alle aktiviert sind, mitausgeliefert:
@@ -31,12 +39,19 @@ Eines der Grundkonzepte von FPLedit ist die Erweiterbarkeit. Erweiterungen füge
 * Aushangfahrplan-Modul (`FPLedit.Aushangfahrplan.dll`)
 * Buchfahrplan-Modul (`FPLedit.Buchfahrplan.dll`)
 * Importer für alte BFPL-Dateien (`FPLedit.BfplImport.dll`)
-* Starter für jTrainGraph zur Bildfahrplanerstellung (`FPLedit.jTrainGraphStarter`)
+* Starter für jTrainGraph zur Bildfahrplanerstellung (`FPLedit.jTrainGraphStarter.dll`)
 * Die Datei `FPLedit.Shared.dll` ist aber keine Erweiterung sondern Bestandteil des Hauptprogramms!
 
 Erweiterungen können über über das Programm verwaltet werden (`Hilfe > Erweiterungen`). In diesem Dialog können Erweiterungen deaktiviert (`<`) oder aktiviert (`>`) werden. [Eigene Erweiterungen](/dev/) können in C# programmiert werden.
 
 ![Erweiterungsfenster](erweiterungsfenster.png)
+
+## Vorlagen
+Zur Generierung der Fahrplan-Ausgabedateien kommen Vorlagen zum Einsatz. Vorlagen sind Textdateien mit der Endung `.fpltmpl`, die im vorgegebenen Format mit einem Texteditor von jedem Benutzer selbst erstellt werden können. Diese liegen im Ordner `templates/` im Programmverzeichnis.
+
+Die Verwaltung von Vorlagen ist unter `Hilfe > Vorlagen` möglich. Fest eingebaute Vorlagen können nicht bearbeitet oder gelöscht werden, dafür können diese als bearbeitbare Kopie gespeichert werden.
+
+![Vorlagenfenster](vorlagenfenster.png)
 
 ## Tastenkombinationen
 

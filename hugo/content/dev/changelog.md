@@ -1,11 +1,19 @@
 ---
 date: 2016-03-08T21:07:13+01:00
 title: API-Changelog
+nooffline: true
 ---
 
 In der Programmierschnittselle ergeben sich in der Versionen immer wieder Änderungen.
 
-### Version 1.5.1
+### Version 2.0.0
+* Viele größere Änderungen, auch in der Programmierschnittselle und im Dateiformat.
+  * Umbau auf routenbasiertes System an Stelle der alten linearen Strecke (v.a. neue Klasse `Route`)
+  * Weitere Möglichkeiten der UI-Erweiterung mit Schnittstellen
+  * Bessere Implementierung des `FileState`s
+* Erweiterungen müssen i.d.R. neu entwickelt werden oder stark angepasst werden.
+
+### Versionen 1.5.1, 1.5.2
 * keine Änderungen
 
 ### Version 1.5.0

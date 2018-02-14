@@ -6,11 +6,17 @@ weight: 30
 
 Der ursprüngliche Zweck von FPLedit war die Erstellung von Buchfahrplänen. Die entsprechende Erweiterung muss natürlich aktiviert sein. Zur Zeit wird kein vollständiger Buchfahrplan generiert, an einigen Stellen ist dieser vereinfacht. Das Modul wird aber in den nächsten Versionen noch einige Verbesserungen und Features erhalten.
 
-Um den Buchfahrplan als Vorschau anzuzeigen, verwenden Sie `Vorschau > Buchfahrplan`. Daneben können über den Menüpunkt `Bearbeiten > Höchstgeschwindigkeiten ändern` für die einzelenen Bahnhöfe auf der Strecke eine Höchstgeschwindigkeit definieren. Neue Geschwindigkeitswechsel (ohne Bahnhof und Fahrtzeiten) auf der freien Strecke können über die Schaltfläche `Hinzufügen` angelegt werden.
+Um den Buchfahrplan als Vorschau anzuzeigen, verwenden Sie `Vorschau > Buchfahrplan`.
 
-Daneben können noch die neben einer Station anzuzeigenden Wellenlinien ausgwählt werden. 1 Wellenlinie >= 10 ‰, 2 Wellenlinien >= 20 ‰ usw. Diese werden im Buchfahrplan, wenn auch möglicherweise nicht in allen Vorlagen, angezeigt.
+## Hinzufügen von Höchstgeschwindigkeiten
 
-Bei Geschwindigkeitswechseln können alle Eigenschaften bearbeitet werden, bei Bahnhöfen nur die Geschwindigkeit. Die anderen Eigenschaften der Bahnhöfe können unter `Bearbeiten > Strecke bearbeiten` bearbeitet werden.
+Daneben kann für die einzelnen Bahnhöfe auf der Strecke eine Höchstgeschwindigkeit definieren. Diese Aktion ist **streckengebunden**, das heißt es muss vorher die entsprechende Strecke ausgewählt und rot markiert sein. Anschließend kann mit einem Klick auf den Button `Höchstgeschwindigkeiten ändern` das entsprechende Fenster geöffnet werden.
+
+Neue Geschwindigkeitswechsel (ohne Bahnhof und Fahrtzeiten) auf der freien Strecke können über die Schaltfläche `Hinzufügen` angelegt werden.
+
+Daneben können noch die neben einer Station anzuzeigenden Wellenlinien (Symbol für Streckensteigungen) ausgewählt werden. 1 Wellenlinie >= 10 ‰, 2 Wellenlinien >= 20 ‰ usw. Diese werden im Buchfahrplan, wenn auch möglicherweise nicht in allen Vorlagen, angezeigt.
+
+Bei Geschwindigkeitswechseln können alle Eigenschaften bearbeitet werden, bei Bahnhöfen nur die Geschwindigkeit. Die anderen Eigenschaften der Bahnhöfe können im Netz- oder Streckeneditor bearbeitet werden.
 
 ![Höchstgeschwindigkeitsfenster](hgsfenster.png)
 
