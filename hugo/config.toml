@@ -27,10 +27,9 @@ pygmentsUseClasses = true
     	accent  = "teal"
 
 [outputs]
-	home = ["HTML", "LUNR"]
+	home = ["HTML", "LUNR", "mod"]
 	page = ["HTML"]
 	section = ["HTML"]
-
 
 [mediaTypes]
 [mediaTypes."text/lunr"]
@@ -43,6 +42,11 @@ pygmentsUseClasses = true
 	baseName = "lunr_idx.js"
 	isPlainText = true
 	notAlternative = true
+[outputFormats.mod]
+	mediaType = "text/html"
+	baseName = "offline-idx"
+	isHTML = true
+	protocol = "mod://"
 
 [[menu.main]]
 	name   = "Start"

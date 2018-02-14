@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>FPLedit Offline-Dokumentation</title>
+	<style>
+		body {
+			font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+		}
+		.beta-note {
+			display:none;
+		}
+		.admonition {
+		    border: 3px solid #29b6f6;
+		}
+		.admonition.warning {
+			border: 3px solid #e84e40;
+		}
+		.admonition {
+		    margin: 20px 0;
+		    padding: 10px;
+		}
+		.admonition p {
+		    margin-top: 0;
+			margin-bottom: 0;
+		}
+		.admonition .admonition-title {
+		    font-style: italic;
+		}
+		.page {
+			border-bottom: 1px solid #bbb;
+		}
+		h1, h2 {
+			font-weight: normal;
+		}
+		header {
+			text-align: center;
+		}
+		kbd {
+		    color: #555;
+		    background-color: #fcfcfc;
+		    border: 1px solid #ccc;
+		    border-bottom-color: #bbb;
+		    border-radius: 3px;
+		    box-shadow: inset 0 -1px 0 #bbb;
+		}
+		table {
+		    border-spacing: 0;
+		    border-collapse: collapse;
+		}
+		table td, table th {
+			border: 1px solid #ccc;
+			padding: 2px;
+			margin: 0;
+		}
+
+		a {
+			transition: color .3s;
+			color: #265C83;
+			text-decoration:none;
+		}
+		a:link,
+		a:visited { color: #265C83; }
+		a:hover   { color: #7FDBFF; }
+		a:active  {	color: #007BE6;	}
+		a[href*="//"]::after {
+			content: '';
+			display: inline-block;
+			background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAB1klEQVRIieWXz0sCQRTHv7MZBLGdVNBDh7WgQ8cueoj6J0KKtsQfBdH/YP9CEZRZmhGE/RNBoBf7C0oPEgXqKREEbbeD7bqju6uzo4fonWYeM++zb+a9L7MErJYoq8x7TEyYRJA/BXbxbP6+kCCQ8deTg4o+5so4lqtDcXjjTsA32iBTaDqGs4P9UhwEWV44OzhJFPiqcQBlIzxXbE4brAr4XLwCENBckZAIOSgyhXExC8JHhZpGQiLSsoepugHOqnYK5QLbQRW1d+92BUcJiHopmQaJ5urIFvrFMwqqrX9+bVuus82YBwrYt5qlZPJCNcv8ztOyh/KbZqyoPTnkhFJ9PnNId4MpOFds6l8KAEveWaR23SzQDPzVFaPCDZopWA6KiIT6gvBW6yBx1xi6K6vjhV+KIbnZhU+KAuTWjEGMAmKsalUFjh8aOH/60n1ba/O4j3rhEgi6iortdA2PL63hqKnAyM62rGpCgLOwG0cbC7ovX2ph57qGdscGOqbZthMhwGnYjX3DsedLLayevFNQ47VMBAwAAgGuZQ8FL9c7FHSwVSYCtoIboVPV6kE4DxRgfOxp8PXlOewFRcdQZrAGd1JMQ3G4Izg0KmPju3fa9v9+YX4A27bcz6Qm/B0AAAAASUVORK5CYII=");
+			background-size: 0.7em 0.7em;
+			width: 0.7em;
+			height: 0.7em;
+			margin-left: 2px;
+		}
+	</style>
+</head>
+	<header>
+		<h1>FPLedit Offline-Dokumentation</h1>
+		<p>Version: {{ .Site.Params.version }} / Stand {{ now.Format "02.01.2006" }}</p>
+		<p><a href="https://fahrplan.manuelhu.de/">Möglicherweise aktuellere Online-Dokumentation &amp; Download</a>
+	</header>
+	<nav class="toc">
+		<h1>Inhalt</h1>
+		<ul>
+			{{ range where .Data.Pages "Kind" "page" }}
+				{{ .Render "nav.mod" }}
+			{{ end }}
+		</ul>
+	</nav>
+	{{ range where .Data.Pages "Kind" "page" }}
+		{{ .Render "entry.mod" }}
+	{{ end }}
+</html>
