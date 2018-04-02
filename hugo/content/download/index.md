@@ -34,6 +34,9 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 * **Achtung:** Die Importfunktion für das alte Bfpl-Binärformat wurde entfernt!
 * Große [API-Änderungen](/dev/changelog/)
 
+### 1.5.3 (vom 02.04.2018)
+* Diese Version enthält einen Warnhinweis beim Öffnen von mit jTrainGraph 3.0 erstellten Dateien.
+
 ### 1.5.2 (vom 29.10.2017)
 * Diese Version behebt ein Problem, bei dem keine Erweiterungen geladen wurden.
 
