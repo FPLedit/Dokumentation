@@ -14,7 +14,7 @@ Die hier beschriebenen Konzepte werden für den gewöhlichen Gebrauch von FPLedi
 {{< /note >}}
 
 
-> **Achtung**: Diese Anleitung ist zur Zeit auf dem Stand von FPLedit Version 1.5.2. Möglicherweise ist sie nicht 100%ig aktuell. In zukünftigen Versionen werden möglicherweise die Programmschnittstellen geändert. In der [Änderungshistorie](changelog/) finden sich weitere Hinweise.
+> **Achtung**: Diese Anleitung ist zur Zeit auf dem Stand von FPLedit Version 1.5.3. Möglicherweise ist sie nicht 100%ig aktuell. In zukünftigen Versionen werden möglicherweise die Programmschnittstellen geändert. In der [Änderungshistorie](changelog/) finden sich weitere Hinweise.
 
 FPLedit basiert auf .NET und ist in der Programmiersprache C# geschrieben, daher ist dies auch die am besten für die Erweiterungsentwicklung geeignete Sprache. Zur Entwicklung mit C# ist die kostenlose Entwicklungsumgebung [Visual Studio Community](https://www.visualstudio.com/de/) von Microsoft gut geeignet, aber auch Alternativen sind verwendbar.
 
