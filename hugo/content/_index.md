@@ -22,7 +22,7 @@ Vor wenigen Tagen ist jTrainGraph in der Version 3.0 erschienen. Die damit gener
 
 - Generieren von unterschiedlichen Fahrplantypen, z.B. **Buchfahrplänen** oder **Aushangfahrplänen** und anschließender Export in von FPLedit unabhängige Dateiformate (HTML).
 
-- Kompatibilität mit dem bekannten Bildfahrplanprogramm [jTrainGraph](http://kinzigtalbahn.bplaced.net/homepage/programme.html). Dateien, die mit einer jTrainGraph-Programmversion größer oder gleich 2.02 erstellt worden sind, können mit FPLedit geöffnet werden (und anschließend auch wieder mit jTrainGraph). Das Generieren von **Bildfahrplänen** ist somit möglich. (**ACHTUNG**: Seit Version 2.0.0 ist dies eingeschränkt, siehe Meldung oben)
+- Kompatibilität mit dem bekannten Bildfahrplanprogramm [jTrainGraph](https://jtraingraph.de/). Dateien, die mit einer jTrainGraph-Programmversion größer oder gleich 2.02 erstellt worden sind, können mit FPLedit geöffnet werden (und anschließend auch wieder mit jTrainGraph). Das Generieren von **Bildfahrplänen** ist somit möglich. (**ACHTUNG**: Seit Version 2.0.0 ist dies eingeschränkt, siehe Meldung oben)
 
 <!-- - Kompatibilität mit der FREMO-Software XPLN -->
 

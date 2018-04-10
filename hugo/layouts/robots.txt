@@ -12,4 +12,15 @@ User-agent: SiteExplorer
 User-agent: wotbox
 User-agent: roboto
 User-agent: Baiduspider
+User-agent: MauiBot
+User-agent: AlphaSeoBot
+User-agent: AlphaSeoBot-SA
+User-agent: BLEXBot
+User-agent: DotBot
+User-agent: DnyzBot
+User-agent: Zauba
+User-agent: ltx71
+User-agent: ExtLinksBot
+User-agent: 360Spider
+User-agent: Cliqzbot
 Disallow: /

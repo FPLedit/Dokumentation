@@ -10,7 +10,7 @@ Diese Dokumentation erläutert die ersten Schritte und Grundfunktionen des Progr
 Vor der Installation muss unbedingt die heruntergeladene ZIP-Datei für Windows entsperrt werden. Dazu `Rechtsklick > Eigenschaften` und dort unten den Haken bei `Zulassen` setzen. Anschließend kann man die ZIP-Datei an einen beliebigen Ort entpacken und die Datei `FPLedit.exe` mit einem Doppelklick starten. Dieser Ordner kann auch nachträglich noch verschoeben werden.
 
 Zur richtigen Darstellung der Buchfahrpläne wird auch noch die systemweit zu installierende Schrift [DIN 1451 Mittelschrift alt](http://www.peter-wiegel.de/alteDin1451.html) von Peter Wiegel benötigt. Die Schriftart der Fahrpläne kann aber auch in eine andere umgeändert werden.    
-Zum Generieren von Bildfahrplänen wird zusätzlich das Programm [jTrainGraph](http://kinzigtalbahn.bplaced.net/homepage/programme.html) benötigt, die Installation kann ins gleiche Verzeichnis erfolgen.
+Zum Generieren von Bildfahrplänen wird zusätzlich das Programm [jTrainGraph](https://jtraingraph.de/) benötigt, die Installation kann ins gleiche Verzeichnis erfolgen.
 
 Das gleiche Verfahren wird auch bei einem Update angewandt. Informationen zur neuesten Version erhält man im Programm unter `Hilfe > Info > Auf neue Version prüfen` oder seit Version 1.2.0 durch eine Benachrichtigung beim Programmstart. Diese lässt sich ebenfalls unter `Hilfe > Info` dekativieren.
 
