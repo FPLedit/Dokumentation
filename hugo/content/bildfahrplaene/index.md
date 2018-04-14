@@ -27,7 +27,9 @@ Um jTrainGraph direkt aus FPLedit zu starten, benutzen Sie `jTrainGraph > jTrain
 **Achtung**: Es werden nur Änderungen an der Bildfahrplandarstellung übernommen, alle anderen Änderungen (z.B. Bahnhöfe oder Züge einfügen) werden verworfen!
 
 ## Konfiguration
-Die Einstellungen befinden sich unter `jTrainGraph > Einstellungen`. Der java-Pfad ist der Pfad zur Programmdatei von Java. Unter Windows sollte dieser normalerweise `javaw.exe` (bzw. `java` unter Linux) lauten. In manchen Fällen muss aber auch der absolute Pfad angegeben werden. Der Pfad zur jTrainGraph-Datei lautet bei Installation im gleichen Verzeichnis `jTrainGraph_203.jar` (203 durch die jeweils aktuelle Version ersetzen). Ebenfalls muss der Pfad hier angepasst werden, wenn die Installation nicht im gleichen Verzeichnis erfolgt ist.
+Die Einstellungen befinden sich unter `jTrainGraph > Einstellungen`. Der java-Pfad ist der Pfad zur Programmdatei von Java. Unter Windows sollte dieser normalerweise `javaw.exe` (bzw. `java` unter Linux) lauten. In manchen Fällen muss aber auch der absolute Pfad angegeben werden. Der Pfad zur jTrainGraph-Datei lautet bei Installation im gleichen Verzeichnis `jTrainGraph_301.jar` (301 durch die jeweils aktuelle Version ersetzen). Ebenfalls muss der Pfad hier angepasst werden, wenn die Installation nicht im gleichen Verzeichnis erfolgt ist.
+
+Weiter muss ausgewählt werden, welche Version von jTrainGraph verwendet wird. Dabei ist nur ausshlaggebend, ob Version 2 (ältere Installationen, vor April 2018) oder 3 (neue Installationen) verwendet wird.
 
 In den neuesten Versionen bietet jTrainGraph eine exe-Version an. Bei der Konfiguration muss gleich verfahren werden, sowohl der java-Pfad als auch der Pfad zur jTrainGraph-(exe)-Datei muss angegeben werden.
 
