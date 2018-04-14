@@ -24,6 +24,9 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 
 ## Changelog
 
+### 1.5.4 (vom 14.04.2018)
+* Diese Version stellt die Kompatibilität mit jTrainGraph 3.0 wieder her.
+
 ### 1.5.3 (vom 02.04.2018)
 * Diese Version enthält einen Warnhinweis beim Öffnen von mit jTrainGraph 3.0 erstellten Dateien.
 

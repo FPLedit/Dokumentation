@@ -7,10 +7,6 @@ weight: 1
 
 FPLedit ist ein kostenloses Programm zum Erstellen von Fahrplänen. Dies ist vorallem für **betriebsorientierte Modellbahner** interessant, die auf ihrer Anlage einen vorbildgetreun Betrieb durchführen wollen und dafür **ans Original angelehnte Fahrplanunterlagen** verwenden wollen. Die Vorlagen dafür werden in der Regel bei der DB bzw. DR gesucht. FPLedit ist dabei aber nicht so komplex (und teuer) wie andere, professionelle Fahrplansoftware für "echte" Verkehrsbetriebe.
 
-{{< warning title="jTrainGraph 3.0" >}}
-Vor wenigen Tagen ist jTrainGraph in der Version 3.0 erschienen. Die damit generierten Fahrplandateien (auch solche, die mit Version 2.x erstellt und mit 3.0 erneut gespeichert wurden!) sind derzeit nicht mit FPLedit kompatibel, dies wird auch durch eine Warnmeldung ab Version 1.5.3 verdeutlicht.
-{{< /warning >}}
-
 ## Features
 - [Erstellen und Bearbeiten](/fahrplaene-bearbeiten/) von Fahrplänen bestehend aus einer Strecke und den darauf verkehrenden Zügen.
 
