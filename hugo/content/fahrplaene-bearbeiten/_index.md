@@ -51,7 +51,7 @@ Bei der Bearbeitung der Verkehrstage eines Zuges können neben den Auswahlboxen 
 
 ## Fahrplan eines Zuges bearbeiten
 
-Nachdem die Züge angelegt wurden, kann der Fahrplan jedes einzelnen Zuges bearbeitet werden. Dazu klickt man im Zugefenster mit dem zu bearbeitenden Zug ausgewählt `Fahrplan bearbeiten`. Im sich nun öffnenden Fahrplaneditor können die Fahrtzeiten des Zuges bearbeitet werden. In der linken Spalte sind die Stationen des Laufweges angezeigt, daneben können Ankunfts- und Abfahrtszeiten bearbeitet werden.
+Nachdem die Züge angelegt wurden, kann der Fahrplan jedes einzelnen Zuges bearbeitet werden. Dazu klickt man im Zugfenster mit dem zu bearbeitenden Zug ausgewählt `Fahrplan bearbeiten`. Im sich nun öffnenden Fahrplaneditor können die Fahrtzeiten des Zuges bearbeitet werden. In der linken Spalte sind die Stationen des Laufweges angezeigt, daneben können Ankunfts- und Abfahrtszeiten bearbeitet werden.
 
 Für die Eingabe der Zeitwerte stehen verschiedene Formate zur Verfügung:
 

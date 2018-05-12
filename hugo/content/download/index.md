@@ -30,8 +30,10 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 * Das Verschieben von Stationen zwischen andere Stationen erzeugt keine fehlerhaften Dateien mehr
 * Neuer Bearbeitungsmodus für Streckennetzen
 * Kopieren von Zügen (mit Verschiebung um bestimmte Zeit)
+* Bessere Kompatibilität mit Linux durch die Verwendung von Eto als Grafikframework
 * Verschiedene andere Fehlerbehebungen und Verbesserungen
 * **Achtung:** Die Importfunktion für das alte Bfpl-Binärformat wurde entfernt!
+* **Achtung:** FPLedit ist nicht mehr mit Windows XP kompatibel!
 * Große [API-Änderungen](/dev/changelog/)
 
 ### 1.5.4 (vom 14.04.2018)
