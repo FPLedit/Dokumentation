@@ -104,3 +104,8 @@ pygmentsUseClasses = true
 	name   = "Kontakt | Impressum"
 	url    = "https://manuelhu.de/impressum.html"
 	weight = 200
+
+[[menu.main]]
+	name   = "Datenschutz"
+	url    = "https://manuelhu.de/datenschutz.html"
+	weight = 210
