@@ -25,7 +25,7 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 ## Changelog
 
 ### 2.0.0 (vom xx.xx.2018)
-* Unterstützung von Netzwerk-Fahrplänen
+* Unterstützung von Streckennetzen (Netzwerk-Fahrplänen)
 * Neues Dateiformat für eigene Vorlagen, nur noch ein Texteditor wird zur Erstellung benötigt
 * Das Verschieben von Stationen zwischen andere Stationen erzeugt keine fehlerhaften Dateien mehr
 * Neuer Bearbeitungsmodus für Streckennetzen

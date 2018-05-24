@@ -35,4 +35,6 @@ In den neuesten Versionen bietet jTrainGraph eine exe-Version an. Bei der Konfig
 
 Wenn die Konfiguration nicht korrekt erfolgt ist, warnt das Programm sowohl beim Speichern der Einstellungen als auch beim Versuch, jTrainGraph über das Menü zu starten.
 
+![Einstellungen](einstellungen.png)
+
 {{% beta %}}

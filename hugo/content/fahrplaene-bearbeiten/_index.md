@@ -76,6 +76,6 @@ Das Entfernen von Stationen aus der Mitte des Laufweges ist nicht möglich, gena
 
 Züge eines Netzwerk-Fahrplans können auch kopiert werden. Dazu reicht ein Klick auf `Zug kopieren`. Der Name des neuen Zuges muss angegeben werden. Der Zug wird um den angegeben Takt (in Minuten) verschoben. Wenn `Erweiterte Attribute übernehmen` ausgewählt ist, werden auch die Angaben zum Bildfahrplan zum Zug aus jTrainGraph mit übernommen.
 
-TODO: Screenshot
+![Zug kopieren](kopierfenster.png)
 
 {{% beta %}}

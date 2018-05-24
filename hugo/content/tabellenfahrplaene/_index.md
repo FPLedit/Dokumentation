@@ -19,6 +19,8 @@ Unter `Bearbeiten > Fahrplandarstellung` im Reiter `Kursbuch` kann das Aussehen 
 
 Die Schriftart, die für die Fahrplan-Darstellung verwendet wird, kann aus allen auf dem System installierten Schriftarten ausgewählt werden. Danaben können noch besondere Werte wie z.B. `serif`, `sans-serif` verwendet werden.
 
+Bei den Kursbüchern der deutschen Eisenbahnen war und ist es oft üblich, dass jede Strecke eine individuelle Kursbuchstreckennummer erhält. In diesem Dialog lässt sich daher für jede der im Fahrplan angelegten Strecken eine Kursbuchstreckennummer angeben, die in der Ausgabe angezeigt werden.
+
 Weiterführend kann die Plandarstellung mit CSS (= Cascading Style Sheets) angepasst werden, da er ja im HTML-Format exportiert wird. Mit CSS können nahezu alle Aspekte der Plandarstellung geändert werden. Zur Aktivierung und Verwendung von CSS gibt es auf [dieser Unterseite](/dev/css/) aber eine ausführlichere Anleitung.
 
 ![Kursbuch-Darstellung](kfpl-darstellung.png)
