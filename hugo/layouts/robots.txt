@@ -24,4 +24,7 @@ User-agent: ExtLinksBot
 User-agent: 360Spider
 User-agent: Cliqzbot
 User-agent: spbot
+User-agent: SeznamBot
+User-agent: CCBot
+User-agent: SEOkicks
 Disallow: /

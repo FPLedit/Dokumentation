@@ -1,17 +1,12 @@
 ---
 date: 2016-10-05T18:29:37+02:00
 title: Lineare Fahrpläne bearbeiten
-weight: 10
 ---
 
 Zu den grundlegenden Funktionen von FPLedit gehört das Erstellen und Bearbeiten der Fahrpläne. Dies gliedert sich in drei Bereiche. Zuerst muss die Strecke erstellt werden, danach können Züge hinzugefügt werden und die Fahrpläne bearbeitet werden.
 
 {{< note title="Beispielfahrplan" >}}
 Den in dieser Anleitung erstellten Fahrplan der Strecke Alexisbad - Harzgerode (Jahr 1984 / 1985) kann man [hier](/files/selketalbahn_84-85.fpl) herunterladen.
-{{< /note >}}
-
-{{< note title="Netzwerk-Fahrpläne" >}}
-Auf dieser Seite wird das Bearbeiten von linearen Fahrplänen beschrieben. Netzwerk-Fahrplänen ist eine [eigene Seite](../) gewidmet. [Zur Unterscheidung der Typen](/einfuehrung/#netzwerk-oder-linearer-fahrplan).
 {{< /note >}}
 
 ## Strecke bearbeiten

@@ -5,7 +5,8 @@
 {{ $.Scratch.Set "currentMenuEntry" . }}
 <li>
   {{ if .HasChildren }}
-    <span class="section">{{ .Name | title }}</span>
+    <input type="checkbox" class="nav-section-toggle" id="nav-section-toggle-{{ .Name | urlize }}" checked style="display:none"></input>
+	<span class="section"><label for="nav-section-toggle-{{ .Name | urlize }}">{{ .Name | title }}</label></span>
     <ul>
       {{ range .Children }}
         {{ $.Scratch.Set "currentMenuEntry" . }}

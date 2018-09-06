@@ -18,7 +18,7 @@ Der Autor dieses Programms haftet nicht für Schäden an Soft- oder Hardware ode
 Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 
 <a href="/files/fpledit-{{< version >}}.zip" class="downloadbtn"><i class="icon icon-download"></i> Download starten (aktuelle Version {{< version >}})</a>
-| [Hinweise zur Installation](/einfuehrung/#installation)
+| **[Hinweise zur Installation](installation/)**
 
 **Andere Downloadmöglichkeiten:** [Sourcecode](/files/fpledit-{{< version >}}-src.zip)
 
@@ -28,14 +28,17 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 * Unterstützung von Streckennetzen (Netzwerk-Fahrplänen)
 * Neues Dateiformat für eigene Vorlagen, nur noch ein Texteditor wird zur Erstellung benötigt
 * Das Verschieben von Stationen zwischen andere Stationen erzeugt keine fehlerhaften Dateien mehr
-* Neuer Bearbeitungsmodus für Streckennetzen
+* Neuer Bearbeitungsmodus für Streckennetze
 * Kopieren von Zügen (mit Verschiebung um bestimmte Zeit)
+* Verbesserungen an den Vorlagen
 * Bessere Kompatibilität mit Linux durch die Verwendung von Eto als Grafikframework
 * Verschiedene andere Fehlerbehebungen und Verbesserungen
+* Fehlermeldung bei der Verwendung von jTrainGraph 3.0 hinzugefügt
 * **Achtung:** Die Importfunktion für das alte Bfpl-Binärformat wurde entfernt!
 * **Achtung:** FPLedit ist nicht mehr mit Windows XP kompatibel!
 * Große [API-Änderungen](/dev/changelog/)
 
+<details><summary>**Ältere Verionshinweise**</summary>
 ### 1.5.4 (vom 14.04.2018)
 * Diese Version stellt die Kompatibilität mit jTrainGraph 3.0 wieder her.
 
@@ -56,7 +59,6 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 * Weitere kleine Fehlerbehebungen
 * [API-Änderungen](/dev/changelog/)
 
-<details><summary>**Ältere Verionshinweise**</summary>
 ### 1.4.0 (vom 19.08.2017)
 * Neuer Fahrplantyp: Aushangfahrpläne mit allen von Buchfahrplaänen her gewohnten Features
 * **Achtung:** Die Erweiterung `FPLedit.BuchfahrplanExport.dll` wurde durch `FPLedit.Buchfahrplan.dll` ersetzt! Die alte Datei kann problemlos gelöscht werden.

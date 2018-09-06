@@ -6,7 +6,7 @@ weight: 50
 
 Seit Version 1.5.0 können Tabellen-/Kursbuchfahrpläne generiert werden. Die entsprechende Erweiterung muss natürlich aktiviert sein.
 
-Um den Kursbuch/Tabellenfahrplan als Vorschau anzuzeigen, verwenden Sie `Vorschau > Kursbuch`.
+Um den Kursbuch/Tabellenfahrplan als Vorschau anzuzeigen, verwenden Sie `Vorschau > Kursbuch`. Es wird für jede im Netzwerkfahrplan angelegte Strecke eine eigne Kursbuchtabelle ausgegeben.
 
 Dieser Kursbuchfahrplan (generiert mit v1.5.0) ist zwar schon recht nah am Vorbild, es fehlt aber trotzdem noch einiges bzw. das Format ist stark vereinfacht:
 

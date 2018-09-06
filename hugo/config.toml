@@ -107,6 +107,6 @@ pygmentsUseClasses = true
 	weight = 200
 
 [[menu.main]]
-	name   = "Datenschutz"
+	name   = "Datenschutzerklärung"
 	url    = "https://manuelhu.de/datenschutz.html"
 	weight = 210
