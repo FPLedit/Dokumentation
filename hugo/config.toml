@@ -13,7 +13,7 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
-	author = "Manuel Huber"
+	author = "Made with ❤️ by Manuel Huber"
 	description = "Ein einfaches Programm zum Erstellen und Bearbeiten von Fahrplänen für Modelleisenbahnen und anschließendem Export als Buch-, Aushang oder Tabellenfahrplan. Kompatibel mit jTrainGraph zu Erstellung von Bildfahrplänen."
 
 	download_url = "/download/"		# URL für Download-Button
