@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #7cb342;
+    --th-color: #9dc671;
+    --accent-color: #00bfa5;
+    --headerlink-color: rgba(0,0,0,.26);
+    --notice-link-color: #bdff00;
+    --notice-link-hover-color: #00ffdc;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -128,6 +137,7 @@ body {
 .header {
     box-shadow: 0 1.5px 3px rgba(0, 0, 0, .24), 0 3px 8px rgba(0, 0, 0, .05);
     background: #e84e40;
+    background: var(--primary-color);
     color: #fff;
 }
 .bar .path {
@@ -272,9 +282,11 @@ hr {
 }
 .drawer .toc a.current, .drawer .toc a:focus, .drawer .toc a:hover {
     color: #e84e40;
+    color: var(--primary-color);
 }
 .drawer .anchor a {
     border-left: 2px solid #e84e40;
+    color: 2px solid var(--primary-color);
 }
 .drawer .section {
     color: rgba(0, 0, 0, .54);
@@ -372,6 +384,7 @@ hr {
     text-transform: uppercase;
     transition: box-shadow .4s, opacity .4s;
     background: #00bfa5;
+    background: var(--accent-color);
     color: #fff;
     border-radius: 3px;
 }
@@ -394,6 +407,7 @@ hr {
 }
 .article a, .article h1, .article h2 {
     color: #e84e40;
+    color: var(--primary-color);
 }
 .article code {
     background: #eee;
@@ -425,6 +439,7 @@ hr {
 }
 .article table th {
     background: #ee7a70;
+    background: var(--th-color);
     color: #fff;
 }
 .article table td {
@@ -456,6 +471,7 @@ hr {
 }
 .admonition.warning {
     background: #e84e40;
+    background: var(--primary-color);
 }
 .admonition a, .admonition a:hover {
     color: #fff;
@@ -759,6 +775,7 @@ h1 .article .headerlink {
     .project {
         box-shadow: 0 1.5px 3px rgba(0, 0, 0, .24), 0 3px 8px rgba(0, 0, 0, .05);
         background: #e84e40;
+        background: var(--primary-color);
         color: #fff;
     }
     .drawer {
@@ -903,10 +920,12 @@ body.palette-primary-light-green a.downloadbtn:focus, body.palette-primary-light
 }
 
 .palette-primary-light-green div.admonition a {
-	color: #bdff00;
+    color: #bdff00;
+    color: var(--notice-link-color);
 }
 .palette-primary-light-green div.admonition a:hover {
-	color: #00ffdc;
+    color: #00ffdc;
+    color: var(--notice-link-hover-color);
 }
 
 /* Suche */
@@ -928,7 +947,8 @@ body.palette-primary-light-green a.downloadbtn:focus, body.palette-primary-light
 	overflow-y: auto;
 }
 .search-results a:hover {
-	color: #00bfa5;
+    color: #00bfa5;
+    color: var(--accent-color);
 }
 .search-results a {
 	display: block;
@@ -939,7 +959,8 @@ body.palette-primary-light-green a.downloadbtn:focus, body.palette-primary-light
 	border-bottom: none;
 }
 .highlight-search {
-	background-color: #00ffdc;
+    background-color: #00ffdc;
+    background-color: var(--notice-link-color);
 }
 .bar.search .search-btn-close-visible {
 	opacity: 1;
