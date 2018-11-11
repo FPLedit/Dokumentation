@@ -24,7 +24,7 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 
 ## Changelog
 
-### 2.0.0 (vom xx.xx.2018)
+### 2.0.0 (vom 11.11.2018)
 * Unterstützung von Streckennetzen (Netzwerk-Fahrplänen)
 * Neues Dateiformat für eigene Vorlagen, nur noch ein Texteditor wird zur Erstellung benötigt
 * Das Verschieben von Stationen zwischen andere Stationen erzeugt keine fehlerhaften Dateien mehr
@@ -33,7 +33,8 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 * Verbesserungen an den Vorlagen
 * Bessere Kompatibilität mit Linux durch die Verwendung von Eto als Grafikframework
 * Verschiedene andere Fehlerbehebungen und Verbesserungen
-* Fehlermeldung bei der Verwendung von jTrainGraph 3.0 hinzugefügt
+* Kompatibilität mit jTrainGraph ab Version 3.03 endgültig wiederhergestellt
+* Speichern der manuell eingestellten Fenstergrößen
 * **Achtung:** Die Importfunktion für das alte Bfpl-Binärformat wurde entfernt!
 * **Achtung:** FPLedit ist nicht mehr mit Windows XP kompatibel!
 * Große [API-Änderungen](/dev/changelog/)

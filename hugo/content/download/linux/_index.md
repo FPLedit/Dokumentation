@@ -4,7 +4,7 @@ title: FPLedit auf Linux
 nooffline: true
 ---
 
-FPLedit ist seit Version 2.0.0 recht gut mit Linux kompatibel. Dabei wird auf die Mono-Laufzeit und die Gtk3-Plattform aufgebaut. Einige Funktionen, wie besipielsweise die Templates-Sandbox, sind unter Linux nicht verfügbar.
+FPLedit ist seit Version 2.0.0 recht gut mit Linux kompatibel. Dabei wird auf die Mono-Laufzeit und die Gtk3-Plattform aufgebaut. Einige Funktionen, wie beispielsweise die Templates-Sandbox, sind unter Linux nicht verfügbar.
 
 ## Vorraussetzungen
 Für die Installation der Mono-Laufzeitumgebung auf Linux-Distributionen siehe die [ofizielle Seite des Mono-Projekts](http://www.mono-project.com/download/stable/#download-lin). Wenn Mono nur für FPLedit verwendet werden soll, genügt derzeit die Installation der folgenden Pakete:

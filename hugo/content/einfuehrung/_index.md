@@ -20,7 +20,7 @@ Eines der Grundkonzepte von FPLedit ist die Erweiterbarkeit. Erweiterungen füge
 
 * Aushangfahrplan-Modul (`FPLedit.Aushangfahrplan.dll`)
 * Buchfahrplan-Modul (`FPLedit.Buchfahrplan.dll`)
-* Importer für alte BFPL-Dateien (`FPLedit.BfplImport.dll`)
+* Modul für Tabellenfahrpläne (`FPLedit.Kursbuch.dll`)
 * Starter für jTrainGraph zur Bildfahrplanerstellung (`FPLedit.jTrainGraphStarter.dll`)
 * Die Datei `FPLedit.Shared.dll` ist aber keine Erweiterung sondern Bestandteil des Hauptprogramms!
 

@@ -5,7 +5,7 @@ title: Netzwerk-Fahrpläne bearbeiten
 
 Zu den grundlegenden Funktionen von FPLedit gehört das Erstellen und Bearbeiten der Fahrpläne. Dies gliedert sich in drei Bereiche. Zuerst muss die Strecke erstellt werden, danach können Züge hinzugefügt werden und die Fahrpläne bearbeitet werden.
 
-## Strecke(-nnetz) bearbeiten
+## Streckennetz bearbeiten
 
 Nachdem man mit `Datei > Neu > Netzwerk-Fahrplan` einen neuen Fahrplan angelegt hat, kann unter im Hauptfenster das Streckennetz bearbeitet werden. Im Streckennetz werden die Bahnhöfe definiert. Das Streckennetz kann verzweigte Strecken enthalten. Geschlossene Ringe sind aber nicht möglich!
 
