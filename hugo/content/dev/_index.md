@@ -3,6 +3,7 @@ date: 2017-07-02T18:29:37+02:00
 title: Erweiterungen entwickeln
 weight: 60
 #needshighlight: true
+nooffline: true
 ---
 
 Diese Seite bietet einen kurzen Überblick über die Entwicklung von Erweiterungen für FPLedit.
@@ -22,6 +23,9 @@ Alle Erweiterungen müssen einen Verweis auf die Assembly `FPLedit.Shared.dll` e
 
 Der Code aus diesen Beispielen findet sich auf GitHub: [FPLedit-TestPlugin](https://github.com/ManuelHu/FPLedit-TestPlugin). Der dort verwendete Code darf gerne als Basis für eigene Erweiterungen verwendet werden.
 
+## Vorlagen
+Zum Entwickeln von Vorlagen gibt es sein Version 2.0 eine eigene [Unterseite](templates/).
+
 ## Dateiformat
 Bevor es hier an die Entwicklung einer eigenen Erweiterung geht, möchte ich hier kurz das von FPLedit verwendete Dateiformat bzw. seine Repräsentation als Objektmodell beschreiben. Jedes Objekt ist einem entsprechenden XML-Element zugeordnet. Daher haben alle von `Entity` erbenden Klassen `Attributes` (=> XML-Attribute) und `Children` (=> XML-Kindelemente).
 
@@ -35,7 +39,7 @@ using FPLedit.Shared;
 
 namespace TestPlugin
 {
-    [Plugin("TestPlugin", "1.5.0", Author = "Autorenname")]
+    [Plugin("TestPlugin", "2.0.0", Author = "Autorenname")]
     public class Plugin : IPlugin
     {
         public void Init(IInfo info)
@@ -216,49 +220,3 @@ info.Reload();
 // Gibt den absoluten Pfad der Datei %TEMP%\fpledit\abc.xyz zurück:
 var fn = info.GetTemp("abc.xyz");
 ```
-
-## Erweiterung von Erweiterungen
-Neben dem Hauptprogramm können auch Funktionen zu bestehenden Erweiterungen hinzugefügt werden. Derzeit ist davon aber nur ein Typ möglich:
-
-### Vorlagen für Buch- und Aushangfahrpläne
-Für diesen Typ von Erweiterungen muss ein weiterer Verweis hinzugefügt werden, je nachdem, ob für Buch- oder Aushangfahrpläne Vorlagen hinzugefügt werden sollen:
-
-* Buchfahrpläne: `FPLedit.Buchfahrplan.dll` und/oder
-* Aushangfahrpläne: `FPLedit.Aushangfahrplan.dll`.
-
-Die Implementierung von Buchfahrplan- bzw. Aushangfahrplantemplates ist nahezu gleich, einziger Unterschied ist die implementierte Schnittstelle: `IBfplTemplate` für Buchfahrpläne und `IAfplTemplate` für Aushangfahrpläne. Beide Schnittstellen verlangen jeweils einen Anzeigenamen und eine Methode, die den generierten Text zurückgibt:
-
-```csharp
-using FPLedit.Buchfahrplan;
-using System.Linq;
-using FPLedit.Shared;
-
-namespace TestPlugin
-{
-    public class TestTemplate : IBfplTemplate
-    {
-        public string Name => "Einfaches Beispiel-Template";
-
-        public string GetResult(Timetable tt)
-        {
-            return @"
-<!doctype html>
-<html>
-<head>
-<title>TestTemplate</title>
-</head>
-<body>
-    <h1>" + tt.GetLineName(TrainDirection.ta) + @"</h1>
-    <ul>
-        <li>"
-        + string.Join("</li><li>", tt.Trains.Select(t => t.TName))
-    + @"</li>
-    </ul>
-</body>
-</html>";
-        }
-    }
-}
-```
-
-Dieses Verfahren zum Generieren der Ausgaben (Zusammenfügen von strings) ist zwar theoretisch für beliebig komplexe Templates möglich, ab einer gewissen Größe wird sie aber sehr unübersichtlich. Stattdessen empfiehlt sich die Verwendung einer spezialisierten Templating-Sprache. Für .NET bieten sich z.B. die von Microsoft mit Visual Studio ausgelieferten [T4-Laufzeit-Templates](https://msdn.microsoft.com/de-de/library/bb126445.aspx) an.

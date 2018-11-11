@@ -18,12 +18,28 @@ Der Autor dieses Programms haftet nicht für Schäden an Soft- oder Hardware ode
 Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 
 <a href="/files/fpledit-{{< version >}}.zip" class="downloadbtn"><i class="icon icon-download"></i> Download starten (aktuelle Version {{< version >}})</a>
-| [Hinweise zur Installation](/einfuehrung/#installation)
+| **[Hinweise zur Installation](installation/)**
 
 **Andere Downloadmöglichkeiten:** [Sourcecode](/files/fpledit-{{< version >}}-src.zip)
 
 ## Changelog
 
+### 2.0.0 (vom 11.11.2018)
+* Unterstützung von Streckennetzen (Netzwerk-Fahrplänen)
+* Neues Dateiformat für eigene Vorlagen, nur noch ein Texteditor wird zur Erstellung benötigt
+* Das Verschieben von Stationen zwischen andere Stationen erzeugt keine fehlerhaften Dateien mehr
+* Neuer Bearbeitungsmodus für Streckennetze
+* Kopieren von Zügen (mit Verschiebung um bestimmte Zeit)
+* Verbesserungen an den Vorlagen
+* Bessere Kompatibilität mit Linux durch die Verwendung von Eto als Grafikframework
+* Verschiedene andere Fehlerbehebungen und Verbesserungen
+* Kompatibilität mit jTrainGraph ab Version 3.03 endgültig wiederhergestellt
+* Speichern der manuell eingestellten Fenstergrößen
+* **Achtung:** Die Importfunktion für das alte Bfpl-Binärformat wurde entfernt!
+* **Achtung:** FPLedit ist nicht mehr mit Windows XP kompatibel!
+* Große [API-Änderungen](/dev/changelog/)
+
+<details><summary>**Ältere Verionshinweise**</summary>
 ### 1.5.4 (vom 14.04.2018)
 * Diese Version stellt die Kompatibilität mit jTrainGraph 3.0 wieder her.
 
@@ -70,7 +86,6 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 * Zusätzliche Tastaturkürzel in den Dialogen
 * Kleine Fehlerbehebungen
 
-<details><summary>**Ältere Verionshinweise**</summary>
 ### 1.2.1 (vom 23.5.2017)
 * Fehler beim Löschen der ersten oder letzten Bahnhöfe behoben
 

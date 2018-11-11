@@ -72,6 +72,10 @@
 			height: 0.7em;
 			margin-left: 2px;
 		}
+
+		img {
+			max-width: 100%;
+		}
 	</style>
 </head>
 	<header>
@@ -82,12 +86,12 @@
 	<nav class="toc">
 		<h1>Inhalt</h1>
 		<ul>
-			{{ range where .Data.Pages "Kind" "page" }}
+			{{ range .Site.Pages }}
 				{{ .Render "nav.mod" }}
 			{{ end }}
 		</ul>
 	</nav>
-	{{ range where .Data.Pages "Kind" "page" }}
+	{{ range .Site.Pages }}
 		{{ .Render "entry.mod" }}
 	{{ end }}
 </html>

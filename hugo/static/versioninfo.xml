@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Version information file for update check. -->
 <info product="manuelhu:fpledit">
-	<version>1.5.4</version>
+	<version>2.0.0</version>
 	<url>https://fahrplan.manuelhu.de/download/</url>
 	<!-- Short description: One full sentence -->
-	<description>Version 1.5.4 stellt die Kompatibilität mit jTrainGraph 3.0 wieder her.</description>
+	<description>Version 2.0.0 als bisher größte Version von FPLedit ermöglicht nun das Erstellen von Streckennetzen. Das volle Changelog finden Sie unter https://fahrplan.manuelhu.de/download/.</description>
 	<!-- This text will be displayed on every check for a new version -->
-	<!--<text>ACHTUNG! Die vor kurzem veröffentlichte Version 3.0 von jTrainGraph ist mit FPLedit derzeit **nicht** kompatibel!</text>-->
+	<text>ACHTUNG! jTrainGraph sollte auf die Version 3.03 aktualisiert werden, um die Kompatibilität vollständig wiederherzustellen!</text>
 </info>

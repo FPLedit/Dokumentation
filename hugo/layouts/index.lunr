@@ -1,9 +1,9 @@
 var documents = [
-{{ range where .Data.Pages "Kind" "page" }}
+{{ range .Site.Pages }}{{ if not .Params.excludeserch }}
 	{
 		"url": "{{ .Permalink }}",
 		"name": "{{ .Title }}",
-		"text": "{{ .Render "lunr-entry" | htmlEscape }}"
+		"text": "{{ delimit .PlainWords " " | htmlEscape }}"
 	},
-{{ end }}
+{{ end }}{{ end }}
 ];
