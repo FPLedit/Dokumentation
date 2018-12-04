@@ -15,7 +15,7 @@ Die hier beschriebenen Konzepte werden für den gewöhlichen Gebrauch von FPLedi
 {{< /note >}}
 
 
-> **Achtung**: Diese Anleitung ist zur Zeit auf dem Stand von FPLedit Version 1.5.4. Möglicherweise ist sie nicht 100%ig aktuell. In zukünftigen Versionen werden möglicherweise die Programmschnittstellen geändert. In der [Änderungshistorie](changelog/) finden sich weitere Hinweise.
+> **Achtung**: Diese Anleitung ist zur Zeit auf dem Stand von FPLedit Version 2.0.0. Möglicherweise ist sie nicht 100%ig aktuell. In zukünftigen Versionen werden möglicherweise die Programmschnittstellen geändert. In der [Änderungshistorie](changelog/) finden sich weitere Hinweise.
 
 FPLedit basiert auf .NET und ist in der Programmiersprache C# geschrieben, daher ist dies auch die am besten für die Erweiterungsentwicklung geeignete Sprache. Zur Entwicklung mit C# ist die kostenlose Entwicklungsumgebung [Visual Studio Community](https://www.visualstudio.com/de/) von Microsoft gut geeignet, aber auch Alternativen sind verwendbar.
 
@@ -24,7 +24,7 @@ Alle Erweiterungen müssen einen Verweis auf die Assembly `FPLedit.Shared.dll` e
 Der Code aus diesen Beispielen findet sich auf GitHub: [FPLedit-TestPlugin](https://github.com/ManuelHu/FPLedit-TestPlugin). Der dort verwendete Code darf gerne als Basis für eigene Erweiterungen verwendet werden.
 
 ## Vorlagen
-Zum Entwickeln von Vorlagen gibt es sein Version 2.0 eine eigene [Unterseite](templates/).
+Eigene Vorlagen werden seit FPLedit 2.0.0 als Textdateien im Programmverzeichnis gespeichert, können aber auch in Erweiterungen einkompiliert werden. Zum Entwickeln von Vorlagen gibt es daher eine eigene [Unterseite](templates/).
 
 ## Dateiformat
 Bevor es hier an die Entwicklung einer eigenen Erweiterung geht, möchte ich hier kurz das von FPLedit verwendete Dateiformat bzw. seine Repräsentation als Objektmodell beschreiben. Jedes Objekt ist einem entsprechenden XML-Element zugeordnet. Daher haben alle von `Entity` erbenden Klassen `Attributes` (=> XML-Attribute) und `Children` (=> XML-Kindelemente).
@@ -32,14 +32,14 @@ Bevor es hier an die Entwicklung einer eigenen Erweiterung geht, möchte ich hie
 ![Diagramm des Dateiformats](fileformat.png)
 
 ## Hauptklasse definieren
-Die Hauptklasse eines Plugins, in der Regel heißt diese `Plugin`, muss zwingend die Schnittstelle `FPLedit.Shared.IPlugin` implementieren. Damit muss auch zwingend eine Methode `Init` vorhanden sein. Weiterhin muss die Klasse auch ein Attribut in der Form `[Plugin("name", "minVer")]` aufweisen, damit die Erweiterung von FPLedit erkannt wird. `minVer` ist dabei die minimale Version von FPLedit, mit der das Plugin kompatibel ist. Ein einfaches Plugin sieht dann so aus:
+Die Hauptklasse eines Plugins, in der Regel heißt diese `Plugin`, muss zwingend die Schnittstelle `FPLedit.Shared.IPlugin` implementieren. Damit muss auch zwingend eine Methode `Init` vorhanden sein. Weiterhin muss die Klasse auch ein Attribut in der Form `[Plugin("name", "minVer", "maxVer")]` aufweisen, damit die Erweiterung von FPLedit erkannt wird. `minVer` ist dabei die minimale Version von FPLedit, mit der das Plugin kompatibel ist und `maxVer` der Versionszweig, der maximal (wahrscheinlich) kompatibel ist. Beispiel: `2.0` als maximale Version erlaubt die Verwendung der Erweiterung mit dem Versionszweig `2.0.*`. Ein einfaches Plugin sieht dann so aus:
 
 ```csharp
 using FPLedit.Shared;
 
 namespace TestPlugin
 {
-    [Plugin("TestPlugin", "2.0.0", Author = "Autorenname")]
+    [Plugin("TestPlugin", "2.0.0", "2.0", Author = "Autorenname")]
     public class Plugin : IPlugin
     {
         public void Init(IInfo info)
@@ -50,7 +50,7 @@ namespace TestPlugin
 }
 ```
 
-Die Autorenangabe kann auch weggelassen werden: `[Plugin("TestPlugin")]`.
+Die Autorenangabe kann auch weggelassen werden: `[Plugin("TestPlugin", "2.0.0", "2.0")]`.
 
 ## Das `IInfo`-Objekt
 Das an die `Init`-Methode des Plugins übergebene `IInfo`-Objekt enthält alle Funktionen, mit denen FPLedit angepasst werden kann. Einige dieser Möglichkeiten werden im Folgenden beschrieben:
@@ -85,7 +85,7 @@ info.Register<IExport>(new TestExport());
 ```
 
 ### Importer
-Änhlich wie bei den Exportern wird auch bei den Importern verfahren. Hier muss die Schnittstelle `IImport`
+Änhlich wie bei den Exportern wird auch bei den Importern verfahren. Hier muss die Schnittstelle `IImport` implementiert werden:
 
 ```csharp
 using FPLedit.Shared;
@@ -113,16 +113,15 @@ info.Register<IImport>(new TestImport());
 ```
 
 ### Menüs & Dateihandhabung
-Das User Interface von FPLedit ist mit der .NET-Technologie Windows Forms entwickelt. Zum Hinzufügen von Menüs muss daher auch diese Technologie verwendet werden. Eine Referenz auf das Hauptmenü ist `info.Menu`.
+Das User Interface von FPLedit ist mit [Eto.Forms](https://github.com/picoe/Eto) entwickelt. Zum Hinzufügen von Menüs muss daher auch diese Technologie verwendet werden. Eine Referenz auf das Hauptmenü ist `info.Menu`.
 
-Untermenüs können einfach wie auch unter Winforms angelegt werden. Auch wenn die Manipulation des gesamten Menüs möglich ist, sollten Erweiterungen nur eigene Menüs hinzufügen:
+Untermenüs können einfach angelegt werden. Auch wenn die Manipulation des gesamten Menüs möglich ist, sollten Erweiterungen nur eigene Menüs hinzufügen:
 
 ```csharp
-var item = new ToolStripMenuItem("Test");
-info.Menu.Items.Add(item);
+var item = ((MenuBar)info.Menu).CreateItem("Test");
 
 // Einen Untereintrag hinzufügen:
-var subItem = item.DropDownItems.Add("Bla");
+var subItem = item.CreateItem("Bla");
 // Standardmäßig deaktivieren, optional:
 subItem.Enabled = false;
 ```
@@ -134,6 +133,8 @@ Der Zustand der aktuellen Datei ist über die Eigenschaft `info.FileState` abruf
 * `FileState.FileName`: Falls vorhanden, Dateiname der aktuellen Datei,
 * `FileState.LineCreated`: Die Datei enthält mindestens zwei Bahnhöfe,
 * `FileState.TrainsCreated`: Die Datei enthält mindestens einen Zug.
+* `FileState.CanGoBack`: Es gibt Schritte, die mit `Bearbeiten > Rückgängig` rückgängig gemacht werden können.
+* `FileState.SelectedRoute`: Die aktuell im Streckennetzeditor ausgewählte Strecke.
 
 Das Event `FileStateChanged` wird immer dann aufgerufen, wenn sich der Zustand der Datei ändert. Darüber können beispielsweise Menüelemente an den Zustand der Datei gekoppelt werden:
 
@@ -144,7 +145,7 @@ info.FileStateChanged += (s, e) => {
 };
 ```
 
-Der Zustand des `FileState`-Objekts darf nicht verändert werden! Erweiterungen können aber anweisen, dass die aktuelle Datei als verändert markiert wird. Dies führt dann ohne ein darauf folgendes Speichern zum Anzeigen einer Meldung beim Schließen des Programms. Vor der Aktion muss aber bereits angewiesen werden, dass die Daten zum späteren eventullen Rückgängig-machen zwischengespeichert werden.
+Erweiterungen können anweisen, dass die aktuelle Datei als verändert markiert wird. Dies führt dann ohne ein darauf folgendes Speichern zum Anzeigen einer Meldung beim Schließen des Programms. Vor der Aktion muss aber bereits angewiesen werden, dass die Daten zum späteren eventullen Rückgängig-machen zwischengespeichert werden.
 
 ```csharp
 info.StageUndoStep(Timetable);
@@ -172,7 +173,7 @@ else
 ```
 
 ### Dialoge
-> *Diese Funktion ist neu in Version 1.5.0, die Dokumentation muss an dieser Stelle noch ergänzt werden*
+> *Diese Funktion ist neu in Version 2.0.0, die Dokumentation muss an dieser Stelle noch ergänzt werden*
 
 ### Log-Ausgaben
 Das `IInfo`-Objekt enthält ein Attribut `Logger`. Darüber können Meldungen in das Textfenster des Hauptprogramms ausgegeben werden:

@@ -7,8 +7,9 @@ nooffline: true
 
 Eine weitere Möglichkeit der Erweiterung sind eigene Vorlagen. Vorlagen sind Textdateien mit der Endung `.fpltmpl` in einem Format, ähnlich dem T4-Format, was mit Visual Studio ausgeliefert wird. Im Folgenden wird das Format näher beschrieben.
 
-## Präambel
+Damit die Vorlage von FPLedit gefunden wird, muss diese im Ordner `templates/` im Programmverzeichnis gespeichert sein. Daneben kann die Vorlagendatei auch in eine eigene Erweiterung einkompilert werden und somit ohne das zusätzliche Kopieren von Vorlagendateien verteilt werden.
 
+## Präambel
 Jede Vorlage muss eine Präambel-Zeile beinhalten. Diese enthält den Anzeigenamen der Vorlage und eine Typangabe. Diese kann derzeit `bfpl`, `afpl` oder `kfpl` sein.
 
 ```nohighlight
@@ -16,7 +17,7 @@ Jede Vorlage muss eine Präambel-Zeile beinhalten. Diese enthält den Anzeigenam
 ```
 
 ## Verweise auf andere Assemblies
-Um beispielsweise auf das Datenmodell oder Funktionen einer Erweiterung zurpckgreifen zu könnnen, muss die Vorlage die entsprechenden Assemblies referenzieren. Für die Standarderweiterungen wären es z.B. diese Dateinamen:
+Um beispielsweise auf das Datenmodell oder Funktionen einer Erweiterung zurückgreifen zu könnnen, muss die Vorlage die entsprechenden Assemblies referenzieren. Für die Standarderweiterungen wären es z.B. diese Dateinamen:
 
 * Buchfahrpläne: `FPLedit.Buchfahrplan.dll`
 * Aushangfahrpläne: `FPLedit.Aushangfahrplan.dll`
