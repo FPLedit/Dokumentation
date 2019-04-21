@@ -1,7 +1,7 @@
 ---
 date: 2017-01-17T18:29:37+02:00
 title: CSS-Hilfe
-weight: 45
+weight: 85
 ---
 
 Diese Anleitung gilt zur Anpassung aller drei Fahrplantypen: Buch, Aushang- und Tabellenfahrplänen. Damit die Fahrpläne über CSS angepasst werden können, muss zuerst links unten im Fenster `Bearbeiten > Fahrplandarstellung` der "Expertenmodus" aktiviert werden. Anschließend kann unter den jeweiligen Reitern der Fahrplantypen der CSS-Code eingegeben werden.

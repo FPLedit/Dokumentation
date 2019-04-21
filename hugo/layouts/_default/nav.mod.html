@@ -1,3 +1,8 @@
 {{ if not .Params.nooffline }}
-<li><a href="#{{ replaceRE "^(/[^/]+)?/([^/]+)/$" "$2" (.Permalink | relURL) }}">{{ .Title }}</a></li>
+<li>
+    <a href="#{{ replaceRE "^(/[^/]+)?/([^/]+)/$" "$2" (.Permalink | relURL) }}">
+        {{ with .Params.offline_indent }}&mdash;{{ end }}
+        {{ .Title }}
+    </a>
+</li>
 {{ end }}

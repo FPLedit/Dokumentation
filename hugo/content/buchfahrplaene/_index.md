@@ -39,6 +39,8 @@ Unter `Bearbeiten > Fahrplandarstellung` im Reiter `Buchfahrplan` kann das Ausse
 
 Die Schriftart, die für die Fahrplan-Darstellung verwendet wird, kann aus allen auf dem System installierten Schriftarten ausgewählt werden. Danaben können noch besondere Werte wie z.B. `serif`, `sans-serif` verwendet werden.
 
+Es kann außerdem ausgewählt werden, ob der beim Zug eingegebene Kommentar und/oder die Verkehrstage des Zuges angezeigt werden sollen.
+
 Weiterführend kann die Plandarstellung mit CSS (= Cascading Style Sheets) angepasst werden, da er ja im HTML-Format exportiert wird. Mit CSS können nahezu alle Aspekte der Plandarstellung geändert werden. Zur Aktivierung und Verwendung von CSS gibt es auf [dieser Unterseite](/dev/css/) aber eine ausführlichere Anleitung.
 
 ![Buchfahrplaneinstellungen](bfpl-darstellung.png)

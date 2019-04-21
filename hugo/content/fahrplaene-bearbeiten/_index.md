@@ -16,8 +16,9 @@ Im Menüpunkt `Datei > Neu` kann ausgewählt werden, ob ein linearer oder ein Ne
 Das Bearbeiten von linearen und Netzwerk-Fahrplänen unterscheidet sich teilweise grundlegend, daher ist den beiden Typen jeweils eine eigene Unterseite gewidmet:
 
 * [Netzwerk-Fahrpläne](network/)
+    * Besonderheiten bei **[zyklischen Netzen](cycles/)** (Netze mit geschlossenen Kreisen)
 * [Lineare Fahrpläne](linear/)
 
 ## Konvertieren von Fahrplänen
 
-Mit `Datei > Konvertieren` (<kbd>Strg</kbd>+<kbd>K</kbd>) kann unter bestimmten Umständen der Fahrplantyp geändert werden. Ein linearer Fahrplan kann immer in einen Netzwerk-Fahrplan umgewandelt werden. In der Gegenrichtung ist dies nur möglich, wenn im Netzwerk nur eine Strecke angelegt wurde.
+Mit `Datei > Konvertieren` (<kbd>Strg</kbd>+<kbd>K</kbd>) kann unter bestimmten Umständen der Fahrplantyp geändert werden. Ein linearer Fahrplan kann immer in einen Netzwerk-Fahrplan umgewandelt werden. In der Gegenrichtung ist dies nur möglich, wenn im Netzwerk nur eine Strecke angelegt wurde oder alle Strecken bis auf eine gelöscht wurden.

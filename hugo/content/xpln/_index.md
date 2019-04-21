@@ -7,5 +7,3 @@ draft: true
 ---
 
 XPLN ist das derzeit beim FREMO eingesetzte Fahrplanprogramm. Eine Kompatibilität mit FPLedit ist derzeit in Planung.
-
-TODO

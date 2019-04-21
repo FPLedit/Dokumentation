@@ -6,26 +6,50 @@ nooffline: true
 
 **FPledit ist ein Projekt, das primär auf (Modell-)Eisenbahnfreunde abzielt. Die Fahrpläne sind nicht nach den Betriebsrichtlinien irgendeiner Bahngesellschaft gestaltet und sind für den Betriebsdienst nicht geeignet!**
 
-FPledit darf für den nicht-kommerziellen Gebrauch (dies schließt die Veröffentlichung damit erstellter Fahrpläne auf privaten Websites ausdrücklich ein) kostenlos heruntergeladen und verwendet werden. Die Weitergabe oder Bereitstellung des Programms über eine öffentliche Plattform oder gegen Entgelt ist nur nach vorheriger Zustimmung des Programmautors gestattet. Verweisen Sie bitte stattdessen auf die offizielle Website des Programms.
-Eine kommerzielle Nutzung des Programms bedarf meiner vorherigen Zustimmung.
+FPLedit ist unter der GNU GPL v3-Lizenz lizenziert:
 
-Der Autor dieses Programms haftet nicht für Schäden an Soft- oder Hardware oder Vermögensschäden, die durch das Benutzen des Programms entstehen, es sei denn diese beruhen auf einem grob fahrlässigen oder vorsätzlichen Handeln des Autors, seiner Erfüllungsgehilfen oder seiner gesetzlichen Vertreter. Für Schäden an der Gesundheit, dem Körper oder dem Leben des Nutzers haftet der Autor uneingeschränkt. Ebenso haftet er für die Verletzung von Pflichten, die zur Erreichung des Vertragszwecks von besonderer Bedeutung sind (Kardinalspflichten).
+<iframe src="/files/gplv3.html" style="width:100%; border:1px solid black; height:300px;"></iframe>
 
-**Sourcecode von FPLedit:** Der Sourcecode von FPLedit darf ebenfalls nach den oben genannten Bestimmungen verwendet werden, damit ist die Veröffentlichung des gesamten, unveränderten Sourcecodes nicht gestattet. Die Verwendung von (Teilen des) Sourcecodes für eigene, auf FPLedit aufbauende Projekte (Erweiterungen) ist ausdrücklich gestattet, solange der oben stehende Copyright-Hinweis auch im neuen Gesamtwerk zu finden ist.
-
-**Datenschutz:** Bei der programminternen Überprüfung auf Aktualisierungen (`Hilfe > Info` oder automatisch beim Programmstart) wird die IP-Adresse des anfragenden Computers an den Server übermittelt. Diese wird anonymisiert in Log-Dateien gespeichert.
+**Datenschutz bei der Verwendung von FPLedit:** Bei der programminternen Überprüfung auf Aktualisierungen (`Hilfe > Info` oder automatisch beim Programmstart) wird die IP-Adresse und der verwendete Betriebssystemtyp des anfragenden Computers an den Server übermittelt. Die IP-Adresse wird nur anonymisiert in Log-Dateien gespeichert; ein Rückschluss auf einzelne Benutzer ist daher nicht möglich. Die automatisierte Übermittlung zur Versionsüberprpüfung beim Programmstart geschieht nur nach Einwilligung des Nutzers. Diese Funktion kann jederzeit über das Programm unter `Hilfe > Info` deaktiviert werden.
 
 Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 
 <a href="/files/fpledit-{{< version >}}.zip" class="downloadbtn"><i class="icon icon-download"></i> Download starten (aktuelle Version {{< version >}})</a>
-| **[Hinweise zur Installation](installation/)**
+| **Hinweise zur Installation: [Windows](installation/), [Linux](linux/)**
 
 **Andere Downloadmöglichkeiten:** [Sourcecode](/files/fpledit-{{< version >}}-src.zip)
 
 ## Changelog
 
+### 2.1.0 (vom 22.09.2019)
+* [Zirkuläre Streckennetze](/fahrplaene-bearbeiten/cycles/) sind nun möglich
+* Sortieren von Zügen ist nun möglich
+* Anlegen von Umläufen über "Folgezüge" ist nun möglich
+* Weitere Vereinheitlichung der Bearbeitungsdialoge und Menüs zwischen linearen Fahrplänen und Netzwerkfahrplänen
+* Anzeige der Verkehrstage im Buchfahrplan
+* Neue dynamische Bildfahrplanvorschau
+* Kompatibilität mit jTrainGraph 3.1: Gleisangaben und Rangierfahrten
+
+#### Behobene Fehler:
+
+* Fehlerbehebungen im Zusammenhang mit der Rückgängig-Funktion
+* Korrektur eines Fehlers, der falsche Zug-Ids intern vergeben hat
+* Mehrere Fehlerbehebungen in Verbindung mit dem Netzwerk-Modus
+* **Achtung:** Möglicherweise ist ein manuelles Nacharbeiten der Fahrplandateien nötig, das Programm gibt dann eine entsprechende Meldung beim Start aus.
+
+#### Sonstige Verbesserungen und Anmerkungen:
+
+* Aktivierung der Template-Sandbox unter Linux
+* Performance-Verbesserungen in einigen Bearbeitungsdialogen
+* Besserer Umgang mit Fehlermeldungen und Programmabstürzen
+* **Achtung:** FPLedit ist nicht mehr mit Windows Vista kompatibel!
+* Wechsel der **Lizenz zur GNU GPLv3**
+* Große [API-Änderungen](/dev/changelog/)
+* **Bekanntes Problem**: Bei komplexen Fahrplänen dauert das Zeichnen der dynamischen Bildfahrplan-Vorschau unter Windows einige Zeit.
+
+<details><summary>**Ältere Verionshinweise**</summary>
 ### 2.0.0 (vom 11.11.2018)
-* Unterstützung von Streckennetzen (Netzwerk-Fahrplänen)
+* Unterstützung von Streckennetzen (Netzwerk-Fahrplänen), **nicht direkt kompatibel mit jTrainGraph, siehe [Bildfahrpläne](/bildfahrplaene)**!
 * Neues Dateiformat für eigene Vorlagen, nur noch ein Texteditor wird zur Erstellung benötigt
 * Das Verschieben von Stationen zwischen andere Stationen erzeugt keine fehlerhaften Dateien mehr
 * Neuer Bearbeitungsmodus für Streckennetze
@@ -39,7 +63,8 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 * **Achtung:** FPLedit ist nicht mehr mit Windows XP kompatibel!
 * Große [API-Änderungen](/dev/changelog/)
 
-<details><summary>**Ältere Verionshinweise**</summary>
+Die Kompatibilität von Netzwerk-Fahrplänen mit **jTrainGraph** ist nicht so gut wie bei FPLedit 1.5.4: Die Fahrplandateien nutzen zwar noch das gleiche, aber funktional stark erweiterte Dateiformat, welches dadurch von jTrainGraph derzeit nicht gelesen werden kann. Der jTrainGraph-Starter ist natürlich weiterhin vorhanden und erlaubt auch bei dem neuen Format das Erstellen von Bildfahrplänen und das Anpassen der zugehörigen Einstellungen. Das Ändern des Fahrplans in jTrainGraph selbst ist aber (derzeit) nicht mehr möglich.
+
 ### 1.5.4 (vom 14.04.2018)
 * Diese Version stellt die Kompatibilität mit jTrainGraph 3.0 wieder her.
 

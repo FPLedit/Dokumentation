@@ -1,7 +1,7 @@
 ---
 date: 2017-07-02T18:29:37+02:00
 title: Erweiterungen entwickeln
-weight: 60
+weight: 80
 #needshighlight: true
 nooffline: true
 ---
@@ -15,7 +15,7 @@ Die hier beschriebenen Konzepte werden für den gewöhlichen Gebrauch von FPLedi
 {{< /note >}}
 
 
-> **Achtung**: Diese Anleitung ist zur Zeit auf dem Stand von FPLedit Version 2.0.0. Möglicherweise ist sie nicht 100%ig aktuell. In zukünftigen Versionen werden möglicherweise die Programmschnittstellen geändert. In der [Änderungshistorie](changelog/) finden sich weitere Hinweise.
+> **Achtung**: Diese Anleitung ist zur Zeit auf dem Stand von FPLedit Version 2.1.0. Möglicherweise ist sie nicht 100%ig aktuell. In zukünftigen Versionen werden möglicherweise die Programmschnittstellen geändert. In der [Änderungshistorie](changelog/) finden sich weitere Hinweise.
 
 FPLedit basiert auf .NET und ist in der Programmiersprache C# geschrieben, daher ist dies auch die am besten für die Erweiterungsentwicklung geeignete Sprache. Zur Entwicklung mit C# ist die kostenlose Entwicklungsumgebung [Visual Studio Community](https://www.visualstudio.com/de/) von Microsoft gut geeignet, aber auch Alternativen sind verwendbar.
 
@@ -39,7 +39,7 @@ using FPLedit.Shared;
 
 namespace TestPlugin
 {
-    [Plugin("TestPlugin", "2.0.0", "2.0", Author = "Autorenname")]
+    [Plugin("TestPlugin", "2.1.0", "2.1", Author = "Autorenname")]
     public class Plugin : IPlugin
     {
         public void Init(IInfo info)
@@ -50,7 +50,7 @@ namespace TestPlugin
 }
 ```
 
-Die Autorenangabe kann auch weggelassen werden: `[Plugin("TestPlugin", "2.0.0", "2.0")]`.
+Die Autorenangabe kann auch weggelassen werden: `[Plugin("TestPlugin", "2.1.0", "2.1")]`.
 
 ## Das `IInfo`-Objekt
 Das an die `Init`-Methode des Plugins übergebene `IInfo`-Objekt enthält alle Funktionen, mit denen FPLedit angepasst werden kann. Einige dieser Möglichkeiten werden im Folgenden beschrieben:

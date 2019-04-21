@@ -6,12 +6,12 @@ weight: 20
 
 Das alte Bildfahrplanmodul wurde in Version 1.1.0 aus FPLedit entfernt, ein direktes Erstellen von Bildfahrplänen ist daher nicht mehr möglich. Bitte nutzen Sie stattdessen [jTrainGraph](https://jtraingraph.de/), dessen Dateiformat seit FPLedit v1.1.0 kompatibel mit FPLedit ist. jTrainGraph bietet mehr Einstellungsmöglichkeiten als FPLedit und ist ebenso wie FPLedit auf mehreren Plattformen lauffähig. Dazu benötigt es aber ein auf dem System installiertes Java.
 
-**WICHTIG**: [jTrainGraph](https://jtraingraph.de/) muss in der Version 2.02 oder höher auf dem PC vorhanden (d.h. installiert) sein, ältere Versionen sind nicht kompatibel! FPLedit stellt dabei nur den Starter zur Verfügung, jTrainGraph ist ein eigenständiges Programm.
+**WICHTIG**: [jTrainGraph](https://jtraingraph.de/) muss in in einer kompatiblen Version auf dem PC vorhanden (d.h. installiert) sein, andere Versionen sind nicht kompatibel! FPLedit stellt dabei nur den Starter zur Verfügung, jTrainGraph ist ein eigenständiges Programm. Informationen zur Kompatibilität finden Sie am Ende dieser Seite.
 
 **Hinweis**: Bevor diese Funktion genutzt werden kann, muss sie zuerst [konfiguriert](#konfiguration) werden.
 
-{{< warning title="FPLedit 2.0 und die Kompatibilität mit jTrainGraph" >}}
-Die Kompatibilität von Netzwerk-Fahrplänen mit **jTrainGraph** ist nicht so gut wie bei FPLedit 1.5.2: Die Fahrplandateien nutzen zwar noch das gleiche, aber funktional stark erweiterte Dateiformat, welches dadurch von jTrainGraph derzeit nicht gelesen werden kann. Der jTrainGraph-Starter ist natürlich weiterhin vorhanden und erlaubt auch bei dem neuen Format das Erstellen von Bildfahrplänen und das Anpassen der zugehörigen Einstellungen. Das Ändern des Fahrplans in jTrainGraph selbst ist aber nicht mehr möglich.
+{{< warning title="FPLedit 2.x und die Kompatibilität mit jTrainGraph" >}}
+Die Kompatibilität von Netzwerk-Fahrplänen mit **jTrainGraph** ist nicht so gut wie bei FPLedit 1.5.4: Die Fahrplandateien nutzen zwar noch das gleiche, aber funktional stark erweiterte Dateiformat, welches dadurch von jTrainGraph derzeit nicht gelesen werden kann. Der jTrainGraph-Starter ist natürlich weiterhin vorhanden und erlaubt auch bei dem neuen Format das Erstellen von Bildfahrplänen und das Anpassen der zugehörigen Einstellungen. Das Ändern des Fahrplans in jTrainGraph selbst ist aber nicht mehr möglich.
 {{< /warning >}}
 
 ## Lineare Fahrpläne
@@ -38,5 +38,13 @@ In den neuesten Versionen bietet jTrainGraph eine exe-Version an. Bei der Konfig
 Wenn die Konfiguration nicht korrekt erfolgt ist, warnt das Programm sowohl beim Speichern der Einstellungen als auch beim Versuch, jTrainGraph über das Menü zu starten.
 
 ![Einstellungen](einstellungen.png)
+
+## Kompatibilitätsmatrix
+| FPLedit Version | ist kompatibel mit | jTrainGraph Versionen |
+|-----------------|--------------------|-----------------------|
+| < 1.5.4         | &rarr;             | 2.02, 2.03            |
+| 1.5.4           | &rarr;             | 2.02, 2.03, 3.03      |
+| 2.0.0           | &rarr;             | 2.02, 2.03, 3.03      |
+| 2.1.0           | &rarr;             | 2.02, 2.03, 3.03, 3.1 |
 
 {{% beta %}}

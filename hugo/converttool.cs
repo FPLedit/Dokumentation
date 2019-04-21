@@ -16,7 +16,6 @@ namespace converttool
         static void Main(string[] args)
         {
             CollectFiles("./content/");
-			//Console.WriteLine(string.Join(" | ", files));
 
             var text = File.ReadAllText("./public/offline-idx.html");
             text = Regex.Replace(text, "<img.+?src=[\"'](.+?)[\"'].*?>", (m) =>
@@ -30,10 +29,16 @@ namespace converttool
 				}
                 return m.Groups[0].Value.Replace(path, ConvertImage(files[fn]));
             }, RegexOptions.IgnoreCase);
-            text = Regex.Replace(text, "<a\\s+(?:[^>]*\\s+)?href=([\"'])(.*?)\\1", (m) =>
+
+            var anchors = Regex.Matches(text, "id=\\\"(\\w+)\\\"").Cast<Match>().Select(m => m.Groups[1].Value).ToArray();
+
+            text = Regex.Replace(text, "<a\\s+(?:[^>]*\\s+)?href=([\"'])(.*?)\\1>(.*?)</a>", (m) =>
             {
                 var path = m.Groups[2].Value;
-                return m.Groups[0].Value.Replace(path, ConvertLink(path));
+                var new_href = ConvertLink(path, anchors);
+                if (new_href != null)
+                    return m.Groups[0].Value.Replace(path, new_href);
+                return m.Groups[3].Value;
             }, RegexOptions.IgnoreCase);
 
             File.WriteAllText("./public/offline-doc.html", text);
@@ -44,21 +49,19 @@ namespace converttool
         static string ConvertImage(string path)
         {
             var bytes = File.ReadAllBytes(path);
-            var ext = Path.GetExtension(path);
+            var ext = Path.GetExtension(path).Replace(".", "");
             return "data:image/" + ext + ";base64," + Convert.ToBase64String(bytes);
         }
 
-        static string ConvertLink(string href)
+        static string ConvertLink(string href, string[] anchors)
         {
             if (!href.StartsWith("mailto:") && !href.StartsWith("http") && !href.StartsWith("#") && !href.StartsWith("/files/"))
             {
                 href = string.Join("", href.Split('/'));
-                return '#' + href;
+                return anchors.Contains(href) ? '#' + href : null;
             }
             else if (href.StartsWith("/files/"))
-            {
-                return "https://fahrplan.manuelhu.de" + href;
-            }
+                 return "https://fahrplan.manuelhu.de" + href;
             return href;
         }
 

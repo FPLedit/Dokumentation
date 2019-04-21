@@ -1,6 +1,8 @@
 ---
 date: 2016-10-05T18:29:37+02:00
 title: Netzwerk-Fahrpläne bearbeiten
+weight: 12
+offline_indent: 1
 ---
 
 Zu den grundlegenden Funktionen von FPLedit gehört das Erstellen und Bearbeiten der Fahrpläne. Dies gliedert sich in drei Bereiche. Zuerst muss die Strecke erstellt werden, danach können Züge hinzugefügt werden und die Fahrpläne bearbeitet werden.
@@ -15,6 +17,8 @@ Durch einen Klick auf `Neue Strecke` wird eine neue abzweigende Seitenstrecke an
 
 Einige Aktionen in FPLedit sind "**streckengebunden**". Dazu zählt auch das oben beschriebene Hinzufügen einer Station. Damit diese auch auf die richtige Teilstrecke angewendet werden, muss ganz links in der Werkzeugleiste die Strecke aus dem Auswahlfeld ausgewählt werden. Zur Kontrolle wird diese im Editor rot markiert.
 
+Eine Station kann mit Gleisangaben versehen werden. Im unteren Teil des Stationseditors kann der schematische Gleisplan editiert werden. Mit einem Klick auf die entsprechenden Schlatflächen können Gleise hinzugefügt, verschoben und auch wieder entfernt werden. Mit einem Doppelklick auf den Gleisnamen kann dieser bearbeitet werden. Am Rand können die Standardgleise in die entsprechende Richtung (abhängig von nder aktuell ausgewählten Strecke) verschoben werden.
+
 **Hinweis**: Schon vor der Erstellung des Streckennetzes sollte man sich Gedanken zum Aufbau des Netzes machen. Strecken können nachträglich nicht mehr zusammengefügt oder getrennt werden. Aus diesem Grund sollten zusammengehörende Strecken auch immer zusammenhängend anglegt werden und nicht aus Teilstrecken zusammengestückelt werden!
 
 ![Streckenfenster](netzeditor.png)
@@ -26,7 +30,7 @@ Wenn ein Streckennetz angelegt wurde, ist der Menüpunkt `Bearbeiten > Züge bea
 Durch einen Klick auf `Neuer Zug` (<kbd>Strg</kbd>+<kbd>N</kbd>) öffnet sich ein Fenster, in dem der Laufweg des Zuges eingestellt werden kann. Dies geschieht durch Klicks auf die Startstation und die Endstation (in dieser Reihenfolge!), was zu einer roten Markierung des Laufweges führt, und einer anschließenden Bestätigung mit `Weiter >>`.
 Anschließend öffnet sich ein Fenster in dem man Name, Verkehrstage und erweiterte Eigenschaften des Zuges auswählen kann. Den selben Dialog erreicht man auch mit einem Klick auf `Zug bearbeiten` (<kbd>Strg</kbd>+<kbd>B</kbd>), damit lassen sich dann nachträglich diese Eigenschaften bearbeiten.
 
-Die erweitereten Eigenschaften enthalten das Triebfahrzeug, die Mindestbremshundertstel und Last. Das Triebfahrzeug lässt sich dabei aus einer Liste aller in dieser Fahrplandatei verwendeten Triebfahrzeuge auswählen oder selbst eingeben. Diese drei Angaben sind nicht verpflichtend und werden im Buchfahrplan angzeigt.
+Die erweitereten Eigenschaften enthalten das Triebfahrzeug, die Mindestbremshundertstel und Last. Das Triebfahrzeug lässt sich dabei aus einer Liste aller in dieser Fahrplandatei verwendeten Triebfahrzeuge auswählen oder selbst eingeben. Diese drei Angaben sind nicht verpflichtend und werden im Buchfahrplan angzeigt. Unten links kann ein Folgezug ausgewählt werden. Damit können Umläufe generiert werden. Diese werden in jTrainGraph im Bildfahrplan angezeigt.
 
 Züge lassen sich natürlich auch mit dem entsprechenden Button bzw. mit <kbd>Entf</kbd> löschen.
 
@@ -53,7 +57,13 @@ Für die Eingabe der Zeitwerte stehen verschiedene Formate zur Verfügung:
 
 Bei Ankünften kann festgelegt werden, ob der Zug vor der Trapeztafel halten muss. Dazu muss die entsprechende Zelle in der Tabelle ausgewählt werden und anschließend mit der Schaltfläche unten links oder mit der Taste <kbd>T</kbd> der Trapeztafelhalt aktiviert werden. Auf dem gleichen Weg wird er auch wieder deaktiviert. In der Tabelle wird der Trapeztafelhalt durch einen hellgrauen Hintergrund angezeigt. Ebenso kann festgelegt werden, wer an dem Bahnhof die Zuglaufmeldung abgibt. Dazu befindet sich ein weiterer Button unten links oder man verwendet die Taste <kbd>Z</kbd>. Dies wird durch Fettschrift symbolisiert. Eine Angabe zur Zuglaufmeldung kann auch noch bei der Abfahrt am ersten Bahnhof angegeben werden. Nicht alle Buchfahrplan-Vorlagen zeigen diese beiden Informationen an.
 
+In jeder Zeile können Abfahrts- und Ankunftsgleis ausgewählt werden. Diese werden an den entsprechenden Stellen in den Fahrplänen angezeigt.
+
 ![Fahrplan bearbeiten](fahrplanfenster.png)
+
+Mit einem Klick auf die Schaltfläche `Rangierfahrten` können die Rangierfahrten des aktuellen Zuges am aktuell ausgewählten Bahnhof bearbeitet werden. Dies ist nur möglich, wenn, wie oben beschrieben, Gleise angelegt wurden. Rangierfahrten bestehen dabei aus Zeitangabe, Start- und Zeilgleis. `Alle Wagen` gibt an, ob das Startgleis nach der Rangierfahrt wieder frei ist.
+
+![Rangierfenster](../rangierfenster.png)
 
 ## Laufweg eines Zuges nachträglich ändern
 
@@ -67,6 +77,16 @@ Das Entfernen von Stationen aus der Mitte des Laufweges ist nicht möglich, gena
 
 Züge eines Netzwerk-Fahrplans können auch kopiert werden. Dazu reicht ein Klick auf `Zug kopieren`. Der Name des neuen Zuges muss angegeben werden. Der Zug wird um den angegeben Takt (in Minuten) verschoben. Wenn `Erweiterte Attribute übernehmen` ausgewählt ist, werden auch die Angaben zum Bildfahrplan zum Zug aus jTrainGraph mit übernommen.
 
-![Zug kopieren](kopierfenster.png)
+![Zug kopieren](../kopierfenster.png)
+
+## Züge sortieren
+
+Züge können im Zugfenster sortiert werden. Dies betrifft nur die Sortierung im Zugfenster; die Fahrpläne bleiben davon unberührt. Mit einem Klick auf `Züge sortieren` kann die Sortierung durchgeführt werden. Dabei stehen verschiedene Modi zur Verfügung:
+
+* *Nach Namen*: Die Züge werden alphabetisch nach dem Zugnamen sortiert.
+* *Nach Zugnummern*: Es wird nach dem numerischen Teil des Zugnamen sortiert. Ein Zug `RB 12345` wird unter der Nummer 12345 sortiert.
+* *Nach Zeit, an Station*: Die Züge werden nach der Fahrtzeit an der ausgewählten Station sortiert.
+
+![Züge sortieren](../sortierfenster.png)
 
 {{% beta %}}

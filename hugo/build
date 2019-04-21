@@ -43,3 +43,7 @@ task_offline() {
     wkhtmltopdf --zoom 1.3 ./public/offline-doc.html ./public/offline-doc.pdf
     echo Artifacts can be found in ./public/offline-doc.{html,pdf}
 }
+
+task_optipng() {
+    find . -name "*.png" -exec optipng "{}" +
+}
