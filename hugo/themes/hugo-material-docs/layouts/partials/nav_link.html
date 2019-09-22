@@ -4,7 +4,7 @@
 
 <a {{ if $isCurrent }}class="current"{{ end }} title="{{ $currentMenuEntry.Name }}" href="{{ $currentMenuEntry.URL | relURL}}">
 	{{ $currentMenuEntry.Pre }}
-	{{ $currentMenuEntry.Name }}
+	{{ $currentMenuEntry.Name | markdownify }}
 </a>
 
 <!--{{ if $isCurrent }}

@@ -33,7 +33,7 @@ pygmentsUseClasses = true
 
 [mediaTypes]
 [mediaTypes."text/lunr"]
-	suffix = ""
+	suffixes = [ "" ]
 	delimiter = ""
 
 [outputFormats]
@@ -99,6 +99,11 @@ pygmentsUseClasses = true
 	url    = "dev/"
 	weight = 80
 	parent = "doku"
+
+[[menu.main]]
+	name   = "Projekt auf GitHub&nbsp;<span class=\"icon icon-github\"></span>"
+	url    = "https://github.com/fpledit/fpledit"
+	weight = 100
 
 [[menu.main]]
 	name   = "Kontakt | Impressum"
