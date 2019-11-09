@@ -21,6 +21,10 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 
 ## Changelog
 
+### 2.1.1 (vom 09.11.2019)
+* Behebt mehrere Fehler im Zusammenhang mit dem Editieren von Gleisen an Stationen
+* Verbesserung der Multiplattform-Kompatibilität
+
 ### 2.1.0 (vom 22.09.2019)
 * [Zirkuläre Streckennetze](/fahrplaene-bearbeiten/cycles/) sind nun möglich
 * Sortieren von Zügen ist nun möglich

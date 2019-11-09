@@ -45,6 +45,6 @@ Wenn die Konfiguration nicht korrekt erfolgt ist, warnt das Programm sowohl beim
 | < 1.5.4         | &rarr;             | 2.02, 2.03            |
 | 1.5.4           | &rarr;             | 2.02, 2.03, 3.03      |
 | 2.0.0           | &rarr;             | 2.02, 2.03, 3.03      |
-| 2.1.0           | &rarr;             | 2.02, 2.03, 3.03, 3.1 |
+| 2.1.x           | &rarr;             | 2.02, 2.03, 3.03, 3.1 |
 
 {{% beta %}}
