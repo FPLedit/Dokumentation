@@ -6,6 +6,8 @@ nooffline: true
 
 Diese Anleitung beschreibt die Installation von FPLedit auf **Windows**. Für die Installation unter Linux siehe [FPLedit unter Linux](/download/linux/)!
 
+<img src="../deblock.png" style="float:left; margin: 10px" />
+
 Vor der Installation muss unbedingt die heruntergeladene ZIP-Datei für Windows entsperrt werden. Dazu `Rechtsklick > Eigenschaften` und dort unten den Haken bei `Zulassen` setzen. Anschließend kann man die ZIP-Datei an einen beliebigen Ort entpacken und die Datei `FPLedit.exe` mit einem Doppelklick starten. Dieser Ordner kann auch nachträglich noch verschoben werden.
 
 Informationen zu neuen verfügbaren Versionen erhält man im Programm unter `Hilfe > Info > Auf neue Version prüfen` oder seit Version 1.2.0 durch eine Benachrichtigung beim Programmstart. Diese lässt sich ebenfalls unter `Hilfe > Info` dekativieren.
