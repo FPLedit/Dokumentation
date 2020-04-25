@@ -28,7 +28,11 @@
       <div class="toc">
         {{ if gt (len .Site.Menus.main) 0 }}
         <ul>
-          {{ partial "nav" . }}
+          {{ $currentNode := . }}
+          {{ range $.Site.Menus.main.ByWeight }}
+            {{ $.Scratch.Set "currentMenuEntry" . }}
+            {{ partial "nav" $currentNode }}
+          {{ end }}
         </ul>
         {{ end }}
       </div>

@@ -451,6 +451,9 @@ hr {
 .admonition pre {
     background: hsla(0, 0%, 100%, .3);
 }
+.admonition code {
+    background: hsla(0, 0%, 0%, .87);
+}
 .admonition.warning {
     background: #e84e40;
 }

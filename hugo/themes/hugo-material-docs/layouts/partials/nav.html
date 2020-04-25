@@ -1,20 +1,21 @@
 {{ $currentNode := . }}
 
-{{ range .Site.Menus.main.ByWeight }}
-
-{{ $.Scratch.Set "currentMenuEntry" . }}
+{{ $curMenu := .Scratch.Get "currentMenuEntry" }}
 <li>
-  {{ if .HasChildren }}
-    <input type="checkbox" class="nav-section-toggle" id="nav-section-toggle-{{ .Name | urlize }}" checked style="display:none"></input>
-	<span class="section"><label for="nav-section-toggle-{{ .Name | urlize }}">{{ .Name | title }}</label></span>
+  {{ if $curMenu.HasChildren }}
+    {{ if eq $curMenu.URL "" }}
+      <input type="checkbox" class="nav-section-toggle" id="nav-section-toggle-{{ $curMenu.Name | urlize }}" checked style="display:none"></input>
+      <span class="section"><label for="nav-section-toggle-{{ $curMenu.Name | urlize }}">{{ $curMenu.Name | title }}</label></span>
+    {{ else }}
+      {{ partial "nav_link" $currentNode }}
+    {{ end }}
     <ul>
-      {{ range .Children }}
+      {{ range $curMenu.Children }}
         {{ $.Scratch.Set "currentMenuEntry" . }}
-        {{ partial "nav_link" $currentNode }}
+        {{ partial "nav" $currentNode }}
       {{ end }}
     </ul>
   {{ else }}
     {{ partial "nav_link" $currentNode }}
   {{ end }}
 </li>
-{{ end }}
