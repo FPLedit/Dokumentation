@@ -1,6 +1,10 @@
 {{ if not .Params.nooffline }}
 <div class="page" id="{{ replaceRE "^(/[^/]+)?/([^/]+)/$" "$2" (.Permalink | relURL) }}">
-<h1>{{ .Title }}</h1>
+{{ with .Params.offline_title }}
+    <h1>{{ . }}</h1>
+{{ else }}
+    <h1>{{ .Title }}</h1>
+{{ end }}
 <div class="content">
 {{ .Content }}
 </div>

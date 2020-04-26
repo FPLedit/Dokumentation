@@ -1,7 +1,7 @@
-{{- $slug := .Get 0 }}
+{{- $slug := .Get 1 }}
 {{- $page := $.Site.GetPage $slug -}}
 {{- with $page -}}
     {{ .Content | markdownify }}
 {{- else -}}
-    {{ errorf "include: Page %s not found" $slug }}
+    {{ errorf "include_mod: Page %s not found" $slug }}
 {{- end -}}

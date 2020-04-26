@@ -26,11 +26,7 @@ FPLedit ist ein freies Programm zum Erstellen von Fahrplänen. Dies ist vor alle
 
 Bei den deutschen Eisenbahnen waren und sind verschiedene Fahrplan-Formate im Einsatz. Diese Seite soll als Entscheidungshilfe dienen, welcher Fahrplantyp zum Einsatz kommen soll.
 
-| Bildfahrpläne                                 | Buchfahrpläne                             | Aushangfahrpläne                               |
-|-----------------------------------------------|-------------------------------------------|------------------------------------------------|
-| Enthält alle Züge einer Strecke               | Enthält nur einen Zug                     | Enthält alle Züge, die an einem Bahnhof halten |
-| ![](bildfahrplaene/bifpl.png)                 | ![](buchfahrplaene/bfpl.png)              | ![](aushangfahrplaene/afpl.png)                |
-| [Erstellung mit jTrainGraph](/bildfahrplaene) | [Erstellung mit FPLedit](/buchfahrplaene) | [Erstellung mit FPLedit](/aushangfahrplaene)   |
+{{< include_mod "/include-index-web" "/include-index-tex" >}}
 
 Das Dateiformat von FPLedit und jTrainGraph ist vollständig kompatibel. Somit können alle drei Formate aus der gleichen Datei generiert werden. Ob das Anlegen der Daten mit jTrainGraph oder FPLedit erfolgt, ist dabei egal. Die erweiterte Konfiguration der Ausgabe ist aber nur mit dem entsprechenden Programm möglich. **Netzwerk-Fahrpläne** können nur noch mit FPLedit erstellt werden.
 

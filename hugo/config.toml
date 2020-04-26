@@ -16,7 +16,7 @@ pygmentsUseClasses = true
 	description = "Ein einfaches Programm zum Erstellen und Bearbeiten von Fahrplänen für Modelleisenbahnen und anschließendem Export als Buch-, Aushang oder Tabellenfahrplan. Kompatibel mit jTrainGraph zu Erstellung von Bildfahrplänen."
 
 	download_url = "/download/"		# URL für Download-Button
-	version = "2.1.1"				# Aktuelle Programmversion
+	version = "2.2.0"				# Aktuelle Programmversion
 
 	logo = "files/logo.svg"			# Seitenlogo
 	twitter_logo = "files/logo.png" # Logo für Twitter Cards
@@ -27,13 +27,16 @@ pygmentsUseClasses = true
     	accent  = "teal"
 
 [outputs]
-	home = ["HTML", "LUNR", "mod"]
+	home = ["HTML", "LUNR", "mod", "tex"]
 	page = ["HTML"]
 	section = ["HTML"]
 
 [mediaTypes]
 [mediaTypes."text/lunr"]
 	suffixes = [ "" ]
+	delimiter = ""
+[mediaTypes."text/latex"]
+	suffixes = [ ".tex" ]
 	delimiter = ""
 
 [outputFormats]
@@ -47,6 +50,11 @@ pygmentsUseClasses = true
 	baseName = "offline-idx"
 	isHTML = true
 	protocol = "mod://"
+[outputFormats.tex]
+	mediaType = "text/latex"
+	baseName = "offline-latex"
+	isHTML = false
+	protocol = "tex://"
 
 [[menu.main]]
 	name   = "Start"
@@ -69,12 +77,25 @@ pygmentsUseClasses = true
 	url    = "fahrplaene-bearbeiten/"
 	weight = 10
 	parent = "doku"
+	identifier = "edit"
 
 [[menu.main]]
-	name   = "Bildfahrpläne"
-	url    = "bildfahrplaene/"
-	weight = 20
-	parent = "doku"
+	name   = "Lineare Strecken"
+	url    = "fahrplaene-bearbeiten/linear/"
+	weight = 11
+	parent = "edit"
+
+[[menu.main]]
+	name   = "Netzwerk-Fahrpläne"
+	url    = "fahrplaene-bearbeiten/network/"
+	weight = 12
+	parent = "edit"
+
+[[menu.main]]
+	name   = "Fortgeschritten: Zirkuläre Netze"
+	url    = "fahrplaene-bearbeiten/cycles/"
+	weight = 13
+	parent = "edit"
 
 [[menu.main]]
 	name   = "Buchfahrpläne"
@@ -95,22 +116,33 @@ pygmentsUseClasses = true
 	parent = "doku"
 
 [[menu.main]]
+	name   = "Bildfahrpläne mit jTrainGraph"
+	url    = "bildfahrplaene/"
+	weight = 60
+	parent = "doku"
+
+[[menu.main]]
+	name   = "Erweiterbarkeit"
+	url    = "erweiterbarkeit/"
+	weight = 70
+	parent = "doku"
+
+[[menu.main]]
 	name   = "Erweiterungen entwickeln"
 	url    = "dev/"
-	weight = 80
-	parent = "doku"
+	weight = 400
 
 [[menu.main]]
 	name   = "Projekt auf GitHub&nbsp;<span class=\"icon icon-github\"></span>"
 	url    = "https://github.com/fpledit/fpledit"
-	weight = 100
+	weight = 500
 
 [[menu.main]]
 	name   = "Kontakt | Impressum"
 	url    = "https://www.manuelhu.de/impressum.html"
-	weight = 200
+	weight = 1000
 
 [[menu.main]]
 	name   = "Datenschutzerklärung"
 	url    = "https://www.manuelhu.de/datenschutz.html"
-	weight = 210
+	weight = 1010
