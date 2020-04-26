@@ -27,4 +27,11 @@ User-agent: spbot
 User-agent: SeznamBot
 User-agent: CCBot
 User-agent: SEOkicks
+User-Agent: Barkrowler
+User-Agent: ZoominfoBot
+User-Agent: Dataprovider
+User-Agent: Clarabot
+User-Agent: DomainStatsBot
+User-Agent: DotBot
+User-Agent: adscanner
 Disallow: /
