@@ -15,15 +15,38 @@ FPLedit ist unter der GNU GPL v3-Lizenz lizenziert:
 Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 
 <a href="/files/fpledit-{{< version >}}.zip" class="downloadbtn"><i class="icon icon-download"></i> Download starten (aktuelle Version {{< version >}})</a>
-| **Hinweise zur Installation: [Windows](installation/), [Linux](linux/)**
+| **Hinweise zur Installation: [Windows](install-windows/), [Linux](install-linux/)**
 
-**Andere Downloadmöglichkeiten:** [Sourcecode](/files/fpledit-{{< version >}}-src.zip)
+**Andere Downloadmöglichkeiten:** [Sourcecode auf GitHub](https://github.com/FPLedit/FPLedit/releases)
 
 ## Changelog
+
+### 2.2.0 (vom xx.xx.2020)
+
+* Wechsel der Vorlagen zu einer Javascript basierten Template-Definition
+    * **Achtung** Alte Vorlagen sind damit nicht mehr kompatibel!
+* Auf Linux-Plattformen wird nun das native Theme besser unterstützt und einige Darstellungsfehler behoben
+* Aktualisierung des UI-Frameworks Eto für bessere Kompatibilität
+* Unter der Haube: Massive Änderungen an der Codebasis um FPLedit fit für die Zukunft zu machen
+* Änderung bei mehreren geöffneten FPLedit-Fenstern: Nur noch die erste Instanz kann Einstellungen ändern, das dient zur Vermeidung von Fehlern.
+* **Performance-Verbesserungen** an verschiedenen Stellen:
+    * Verbesserung der Ladezeiten von sehr großen Dateien (Referenz: 200.000 Stationen an 2000 Strecken) wurde stark verbessert
+    * Performance-Verbesserungen der Rückgängig-Funktion
+    * Performance-Verbesserungen bei der dynamischen Bildfahrplanvorschau
+* **Behobene Fehler:**
+    * Behebt einige Fehler unter Mono, Vorbereitung für .NET Core
+    * Behebt einige Fehler mit Überprüfungen
+    * Behebt mehrere Fehler im Vorlagen-Mechanismus
+    * Bugfixes bei routenabhängigen Werten die Semikola (`;`) enthalten, und bei Filterregeln mit Pipes (`|`) im Suchwert.
+
+* **Bekannte Fehler unter Linux**:
+    * Das Kontextmenü der Logansicht funktioniert nicht
 
 ### 2.1.1 (vom 09.11.2019)
 * Behebt mehrere Fehler im Zusammenhang mit dem Editieren von Gleisen an Stationen
 * Verbesserung der Multiplattform-Kompatibilität
+
+<details><summary>**Ältere Verionshinweise**</summary>
 
 ### 2.1.0 (vom 22.09.2019)
 * [Zirkuläre Streckennetze](/fahrplaene-bearbeiten/cycles/) sind nun möglich
@@ -48,10 +71,8 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 * Besserer Umgang mit Fehlermeldungen und Programmabstürzen
 * **Achtung:** FPLedit ist nicht mehr mit Windows Vista kompatibel!
 * Wechsel der **Lizenz zur GNU GPLv3**
-* Große [API-Änderungen](/dev/changelog/)
 * **Bekanntes Problem**: Bei komplexen Fahrplänen dauert das Zeichnen der dynamischen Bildfahrplan-Vorschau unter Windows einige Zeit.
 
-<details><summary>**Ältere Verionshinweise**</summary>
 ### 2.0.0 (vom 11.11.2018)
 * Unterstützung von Streckennetzen (Netzwerk-Fahrplänen), **nicht direkt kompatibel mit jTrainGraph, siehe [Bildfahrpläne](/bildfahrplaene)**!
 * Neues Dateiformat für eigene Vorlagen, nur noch ein Texteditor wird zur Erstellung benötigt
@@ -65,7 +86,6 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 * Speichern der manuell eingestellten Fenstergrößen
 * **Achtung:** Die Importfunktion für das alte Bfpl-Binärformat wurde entfernt!
 * **Achtung:** FPLedit ist nicht mehr mit Windows XP kompatibel!
-* Große [API-Änderungen](/dev/changelog/)
 
 Die Kompatibilität von Netzwerk-Fahrplänen mit **jTrainGraph** ist nicht so gut wie bei FPLedit 1.5.4: Die Fahrplandateien nutzen zwar noch das gleiche, aber funktional stark erweiterte Dateiformat, welches dadurch von jTrainGraph derzeit nicht gelesen werden kann. Der jTrainGraph-Starter ist natürlich weiterhin vorhanden und erlaubt auch bei dem neuen Format das Erstellen von Bildfahrplänen und das Anpassen der zugehörigen Einstellungen. Das Ändern des Fahrplans in jTrainGraph selbst ist aber (derzeit) nicht mehr möglich.
 
@@ -87,7 +107,6 @@ Die Kompatibilität von Netzwerk-Fahrplänen mit **jTrainGraph** ist nicht so gu
 * **Achtung:** Die Erweiterung `FPLedit.AStandard.dll` wurde in das Hauptprogramm integriert! Die alte Datei kann problemlos gelöscht werden.
 * Rückgängig-Funktion (`Bearbeiten > Rückgängig`)
 * Weitere kleine Fehlerbehebungen
-* [API-Änderungen](/dev/changelog/)
 
 ### 1.4.0 (vom 19.08.2017)
 * Neuer Fahrplantyp: Aushangfahrpläne mit allen von Buchfahrplaänen her gewohnten Features

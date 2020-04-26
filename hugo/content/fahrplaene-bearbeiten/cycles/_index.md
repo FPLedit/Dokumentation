@@ -5,7 +5,7 @@ weight: 13
 offline_indent: 1
 ---
 
-Ab FPLedit Version 2.1.0 können Netzwerke auch geschlossene Kreise enthalten. Daiese Funktion ist leider nicht so bequem zu bedienen wie das Erstellen normaler Streckennetze. Deshalb ist den zyklischen Netzen hier eine eigene Seite gewidmet.
+Ab FPLedit Version 2.1.0 können Netzwerke auch geschlossene Kreise enthalten. Diese Funktion ist leider nicht so bequem zu bedienen wie das Erstellen normaler Streckennetze. Deshalb ist den zyklischen Netzen hier eine eigene Seite gewidmet. Im Folgenden betrachten wir ein Beispielnetz, an dem die nötigen Konzepte erläutert werden.
 
 ## Strecken untereinander wieder verbinden
 
@@ -20,6 +20,10 @@ Nach einem Klick auf `Strecken zusammenführen` erscheint muss der neue Strecken
 Zum Abschluss sieht das resultierende Netz nun so aus:
 
 ![](join_end.png)
+
+{{< note title="Zirkuläre Strecken löschen" >}}
+Zirkuläre Strecken können nicht mehr vollständig gelöscht werden, da sonst meist mehrere Strecken zwischen zwei Stationen zusammenfallen. FPLedit wird dies verhindern, ein Löschen der letzten Station, die zwei Strecken unterscheidet ist somit nicht mehr möglich. Ein Entfernen des Streckenastes B - E - F - C ist daher in diesem Besipiel nicht mehr möglich, wohl aber das Löschen *einer* Station: E *oder* F.
+{{< /note >}}
 
 ## Züge in zirkulären Netzwerken anlegen
 

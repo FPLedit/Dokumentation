@@ -1,6 +1,6 @@
 ---
 date: 2016-10-05T18:29:37+02:00
-title: Bildfahrpläne
+title: Bildfahrpläne mit jTrainGraph
 weight: 20
 ---
 
@@ -18,20 +18,20 @@ Die Kompatibilität von Netzwerk-Fahrplänen mit **jTrainGraph** ist nicht so gu
 
 Um jTrainGraph direkt aus FPLedit zu starten, benutzen Sie `jTrainGraph > jTrainGraph starten`. Dies speichert automatisch die aktuelle Datei und öffnet diese dann in jTrainGraph. Um die dort geänderten Daten wieder zurückzuübernehmen speichern Sie die Datei in jTrainGraph und schließen anschließend das Fenster. Die geänderten Daten werden wieder geladen.
 
-**Achtung:** Die Datei wird am aktuellen Speicherort gespeichert, dabei werden alle Änderungen in die Datei geschrieben und können nicht mehr durch Schließen des Programms verworfen werden!
+**Achtung:** Die Datei wird am aktuellen Speicherort gespeichert, dabei werden alle Änderungen in die Datei geschrieben und können nicht mehr durch Schließen von FPLedit verworfen werden!
 
 ## Netzwerk-Fahrpläne
 
-Um jTrainGraph direkt aus FPLedit zu starten, benutzen Sie `jTrainGraph > jTrainGraph starten (aktuelle Route)`. Diese Aktion ist **streckengebunden**. Dies speichert die aktuell ausgewählte Route in eine temporäre Datei und öffnet dann jTrainGraph (>= 2.02). Um die dort geänderten Daten wieder zurückzuübernehmen speichern Sie die Datei in jTrainGraph und schließen anschließend das Fenster. Die Änderungen an den Bildfahrplaneinstellungen werden wieder geladen.
+Um jTrainGraph direkt aus FPLedit zu starten, benutzen Sie `jTrainGraph > jTrainGraph starten (aktuelle Route)`. Diese Aktion ist **streckengebunden**. Dies speichert die aktuell ausgewählte Route in eine temporäre Datei und öffnet dann jTrainGraph. Um die dort geänderten Daten wieder zurückzuübernehmen speichern Sie die Datei in jTrainGraph und schließen anschließend das jTrainGraph-Fenster. Die Änderungen an den Bildfahrplaneinstellungen werden wieder geladen.
 
 **Achtung**: Es werden nur Änderungen an der Bildfahrplandarstellung übernommen, alle anderen Änderungen (z.B. Bahnhöfe oder Züge einfügen) werden verworfen!
 
 ## Konfiguration
 Die Einstellungen befinden sich unter `jTrainGraph > Einstellungen`. Der java-Pfad ist der Pfad zur Programmdatei von Java. Unter Windows sollte dieser normalerweise `javaw.exe` (bzw. `java` unter Linux) lauten. In manchen Fällen muss aber auch der absolute Pfad angegeben werden. Es kann auch der `Erkennen`-Button genutzt werden, um auf Windows automatisch den Java-Pfad herauszufinden.
 
-Der Pfad zur jTrainGraph-Datei lautet bei Installation im gleichen Verzeichnis `jTrainGraph_301.jar` (301 durch die jeweils aktuelle Version ersetzen). Ebenfalls muss der Pfad hier angepasst werden, wenn die Installation nicht im gleichen Verzeichnis erfolgt ist.
+Der Pfad zur jTrainGraph-Datei lautet bei Installation im gleichen Verzeichnis `jTrainGraph_311.jar` (301 durch die jeweils aktuelle Version ersetzen). Ebenfalls muss der Pfad hier angepasst werden, wenn die Installation nicht im gleichen Verzeichnis erfolgt ist.
 
-Weiter muss ausgewählt werden, welche Version von jTrainGraph verwendet wird. Dabei ist nur ausshlaggebend, ob Version 2 (ältere Installationen, vor April 2018) oder 3 (neue Installationen) verwendet wird.
+Weiter muss ausgewählt werden, welche Version von jTrainGraph verwendet wird. Dabei ist nur ausschlaggebend, ob Version 2 (ältere Installationen, vor April 2018) oder 3 (neue Installationen) verwendet wird.
 
 In den neuesten Versionen bietet jTrainGraph eine exe-Version an. Bei der Konfiguration muss gleich verfahren werden, sowohl der java-Pfad als auch der Pfad zur jTrainGraph-(exe)-Datei muss angegeben werden.
 
@@ -40,11 +40,11 @@ Wenn die Konfiguration nicht korrekt erfolgt ist, warnt das Programm sowohl beim
 ![Einstellungen](einstellungen.png)
 
 ## Kompatibilitätsmatrix
-| FPLedit Version | ist kompatibel mit | jTrainGraph Versionen |
-|-----------------|--------------------|-----------------------|
-| < 1.5.4         | &rarr;             | 2.02, 2.03            |
-| 1.5.4           | &rarr;             | 2.02, 2.03, 3.03      |
-| 2.0.0           | &rarr;             | 2.02, 2.03, 3.03      |
-| 2.1.x           | &rarr;             | 2.02, 2.03, 3.03, 3.1 |
+| FPLedit Version | ist kompatibel mit | jTrainGraph Versionen       |
+|-----------------|--------------------|-----------------------------|
+| < 1.5.4         | &rarr;             | 2.02, 2.03                  |
+| 1.5.4           | &rarr;             | 2.02, 2.03, 3.03            |
+| 2.0.0           | &rarr;             | 2.02, 2.03, 3.03            |
+| 2.1.x, 2.2.x    | &rarr;             | 2.02, 2.03, 3.03, 3.11      |
 
 {{% beta %}}

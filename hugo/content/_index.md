@@ -4,9 +4,10 @@ title: Startseite
 type: index
 weight: 1
 offline-weight: 100
+offline_title: "Was ist FPLedit?"
 ---
 
-FPLedit ist ein kostenloses Programm zum Erstellen von Fahrplänen. Dies ist vor allem für **betriebsorientierte Modellbahner** interessant, die auf ihrer Anlage einen vorbildgetreuen Betrieb durchführen wollen und dafür **ans Original angelehnte Fahrplanunterlagen** verwenden wollen. Die Vorlagen dafür werden in der Regel bei der DB bzw. DR gesucht. FPLedit ist dabei aber nicht so komplex (und teuer) wie andere, professionelle Fahrplansoftware für "echte" Verkehrsbetriebe.
+FPLedit ist ein freies Programm zum Erstellen von Fahrplänen. Dies ist vor allem für **betriebsorientierte Modellbahner** interessant, die auf ihrer Anlage einen vorbildgetreuen Betrieb durchführen wollen und dafür **ans Original angelehnte Fahrplanunterlagen** verwenden wollen. Die Vorlagen dafür werden in der Regel bei der DB bzw. DR gesucht. FPLedit ist dabei aber nicht so komplex (und teuer) wie andere, professionelle Fahrplansoftware für "echte" Verkehrsbetriebe.
 
 ## Features
 - [Erstellen und Bearbeiten](/fahrplaene-bearbeiten/) von Fahrplänen bestehend aus einer einzelnen Strecke oder einem Streckennetz und den darauf verkehrenden Zügen.
@@ -17,7 +18,9 @@ FPLedit ist ein kostenloses Programm zum Erstellen von Fahrplänen. Dies ist vor
 
 - Weiterentwicklung: FPLedit wird weiterentwickelt und wird in Zukunft noch einige Features und andere Fahrplanformate erhalten.
 
-- Möglichkeit der Erweiterung durch [selbst erstellte Extensions](/dev/), geschrieben in der Programmiersprache C#.
+- Die Ausgabe kann mit eigenen [Vorlagen](/dev/templates) an die Bedürfnisse angepasst werden.
+
+- Unterstützung **mehrerer Betriebssystem**: Windows und Linux mit Hilfe von Mono
 
 ## Fahrplan-Ausgabeformate
 

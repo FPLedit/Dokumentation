@@ -4,7 +4,11 @@ title: Aushangfahrpläne
 weight: 40
 ---
 
-Seit Version 1.4.0 können Aushangfahrpläne generiert werden. Die entsprechende Erweiterung muss natürlich aktiviert sein.
+Seit Version 1.4.0 können Aushangfahrpläne generiert werden. Aushangfahrpläne sind Fahrpläne, die den Reisenden die Abfahrtszeiten am jeweiligen Bahnhof anzeigen. Sie enthalten daher in der Regel nicht so viele Informationen, wie andere betriebsinterne Fahrplanformate.
+
+Der Aushangfahrplan folgt grob einer Vorlage vom Bahnhof Malsch aus der Zeit der DRG. Die Darstellung mit der Standard-Vorlage ist weit nicht so vorbildnah wie bei den anderen Formaten:
+
+![Quelle der Daten: Buchfahrplanheft 721-33 der DR aus dem Jahr 1894/85](afpl.png)
 
 Um den Aushangfahrplan als Vorschau anzuzeigen, verwenden Sie `Vorschau > Aushangfahrplan`. Unter `Bearbeiten > Filterregeln` können Regeln angelegt werden, nach denen vor der Ausgabe die Züge und Bahnhöfe gefiltert werden. Damit könnten z.B. alle Güterzüge und Anschlussstellen aus dem Aushangfahrplan ausgeblendet werden.
 
@@ -21,15 +25,7 @@ Weiterführend kann die Plandarstellung mit CSS (= Cascading Style Sheets) angep
 
 ![Aushangfahrplansdarstellung](afpl-darstellung.png)
 
-Der Aushangfahrplan folgt grob einer Vorlage vom Bahnhof Malsch aus der Zeit der DRG. Die Darstellung ist weit nicht so vorbildnah wie bei den anderen Formaten:
-
-![Quelle der Daten: Buchfahrplanheft 721-33 der DR aus dem Jahr 1894/85](afpl.png)
-
 ## Aushangfahrpläne exportieren und drucken
-Aushangfahrpläne können mit `Datei > Export` als HTML-Datei exportiert werden. Zum Anzeigen dieser Datei wird ein Webbrowser (wie z.B. Firefox) benötigt. Zur Ansicht der HTML-Fahrpläne müssen auch die ausgewählten Schriftarten auf dem Computer installiert sein, eine einfache Weitergabe ist deshalb nicht möglich.
-
-Ein direktes Drucken aus FPLedit heraus ist nicht möglich. Aber aus dem Webbrowser heraus können die als HTML exportierten Fahrpläne gedruckt werden. Die im Browser angegebenen Druckränder werden ignoriert.
-
-Mit einem PDF-Drucker (wie z.B. PDF24) lassen sich so auch die exportierten Fahrpläne in eine PDF-Datei umwandeln und damit auch ohne Installation der für den Fahrplan ausgewählten Schriften auf anderen Computern ansehen. Auch können viele PDF-Reader zwei A5-Seiten zusammen auf eine A4-Seite drucken, dann hat man die richtige Größe, wenn man die A4-Seite in der Mitte auseinanderschneidet bzw. faltet.
+{{< include "/include-export" >}}
 
 {{% beta %}}

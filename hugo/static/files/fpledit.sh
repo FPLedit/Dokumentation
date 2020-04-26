@@ -7,7 +7,7 @@ if [ -z "$MONO" ]; then
 	echo "Can't start fpledit. mono is not installed";
 fi
 
-$MONO $FPLEDIT --mp-log $1 >./fpledit-error.log 2>&1
+$MONO $FPLEDIT --log-console $1 >./fpledit-error.log 2>&1
 
 result="$?"
 if [ "$result" -ne 0 ]; then

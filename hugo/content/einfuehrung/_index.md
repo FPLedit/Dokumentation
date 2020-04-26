@@ -6,45 +6,53 @@ weight: 3
 
 Diese Dokumentation erläutert die ersten Schritte und Grundfunktionen des Programms.
 
-## Hauptfenster
-Nach dem Programmstart erscheint zuerst das Haptfenster. Über die verschiedenen Menüs lassen sich die Dialoge der [Erweiterungen](#erweiterungen) aufrufen. Diese werden in den entsprechenden Kapiteln der Dokumentation näher erläutert. Im unteren Bereich des Hauptfensters werden Meldungen protokolliert, z.B. Fehler beim Öffnen oder Speichern von Dateien.
+Die Arbeit mit FPLedit lässt sich grob in zwei Arbeitsschritte gliedern:
 
-Unter dem Menü ist das Streckennetz-Bearbeitungstool angeordnet. Mit ihm kann das dem Fahrplan zu Grunde liegende Streckennetz erstellt und bearbeitet werden. Zum Bearbeiten des Streckennetzes siehe [Fahrpläne Bearbeiten](/fahrplaene-bearbeiten/).
+Zuerst erfolgt die Eingabe der Fahrplandaten. Dies erfolgt im Streckeneditor im Hauptfenster und größtenteils in den Dialogen des `Bearbeiten`-Menüs. Dies gliedert sich nochmals in 3 Schritte:
+
+1. Erzeugung einer Strecke / eines Streckennetzes
+2. Erzeugung von Zügen
+3. Eingeben von Fahrtzeiten
+
+Anschließend können verschiedene Ausgabeformate generiert werden, und die Ausgaben können nach eigenen Wünschen angepasst werden.
+
+Die entsprechenden Funktionen werden in den nachfolgenden Kapiteln dieser Dokumentation erläutert.
+
+## Hauptfenster des Programms
+
+Nach dem Programmstart erscheint zuerst das Haptfenster. Über die verschiedenen Menüs lassen sich die Dialoge der einzelnen Funktionen aufrufen. Diese werden in den entsprechenden Kapiteln der Dokumentation näher erläutert. Im unteren Bereich des Hauptfensters werden Meldungen protokolliert, z.B. Fehler beim Öffnen oder Speichern von Dateien.
+
+Unter dem Menü ist direkt im Hauptfenster das Strecken-Bearbeitungstool angeordnet. Hier kann auf einfache graphische Weise die Strecke oder das Streckennetz des Fahrplans bearbeitet werden. Mehr zu den verschiedenen Bearbeitungsmöglichkeiten im Kapitel zu Fahrplänen. Mit der Maus kann hier die Ansicht verschoben werden.
 
 ![Hauptfenster nach einigen Aktionen](hauptfenster.png)
 
-Der Menüpunkt `Bearbeiten > Rückgängig` können fast alle zuletzt angewendete Aktionen rückgängig gemacht werden.
+* Menüpunkt `Bearbeiten`: Hier gibt es die Möglichkeit, den Fahrplan nach eigenen Wünschen zu erzeugen und anzupassen. Die Reihenfolge entspricht der empfohlenen Bearbeitungsreihenfolge. Die hier befindlichen Dialoge dienen ausschließlich der Dateneingabe.
+    * Der Menüpunkt `Bearbeiten > Rückgängig` können fast alle zuletzt angewendete Aktionen rückgängig gemacht werden.
+    * Je nach Fahrplantyp stehen hier unterschiedliche Unterpunkte zur Verfügung.
+* Menüpunkt `Vorschau`: Hier kann die Ausgabe der einzelnen Ausgabeformate geteset werden. Weitere Informationen in den jeweiligen Kapiteln.
+* Menüpunkt `jTrainGraph`: Mit diesem Menüpunkt kann direkt aus FPLedit heraus [das Bildfahrplanprogramm jTrainGraph](../bildfahrplaene) gestartet werden.
 
-## Erweiterungen
-Eines der Grundkonzepte von FPLedit ist die Erweiterbarkeit. Erweiterungen fügen Menüs und eigene Dialoge hinzu und stellen zusätzliche Funktionalität bereit. Die Erweiterungen liegen als DLL-Datei im Programmverzeichnis. Nahezu alle Programmfunktionen werden über Erweiterungen bereitgestellt. Mit dem Programm werden schon einige Erweiterungen, die standardmäßig alle aktiviert sind, mitausgeliefert:
+## Dynamische Bildfahrplanvorschau
+Mit dem Menüpunkt `Vorschau > Dynamischer Bildfahrplan` steht ein Werkzeug bereit, das bei der Fahrplangestaltung nützlich sein kann. Das Bildfahrplanfenster kann neben dem Hauptfenster dauerhaft geöffnet bleiben und zeigt immer die aktuellen Änderungen an, sobald alle anderen Dialoge geschlossen wurden. Oben links lässt sich die darzustellende Strecke auswählen.
 
-* Aushangfahrplan-Modul (`FPLedit.Aushangfahrplan.dll`)
-* Buchfahrplan-Modul (`FPLedit.Buchfahrplan.dll`)
-* Modul für Tabellenfahrpläne (`FPLedit.Kursbuch.dll`)
-* Starter für jTrainGraph zur Bildfahrplanerstellung (`FPLedit.jTrainGraphStarter.dll`)
-* Dynamische Bildfahrplanvorschau (`FPLedit.Bildfahrplan.dll`)
-* Die Datei `FPLedit.Shared.dll` ist aber keine Erweiterung sondern Bestandteil des Hauptprogramms!
+![Dynamische Bildfahrplanvorschau](dynamische-vorschau.png)
 
-Erweiterungen können über über das Programm verwaltet werden (`Hilfe > Erweiterungen`). In diesem Dialog können Erweiterungen deaktiviert (`<`) oder aktiviert (`>`) werden. [Eigene Erweiterungen](/dev/) können in C# programmiert werden.
+Einige Darstellungseinstellungen lassen sich auch anpassen. Diese werden auch für den von jTrainGraph generierten Bildfahrplan übernommen. Ein Export oder Druck der dynamischen Vorschau ist nicht möglich.
 
-![Erweiterungsfenster](erweiterungsfenster.png)
-
-## Vorlagen
-Zur Generierung der Fahrplan-Ausgabedateien kommen Vorlagen zum Einsatz. Vorlagen sind Textdateien mit der Endung `.fpltmpl`, die im vorgegebenen Format mit einem Texteditor von jedem Benutzer selbst erstellt werden können. Diese liegen im Ordner `templates/` im Programmverzeichnis.
-
-Die Verwaltung von Vorlagen ist unter `Hilfe > Vorlagen` möglich. Fest eingebaute Vorlagen können nicht bearbeitet oder gelöscht werden, dafür können diese als bearbeitbare Kopie gespeichert werden.
-
-**Achtung:** Vorlagen sind ausführbarer Programmcode. Möglicherweise können Vorlagen, die nicht mit FPLedit ausgeliefert wurden und beispielsweise von einer anderen Website heruntergeladen werden, ein Sicherheitsrisiko für ihren Computer darstellen.
-
-![Vorlagenfenster](vorlagenfenster.png)
+![Dynamische Bildfahrplaneinstellungen](dynamische-einstellungen.png)
 
 ## Tastenkombinationen
 
 Einige häufig verwendete Funktionen des Hauptprogramms lassen sich über Tastenkombinationen im Hauptfenster aufrufen:
 
 * <kbd>Strg</kbd>+<kbd>S</kbd>: Datei am aktuellen Ort speichern
+* <kbd>Strg</kbd>+<kbd>⇧ Umschalt</kbd>+<kbd>S</kbd>: Speichern untern
 * <kbd>Strg</kbd>+<kbd>O</kbd>: Datei öffnen
 * <kbd>Strg</kbd>+<kbd>E</kbd>: Aktuelle Datei exportieren
 * <kbd>Strg</kbd>+<kbd>Z</kbd>: Die letzte Aktion rückgängig machen
+* <kbd>Strg</kbd>+<kbd>K</kbd>: Versuche, den Fahrplantyp zu konvertieren
+* <kbd>Strg</kbd>+<kbd>L</kbd>: *(Nur lineare Fahrpläne)* Strecke bearbeiten
+* <kbd>Strg</kbd>+<kbd>R</kbd>: Züge bearbeiten
+* <kbd>Strg</kbd>+<kbd>T</kbd>: Fahrplan bearbeiten
 
 {{% beta %}}
