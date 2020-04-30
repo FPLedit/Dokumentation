@@ -12,7 +12,6 @@ Eines der Grundkonzepte von FPLedit ist die Erweiterbarkeit. Erweiterungen füge
 * Modul für Tabellenfahrpläne (`FPLedit.Kursbuch.dll`)
 * Starter für jTrainGraph zur Bildfahrplanerstellung (`FPLedit.jTrainGraphStarter.dll`)
 * Dynamische Bildfahrplanvorschau (`FPLedit.Bildfahrplan.dll`)
-* Die Datei `FPLedit.Shared.dll` ist aber keine Erweiterung sondern Bestandteil des Hauptprogramms!
 
 Erweiterungen können über über das Programm verwaltet werden (`Hilfe > Erweiterungen`). In diesem Dialog können Erweiterungen deaktiviert (`<`) oder aktiviert (`>`) werden. [Eigene Erweiterungen](/dev/) können in C# programmiert werden.
 

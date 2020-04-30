@@ -15,11 +15,9 @@ Den in dieser Anleitung erstellten Fahrplan der Strecke Alexisbad - Harzgerode (
 
 Nachdem man mit `Datei > Neu > Lineare Strecke` einen neuen Fahrplan angelegt hat, kann unter dem Menüpunkt `Bearbeiten > Strecke bearbeiten (tabellarisch)` die Strecke bearbeitet werden. Die Strecke enthält alle Bahnhöfe, sie kann aber nur linear sein.
 
-Durch einen Klick auf `Neue Station` (<kbd>Strg</kbd>+<kbd>N</kbd>) kann man durch Eingabe von Bahnhofsnamen und Streckenkilometer einen neuen Bahnhof anlegen, mit `Station bearbeiten` (<kbd>Strg</kbd>+<kbd>B</kbd>) können nachträglich die Eigenschaften einer Station wieder geändert werden. Mit dem Button `Station löschen` (<kbd>Entf</kbd>) löscht man die selektierte Station wieder.
+Durch einen Klick auf `Neue Station` ({{< kbd "Strg+N" >}}) kann man durch Eingabe von Bahnhofsnamen und Streckenkilometer einen neuen Bahnhof anlegen, mit `Station bearbeiten` ({{< kbd "Strg+B" >}} ) können nachträglich die Eigenschaften einer Station wieder geändert werden. Mit dem Button `Station löschen` ({{< kbd "Del" >}} ) löscht man die selektierte Station wieder.
 
 Eine Station kann mit Gleisangaben versehen werden. Im unteren Teil des Stationseditors kann der schematische Gleisplan editiert werden. Mit einem Klick auf die entsprechenden Schlatflächen können Gleise hinzugefügt, verschoben und auch wieder entfernt werden. Mit einem Doppelklick auf den Gleisnamen kann dieser bearbeitet werden. Am Rand können die Standardgleise in die entsprechende Richtung verschoben werden.
-
-Mit der Schaltfläche `Strecke laden` (<kbd>Strg</kbd>+<kbd>L</kbd>) lässt sich die Strecke aus einem anderen Fahrplan bzw. einer aus jTrainGraph exportierten Streckendatei (`.str`) laden, so lange noch keine eigenen Stationen angelegt wurden.
 
 ![Streckenfenster](lin-streckenfenster.png)
 
@@ -27,7 +25,7 @@ Mit der Schaltfläche `Strecke laden` (<kbd>Strg</kbd>+<kbd>L</kbd>) lässt sich
 
 Wenn eine Strecke angelegt wurde, ist der Menüpunkt `Bearbeiten > Züge bearbeiten` nicht mehr ausgegraut. In diesem Fenster lassen sich die Züge, die auf der Strecke verkehren, bearbeiten.
 
-Die Züge sind nach Fahrtrichtung geordnet, diese kann nachträglich auch nicht mehr geändert werden! Durch einen Klick auf `Neuer Zug` (<kbd>Strg</kbd>+<kbd>N</kbd>) bei der jeweiligen Fahrtrichtung, in dem die Daten des Zuges festgelegt werden können. Den selben Dialog erreicht man auch mit einem Klick auf `Zug bearbeiten` (<kbd>Strg</kbd>+<kbd>B</kbd>), damit lassen sich dann nachträglich Züge bearbeiten. Züge lassen sich natürlich auch mit dem entsprechenden Button bzw. mit <kbd>Entf</kbd> löschen.
+Die Züge sind nach Fahrtrichtung geordnet, diese kann nachträglich auch nicht mehr geändert werden! Durch einen Klick auf `Neuer Zug` ({{< kbd "Strg+N" >}}) bei der jeweiligen Fahrtrichtung, in dem die Daten des Zuges festgelegt werden können. Den selben Dialog erreicht man auch mit einem Klick auf `Zug bearbeiten` ({{< kbd "Strg+B" >}}), damit lassen sich dann nachträglich Züge bearbeiten. Züge lassen sich natürlich auch mit dem entsprechenden Button bzw. mit {{< kbd "Del" >}} löschen.
 
 ![Zugfenster](lin-zugfenster.png)
 
@@ -37,11 +35,11 @@ In jeder Zeile können Abfahrts- und Ankunftsgleis ausgewählt werden. Diese wer
 
 Bei der Bearbeitung der Verkehrstage eines Zuges können neben den Auswahlboxen unten die folgenden Tastenkürzel verwendet werden:
 
-* <kbd>Strg</kbd>+<kbd>A</kbd> Alle Tage anwählen
-* <kbd>Strg</kbd>+<kbd>W</kbd> Verkehrt nur Werktags (Mo-Sa)
-* <kbd>Strg</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd> Verkehrt nur Werktags ohne Samstag
-* <kbd>Strg</kbd>+<kbd>S</kbd> Verkehrt nur Sonntags
-* <kbd>Strg</kbd>+<kbd>0</kbd> Keine Tage anwählen
+* {{< kbd "Strg+A" >}} Alle Tage anwählen
+* {{< kbd "Strg+W" >}} Verkehrt nur Werktags (Mo-Sa)
+* {{< kbd "Strg+Shift+W" >}} Verkehrt nur Werktags ohne Samstag
+* {{< kbd "Strg+S" >}} Verkehrt nur Sonntags
+* {{< kbd "Strg+0" >}} Keine Tage anwählen
 
 ![Zugfenster](lin-zugeditor.png)
 
@@ -58,7 +56,7 @@ Für die Eingabe der Zeitwerte stehen verschiedene Formate zur Verfügung:
 * `hmm`, z.B. `850` wird zu `08:50`
 * `mm`, z.B. `10` wird zu `00:10`
 
-Bei Ankünften kann festgelegt werden, ob der Zug vor der Trapeztafel halten muss. Dazu muss die entsprechende Zelle in der Tabelle ausgewählt werden und anschließend mit der Schaltfläche unten links oder mit der Taste <kbd>T</kbd> der Trapeztafelhalt aktiviert werden. Auf dem gleichen Weg wird er auch wieder deaktiviert. In der Tabelle wird der Trapeztafelhalt durch einen hellgrauen Hintergrund angezeigt. Ebenso kann festgelegt werden, wer an dem Bahnhof die Zuglaufmeldung abgibt. Dazu befindet sich ein weiterer Button unten links oder man verwendet die Taste <kbd>Z</kbd>. Dies wird durch Fettschrift symbolisiert. Eine Angabe zur Zuglaufmeldung kann auch noch bei der Abfahrt am ersten Bahnhof angegeben werden. Nicht alle Buchfahrplan-Vorlagen zeigen diese beiden Informationen an.
+Bei Ankünften kann festgelegt werden, ob der Zug vor der Trapeztafel halten muss. Dazu muss die entsprechende Zelle in der Tabelle ausgewählt werden und anschließend mit der Schaltfläche unten links oder mit der Taste {{< kbd "T" >}} der Trapeztafelhalt aktiviert werden. Auf dem gleichen Weg wird er auch wieder deaktiviert. In der Tabelle wird der Trapeztafelhalt durch einen hellgrauen Hintergrund angezeigt. Ebenso kann festgelegt werden, wer an dem Bahnhof die Zuglaufmeldung abgibt. Dazu befindet sich ein weiterer Button unten links oder man verwendet die Taste {{< kbd "Z" >}} . Dies wird durch Fettschrift symbolisiert. Eine Angabe zur Zuglaufmeldung kann auch noch bei der Abfahrt am ersten Bahnhof angegeben werden. Nicht alle Buchfahrplan-Vorlagen zeigen diese beiden Informationen an.
 
 ![Fahrplan bearbeiten](lin-fahrplanfenster.png)
 

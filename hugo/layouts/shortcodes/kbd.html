@@ -1,0 +1,27 @@
+{{- $shortcut := .Get 0 -}}
+{{- $parts := split $shortcut "+" -}}
+{{- $processed := slice -}}
+{{- range $parts -}}
+    {{- $part := . -}}
+    {{- if eq $part "Del" -}}
+        {{- $part = "Entf" -}}
+    {{- else if eq $part "Ctrl" -}}
+        {{- $part = "Strg" -}}
+    {{- else if eq $part "Shift" -}}
+        {{- $part = "⇧ Shift" -}}
+    {{- else if eq $part "Tab" -}}
+        {{- $part = "Tab ↹" -}}
+    {{- else if eq $part "Down" -}}
+        {{- $part = "↓" -}}
+    {{- else if eq $part "Up" -}}
+        {{- $part = "↑" -}}
+    {{- else if eq $part "Left" -}}
+        {{- $part = "←" -}}
+    {{- else if eq $part "Right" -}}
+        {{- $part = "→" -}}
+    {{- end -}}
+    {{- $processed = $processed | append $part -}}
+{{- end -}}
+{{- with $processed -}}
+    <kbd>{{- delimit $processed "</kbd>+<kbd>" -}}</kbd>
+{{- end -}}

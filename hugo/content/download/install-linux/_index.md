@@ -33,7 +33,7 @@ Grundsätzlich reicht auch auf Linux das reine Entpacken des ZIP-Ordners. Die Da
 {{< include "/download/update-general.md" >}}
 
 ## Andere Bedienung: Fahrplaneditoren
-Unter Linux ist die Bedienung der Fahrplaneditoren (sowohl für lineare als auch für Netzwerkfahrpläne) anders als unter Windows. Felder müssen erst per Doppelklick zur Eingabe geöffnet werden. Ein einfacher Klick neben das Feld oder <kbd>Enter</kbd> schließt das Eingabefeld wieder und die Eingabe wird übernommen.
+Unter Linux ist die Bedienung der Fahrplaneditoren (sowohl für lineare als auch für Netzwerkfahrpläne) anders als unter Windows. Felder müssen erst per Doppelklick zur Eingabe geöffnet werden. Ein einfacher Klick neben das Feld oder {{< kbd "Enter" >}} schließt das Eingabefeld wieder und die Eingabe wird übernommen.
 
 ![Editorfenster (hier lineare Strecke) unter Linux](editor-linux.png)
 
@@ -41,9 +41,9 @@ Unter Linux ist die Bedienung der Fahrplaneditoren (sowohl für lineare als auch
 
 Zusätzlich stehen aber weitere Tastaturkürzel zur Verfügung:
 
-* <kbd>Pos1</kbd> wählt das erste Feld aus
-* <kbd>Enter</kbd> beendet den Eingabemodus
-* <kbd>Tab</kbd> wechselt ein Feld nach rechts
-* <kbd>Strg</kbd>+<kbd>Tab</kbd> wechselt ein Feld nach links
+* {{< kbd "Pos1" >}} wählt das erste Feld aus
+* {{< kbd "Enter" >}} beendet den Eingabemodus
+* {{< kbd "Tab" >}} wechselt ein Feld nach rechts
+* {{< kbd "Strg+Tab" >}} wechselt ein Feld nach links
 
 Wenn Felder nur über die Tastatur ausgewählt werden, dann funktionieren bei der Eingabe nur die Buchstaben, Ziffern, Punktzeichen und die Löschtaste (also vor allem keine Pfeiltaste um innerhalb eines Feldes zu navigieren)!

@@ -27,26 +27,26 @@ Eine Station kann mit Gleisangaben versehen werden. Im unteren Teil des Stations
 
 Wenn ein Streckennetz angelegt wurde, ist der Menüpunkt `Bearbeiten > Züge bearbeiten` nicht mehr ausgegraut. In diesem Fenster lassen sich die Züge, die im Streckennetz verkehren, bearbeiten. Züge haben im Gegensatz zu früheren Versionen einen Laufweg, der für jeden Zug seperat angelegt werden kann. Daher haben Züge auch keine Richtung mehr und die entsprechenden Teilung entfällt.
 
-Durch einen Klick auf `Neuer Zug` (<kbd>Strg</kbd>+<kbd>N</kbd>) öffnet sich ein Fenster, in dem der Laufweg des Zuges eingestellt werden kann. Dies geschieht durch Klicks auf die Startstation und die Endstation (in dieser Reihenfolge!), was zu einer roten Markierung des Laufweges führt, und einer anschließenden Bestätigung mit `Weiter >>`.
-Anschließend öffnet sich ein Fenster in dem man Name, Verkehrstage und erweiterte Eigenschaften des Zuges auswählen kann. Den selben Dialog erreicht man auch mit einem Klick auf `Zug bearbeiten` (<kbd>Strg</kbd>+<kbd>B</kbd>), damit lassen sich dann nachträglich diese Eigenschaften bearbeiten.
+Durch einen Klick auf `Neuer Zug` ({{< kbd "Strg+N" >}}) öffnet sich ein Fenster, in dem der Laufweg des Zuges eingestellt werden kann. Dies geschieht durch Klicks auf die Startstation und die Endstation (in dieser Reihenfolge!), was zu einer roten Markierung des Laufweges führt, und einer anschließenden Bestätigung mit `Weiter >>`.
+Anschließend öffnet sich ein Fenster in dem man Name, Verkehrstage und erweiterte Eigenschaften des Zuges auswählen kann. Den selben Dialog erreicht man auch mit einem Klick auf `Zug bearbeiten` ({{< kbd "Strg+B" >}}), damit lassen sich dann nachträglich diese Eigenschaften bearbeiten.
 
 Die erweitereten Eigenschaften enthalten das Triebfahrzeug, die Mindestbremshundertstel und Last. Das Triebfahrzeug lässt sich dabei aus einer Liste aller in dieser Fahrplandatei verwendeten Triebfahrzeuge auswählen oder selbst eingeben. Diese drei Angaben sind nicht verpflichtend und werden im Buchfahrplan angzeigt. Unten links kann ein Folgezug ausgewählt werden. Damit können Umläufe generiert werden. Diese werden in jTrainGraph im Bildfahrplan angezeigt.
 
-Züge lassen sich natürlich auch mit dem entsprechenden Button bzw. mit <kbd>Entf</kbd> löschen.
+Züge lassen sich natürlich auch mit dem entsprechenden Button bzw. mit {{< kbd "Del" >}} löschen.
 
 Bei der Bearbeitung der Verkehrstage eines Zuges können neben den Auswahlboxen unten die folgenden Tastenkürzel verwendet werden:
 
-* <kbd>Strg</kbd>+<kbd>A</kbd> Alle Tage anwählen
-* <kbd>Strg</kbd>+<kbd>W</kbd> Verkehrt nur Werktags (Mo-Sa)
-* <kbd>Strg</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd> Verkehrt nur Werktags ohne Samstag
-* <kbd>Strg</kbd>+<kbd>S</kbd> Verkehrt nur Sonntags
-* <kbd>Strg</kbd>+<kbd>0</kbd> Keine Tage anwählen
+* {{< kbd "Strg+A" >}} Alle Tage anwählen
+* {{< kbd "Strg+W" >}} Verkehrt nur Werktags (Mo-Sa)
+* {{< kbd "Strg+Shift+W" >}} Verkehrt nur Werktags ohne Samstag
+* {{< kbd "Strg+S" >}} Verkehrt nur Sonntags
+* {{< kbd "Strg+0" >}} Keine Tage anwählen
 
 ![Zugfenster](zugfenster.png)
 
 ## Fahrplan eines Zuges bearbeiten
 
-Nachdem die Züge angelegt wurden, kann der Fahrplan jedes einzelnen Zuges bearbeitet werden. Dazu klickt man im Zugfenster mit dem zu bearbeitenden Zug ausgewählt auf `Zug bearbeiten` (<kbd>Strg</kbd>+<kbd>B</kbd>). Im sich nun öffnenden Fahrplaneditor können die Fahrtzeiten des Zuges bearbeitet werden. In der linken Spalte sind die Stationen des Laufweges angezeigt, daneben können Ankunfts- und Abfahrtszeiten bearbeitet werden.
+Nachdem die Züge angelegt wurden, kann der Fahrplan jedes einzelnen Zuges bearbeitet werden. Dazu klickt man im Zugfenster mit dem zu bearbeitenden Zug ausgewählt auf `Zug bearbeiten` ({{< kbd "Strg+B" >}}). Im sich nun öffnenden Fahrplaneditor können die Fahrtzeiten des Zuges bearbeitet werden. In der linken Spalte sind die Stationen des Laufweges angezeigt, daneben können Ankunfts- und Abfahrtszeiten bearbeitet werden.
 
 Für die Eingabe der Zeitwerte stehen verschiedene Formate zur Verfügung:
 
@@ -55,7 +55,7 @@ Für die Eingabe der Zeitwerte stehen verschiedene Formate zur Verfügung:
 * `hmm`, z.B. `850` wird zu `08:50`
 * `mm`, z.B. `10` wird zu `00:10`
 
-Bei Ankünften kann festgelegt werden, ob der Zug vor der Trapeztafel halten muss. Dazu muss die entsprechende Zelle in der Tabelle ausgewählt werden und anschließend mit der Schaltfläche unten links oder mit der Taste <kbd>T</kbd> der Trapeztafelhalt aktiviert werden. Auf dem gleichen Weg wird er auch wieder deaktiviert. In der Tabelle wird der Trapeztafelhalt durch einen hellgrauen Hintergrund angezeigt. Ebenso kann festgelegt werden, wer an dem Bahnhof die Zuglaufmeldung abgibt. Dazu befindet sich ein weiterer Button unten links oder man verwendet die Taste <kbd>Z</kbd>. Dies wird durch Fettschrift symbolisiert. Eine Angabe zur Zuglaufmeldung kann auch noch bei der Abfahrt am ersten Bahnhof angegeben werden. Nicht alle Buchfahrplan-Vorlagen zeigen diese beiden Informationen an.
+Bei Ankünften kann festgelegt werden, ob der Zug vor der Trapeztafel halten muss. Dazu muss die entsprechende Zelle in der Tabelle ausgewählt werden und anschließend mit der Schaltfläche unten links oder mit der Taste {{< kbd "T" >}} der Trapeztafelhalt aktiviert werden. Auf dem gleichen Weg wird er auch wieder deaktiviert. In der Tabelle wird der Trapeztafelhalt durch einen hellgrauen Hintergrund angezeigt. Ebenso kann festgelegt werden, wer an dem Bahnhof die Zuglaufmeldung abgibt. Dazu befindet sich ein weiterer Button unten links oder man verwendet die Taste {{< kbd "Z" >}}. Dies wird durch Fettschrift symbolisiert. Eine Angabe zur Zuglaufmeldung kann auch noch bei der Abfahrt am ersten Bahnhof angegeben werden. Nicht alle Buchfahrplan-Vorlagen zeigen diese beiden Informationen an.
 
 In jeder Zeile können Abfahrts- und Ankunftsgleis ausgewählt werden. Diese werden an den entsprechenden Stellen in den Fahrplänen angezeigt.
 

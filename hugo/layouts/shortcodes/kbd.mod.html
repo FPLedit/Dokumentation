@@ -1,0 +1,29 @@
+{{- $shortcut := .Get 0 -}}
+{{- $parts := split $shortcut "+" -}}
+{{- $processed := slice -}}
+{{- range $parts -}}
+    {{- $part := . -}}
+    {{- if eq $part "Del" -}}
+        {{- $part = "\\textrm{Entf}" -}}
+    {{- else if eq $part "Ctrl" -}}
+        {{- $part = "\\textrm{Strg}" -}}
+    {{- else if eq $part "Shift" -}}
+        {{- $part = "\\Uparrow \\textrm{Shift}" -}}
+    {{- else if eq $part "Tab" -}}
+        {{- $part = "\\textrm{Tab} \\rightleftharpoons" -}}
+    {{- else if eq $part "Down" -}}
+        {{- $part = "\\downarrow" -}}
+    {{- else if eq $part "Up" -}}
+        {{- $part = "\\uparrow" -}}
+    {{- else if eq $part "Left" -}}
+        {{- $part = "\\leftarrow" -}}
+    {{- else if eq $part "Right" -}}
+        {{- $part = "\\rightarrow" -}}
+    {{- else -}}
+        {{- $part = delimit (slice "\\textrm{" $part "}" ) "" }}
+    {{- end -}}
+    {{- $processed = $processed | append $part -}}
+{{- end -}}
+{{- with $processed -}}
+    $\boxed{ {{- delimit $processed "}+\\boxed{" -}} }$
+{{- end -}}

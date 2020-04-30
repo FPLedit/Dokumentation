@@ -45,14 +45,14 @@ Einige Darstellungseinstellungen lassen sich auch anpassen. Diese werden auch f�
 
 Einige häufig verwendete Funktionen des Hauptprogramms lassen sich über Tastenkombinationen im Hauptfenster aufrufen:
 
-* <kbd>Strg</kbd>+<kbd>S</kbd>: Datei am aktuellen Ort speichern
-* <kbd>Strg</kbd>+<kbd>⇧ Umschalt</kbd>+<kbd>S</kbd>: Speichern untern
-* <kbd>Strg</kbd>+<kbd>O</kbd>: Datei öffnen
-* <kbd>Strg</kbd>+<kbd>E</kbd>: Aktuelle Datei exportieren
-* <kbd>Strg</kbd>+<kbd>Z</kbd>: Die letzte Aktion rückgängig machen
-* <kbd>Strg</kbd>+<kbd>K</kbd>: Versuche, den Fahrplantyp zu konvertieren
-* <kbd>Strg</kbd>+<kbd>L</kbd>: *(Nur lineare Fahrpläne)* Strecke bearbeiten
-* <kbd>Strg</kbd>+<kbd>R</kbd>: Züge bearbeiten
-* <kbd>Strg</kbd>+<kbd>T</kbd>: Fahrplan bearbeiten
+* {{< kbd "Strg+S" >}}: Datei am aktuellen Ort speichern
+* {{< kbd "Strg+Shift+S" >}}: Speichern untern
+* {{< kbd "Strg+O" >}}: Datei öffnen
+* {{< kbd "Strg+E" >}}: Aktuelle Datei exportieren
+* {{< kbd "Strg+Z" >}}: Die letzte Aktion rückgängig machen
+* {{< kbd "Strg+K" >}}: Versuche, den Fahrplantyp zu konvertieren
+* {{< kbd "Strg+L" >}}: *(Nur lineare Fahrpläne)* Strecke bearbeiten
+* {{< kbd "Strg+R" >}}: Züge bearbeiten
+* {{< kbd "Strg+T" >}}: Fahrplan bearbeiten
 
 {{% beta %}}
