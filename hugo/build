@@ -2,39 +2,14 @@
 
 source ./runner.sh
 
-# Helper functions
-PREFIX=themes/hugo-material-docs
-
-_internal_sass() {
-    sass $PREFIX/src/application.scss $PREFIX/static/stylesheets/application.css --no-source-map --style compressed $1
-}
-
-# Internal tasks. Do not use directly!
-task__sass_s() {
-    _internal_sass
-}
-
-task__sass_w() {
-    _internal_sass --watch || return
-}
-
-task__hugo_s() {
-    hugo
-}
-
-task__hugo_w() {
-    hugo server || return
-}
-
 # Build tasks
 runner_default_task="static"
 task_static() {
-    runner_sequence _sass_s _hugo_s
+    hugo
 }
 
 task_watch() {
-    trap 'exit 0' SIGINT
-    runner_parallel _sass_w _hugo_w
+    hugo server || return
 }
 
 task_offline() {

@@ -1,6 +1,8 @@
 ---
 headless: true
 nooffline: true
+_build:
+    render: false
 ---
 
 Der konfigurierte Fahrplan können mit `Datei > Export` als HTML-Datei exportiert werden. Zum Anzeigen dieser Datei wird ein Webbrowser (wie z.B. Firefox) benötigt. Zur Ansicht der HTML-Fahrpläne müssen auch die ausgewählten Schriftarten auf dem Computer installiert sein, eine einfache Weitergabe ist deshalb nicht möglich.

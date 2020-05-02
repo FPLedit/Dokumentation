@@ -1,12 +1,12 @@
 .article pre.chroma code { color: rgba(255, 255, 255, 0.9);	background-color: transparent; }
 
-.chroma { color: #f8f8f2; background-color: #272822 }
+.chroma, pre, .article pre code { color: #f8f8f2; background: #272822 }
 .chroma .err { color: #960050; background-color: #1e0010 }
-.chroma .lntd { ; vertical-align: top; padding: 0; margin: 0; border: 0; }
-.chroma .lntable { ; border-spacing: 0; padding: 0; margin: 0; border: 0; width: 100%; overflow: auto; display: block; }
+.chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+.chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: 100%; overflow: auto; display: block; }
 .chroma .hl { background-color: #ffffcc; display: block; width: 100% }
-.chroma .lnt { ; margin-right: 0.4em; padding: 0 0.4em 0 0.4em; display: block; }
-.chroma .ln { ; margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
+.chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; display: block; }
+.chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
 .chroma .k { color: #66d9ef }
 .chroma .kc { color: #66d9ef }
 .chroma .kd { color: #66d9ef }

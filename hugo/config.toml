@@ -56,6 +56,11 @@ pygmentsUseClasses = true
 	isHTML = false
 	protocol = "tex://"
 
+[markup]
+	[markup.goldmark]
+		[markup.goldmark.renderer]
+			unsafe = true
+
 [[menu.main]]
 	name   = "Start"
 	url    = "/"

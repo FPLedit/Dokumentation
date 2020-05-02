@@ -1,6 +1,8 @@
 ---
 headless: true
 nooffline: true
+_build:
+    render: false
 ---
 
 | Bildfahrpläne                                 | Buchfahrpläne                             | Aushangfahrpläne                               |

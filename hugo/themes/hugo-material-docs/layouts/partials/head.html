@@ -13,7 +13,7 @@
     <link rel="canonical" href="{{ .Permalink }}">
     {{ with .Site.Params.author }}
     <meta name="author" content="{{ . }}">
-    {{ end }}
+    {{- end }}
 
 	<meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Permalink }}">
@@ -33,10 +33,9 @@
       }
     </style>
 
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}stylesheets/application.css">
-    <!--<link rel="stylesheet" href="{{ .Site.BaseURL }}stylesheets/palettes.css">-->
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}stylesheets/highlight.css">
-	<link rel="stylesheet" href="{{ $.Site.BaseURL }}stylesheets/palette.css">
+    {{- $options := (dict "targetPath" "stylesheets/application2.css" "outputStyle" "compressed" ) -}}
+    {{- $sass := resources.Get "application.scss" | toCSS $options }}
+    <link rel="stylesheet" href="{{ $sass.Permalink }}">
   </head>
   <body class="{{ with .Site.Params.palette.primary }}palette-primary-{{ . }}{{end }} {{ with .Site.Params.palette.accent }}palette-accent-{{ .  }}{{ end }}">
 	  <input class="toggle" type="checkbox" id="toggle-drawer" autocomplete="off">

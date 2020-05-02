@@ -46,7 +46,7 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
 * Behebt mehrere Fehler im Zusammenhang mit dem Editieren von Gleisen an Stationen
 * Verbesserung der Multiplattform-Kompatibilität
 
-<details><summary>**Ältere Verionshinweise**</summary>
+<details><summary><strong>Ältere Verionshinweise</strong></summary>
 
 ### 2.1.0 (vom 22.09.2019)
 * [Zirkuläre Streckennetze](/fahrplaene-bearbeiten/cycles/) sind nun möglich
