@@ -24,13 +24,9 @@ Bei Geschwindigkeitswechseln können alle Eigenschaften bearbeitet werden, bei B
 
 ![Höchstgeschwindigkeitsfenster](hgsfenster.png)
 
-In den Namen der Geschwindigkeitswechsel können Sonderzeichen verwendet werden, die in Buchfahrplänen eine besondere Bedeutung haben. Zum Verwenden im Plan bitte hier in der Dokumentation Kopieren (<kbd>Strg+C</kbd>) und im Namenstextfeld einfügen (<kbd>Strg+V</kbd>).
+In den Namen der Geschwindigkeitswechsel können Sonderzeichen verwendet werden, die in Buchfahrplänen eine besondere Bedeutung haben. Zum Verwenden im Plan bitte hier in der Dokumentation Kopieren ({{< kbd "Strg+C" >}}) und im Namenstextfeld einfügen ({{< kbd "Strg+V" >}}).
 
-| Symbol | Bedeutung                               |
-|--------|-----------------------------------------|
-| ¥      | Ende des anschließenden Weichenbereichs |
-| ▽      | Verkürzter Vorsignalabstand             |
-| ┣━╸    | Einfahrt in Stumpfgleis                 |
+{{< include_mod "/buchfahrplaene/include-symbol-table" "/buchfahrplaene/include-symbol-table-tex" >}}
 
 Unter `Bearbeiten > Filterregeln` können Regeln angelegt werden, nach denen vor der Ausgabe die Züge und Bahnhöfe gefiltert werden. Damit könnten z.B. alle Güterzüge oder Anschlussstellen aus dem Buchfahrplan ausgeblendet werden.
 
