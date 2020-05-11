@@ -5,16 +5,17 @@ weight: 80
 nooffline: true
 ---
 
-Diese Seite bietet einen kurzen Überblick über die Entwicklung von Erweiterungen für FPLedit.
-
-{{< note title="Zielgruppe" >}}
+{{< note title="Zielgruppe dieser Anleitung" >}}
 Zur Entwicklung von Erweiterung sind Programmierkenntnisse erforderlich. Wenn Sie Ideen oder Anregungen haben und nicht gleich eine eigene Erweiterung entwickeln wollen, können Sie sich auch gerne per Mail (Adresse siehe Impressum) bei mir melden.
 
 Die hier beschriebenen Konzepte werden für den gewöhlichen Gebrauch von FPLedit nicht benötigt!
 {{< /note >}}
 
+{{< note title="API-Dokumentation" >}}
+Die API-Dokumentation befindet sich unter https://apidoc.fpledit.de/ (in Englischer Sprache). Diese Anleitung führt nur in die wichtigesten Konzepte ein. In Zukunft wird der Entwickler-Bereich dieser Hauptseite auch auf die neue Seite verschoben.
+{{< /note >}}
 
-> **Achtung**: Diese Anleitung ist zur Zeit auf dem Stand von FPLedit Version 2.2.0. Möglicherweise ist sie nicht 100%ig aktuell. In zukünftigen Versionen werden möglicherweise die Programmschnittstellen geändert. In der [Änderungshistorie](changelog/) finden sich weitere Hinweise.
+> **Achtung**: Diese Anleitung ist zur Zeit auf dem Stand von FPLedit Version 2.2.0. Möglicherweise ist sie nicht 100%ig aktuell. In zukünftigen Versionen werden möglicherweise die Programmschnittstellen geändert. Die [API-Dokumentation](https://apidoc.fpledit.de/) ist in der Regel aktueller.
 
 FPLedit basiert auf .NET und ist in der Programmiersprache C# geschrieben, daher ist dies auch die am besten für die Erweiterungsentwicklung geeignete Sprache. Zur Entwicklung mit C# ist die kostenlose Entwicklungsumgebung [Visual Studio Community](https://www.visualstudio.com/de/) von Microsoft gut geeignet, aber auch Alternativen (z.B. das (kostenlose) [MonoDevelop](https://www.monodevelop.com/) und (kostenpflichtige) Rider für Linux) sind verwendbar.
 

@@ -12,19 +12,18 @@ FPLedit ist unter der GNU GPL v3-Lizenz lizenziert:
 
 **Datenschutz bei der Verwendung von FPLedit:** Bei der programminternen Überprüfung auf Aktualisierungen (`Hilfe > Info` oder automatisch beim Programmstart) wird die IP-Adresse und der verwendete Betriebssystemtyp des anfragenden Computers an den Server übermittelt. Die IP-Adresse wird nur anonymisiert in Log-Dateien gespeichert; ein Rückschluss auf einzelne Benutzer ist daher nicht möglich. Die automatisierte Übermittlung zur Versionsüberprpüfung beim Programmstart geschieht nur nach Einwilligung des Nutzers. Diese Funktion kann jederzeit über das Programm unter `Hilfe > Info` deaktiviert werden.
 
-Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
+Mit dem Download akzeptieren Sie die oben genannten Bedingungen. <span style="color:red;font-weight:bold;">Bitte Lesen Sie auch die verlinkten Installationshinweise, da mich in letzter Zeit viele Fragen dazu erreichen.</span>
 
 <a href="/files/fpledit-{{< version >}}.zip" class="downloadbtn"><i class="icon icon-download"></i> Download starten (aktuelle Version {{< version >}})</a>
-| **Hinweise zur Installation: [Windows](install-windows/), [Linux](install-linux/)**
-
-**Andere Downloadmöglichkeiten:** [Sourcecode auf GitHub](https://github.com/FPLedit/FPLedit/releases)
+| <span style="color:red;">**Hinweise zur Installation:</span> [Windows](install-windows/), [Linux](install-linux/)**
+| **Andere Downloads:** [Sourcecode auf GitHub](https://github.com/FPLedit/FPLedit/releases)
 
 ## Changelog
 
-### 2.2.0 (vom xx.xx.2020)
+### 2.2.0 (vom 11.05.2020)
 
 * Wechsel der Vorlagen zu einer Javascript basierten Template-Definition
-    * **Achtung** Alte Vorlagen sind damit nicht mehr kompatibel!
+    * **Achtung:** Alte Vorlagen sind damit nicht mehr kompatibel!
 * Auf Linux-Plattformen wird nun das native Theme besser unterstützt und einige Darstellungsfehler behoben
 * Aktualisierung des UI-Frameworks Eto für bessere Kompatibilität
 * Unter der Haube: Massive Änderungen an der Codebasis um FPLedit fit für die Zukunft zu machen
@@ -37,15 +36,14 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen:
     * Behebt einige Fehler unter Mono, Vorbereitung für .NET Core
     * Behebt einige Fehler mit Überprüfungen
     * Behebt mehrere Fehler im Vorlagen-Mechanismus
+    * Behebt mehrere Fehler der Trapeztafel-, Kreuzungs-, und Überholungs-Ausgabe in den Buchfahrplänen
     * Bugfixes bei routenabhängigen Werten die Semikola (`;`) enthalten, und bei Filterregeln mit Pipes (`|`) im Suchwert.
-
-* **Bekannte Fehler unter Linux**:
-    * Das Kontextmenü der Logansicht funktioniert nicht
 
 ### 2.1.1 (vom 09.11.2019)
 * Behebt mehrere Fehler im Zusammenhang mit dem Editieren von Gleisen an Stationen
 * Verbesserung der Multiplattform-Kompatibilität
 
+<p></p>
 <details><summary><strong>Ältere Verionshinweise</strong></summary>
 
 ### 2.1.0 (vom 22.09.2019)
