@@ -962,3 +962,6 @@ body.palette-primary-light-green a.downloadbtn:focus, body.palette-primary-light
 .nav-section-toggle:checked + span:before {
     content: '▼ ';
 }
+figcaption {
+    font-style: italic;
+}

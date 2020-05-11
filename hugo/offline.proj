@@ -5,6 +5,12 @@
 -->
 
 <Project>
+
+    <PropertyGroup>
+        <OfflineDoc_BuildPdf>true</OfflineDoc_BuildPdf>
+    </PropertyGroup>
+
+    <!-- Generation targets, generic -->
     <Target Name="OfflineDoc_Build" DependsOnTargets="_OfflineDoc_HugoTransform">
         <Message IsCritical="true" Importance="high" Text="$(OfflineDoc_OutputFolder)" />
         <_OfflineDoc_EmbedOfflineFilesTask 
