@@ -17,7 +17,7 @@ Bei älteren Versionen ist es ggf. nötig die Datei `lib/Eto.Wpf.dll` aus dem en
 FPLedit ist aktuell explizit nicht mit .NET Core kompatibel. In Zukunft werde ich ggf. eine FPledit-Variante für .NET Core anbieten.
 {{< /warning >}}
 
-Wenn Mono nur für FPLedit verwendet werden soll, genügt derzeit die Installation der folgenden Pakete (unter Ubuntu/anderen Debian-basioerten Distros):
+Wenn Mono nur für FPLedit verwendet werden soll, genügt derzeit die Installation der folgenden Pakete (unter Ubuntu/anderen Debian-basierten Distros):
 
 ```nohighlight
 mono-runtime mono-devel

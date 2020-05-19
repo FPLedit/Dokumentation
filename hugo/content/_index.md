@@ -31,7 +31,7 @@ Bei den deutschen Eisenbahnen waren und sind verschiedene Fahrplan-Formate im Ei
 Das Dateiformat von FPLedit und jTrainGraph ist vollständig kompatibel. Somit können alle drei Formate aus der gleichen Datei generiert werden. Ob das Anlegen der Daten mit jTrainGraph oder FPLedit erfolgt, ist dabei egal. Die erweiterte Konfiguration der Ausgabe ist aber nur mit dem entsprechenden Programm möglich. **Netzwerk-Fahrpläne** können nur noch mit FPLedit erstellt werden.
 
 ## Systemvoraussetzungen
-FPLedit läuft auf allen Systemen, auf denen entweder Microsoft .NET ab Version 4.6.1 (installierbar ab Windows 7 SP1) oder ein aktuelles [Mono](http://www.mono-project.com/) installiert ist. Damit sollte dieses Programm auf **Windows und [Linux](/download/linux/)** laufen.
+FPLedit läuft auf allen Systemen, auf denen entweder Microsoft .NET ab Version 4.6.1 (installierbar ab Windows 7 SP1) oder ein aktuelles [Mono](http://www.mono-project.com/) installiert ist. Damit sollte dieses Programm auf **Windows und [Linux](/download/install-linux/)** laufen.
 
 ## Danke!
 Vielen Dank an alle, die dieses Programm verwenden: Ohne euch wäre die Arbeit hier nutzlos. Und auch ein noch größeres Dankeschön an alle Betatester, die bei der Behebung von Fehlern und dem Testen von neuen Funktionen helfen und Ideen für neue Funktionen beisteuern! Natürlich auch ein Danke an Moritz Scherzinger von jTrainGraph für die gute Kooperation beim gemeinsam verwendeten Dateiformat!
