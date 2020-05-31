@@ -43,6 +43,10 @@
   {{- $options := (dict "targetPath" "stylesheets/application2.css" "outputStyle" "compressed" ) -}}
   {{- $sass := resources.Get "application.scss" | toCSS $options }}
   <link rel="stylesheet" href="{{ $sass.Permalink }}">
+
+  <script src="{{ .Site.BaseURL }}js/lunr.js" defer></script>
+  <script src="{{ .Site.BaseURL }}js/search.js" defer></script>
+  <script src="{{ .Site.BaseURL }}js/app.js" defer></script>
 </head>
 
 <body class="{{ with .Site.Params.palette.primary }}palette-primary-{{ . }}{{end }} {{ with .Site.Params.palette.accent }}palette-accent-{{ .  }}{{ end }}">
