@@ -4,7 +4,7 @@ title: Aushangfahrpläne
 weight: 40
 ---
 
-Seit Version 1.4.0 können Aushangfahrpläne generiert werden. Aushangfahrpläne sind Fahrpläne, die den Reisenden die Abfahrtszeiten am jeweiligen Bahnhof anzeigen. Sie enthalten daher in der Regel nicht so viele Informationen, wie andere betriebsinterne Fahrplanformate.
+Aushangfahrpläne sind Fahrpläne, die den Reisenden die Abfahrtszeiten am jeweiligen Bahnhof anzeigen. Sie enthalten daher in der Regel nicht so viele Informationen, wie andere betriebsinterne Fahrplanformate.
 
 Der Aushangfahrplan folgt grob einer Vorlage vom Bahnhof Malsch aus der Zeit der DRG. Die Darstellung mit der Standard-Vorlage ist weit nicht so vorbildnah wie bei den anderen Formaten:
 

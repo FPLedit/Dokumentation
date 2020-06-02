@@ -4,9 +4,9 @@ title: Bildfahrpläne mit jTrainGraph
 weight: 20
 ---
 
-Das alte Bildfahrplanmodul wurde in Version 1.1.0 aus FPLedit entfernt, ein direktes Erstellen von Bildfahrplänen ist daher nicht mehr möglich. Bitte nutzen Sie stattdessen [jTrainGraph](https://jtraingraph.de/), dessen Dateiformat seit FPLedit v1.1.0 kompatibel mit FPLedit ist. jTrainGraph bietet mehr Einstellungsmöglichkeiten als FPLedit und ist ebenso wie FPLedit auf mehreren Plattformen lauffähig. Dazu benötigt es aber ein auf dem System installiertes Java.
+Ein direktes Erstellen von Bildfahrplänen ist mit FPLedit nicht (mehr) möglich. Bitte nutzen Sie stattdessen [jTrainGraph](https://jtraingraph.de/), dessen Dateiformat kompatibel mit FPLedit ist. jTrainGraph bietet mehr Einstellungsmöglichkeiten als FPLedit und ist ebenso wie FPLedit auf mehreren Plattformen lauffähig. Dazu benötigt es aber eine auf dem System installierte Java-Laufzeitumgebung.
 
-**WICHTIG**: [jTrainGraph](https://jtraingraph.de/) muss in in einer kompatiblen Version auf dem PC vorhanden (d.h. installiert) sein, andere Versionen sind nicht kompatibel! FPLedit stellt dabei nur den Starter zur Verfügung, jTrainGraph ist ein eigenständiges Programm. Informationen zur Kompatibilität finden Sie am Ende dieser Seite.
+**WICHTIG**: [jTrainGraph](https://jtraingraph.de/) muss in in einer kompatiblen Version auf dem PC vorhanden/installiert sein, andere Versionen sind nicht kompatibel! FPLedit stellt dabei nur den Starter zur Verfügung, jTrainGraph ist ein eigenständiges Programm. Informationen zur Kompatibilität finden Sie am Ende dieser Seite.
 
 **Hinweis**: Bevor diese Funktion genutzt werden kann, muss sie zuerst [konfiguriert](#konfiguration) werden.
 
