@@ -20,8 +20,13 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen. <span style="co
 
 ## Changelog
 
-### 2.2.0 (vom 11.05.2020)
+### 2.2.1 (vom 05.06.2020)
+* Behebt mehrere Fehler beim Importieren von Streckendateien
+* Behebt einen Fehler beim Anzeigen der Rangierfahrten im Editor: Die Einträge wurden erst nach einem Klick auf eine beliebige Schaltfläche angezeigt.
+* Behebt zwei Fehler, mit denen nur Sonntags verkehrende Züge und Folgezüge an den ersten und letzten Stationen im Bildfahrplan nicht gezeichnet wurden.
+* Behebt weitere kleine Fehler
 
+### 2.2.0 (vom 11.05.2020)
 * Wechsel der Vorlagen zu einer Javascript basierten Template-Definition
     * **Achtung:** Alte Vorlagen sind damit nicht mehr kompatibel!
 * Auf Linux-Plattformen wird nun das native Theme besser unterstützt und einige Darstellungsfehler behoben
@@ -39,12 +44,12 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen. <span style="co
     * Behebt mehrere Fehler der Trapeztafel-, Kreuzungs-, und Überholungs-Ausgabe in den Buchfahrplänen
     * Bugfixes bei routenabhängigen Werten die Semikola (`;`) enthalten, und bei Filterregeln mit Pipes (`|`) im Suchwert.
 
+<p></p>
+<details><summary><strong>Ältere Verionshinweise</strong></summary>
+
 ### 2.1.1 (vom 09.11.2019)
 * Behebt mehrere Fehler im Zusammenhang mit dem Editieren von Gleisen an Stationen
 * Verbesserung der Multiplattform-Kompatibilität
-
-<p></p>
-<details><summary><strong>Ältere Verionshinweise</strong></summary>
 
 ### 2.1.0 (vom 22.09.2019)
 * [Zirkuläre Streckennetze](/fahrplaene-bearbeiten/cycles/) sind nun möglich
