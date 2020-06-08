@@ -2,7 +2,7 @@
 title: "FPLedit auf MacOS"
 ---
 
-Version 2.3.0 ist erstmals auch mit macOS kompatibel. Vorerst wird dabei das Gtk+3-UI-Toolkit verwendet, das auch für die Linux-Unterstützung verwendet wird. Die macOS-Untersützung ist noch rudimentär und wenig getestet.
+Version 2.2.2 ist erstmals auch mit macOS kompatibel. Vorerst wird dabei das Gtk+3-UI-Toolkit verwendet, das auch für die Linux-Unterstützung verwendet wird. Die macOS-Untersützung ist noch rudimentär und wenig getestet.
 
 ## Abhängigkeiten installieren
 1. Für die Installation der Mono-Laufzeitumgebung auf macO-Systemen siehe die [ofizielle Seite des Mono-Projekts](http://www.mono-project.com/download/stable/#download-mac).

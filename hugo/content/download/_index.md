@@ -15,12 +15,12 @@ FPLedit ist unter der GNU GPL v3-Lizenz lizenziert:
 Mit dem Download akzeptieren Sie die oben genannten Bedingungen. <span style="color:red;font-weight:bold;">Bitte Lesen Sie auch die verlinkten Installationshinweise, da mich in letzter Zeit viele Fragen dazu erreichen.</span>
 
 <a href="/files/fpledit-{{< version >}}.zip" class="downloadbtn"><i class="icon icon-download"></i> Download starten (aktuelle Version {{< version >}})</a>
-| <span style="color:red;">**Hinweise zur Installation:</span> [Windows](install-windows/), [Linux](install-linux/) | [macOS](install-macos/)**
+| <span style="color:red;">**Hinweise zur Installation:</span> [Windows](install-windows/), [Linux](install-linux/), [macOS](install-macos/)**
 | **Andere Downloads:** [Sourcecode auf GitHub](https://github.com/FPLedit/FPLedit/releases)
 
 ## Changelog
 
-## 2.2.2 (vom 08.06.2020)
+### 2.2.2 (vom 08.06.2020)
 * Erste Unterstützung für [macOS](install-macos/)
 * Behebt einen Absturz beim Löschen von Stationen
 
