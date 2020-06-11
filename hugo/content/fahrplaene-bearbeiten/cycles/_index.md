@@ -40,3 +40,5 @@ Der Laufweg des Zuges ist nun A - B - E - B - C - D und damit noch immer nicht d
 ![Der fertige Laufweg wurde mit zwei Wegpunkten realisiert](train_waypoints.png)
 
 Der Laufweg ist nun vollständig und der Zug kann wie gewohnt bearbeitet werden.
+
+{{% beta %}}

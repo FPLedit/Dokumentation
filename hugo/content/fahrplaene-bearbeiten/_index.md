@@ -24,3 +24,5 @@ Das Bearbeiten von linearen und Netzwerk-Fahrplänen unterscheidet sich teilweis
 ## Konvertieren von Fahrplänen
 
 Mit `Datei > Konvertieren` ({{< kbd "Strg+K" >}}) kann unter bestimmten Umständen der Fahrplantyp geändert werden. Ein linearer Fahrplan kann immer in einen Netzwerk-Fahrplan umgewandelt werden. In der Gegenrichtung ist dies nur möglich, wenn im Netzwerk nur eine Strecke angelegt wurde oder alle Strecken bis auf eine gelöscht wurden.
+
+{{% beta %}}
