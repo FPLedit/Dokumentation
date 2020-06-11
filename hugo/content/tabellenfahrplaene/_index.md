@@ -4,7 +4,7 @@ title: Kursbuchfahrpläne
 weight: 50
 ---
 
-Mit dem Kursbuch-/Tabellenfahrplanmodul können Fahrpläne generiert werden, die alle Züge einer Strecke in einer Fahrplantabelle zusammenfassen.
+Mit dem Kursbuch-/Tabellenfahrplanmodul können Fahrpläne generiert werden, die alle Züge einer Strecke in einer Fahrplantabelle zusammenfassen. Dies ist ein anderes für Reisende vorgesehenes Fahrplanformat, das alle Züge einer Strecke übersichtlich zusammenfasst.
 
 Um den Kursbuch/Tabellenfahrplan als Vorschau anzuzeigen, verwenden Sie `Vorschau > Kursbuch`. Es wird für jede im Netzwerkfahrplan angelegte Strecke eine eigne Kursbuchtabelle ausgegeben.
 

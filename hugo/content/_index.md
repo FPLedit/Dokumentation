@@ -9,6 +9,8 @@ offline_title: "Was ist FPLedit?"
 
 FPLedit ist ein freies Programm zum Erstellen von Fahrplänen. Dies ist vor allem für **betriebsorientierte Modellbahner** interessant, die auf ihrer Anlage einen vorbildgetreuen Betrieb durchführen wollen und dafür **ans Original angelehnte Fahrplanunterlagen** verwenden wollen. Die Vorlagen dafür werden in der Regel bei der DB bzw. DR gesucht. FPLedit ist dabei aber nicht so komplex (und teuer) wie andere, professionelle Fahrplansoftware für "echte" Verkehrsbetriebe.
 
+Der Fahrplan ist die Grundlage für den Bahnbetrieb und muss vor der fahrt für jeden Zug erstellt werden. Auch auf Modelleisenbahnanlagen kann der Betriebsspaß damit oftmals vergrößert werden - egal ob alleine oder mit anderen Mitstreitern!
+
 ## Features
 - [Erstellen und Bearbeiten](/fahrplaene-bearbeiten/) von Fahrplänen bestehend aus einer einzelnen Strecke oder einem Streckennetz und den darauf verkehrenden Zügen.
 
@@ -24,14 +26,14 @@ FPLedit ist ein freies Programm zum Erstellen von Fahrplänen. Dies ist vor alle
 
 ## Fahrplan-Ausgabeformate
 
-Bei den deutschen Eisenbahnen waren und sind verschiedene Fahrplan-Formate im Einsatz. Diese Seite soll als Entscheidungshilfe dienen, welcher Fahrplantyp zum Einsatz kommen soll.
+Der Fahrplan ist die Grundlage für den Bahnbetrieb und muss vor der fahrt für jeden Zug erstellt werden. Bei den deutschen Eisenbahnen waren und sind zu diesem Zweck verschiedene Fahrplan-Formate im Einsatz, die an unterschiedliche Benutzergruppen gerichtet sind. Diese Seite soll als Entscheidungshilfe dienen, welcher Fahrplantyp zum Einsatz kommen soll.
 
 {{< include_mod "/include-index-web" "/include-index-tex" >}}
 
 Das Dateiformat von FPLedit und jTrainGraph ist vollständig kompatibel. Somit können alle drei Formate aus der gleichen Datei generiert werden. Ob das Anlegen der Daten mit jTrainGraph oder FPLedit erfolgt, ist dabei egal. Die erweiterte Konfiguration der Ausgabe ist aber nur mit dem entsprechenden Programm möglich. **Netzwerk-Fahrpläne** können nur noch mit FPLedit erstellt werden.
 
 ## Systemvoraussetzungen
-FPLedit läuft auf allen Systemen, auf denen entweder Microsoft .NET ab Version 4.6.1 (installierbar ab Windows 7 SP1) oder ein aktuelles [Mono](http://www.mono-project.com/) installiert ist. Damit sollte dieses Programm auf **Windows und [Linux](/download/install-linux/)** laufen.
+FPLedit läuft auf allen Systemen, auf denen entweder Microsoft .NET ab Version 4.6.1 (installierbar ab Windows 7 SP1) oder ein aktuelles [Mono](http://www.mono-project.com/) installiert ist. Damit sollte dieses Programm auf **Windows und [Linux](/download/install-linux/)** (experimentell auch unter [macOS](/download/install-macos/)) laufen.
 
 ## Danke!
 Vielen Dank an alle, die dieses Programm verwenden: Ohne euch wäre die Arbeit hier nutzlos. Und auch ein noch größeres Dankeschön an alle Betatester, die bei der Behebung von Fehlern und dem Testen von neuen Funktionen helfen und Ideen für neue Funktionen beisteuern! Natürlich auch ein Danke an Moritz Scherzinger von jTrainGraph für die gute Kooperation beim gemeinsam verwendeten Dateiformat!

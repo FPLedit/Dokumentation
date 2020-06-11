@@ -12,13 +12,17 @@ FPLedit ist unter der GNU GPL v3-Lizenz lizenziert:
 
 **Datenschutz bei der Verwendung von FPLedit:** Bei der programminternen Überprüfung auf Aktualisierungen (`Hilfe > Info` oder automatisch beim Programmstart) wird die IP-Adresse und der verwendete Betriebssystemtyp des anfragenden Computers an den Server übermittelt. Die IP-Adresse wird nur anonymisiert in Log-Dateien gespeichert; ein Rückschluss auf einzelne Benutzer ist daher nicht möglich. Die automatisierte Übermittlung zur Versionsüberprpüfung beim Programmstart geschieht nur nach Einwilligung des Nutzers. Diese Funktion kann jederzeit über das Programm unter `Hilfe > Info` deaktiviert werden.
 
-Mit dem Download akzeptieren Sie die oben genannten Bedingungen. <span style="color:red;font-weight:bold;">Bitte Lesen Sie auch die verlinkten Installationshinweise, da mich in letzter Zeit viele Fragen dazu erreichen.</span>
+Mit dem Download akzeptieren Sie die oben genannten Bedingungen. <span style="color:red;font-weight:bold;">Bitte Lesen Sie auch die verlinkten Installationshinweise (je nach Betriebssystem), da mich in letzter Zeit viele Fragen dazu erreichen.</span>
 
 <a href="/files/fpledit-{{< version >}}.zip" class="downloadbtn"><i class="icon icon-download"></i> Download starten (aktuelle Version {{< version >}})</a>
 | <span style="color:red;">**Hinweise zur Installation:</span> [Windows](install-windows/), [Linux](install-linux/), [macOS](install-macos/)**
 | **Andere Downloads:** [Sourcecode auf GitHub](https://github.com/FPLedit/FPLedit/releases)
 
 ## Changelog
+
+### 2.2.3 (vom 11.06.2020)
+* Erste Unterstützung von Dateien, die mit jTrainGraph 3.2 erstellt wurden:
+* **ACHTUNG:** Noch keine Unterstützuing für die neuen, nur in der Pro-Version verfügbaren Funktionen (erweiterte Verknüpfungen, Fahrzeuge und Umläufe).
 
 ### 2.2.2 (vom 08.06.2020)
 * Erste Unterstützung für [macOS](install-macos/)

@@ -4,9 +4,9 @@ title: Aushangfahrpläne
 weight: 40
 ---
 
-Aushangfahrpläne sind Fahrpläne, die den Reisenden die Abfahrtszeiten am jeweiligen Bahnhof anzeigen. Sie enthalten daher in der Regel nicht so viele Informationen, wie andere betriebsinterne Fahrplanformate.
+Aushangfahrpläne sind Fahrpläne, die den Reisenden die Abfahrtszeiten am jeweiligen Bahnhof anzeigen und damit wahrscheinlich die den Reisenden am häufigsten sichtabren Fahrpläne. Sie enthalten daher in der Regel nicht so viele Informationen, wie andere betriebsinterne Fahrplanformate, sondern nur für Reisende relevante Daten: Abfahrts- und manchmal an größeren Bahnhöfen auch Ankunftszeiten, Gleisangaben, Zielbahnhöfe.
 
-Der Aushangfahrplan folgt grob einer Vorlage vom Bahnhof Malsch aus der Zeit der DRG. Die Darstellung mit der Standard-Vorlage ist weit nicht so vorbildnah wie bei den anderen Formaten:
+Der Aushangfahrplan, der mit der Standard-Vorlage von FPledit erstellt wird, folgt grob einer Vorlage vom Bahnhof Malsch aus der Zeit der DRG und enthält keine Ankunftszeiten. Damit ist er am besten für kleinere Bahnhöfe an einer oder wenigen Strecken zu verwenden:
 
 ![Quelle der Daten: Buchfahrplanheft 721-33 der DR aus dem Jahr 1894/85](afpl.png)
 
