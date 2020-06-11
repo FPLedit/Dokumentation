@@ -22,7 +22,7 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen. <span style="co
 
 ### 2.2.3 (vom 11.06.2020)
 * Erste Unterstützung von Dateien, die mit jTrainGraph 3.2 erstellt wurden:
-* **ACHTUNG:** Noch keine Unterstützuing für die neuen, nur in der Pro-Version verfügbaren Funktionen (erweiterte Verknüpfungen, Fahrzeuge und Umläufe).
+* **ACHTUNG:** Noch keine Unterstützung für die neuen, nur in der Pro-Version verfügbaren Funktionen (erweiterte Verknüpfungen, Fahrzeuge und Umläufe).
 
 ### 2.2.2 (vom 08.06.2020)
 * Erste Unterstützung für [macOS](install-macos/)
