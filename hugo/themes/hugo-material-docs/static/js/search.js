@@ -1,4 +1,4 @@
-var idx = undefined;
+let idx = undefined;
 
 const $ = document.querySelector.bind( document );
 
@@ -9,23 +9,40 @@ const results = $( '.search-results' );
 const closeButton = $( '.bar.search .button-reset' );
 const backButton = $( '.bar.search .button-close' );
 
+let script_count = 0;
+const max_script_count = 2;
+
 const ieCompat = function () {
 	if ( /MSIE|Edge\/\d./i.test( navigator.userAgent ) ) {
 		$( 'body' ).classList.add( 'no-csstransforms3d' );
-		searchButton.removeEventListener( 'click', focusField );
 	}
 };
 
-// Adds pages and triggers building of index
+// Loads all necessary scripts.
 const downloadPages = function () {
-	var script = document.createElement( 'script' );
-	script.src = "/lunr_idx.js";
-	script.onload = buildIndex;
-	script.async = 'async';
-	document.body.appendChild( script );
+	if ( script_count >= max_script_count ) {
+		return;
+	}
+
+	const lunrScript = document.createElement( 'script' );
+	lunrScript.src = "/js/lunr.js";
+	lunrScript.onload = buildIndex;
+	lunrScript.async = 'async';
+	document.body.appendChild( lunrScript );
+
+	const indexScript = document.createElement( 'script' );
+	indexScript.src = "/lunr_idx.js";
+	indexScript.onload = buildIndex;
+	indexScript.async = 'async';
+	document.body.appendChild( indexScript );
 };
 
 const buildIndex = function () {
+	script_count++;
+	if ( script_count < max_script_count ) {
+		return;
+	}
+
 	idx = lunr( function () {
 		this.ref( 'url' );
 		this.field( 'name' );
@@ -48,12 +65,12 @@ const closeResults = function ( e ) {
 const buildText = function ( text, pos, len ) {
 	pos = pos || 0;
 	len = len || 0;
-	var extractStart = pos - 90;
-	var extractEnd = pos + len + 90;
+	const extractStart = pos - 90;
+	const extractEnd = pos + len + 90;
 
-	var begin = ( extractStart < 0 ? '' : '...' ) + text.substring( extractStart, pos );
-	var end = text.substring( pos + len, extractEnd ) + ( extractEnd > text.length ? '' : '...' );
-	var sw = text.substring( pos, pos + len );
+	const begin = ( extractStart < 0 ? '' : '...' ) + text.substring( extractStart, pos );
+	const end = text.substring( pos + len, extractEnd ) + ( extractEnd > text.length ? '' : '...' );
+	const sw = text.substring( pos, pos + len );
 
 	return begin + '<span class="highlight-search">' + sw + '</span>' + end;
 };
@@ -62,33 +79,33 @@ const onSearchKeydown = function ( e ) {
 	if ( idx === undefined )
 		return;
 
-	if ( e.keyCode == 27 )
+	if ( e.keyCode == 27 ) // Escaoe
 		closeResults();
 
-	if ( e.keyCode != 13 )
+	if ( e.keyCode != 13 ) // Enter
 		return;
 
-	var query = searchField.value;
-	var res = idx.search( query );
+	const query = searchField.value;
+	const res = idx.search( query );
 
 	header.classList.add( 'search-results-open' );
 	closeButton.classList.add( 'search-btn-close-visible' );
 	results.innerHTML = '';
 	res.forEach( function ( v ) {
-		var mdata = v.matchData.metadata;
-		var match = Object.keys( mdata )[ 0 ];
-		var part = Object.keys( mdata[ match ] )[ 0 ];
-		var pos = mdata[ match ][ part ].position[ 0 ];
+		const mdata = v.matchData.metadata;
+		const match = Object.keys( mdata )[ 0 ];
+		const part = Object.keys( mdata[ match ] )[ 0 ];
+		const pos = mdata[ match ][ part ].position[ 0 ];
 
-		var page = documents.filter( function ( elem ) { return elem.url == v.ref; } )[ 0 ];
+		const page = documents.filter( function ( elem ) { return elem.url == v.ref; } )[ 0 ];
 
-		var link = document.createElement( 'a' );
+		const link = document.createElement( 'a' );
 		link.href = page.url;
-		var h2 = document.createElement( 'h2' );
+		const h2 = document.createElement( 'h2' );
 		h2.innerHTML = part == 'name' ? buildText( page.name, pos[ 0 ], pos[ 1 ] ) : buildText( page.name );
 		link.appendChild( h2 );
 
-		var p = document.createElement( 'p' );
+		const p = document.createElement( 'p' );
 		p.innerHTML = part == 'text' ? buildText( page.text, pos[ 0 ], pos[ 1 ] ) : buildText( page.text );
 		link.appendChild( p );
 
@@ -96,8 +113,8 @@ const onSearchKeydown = function ( e ) {
 	} );
 
 	if ( res.length == 0 ) {
-		var cont = document.createElement( 'div' );
-		var h2 = document.createElement( 'h2' );
+		const cont = document.createElement( 'div' );
+		const h2 = document.createElement( 'h2' );
 		h2.innerHTML = 'Keine Suchergebnisse';
 		cont.appendChild( h2 );
 		results.appendChild( cont );
@@ -109,14 +126,14 @@ const onSearchChange = function () {
 		closeResults();
 };
 
-const focusField = function () {
+const triggerSearch = function () {
 	searchField.select();
+	downloadPages();
 };
 
 addEventListener( 'load', ieCompat );
-addEventListener( 'load', downloadPages );
 searchField.addEventListener( 'keydown', onSearchKeydown );
 searchField.addEventListener( 'input', onSearchChange );
 closeButton.addEventListener( 'click', closeResults );
 backButton.addEventListener( 'click', closeResults );
-searchButton.addEventListener( 'click', focusField );
+searchButton.addEventListener( 'click', triggerSearch );

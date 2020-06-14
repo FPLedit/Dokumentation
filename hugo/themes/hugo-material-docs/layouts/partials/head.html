@@ -44,7 +44,6 @@
   {{- $sass := resources.Get "application.scss" | toCSS $options }}
   <link rel="stylesheet" href="{{ $sass.Permalink }}">
 
-  <script src="{{ .Site.BaseURL }}js/lunr.js" defer></script>
   <script src="{{ .Site.BaseURL }}js/search.js" defer></script>
   <script src="{{ .Site.BaseURL }}js/app.js" defer></script>
 </head>
