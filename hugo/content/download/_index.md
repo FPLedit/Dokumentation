@@ -8,17 +8,78 @@ nooffline: true
 
 FPLedit ist unter der GNU GPL v3-Lizenz lizenziert:
 
-<iframe src="/files/gplv3.html" style="width:100%; border:1px solid black; height:300px;"></iframe>
+<iframe src="/files/gplv3.html" style="width:100%; border:1px solid black; height:250px;"></iframe>
 
-**Datenschutz bei der Verwendung von FPLedit:** Bei der programminternen Überprüfung auf Aktualisierungen (`Hilfe > Info` oder automatisch beim Programmstart) wird die IP-Adresse und der verwendete Betriebssystemtyp des anfragenden Computers an den Server übermittelt. Die IP-Adresse wird nur anonymisiert in Log-Dateien gespeichert; ein Rückschluss auf einzelne Benutzer ist daher nicht möglich. Die automatisierte Übermittlung zur Versionsüberprpüfung beim Programmstart geschieht nur nach Einwilligung des Nutzers. Diese Funktion kann jederzeit über das Programm unter `Hilfe > Info` deaktiviert werden.
+**Datenschutz bei der Verwendung von FPLedit:** Bei der programminternen Überprüfung auf Aktualisierungen (`Hilfe > Einstellungen > Überprüfung auf neue Versionen` oder automatisch beim Programmstart) wird die IP-Adresse und der verwendete Betriebssystemtyp des anfragenden Computers an den Server übermittelt. Die IP-Adresse wird nur anonymisiert in Log-Dateien gespeichert; ein Rückschluss auf einzelne Benutzer ist daher nicht möglich. Die automatisierte Übermittlung zur Versionsüberprpüfung beim Programmstart geschieht nur nach Einwilligung des Nutzers. Diese Funktion kann jederzeit über das Programm unter `Hilfe > Einstellungen > Überprüfung auf neue Versionen` deaktiviert werden.
 
 Mit dem Download akzeptieren Sie die oben genannten Bedingungen. <span style="color:red;font-weight:bold;">Bitte Lesen Sie auch die verlinkten Installationshinweise (je nach Betriebssystem), da mich in letzter Zeit viele Fragen dazu erreichen.</span>
 
-<a href="/files/fpledit-{{< version >}}.zip" class="downloadbtn"><i class="icon icon-download"></i> Download starten (aktuelle Version {{< version >}})</a>
-| <span style="color:red;">**Hinweise zur Installation:</span> [Windows](install-windows/), [Linux](install-linux/), [macOS](install-macos/)**
-| **Andere Downloads:** [Sourcecode auf GitHub](https://github.com/FPLedit/FPLedit/releases)
+<style>
+table.download-table {
+    display: table;
+    font-size: 1em;
+    margin: 1em;
+    box-sizing: border-box;
+}
+.download-table td, table.download-table th {
+    width: 33.3%;
+    text-align: center;
+}
+.download-table .install-notes {
+    font-weight: bold;
+    color: red;
+}
+</style>
+
+<table class="download-table">
+    <tr>
+        <th>Windows</th>
+        <th>Linux</th>
+        <th>macOS</th>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <a href="/files/fpledit-{{< version >}}.zip" class="downloadbtn"><i class="icon icon-download"></i> Aktuelle Version {{< version >}} für Windows &amp; Linux</a>
+        </td>
+        <td>
+            <a href="/files/fpledit-{{< version >}}.zip" class="downloadbtn"><i class="icon icon-download"></i> Aktuelle Version {{< version >}} für macOS</a>
+        </td>
+    </tr>
+    <tr>
+        <td><a class="install-notes" href="install-windows/">Hinweise zur Installation</a></td>
+        <td><a class="install-notes" href="install-linux/">Hinweise zur Installation</a></td>
+        <td><a class="install-notes" href="install-macos/">Hinweise zur Installation</a></td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <a href="https://github.com/FPLedit/FPLedit/releases">Sourcecode auf GitHub (alle Plattformen)</a>
+        <td>
+    </tr>
+</table>
 
 ## Changelog
+
+### 2.3.0 (vom xx.xx.2020)
+* Stationen und einzelne Fahrtzeiteneinträge können nun als Bedarfshalt markiert werden
+* Unterstützung für verlinkte Züge aus jTrainGraph 3.1
+* Unterstützung von Fahrplandateien, die mit jTrainGraph 3.2 erstellt wurden
+* Möglichkeit des Exportierens einer Fahrplandatei nur mit den Stationen ("Strecken-/Netzwerkdatei")
+* Möglichkeit der Verwendung einer englischen Benutzeroberfläche. (`Hilfe > Einstellungen > Sprache`)
+
+* **Verbesserungen und Änderungen**
+    * Dateien im Dateiformat von jTrainGraph 2.0x und 3.0x können nur noch in neuere Formate konvertiert werden
+    * Verbesserung des Fahrplan-Editors (vor allem unter Linux/macOS)
+    * Neue zentrale Möglichkeit zum Anpassen der Programmeinstellungen `Hilfe > Einstellungen`
+    * Verbesserte Unterstützung für macOS (neues "natives" Programmpaket als _seperater Download_)
+* **Performance-Verbesserungen** an verschiedenen Stellen:
+    * Verbesserung der Ladezeiten von sehr großen Dateien (Referenz: 200.000 Stationen an 2000 Strecken) wurde stark verbessert (< 30 Sekunden)
+    * Performance-Verbesserungen bei der dynamischen Bildfahrplanvorschau (teilweise ca. 10-40x schneller), kaum Flackern mehr
+    * Teilweise asynchrones Laden der Dateien
+    * Verbesserung der Programm-Initialisierung
+* **Behobene Fehler:**
+    * Einige kleine Fehler in der Benutzerschnittstelle wurden behoben.
+* **interne Änderungen:**
+    * FPLedit wird wieder vollständig und ausschließlich für das .NET-Framework / Mono gebaut. Alle bereist auf netstandard umgestellte Teile wurden wieder zurückumgestellt.
 
 ### 2.2.3 (vom 11.06.2020)
 * Erste Unterstützung von Dateien, die mit jTrainGraph 3.2 erstellt wurden:

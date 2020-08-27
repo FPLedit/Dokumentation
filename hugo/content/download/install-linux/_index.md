@@ -4,7 +4,7 @@ title: FPLedit auf Linux
 nooffline: true
 ---
 
-FPLedit ist seit Version 2.0.0 recht gut mit Linux kompatibel und wird auch aktiv getestet. Dabei wird auf die Mono-Laufzeitumgebung und die Gtk3-Plattform aufgebaut. Seit Version 2.2.0 ist Ubuntu sogar das Hauptsystem auf dem FPLedit entwickelt wird!
+FPLedit ist seit Version 2.0.0 recht gut mit Linux kompatibel und wird auch aktiv getestet. Dabei wird auf die Mono-Laufzeitumgebung und die Gtk3-Plattform aufgebaut. Seit Version 2.2.0 ist Linux (bis 2.2.3 unter Ubuntu, später unter Fedora 😀) sogar das Hauptsystem auf dem FPLedit entwickelt wird!
 
 ## Abhängigkeiten installieren
 Für die Installation der Mono-Laufzeitumgebung auf Linux-Distributionen siehe die [ofizielle Seite des Mono-Projekts](http://www.mono-project.com/download/stable/#download-lin).
