@@ -1,0 +1,10 @@
+date="30.09.2017"
+version="1.5.0"
+
+content="""
+* Neue, vereinheitlichte Dialoge
+* Neuer Fahrplantyp: Tabellenfahrpläne mit allen von Buchfahrplaänen und Aushangfahrplänen her gewohnten Features
+* **Achtung:** Die Erweiterung `FPLedit.AStandard.dll` wurde in das Hauptprogramm integriert! Die alte Datei kann problemlos gelöscht werden.
+* Rückgängig-Funktion (`Bearbeiten > Rückgängig`)
+* Weitere kleine Fehlerbehebungen
+"""

@@ -1,0 +1,19 @@
+date="11.11.2018"
+version="2.0.0"
+
+content="""
+* Unterstützung von Streckennetzen (Netzwerk-Fahrplänen), **nicht direkt kompatibel mit jTrainGraph, siehe [Bildfahrpläne](/bildfahrplaene)**!
+* Neues Dateiformat für eigene Vorlagen, nur noch ein Texteditor wird zur Erstellung benötigt
+* Das Verschieben von Stationen zwischen andere Stationen erzeugt keine fehlerhaften Dateien mehr
+* Neuer Bearbeitungsmodus für Streckennetze
+* Kopieren von Zügen (mit Verschiebung um bestimmte Zeit)
+* Verbesserungen an den Vorlagen
+* Bessere Kompatibilität mit Linux durch die Verwendung von Eto als Grafikframework
+* Verschiedene andere Fehlerbehebungen und Verbesserungen
+* Kompatibilität mit jTrainGraph ab Version 3.03 endgültig wiederhergestellt
+* Speichern der manuell eingestellten Fenstergrößen
+* **Achtung:** Die Importfunktion für das alte Bfpl-Binärformat wurde entfernt!
+* **Achtung:** FPLedit ist nicht mehr mit Windows XP kompatibel!
+
+Die Kompatibilität von Netzwerk-Fahrplänen mit **jTrainGraph** ist nicht so gut wie bei FPLedit 1.5.4: Die Fahrplandateien nutzen zwar noch das gleiche, aber funktional stark erweiterte Dateiformat, welches dadurch von jTrainGraph derzeit nicht gelesen werden kann. Der jTrainGraph-Starter ist natürlich weiterhin vorhanden und erlaubt auch bei dem neuen Format das Erstellen von Bildfahrplänen und das Anpassen der zugehörigen Einstellungen. Das Ändern des Fahrplans in jTrainGraph selbst ist aber (derzeit) nicht mehr möglich.
+"""

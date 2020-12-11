@@ -1,0 +1,28 @@
+date="xx.12.2020"
+version="2.3.0"
+
+content="""
+* Stationen und einzelne Fahrtzeiteneinträge können nun als **Bedarfshalt** markiert werden
+* Unterstützung für verlinkte Züge aus jTrainGraph 3.1
+* Unterstützung von Fahrplandateien, die mit **jTrainGraph 3.2** erstellt wurden
+* Unterstützung von allen neuen Features von **jTrainGraph 3.3** (Sekundengenaue Zeitangaben)
+* Sekundengenaue Zeitangaben auch für Netzwerk-Fahrplänen.
+* Möglichkeit des Exportierens einer Fahrplandatei nur mit den Stationen ("Strecken-/Netzwerkdatei")
+* Möglichkeit der Verwendung einer englischen Benutzeroberfläche. (`Hilfe > Einstellungen > Sprache`). Die Dokumentation wird vorerst nicht übersetzt.
+
+* **Verbesserungen und Änderungen**
+    * Dateien im Dateiformat von jTrainGraph 2.0x und 3.0x können nur noch in neuere Formate konvertiert werden
+    * Verbesserung des Fahrplan-Editors (vor allem unter Linux/macOS)
+    * Neue zentrale Möglichkeit zum Anpassen der Programmeinstellungen `Hilfe > Einstellungen`
+    <!-- * Verbesserte Unterstützung für macOS (neues "natives" Programmpaket als _seperater Download_) -->
+* **Performance-Verbesserungen** an verschiedenen Stellen:
+    * Verbesserung der Ladezeiten von sehr großen Dateien (Referenz: 200.000 Stationen an 2000 Strecken) wurde stark verbessert (< 30 Sekunden)
+    * Performance-Verbesserungen bei der dynamischen Bildfahrplanvorschau (teilweise ca. 10-40x schneller), kaum Flackern mehr
+    * Teilweise asynchrones Laden der Dateien
+    * Verbesserung der Programm-Initialisierung
+* **Behobene Fehler:**
+    * Einige kleine Fehler in der Benutzerschnittstelle wurden behoben.
+    * Ein Fehler wurde behoben, bei dem in der Sitzung nach dem Erstellen einer Datei bestimmte Attribute nicht gespeichert wurden.
+* **interne Änderungen:**
+    * FPLedit wird wieder vollständig und ausschließlich für das .NET-Framework / Mono gebaut. Alle bereits auf netstandard umgestellte Teile wurden vorerst zurückumgestellt.
+"""

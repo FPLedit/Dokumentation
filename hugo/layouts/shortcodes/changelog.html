@@ -1,0 +1,13 @@
+{{- $count := 0 -}}
+{{- range sort $.Site.Data.changelog  "version" "desc" -}}
+   <h3>{{ .version }} (vom {{ .date }})</h3>
+   <p>{{ .content | markdownify }}</p>
+   {{- if eq $count 0 }}
+    <details><summary><strong>Ältere Verionshinweise</strong></summary>
+   {{ end -}}
+   {{- $count = add $count  1 -}}
+{{- end -}}
+
+{{- if gt $count 1 }}
+</details>
+{{ end -}}

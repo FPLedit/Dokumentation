@@ -1,0 +1,25 @@
+date="22.09.2019"
+version="2.1.0"
+
+content="""
+* [Zirkuläre Streckennetze](/fahrplaene-bearbeiten/cycles/) sind nun möglich
+* Sortieren von Zügen ist nun möglich
+* Anlegen von Umläufen über "Folgezüge" ist nun möglich
+* Weitere Vereinheitlichung der Bearbeitungsdialoge und Menüs zwischen linearen Fahrplänen und Netzwerkfahrplänen
+* Anzeige der Verkehrstage im Buchfahrplan
+* Neue dynamische Bildfahrplanvorschau
+* Kompatibilität mit jTrainGraph 3.1: Gleisangaben und Rangierfahrten
+* **Behobene Fehler:**
+    * Fehlerbehebungen im Zusammenhang mit der Rückgängig-Funktion
+    * Korrektur eines Fehlers, der falsche Zug-Ids intern vergeben hat
+    * Mehrere Fehlerbehebungen in Verbindung mit dem Netzwerk-Modus
+    * **Achtung:** Möglicherweise ist ein manuelles Nacharbeiten der Fahrplandateien nötig, das Programm gibt dann eine entsprechende Meldung beim Start aus.
+
+* **Sonstige Verbesserungen und Anmerkungen:**
+    * Aktivierung der Template-Sandbox unter Linux
+    * Performance-Verbesserungen in einigen Bearbeitungsdialogen
+    * Besserer Umgang mit Fehlermeldungen und Programmabstürzen
+    * **Achtung:** FPLedit ist nicht mehr mit Windows Vista kompatibel!
+    * Wechsel der **Lizenz zur GNU GPLv3**
+    * **Bekanntes Problem**: Bei komplexen Fahrplänen dauert das Zeichnen der dynamischen Bildfahrplan-Vorschau unter Windows einige Zeit.
+"""

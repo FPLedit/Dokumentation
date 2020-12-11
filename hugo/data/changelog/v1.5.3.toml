@@ -1,0 +1,6 @@
+date="02.04.2018"
+version="1.5.3"
+
+content="""
+* Diese Version enthält einen Warnhinweis beim Öffnen von mit jTrainGraph 3.0 erstellten Dateien.
+"""

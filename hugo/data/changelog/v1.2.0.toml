@@ -1,0 +1,12 @@
+date="22.05.2017"
+version="1.2.0"
+
+content="""
+* Automatische Überprüfung auf neue Programmversionen beim Programmstart
+* Buchfahrplan: Schriftart anpassen & mit CSS gestalten
+* Geschwindigkeitswechel auf der freien Strecke möglich
+* Zuletzt verwendete Dateien merken
+* Kommentare der Züge bearbeiten
+* Strecke aus anderer Fahrplandatei bzw. Streckendatei laden
+* Ermöglichen der Verknüpfung von fpl-Dateien mit FPLedit, so dass diese mit einem Doppelklick geöffnet werden.
+"""

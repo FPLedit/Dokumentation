@@ -1,0 +1,6 @@
+date="28.02.2017"
+version="1.1.1"
+
+content="""
+* Fehlermeldung beim Öffnen, wenn mehr Fahrtzeiten als Stationen angegeben sind. Löst ein evetuell auftretendes Missverständnis.
+"""

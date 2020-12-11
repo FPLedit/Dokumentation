@@ -1,0 +1,6 @@
+date="23.05.2017"
+version="1.2.1"
+
+content="""
+* Fehler beim Löschen der ersten oder letzten Bahnhöfe behoben
+"""

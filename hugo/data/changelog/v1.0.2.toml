@@ -1,0 +1,7 @@
+date="04.12.2016"
+version="1.0.2"
+
+content="""
+* Fehler behoben, bei dem manche jTrainGraph-Fahrpläne nicht importiert werden
+* Beim Updaten springen in den Bearbeitungsdialogen die Listen nicht mehr so viel
+"""

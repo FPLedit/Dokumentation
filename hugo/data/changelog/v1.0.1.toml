@@ -1,0 +1,8 @@
+date="02.12.2016"
+version="1.0.1"
+
+content="""
+* Farben werden jetzt intern hexadezimal gespeichert (#RRGGGBB)
+* Verwaltung von Erweiterungen (siehe `Hilfe > Erweiterungen`)
+* Neuer Info-Dialog
+"""
