@@ -2,8 +2,11 @@
 title: "FPLedit auf MacOS"
 ---
 
-Version 2.2.2 ist erstmals auch mit macOS kompatibel. Vorerst wird dabei das Gtk+3-UI-Toolkit verwendet, das auch für die Linux-Unterstützung verwendet wird. Die macOS-Untersützung ist noch rudimentär und wenig getestet. Es stehen zwei Varianten zur Verfügung: Einmal FPLedit nactiv und FPLedit mit Gtk. Erstere ist besser in das Betriebssystem integriert.
+Version 2.2.2 ist erstmals auch mit macOS kompatibel. Vorerst wird dabei das Gtk+3-UI-Toolkit verwendet, das auch für die Linux-Unterstützung verwendet wird. Die macOS-Untersützung ist noch rudimentär und wenig getestet. Gestestet wurde bisher nur auf macOS 10.15.
 
+<!--Es stehen zwei Varianten zur Verfügung: Einmal FPLedit nactiv und FPLedit mit Gtk. Erstere ist besser in das Betriebssystem integriert.-_>
+
+<!--
 ## FPLedit "nativ"
 
 ### Download des Paketes
@@ -23,6 +26,8 @@ chmod +x FPLedit.app/Contents/MacOS/FPLedit
 Ohne diese Befehle ist das Programm nicht nutzbar, da FPLedit nicht von Apple signiert wurde bzw. ich das Programmpaket auf meinem Linux-PC erstelle.
 
 Anschließend kann FPLedit mit einem Doppelklick gestartet werden.
+
+-->
 
 ## FPLedit mit Gtk+
 

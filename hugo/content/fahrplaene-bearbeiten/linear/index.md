@@ -27,7 +27,7 @@ Wenn eine Strecke angelegt wurde, ist der Menüpunkt `Bearbeiten > Züge bearbei
 
 Die Züge sind nach Fahrtrichtung geordnet, diese kann nachträglich auch nicht mehr geändert werden! Durch einen Klick auf `Neuer Zug` ({{< kbd "Strg+N" >}}) bei der jeweiligen Fahrtrichtung, in dem die Daten des Zuges festgelegt werden können. Den selben Dialog erreicht man auch mit einem Klick auf `Zug bearbeiten` ({{< kbd "Strg+B" >}}), damit lassen sich dann nachträglich Züge bearbeiten. Züge lassen sich natürlich auch mit dem entsprechenden Button bzw. mit {{< kbd "Del" >}} löschen.
 
-![Zugfenster](lin-zugfenster.png)
+![Zugfenster](lin-zugfenster.png)  <!-- TODO: Update grafik -->
 
 Im Zugfenster kann man Name, Verkehrstage und erweiterte Eigenschaften des Zuges eingeben. Die erweitereten Eigenschaften enthalten das Triebfahrzeug, die Mindestbremshundertstel und Last. Das Triebfahrzeug lässt sich dabei aus einer Liste aller in dieser Fahrplandatei verwendeten Triebfahrzeuge auswählen oder selbst eingeben. Diese drei Angaben sind nicht verpflichtend und werden im Buchfahrplan angzeigt. Unten links kann ein Folgezug ausgewählt werden. Damit können Umläufe generiert werden. Diese werden in jTrainGraph im Bildfahrplan angezeigt.
 
@@ -41,7 +41,7 @@ Bei der Bearbeitung der Verkehrstage eines Zuges können neben den Auswahlboxen 
 * {{< kbd "Strg+S" >}} Verkehrt nur Sonntags
 * {{< kbd "Strg+0" >}} Keine Tage anwählen
 
-![Zugfenster](lin-zugeditor.png)
+![Zugfenster](lin-zugeditor.png)  <!-- TODO: Update grafik -->
 
 Mit einem Klick auf die Schaltfläche `Rangierfahrten` können die Rangierfahrten des aktuellen Zuges am aktuell ausgewählten Bahnhof bearbeitet werden. Dies ist nur möglich, wenn, wie oben beschrieben, Gleise angelegt wurden. Rangierfahrten bestehen dabei aus Zeitangabe, Start- und Zeilgleis. `Alle Wagen` gibt an, ob das Startgleis nach der Rangierfahrt wieder frei ist.
 
@@ -56,15 +56,13 @@ Für die Eingabe der Zeitwerte stehen verschiedene Formate zur Verfügung:
 * `hmm`, z.B. `850` wird zu `08:50`
 * `mm`, z.B. `10` wird zu `00:10`
 
-Bei Ankünften kann festgelegt werden, ob der Zug vor der Trapeztafel halten muss. Dazu muss die entsprechende Zelle in der Tabelle ausgewählt werden und anschließend mit der Schaltfläche unten links oder mit der Taste {{< kbd "T" >}} der Trapeztafelhalt aktiviert werden. Auf dem gleichen Weg wird er auch wieder deaktiviert. In der Tabelle wird der Trapeztafelhalt durch einen hellgrauen Hintergrund angezeigt. Ebenso kann festgelegt werden, wer an dem Bahnhof die Zuglaufmeldung abgibt. Dazu befindet sich ein weiterer Button unten links oder man verwendet die Taste {{< kbd "Z" >}} . Dies wird durch Fettschrift symbolisiert. Eine Angabe zur Zuglaufmeldung kann auch noch bei der Abfahrt am ersten Bahnhof angegeben werden. Nicht alle Buchfahrplan-Vorlagen zeigen diese beiden Informationen an.
+Bei Ankünften kann festgelegt werden, ob der Zug vor der Trapeztafel halten muss. Dazu muss die entsprechende Zelle in der Tabelle ausgewählt werden und anschließend mit der Schaltfläche unten links oder mit der Taste {{< kbd "T" >}} der Trapeztafelhalt aktiviert werden. Auf dem gleichen Weg wird er auch wieder deaktiviert. In der Tabelle wird der Trapeztafelhalt durch einen hellgrauen Hintergrund angezeigt. Ebenso kann festgelegt werden, wer an dem Bahnhof die Zuglaufmeldung abgibt. Dazu befindet sich ein weiterer Button unten links oder man verwendet die Taste {{< kbd "Z" >}}. Dies wird durch Fettschrift symbolisiert. Eine Angabe zur Zuglaufmeldung kann auch noch bei der Abfahrt am ersten Bahnhof angegeben werden. Nicht alle Buchfahrplan-Vorlagen zeigen diese beiden Informationen an. Ein Bedarfshalt lässt sich analog eingeben, hierzu dient die rot-umrandete gelbe Scheibe [^1] oder die Taste {{< kbd "B" >}}.
 
-![Fahrplan bearbeiten](lin-fahrplanfenster.png)
+[^1]: Dies ist das Signal für Bedarfshalt bei den schwedischen Eisenbahnen. Ein Reisender kann die Scheibe von Hand in Richtung des Zuges drehen, damit der Zug anhalten wird.
 
-## Züge kopieren
+![Fahrplan bearbeiten](lin-fahrplanfenster.png)  <!-- TODO: Update grafik -->
 
-Züge eines linearen Fahrplans können auch kopiert werden. Dazu reicht ein Klick auf `Zug kopieren`. Der Name des neuen Zuges muss angegeben werden. Der Zug wird um den angegeben Takt (in Minuten) verschoben. Wenn `Erweiterte Attribute übernehmen` ausgewählt ist, werden auch die Angaben zum Bildfahrplan zum Zug aus jTrainGraph mit übernommen.
-
-![Zug kopieren](../kopierfenster.png)
+{{< include "inc_kopieren.md" >}}
 
 ## Züge sortieren
 
@@ -73,8 +71,8 @@ Züge können im Zugfenster sortiert werden. Dies betrifft nur die Sortierung im
 * *Nach Namen*: Die Züge werden alphabetisch nach dem Zugnamen sortiert.
 * *Nach Zugnummern*: Es wird nach dem numerischen Teil des Zugnamen sortiert. Ein Zug `RB 12345` wird unter der Nummer 12345 sortiert.
 * *Nach Zeit, an Station*: Die Züge werden nach der Fahrtzeit an der ausgewählten Station sortiert.
-<!--* *Von oben nach unten*: Die Stationenliste der Fahrtrichtung wird von oben nach unten durchgegangen und an jedem Bahnhof sortiert.-->
-<!--* *Von unten nach oben*: Die Stationenliste der Fahrtrichtung wird von unten nach oben durchgegangen und an jedem Bahnhof sortiert.-->
+* *Von oben nach unten*: Die Stationenliste der Fahrtrichtung wird von oben nach unten durchgegangen und an jedem Bahnhof sortiert.
+* *Von unten nach oben*: Die Stationenliste der Fahrtrichtung wird von unten nach oben durchgegangen und an jedem Bahnhof sortiert.
 
 ![Züge sortieren](../sortierfenster.png)
 

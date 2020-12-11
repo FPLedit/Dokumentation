@@ -22,6 +22,7 @@ title: "Tastaturkürzel in FPledit"
 | {{< kbd "Strg+N" >}}                          | Neue Station erstellen
 |                                               | **Fahrplan-Editoren (allgemein):**
 | {{< kbd "T" >}}                               | Trapeztafelhalt umschalten{{< break >}}(nur wenn Ankunftszeit ausgewählt)
+| {{< kbd "B" >}}                               | Bedarfshalt umschalten{{< break >}}(nur wenn Ankunftszeit ausgewählt)
 | {{< kbd "Z" >}}                               | Zuglaufmeldung eingeben{{< break >}}(nur wenn Ankunftszeit ausgewählt)
 | {{< kbd "Pos1" >}}                            | Die erste Zeit auswählen (nur Linux)
 | {{< kbd "Tab" >}}                             | Wechsel zum nächsten Zeitfeld

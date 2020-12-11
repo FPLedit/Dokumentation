@@ -38,12 +38,12 @@ table.download-table {
         <th>macOS</th>
     </tr>
     <tr>
-        <td colspan="2">
-            <a href="/files/fpledit-{{< version >}}.zip" class="downloadbtn"><i class="icon icon-download"></i> Aktuelle Version {{< version >}} für Windows &amp; Linux</a>
+        <td colspan="3">
+            <a href="/files/fpledit-{{< version >}}.zip" class="downloadbtn"><i class="icon icon-download"></i> Aktuelle Version {{< version >}} für Windows, Linux &amp; macOS</a>
         </td>
-        <td>
+        <!--<td>
             <a href="/files/fpledit-{{< version >}}.zip" class="downloadbtn"><i class="icon icon-download"></i> Aktuelle Version {{< version >}} für macOS</a>
-        </td>
+        </td>-->
     </tr>
     <tr>
         <td><a class="install-notes" href="install-windows/">Hinweise zur Installation</a></td>
@@ -59,18 +59,20 @@ table.download-table {
 
 ## Changelog
 
-### 2.3.0 (vom xx.xx.2020)
-* Stationen und einzelne Fahrtzeiteneinträge können nun als Bedarfshalt markiert werden
+### 2.3.0 (vom xx.12.2020)
+* Stationen und einzelne Fahrtzeiteneinträge können nun als **Bedarfshalt** markiert werden
 * Unterstützung für verlinkte Züge aus jTrainGraph 3.1
-* Unterstützung von Fahrplandateien, die mit jTrainGraph 3.2 erstellt wurden
+* Unterstützung von Fahrplandateien, die mit **jTrainGraph 3.2** erstellt wurden
+* Unterstützung von allen neuen Features von **jTrainGraph 3.3** (Sekundengenaue Zeitangaben)
+* Sekundengenaue Zeitangaben auch für Netzwerk-Fahrplänen.
 * Möglichkeit des Exportierens einer Fahrplandatei nur mit den Stationen ("Strecken-/Netzwerkdatei")
-* Möglichkeit der Verwendung einer englischen Benutzeroberfläche. (`Hilfe > Einstellungen > Sprache`)
+* Möglichkeit der Verwendung einer englischen Benutzeroberfläche. (`Hilfe > Einstellungen > Sprache`). Die Dokumentation wird vorerst nicht übersetzt.
 
 * **Verbesserungen und Änderungen**
     * Dateien im Dateiformat von jTrainGraph 2.0x und 3.0x können nur noch in neuere Formate konvertiert werden
     * Verbesserung des Fahrplan-Editors (vor allem unter Linux/macOS)
     * Neue zentrale Möglichkeit zum Anpassen der Programmeinstellungen `Hilfe > Einstellungen`
-    * Verbesserte Unterstützung für macOS (neues "natives" Programmpaket als _seperater Download_)
+    <!-- * Verbesserte Unterstützung für macOS (neues "natives" Programmpaket als _seperater Download_) -->
 * **Performance-Verbesserungen** an verschiedenen Stellen:
     * Verbesserung der Ladezeiten von sehr großen Dateien (Referenz: 200.000 Stationen an 2000 Strecken) wurde stark verbessert (< 30 Sekunden)
     * Performance-Verbesserungen bei der dynamischen Bildfahrplanvorschau (teilweise ca. 10-40x schneller), kaum Flackern mehr
@@ -78,8 +80,12 @@ table.download-table {
     * Verbesserung der Programm-Initialisierung
 * **Behobene Fehler:**
     * Einige kleine Fehler in der Benutzerschnittstelle wurden behoben.
+    * Ein Fehler wurde behoben, bei dem in der Sitzung nach dem Erstellen einer Datei bestimmte Attribute nicht gespeichert wurden.
 * **interne Änderungen:**
-    * FPLedit wird wieder vollständig und ausschließlich für das .NET-Framework / Mono gebaut. Alle bereist auf netstandard umgestellte Teile wurden wieder zurückumgestellt.
+    * FPLedit wird wieder vollständig und ausschließlich für das .NET-Framework / Mono gebaut. Alle bereits auf netstandard umgestellte Teile wurden vorerst zurückumgestellt.
+
+<p></p>
+<details><summary><strong>Ältere Verionshinweise</strong></summary>
 
 ### 2.2.3 (vom 11.06.2020)
 * Erste Unterstützung von Dateien, die mit jTrainGraph 3.2 erstellt wurden:
@@ -114,9 +120,6 @@ table.download-table {
     * Behebt mehrere Fehler der Trapeztafel-, Kreuzungs-, und Überholungs-Ausgabe in den Buchfahrplänen
     * Bugfixes bei routenabhängigen Werten die Semikola (`;`) enthalten, und bei Filterregeln mit Pipes (`|`) im Suchwert.
 
-<p></p>
-<details><summary><strong>Ältere Verionshinweise</strong></summary>
-
 ### 2.1.1 (vom 09.11.2019)
 * Behebt mehrere Fehler im Zusammenhang mit dem Editieren von Gleisen an Stationen
 * Verbesserung der Multiplattform-Kompatibilität
@@ -129,22 +132,19 @@ table.download-table {
 * Anzeige der Verkehrstage im Buchfahrplan
 * Neue dynamische Bildfahrplanvorschau
 * Kompatibilität mit jTrainGraph 3.1: Gleisangaben und Rangierfahrten
+* **Behobene Fehler:**
+    * Fehlerbehebungen im Zusammenhang mit der Rückgängig-Funktion
+    * Korrektur eines Fehlers, der falsche Zug-Ids intern vergeben hat
+    * Mehrere Fehlerbehebungen in Verbindung mit dem Netzwerk-Modus
+    * **Achtung:** Möglicherweise ist ein manuelles Nacharbeiten der Fahrplandateien nötig, das Programm gibt dann eine entsprechende Meldung beim Start aus.
 
-#### Behobene Fehler:
-
-* Fehlerbehebungen im Zusammenhang mit der Rückgängig-Funktion
-* Korrektur eines Fehlers, der falsche Zug-Ids intern vergeben hat
-* Mehrere Fehlerbehebungen in Verbindung mit dem Netzwerk-Modus
-* **Achtung:** Möglicherweise ist ein manuelles Nacharbeiten der Fahrplandateien nötig, das Programm gibt dann eine entsprechende Meldung beim Start aus.
-
-#### Sonstige Verbesserungen und Anmerkungen:
-
-* Aktivierung der Template-Sandbox unter Linux
-* Performance-Verbesserungen in einigen Bearbeitungsdialogen
-* Besserer Umgang mit Fehlermeldungen und Programmabstürzen
-* **Achtung:** FPLedit ist nicht mehr mit Windows Vista kompatibel!
-* Wechsel der **Lizenz zur GNU GPLv3**
-* **Bekanntes Problem**: Bei komplexen Fahrplänen dauert das Zeichnen der dynamischen Bildfahrplan-Vorschau unter Windows einige Zeit.
+* **Sonstige Verbesserungen und Anmerkungen:**
+    * Aktivierung der Template-Sandbox unter Linux
+    * Performance-Verbesserungen in einigen Bearbeitungsdialogen
+    * Besserer Umgang mit Fehlermeldungen und Programmabstürzen
+    * **Achtung:** FPLedit ist nicht mehr mit Windows Vista kompatibel!
+    * Wechsel der **Lizenz zur GNU GPLv3**
+    * **Bekanntes Problem**: Bei komplexen Fahrplänen dauert das Zeichnen der dynamischen Bildfahrplan-Vorschau unter Windows einige Zeit.
 
 ### 2.0.0 (vom 11.11.2018)
 * Unterstützung von Streckennetzen (Netzwerk-Fahrplänen), **nicht direkt kompatibel mit jTrainGraph, siehe [Bildfahrpläne](/bildfahrplaene)**!

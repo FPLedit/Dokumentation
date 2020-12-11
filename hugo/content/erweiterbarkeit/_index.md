@@ -26,4 +26,7 @@ Die Verwaltung von Vorlagen ist unter `Hilfe > Einstellungen > Vorlagen` möglic
 
 ![Vorlagenfenster](vorlagenfenster.png)
 
+## Sprachdateien
+Unter `Hilfe > Einstellungen > Sprache` kann die Sprache der Benutzeroberfläche von FPLedit eingestellt werden.
+
 {{% beta %}}
