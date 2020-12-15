@@ -13,17 +13,28 @@ Eines der Grundkonzepte von FPLedit ist die Erweiterbarkeit. Erweiterungen füge
 * Starter für jTrainGraph zur Bildfahrplanerstellung (`FPLedit.jTrainGraphStarter.dll`)
 * Dynamische Bildfahrplanvorschau (`FPLedit.Bildfahrplan.dll`)
 
-Erweiterungen können über über das Programm verwaltet werden (`Hilfe > Erweiterungen`). In diesem Dialog können Erweiterungen deaktiviert (`<`) oder aktiviert (`>`) werden. [Eigene Erweiterungen](/dev/) können in C# programmiert werden.
+Erweiterungen können über über das Programm verwaltet werden (`Hilfe > Einstellungen > Erweiterungen`). In diesem Dialog können Erweiterungen deaktiviert (`<`) oder aktiviert (`>`) werden. [Eigene Erweiterungen](/dev/) können in C# programmiert werden.
 
 ![Erweiterungsfenster](erweiterungsfenster.png)
 
 ## Vorlagen
 Zur Generierung der Fahrplan-Ausgabedateien kommen Vorlagen zum Einsatz. Vorlagen sind Textdateien mit der Endung `.fpltmpl`, die im vorgegebenen Format mit einem Texteditor von jedem Benutzer selbst erstellt werden können. Diese liegen im Ordner `templates/` im Programmverzeichnis.
 
-Die Verwaltung von Vorlagen ist unter `Hilfe > Vorlagen` möglich. Fest eingebaute Vorlagen können nicht bearbeitet oder gelöscht werden, dafür können diese als bearbeitbare Kopie gespeichert werden.
+Die Verwaltung von Vorlagen ist unter `Hilfe > Einstellungen > Vorlagen` möglich. Fest eingebaute Vorlagen können nicht bearbeitet oder gelöscht werden, dafür können diese als bearbeitbare Kopie gespeichert werden.
 
 **Achtung:** Vorlagen sind ausführbarer Programmcode. Möglicherweise können Vorlagen, die nicht mit FPLedit ausgeliefert wurden und beispielsweise von einer anderen Website heruntergeladen werden, ein Sicherheitsrisiko für ihren Computer darstellen.
 
 ![Vorlagenfenster](vorlagenfenster.png)
+
+## Sprachdateien
+Unter `Hilfe > Einstellungen > Sprache` kann die Sprache der Benutzeroberfläche von FPLedit eingestellt werden.
+
+![Sprachfenster](sprachfenster.png)
+
+## Dateiformatversionen
+
+Es stehen mehrere Dateiformatversionen sowohl für lineare als auch Netzwerk-Fahrpläne zur Verfügung. Diese können in den Einstellungen augewählt weden und werden bei jedem Programmupdate auf die jeweils aktuelle Version gesetzt. Normalerweise ist die Auswahl der aktuellsten Version die richtige Entscheidung, da damit immer die meisten und neuesten Features bereitstehen.
+
+![Dateiformatfenster](dateiformatfenster.png)
 
 {{% beta %}}

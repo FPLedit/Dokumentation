@@ -1,0 +1,7 @@
+date="08.06.2020"
+version="2.2.2"
+
+content="""
+* Erste Unterstützung für [macOS](install-macos/)
+* Behebt einen Absturz beim Löschen von Stationen
+"""

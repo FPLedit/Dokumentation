@@ -1,0 +1,12 @@
+date="19.08.2017"
+version="1.4.0"
+
+content="""
+* Neuer Fahrplantyp: Aushangfahrpläne mit allen von Buchfahrplaänen her gewohnten Features
+* **Achtung:** Die Erweiterung `FPLedit.BuchfahrplanExport.dll` wurde durch `FPLedit.Buchfahrplan.dll` ersetzt! Die alte Datei kann problemlos gelöscht werden.
+* Dateien können vom Dateiexplorer auf das Hauptfenster gezogen werden
+* Listen springen beim Bearbeiten nicht mehr hin und her
+* Neustart bei Änderung der aktivierten Erweiterungen
+* Viele Verbesserungen unter der Haube
+* Erstmalige Veröffentlichung des Sourcecodes
+"""

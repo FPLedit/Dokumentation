@@ -1,0 +1,9 @@
+date="05.06.2020"
+version="2.2.1"
+
+content="""
+* Behebt mehrere Fehler beim Importieren von Streckendateien
+* Behebt einen Fehler beim Anzeigen der Rangierfahrten im Editor: Die Einträge wurden erst nach einem Klick auf eine beliebige Schaltfläche angezeigt.
+* Behebt zwei Fehler, mit denen nur Sonntags verkehrende Züge und Folgezüge an den ersten und letzten Stationen im Bildfahrplan nicht gezeichnet wurden.
+* Behebt weitere kleine Fehler
+"""

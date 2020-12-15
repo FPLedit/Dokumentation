@@ -126,7 +126,7 @@ clr_typename(tt); // Gibt den .NET-Typnamen zurück. (hier: "Timetable")
 clr_typefullname(tt); // Gibt den vollen .NET-Typnamen zurück. (hier: "FPLedit.Shared.Timetable")
 ```
 
-Alle [Polyfills können auf GitHub](https://github.com/FPLedit/FPLedit/blob/develop/FPLedit/Templating/TemplatePolyfills.js) eingesehen werden.
+Alle [Polyfills können auf GitHub](https://github.com/FPLedit/FPLedit/blob/develop/FPLedit/Templating/TemplatePolyfills.js) eingesehen werden und stehen auch in eigenen Templates zur Vefügung.
 
 ## Template-Type spezifischer Code
 Jeder Template-Typ stellt weitere Hilfsklassen bereit, die in Templates verwendet werden können.
@@ -138,74 +138,3 @@ Templates aus den Standarderweiterungen bieten einen guten Überblick zu den Mö
 * [Buchfahrplan Zugleitbetrieb](https://github.com/FPLedit/FPLedit/blob/develop/FPLedit.Buchfahrplan/Templates/ZlbTemplate.fpltmpl)
 * [Aushangfahrplan (beide Varianten)](https://github.com/FPLedit/FPLedit/blob/develop/FPLedit.Aushangfahrplan/Templates/AfplCommon.fpltmpl)
 * [Tabellenfahrplan/Kursbuch](https://github.com/FPLedit/FPLedit/blob/develop/FPLedit.Kursbuch/Templates/KfplTemplate.fpltmpl)
-
-<!--#
-TODO: DAS FOLGENDE TEMPLATE IST ALT (version 1) UND FUNKTIONIERT NICHT! ;-)
-
-```nohighlight
-<#@ fpledit_template type="bfpl" version="2" name="Beispielvorlage" #>
-
-<#
-let font = "\"Alte DIN 1451 Mittelschrift\"";
-let additionalCss = "";
-let helper = new TemplateHelper(tt);
-
-let attrs = BfplAttrs.GetAttrs(tt);
-if (attrs != null)
-{
-    if (attrs.Font != "")
-        font = attrs.Font;
-    additionalCss = attrs.Css ?? "";
-}
-#>
-
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Beispielvorlage</title>
-		<style id="add-css">
-			<#= additionalCss #>
-		</style>
-	</head>
-	<body>
-		<div>
-			<#
-			foreach (Train tra in helper.GetTrains()) { #>
-				<h1><#= tra.TName #></h1>
-				<h2><#= tt.GetLineName(tra) #></h2>
-				<ul>
-				<#
-				var stations = helper.GetStations(tra);
-				int route = Timetable.LINEAR_ROUTE_ID;
-				foreach (var entity in stations) { #>
-					<#
-						if (entity != stations.Last() && tt.Type == TimetableType.Network) {
-							var sta1 = stations[stations.IndexOf(entity) + 1];
-							route = entity.Routes.Where(r => sta1.Routes.Contains(r)).ToArray()[0];
-						}
-						var pos = entity.Positions.GetPosition(route);
-					#>
-					<li>
-						<#= pos.HasValue ? pos.Value.ToString("0.0") : "" #> &middot;
-						<#= entity.SName #> &middot;
-						<#
-						if (entity.GetType() == typeof(Station)) {
-							Station s = (Station)entity;
-							var ardp = tra.GetArrDep(s);
-							var ar = ardp.Arrival.ToShortTimeString();
-							var dp = ardp.Departure.ToShortTimeString();
-						#>
-						<#= ar != "00:00" ? "ab: " + ar + " &middot; " : "" #>
-						<#= dp != "00:00" ? "an: " + dp : "" #>
-						<# } #>
-					</li>
-				<# } #>
-				</ul>
-			</table>
-			<# } #>
-		</div>
-	</body>
-</html>
-```
--->

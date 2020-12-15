@@ -1,0 +1,6 @@
+date="29.10.2017"
+version="1.5.2"
+
+content="""
+* Diese Version behebt ein Problem, bei dem keine Erweiterungen geladen wurden.
+"""

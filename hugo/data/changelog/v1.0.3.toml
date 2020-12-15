@@ -1,0 +1,9 @@
+date="12.12.2016"
+version="1.0.1"
+
+content="""
+* Fehler behoben, bei dem Bildfahrpläne im falschen Dateiformat exportiert wurden (jetzt PNG statt BMP)
+* Fehler behoben, bei dem die Stationen im Buchfahrplan falsch herum sortiert wurden
+* Fehler behoben, bei dem auf der Mono-Plattform nicht alle Züge im Bildfahrplan gezeichnet wurden
+* Neuer technischer Unterbau für das Buchfahrplanmodul (optimierter HTML-Code)
+"""

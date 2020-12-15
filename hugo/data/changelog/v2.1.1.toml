@@ -1,0 +1,7 @@
+date="09.11.2019"
+version="2.1.1"
+
+content="""
+* Behebt mehrere Fehler im Zusammenhang mit dem Editieren von Gleisen an Stationen
+* Verbesserung der Multiplattform-Kompatibilität
+"""

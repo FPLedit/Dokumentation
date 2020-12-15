@@ -1,0 +1,11 @@
+date="23.01.2017"
+version="1.1.0"
+
+content="""
+* Neues, mit jTrainGraph (**Version >= 2.02**) vollständig kompatibles Dateiformat
+* Entfernen des Bildfahrplan-Moduls, bitte jTrainGraph benutzen!
+* Starter für jTrainGraph, dadurch kann jTrainGraph direkt aus dem Programm heraus gestartet werden (jTrainGraph >= 2.02)
+* Das alte BFPL-Format kann nur noch über `Datei > Importieren` geöffnet werden, `Öffnen` öffnet nur noch das neue Dateiformat
+* Exportieren nur noch über `Datei > Exportieren`, `Speichern (unter)` öffnet nur noch das neue Dateiformat
+* Auswahl aus vorhandenen Triebfahrzeugen
+"""

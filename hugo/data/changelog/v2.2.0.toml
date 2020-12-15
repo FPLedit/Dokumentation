@@ -1,0 +1,21 @@
+date="11.05.2020"
+version="2.2.0"
+
+content="""
+* Wechsel der Vorlagen zu einer Javascript basierten Template-Definition
+    * **Achtung:** Alte Vorlagen sind damit nicht mehr kompatibel!
+* Auf Linux-Plattformen wird nun das native Theme besser unterstützt und einige Darstellungsfehler behoben
+* Aktualisierung des UI-Frameworks Eto für bessere Kompatibilität
+* Unter der Haube: Massive Änderungen an der Codebasis um FPLedit fit für die Zukunft zu machen
+* Änderung bei mehreren geöffneten FPLedit-Fenstern: Nur noch die erste Instanz kann Einstellungen ändern, das dient zur Vermeidung von Fehlern.
+* **Performance-Verbesserungen** an verschiedenen Stellen:
+    * Verbesserung der Ladezeiten von sehr großen Dateien (Referenz: 200.000 Stationen an 2000 Strecken) wurde stark verbessert
+    * Performance-Verbesserungen der Rückgängig-Funktion
+    * Performance-Verbesserungen bei der dynamischen Bildfahrplanvorschau
+* **Behobene Fehler:**
+    * Behebt einige Fehler unter Mono, Vorbereitung für .NET Core
+    * Behebt einige Fehler mit Überprüfungen
+    * Behebt mehrere Fehler im Vorlagen-Mechanismus
+    * Behebt mehrere Fehler der Trapeztafel-, Kreuzungs-, und Überholungs-Ausgabe in den Buchfahrplänen
+    * Bugfixes bei routenabhängigen Werten die Semikola (`;`) enthalten, und bei Filterregeln mit Pipes (`|`) im Suchwert.
+"""

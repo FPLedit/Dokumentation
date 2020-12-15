@@ -1,0 +1,22 @@
+{{- $details := true -}}
+{{- with .Get "details" -}}
+   {{- $details = . -}}
+{{- end -}}
+
+{{- $count := 0 -}}
+{{- range sort $.Site.Data.changelog "version" "desc" -}}
+   {{- if not (eq .released false) }}
+
+      <h3>{{ .version }} (vom {{ .date }})</h3>
+      <p>{{ .content | markdownify }}</p>
+      {{- if ( and ( eq $count 0 ) ( eq $details true ) ) }}
+      <details><summary><strong>Ältere Verionshinweise</strong></summary>
+      {{ end -}}
+
+   {{ end -}}
+   {{- $count = add $count  1 -}}
+{{- end -}}
+
+{{- if and ( gt $count 1 ) ( eq $details true ) }}
+</details>
+{{ end -}}
