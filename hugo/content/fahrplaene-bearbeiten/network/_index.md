@@ -42,7 +42,7 @@ Bei der Bearbeitung der Verkehrstage eines Zuges können neben den Auswahlboxen 
 * {{< kbd "Strg+S" >}} Verkehrt nur Sonntags
 * {{< kbd "Strg+0" >}} Keine Tage anwählen
 
-![Zugfenster](zugfenster.png)  <!-- TODO: Update grafik -->
+![Zugfenster](zugfenster.png)
 
 ## Fahrplan eines Zuges bearbeiten
 
@@ -63,7 +63,7 @@ In jeder Zeile können Abfahrts- und Ankunftsgleis ausgewählt werden. Diese wer
 
 Mit einem Klick auf die Schaltfläche `Rangierfahrten` können die Rangierfahrten des aktuellen Zuges am aktuell ausgewählten Bahnhof bearbeitet werden. Dies ist nur möglich, wenn, wie oben beschrieben, Gleise angelegt wurden. Rangierfahrten bestehen dabei aus Zeitangabe, Start- und Zeilgleis. `Alle Wagen` gibt an, ob das Startgleis nach der Rangierfahrt wieder frei ist.
 
-![Rangierfenster](../rangierfenster.png)  <!-- TODO: Update grafik -->
+![Rangierfenster](../rangierfenster.png)
 
 ## Laufweg eines Zuges nachträglich ändern
 

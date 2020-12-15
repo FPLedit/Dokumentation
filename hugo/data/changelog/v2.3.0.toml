@@ -26,4 +26,7 @@ content="""
     * Die dynamische Bildfahrplanvorschau funktioniert nun auch mit einer Endzeit vor der Startzeit.
 * **interne Änderungen:**
     * FPLedit wird wieder vollständig und ausschließlich für das .NET-Framework / Mono gebaut. Alle bereits auf netstandard umgestellte Teile wurden vorerst zurückumgestellt. Dies wird aber vorraussichtlich die letzte Version für klassiches .NET sein.
+
+* **BEKANNTE PROBLEME:**
+    * In bestimmten Szenarien können vermehrt Abstürze unter Windows auftreten. Die Ursache ist aktuell leider nicht bekannt.
 """

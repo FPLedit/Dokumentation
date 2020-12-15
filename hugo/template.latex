@@ -9,7 +9,7 @@ $if(linestretch)$
 \setstretch{$linestretch$}
 $endif$
 
-\usepackage{pmboxdraw}
+%\usepackage{pmboxdraw}
 
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}

@@ -29,4 +29,12 @@ Die Verwaltung von Vorlagen ist unter `Hilfe > Einstellungen > Vorlagen` möglic
 ## Sprachdateien
 Unter `Hilfe > Einstellungen > Sprache` kann die Sprache der Benutzeroberfläche von FPLedit eingestellt werden.
 
+![Sprachfenster](sprachfenster.png)
+
+## Dateiformatversionen
+
+Es stehen mehrere Dateiformatversionen sowohl für lineare als auch Netzwerk-Fahrpläne zur Verfügung. Diese können in den Einstellungen augewählt weden und werden bei jedem Programmupdate auf die jeweils aktuelle Version gesetzt. Normalerweise ist die Auswahl der aktuellsten Version die richtige Entscheidung, da damit immer die meisten und neuesten Features bereitstehen.
+
+![Dateiformatfenster](dateiformatfenster.png)
+
 {{% beta %}}
