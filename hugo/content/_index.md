@@ -24,10 +24,6 @@ Der Fahrplan ist die Grundlage für den Bahnbetrieb und muss vor der fahrt für 
 
 - Unterstützung **mehrerer Betriebssystem**: Windows und Linux mit Hilfe von Mono
 
-{{< warning title="jTrainGraph 3.3" >}}
-FPLedit ist aktuell nicht mit jTrainGraph 3.3 kompatibel. Erst die nächste Version 2.3.0 wird mit jTrainGraph 3.3 kompatibel sein!
-{{< /warning >}}
-
 ## Fahrplan-Ausgabeformate
 
 Der Fahrplan ist die Grundlage für den Bahnbetrieb und muss vor der fahrt für jeden Zug erstellt werden. Bei den deutschen Eisenbahnen waren und sind zu diesem Zweck verschiedene Fahrplan-Formate im Einsatz, die an unterschiedliche Benutzergruppen gerichtet sind. Diese Seite soll als Entscheidungshilfe dienen, welcher Fahrplantyp zum Einsatz kommen soll.
