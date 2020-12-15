@@ -1,4 +1,4 @@
-date="xx.12.2020"
+date="15.12.2020"
 version="2.3.0"
 
 content="""
@@ -21,8 +21,9 @@ content="""
     * Teilweise asynchrones Laden der Dateien
     * Verbesserung der Programm-Initialisierung
 * **Behobene Fehler:**
-    * Einige kleine Fehler in der Benutzerschnittstelle wurden behoben.
+    * Einige kleine Fehler in der Benutzerschnittstelle und im Programm wurden behoben.
     * Ein Fehler wurde behoben, bei dem in der Sitzung nach dem Erstellen einer Datei bestimmte Attribute nicht gespeichert wurden.
+    * Die dynamische Bildfahrplanvorschau funktioniert nun auch mit einer Endzeit vor der Startzeit.
 * **interne Änderungen:**
-    * FPLedit wird wieder vollständig und ausschließlich für das .NET-Framework / Mono gebaut. Alle bereits auf netstandard umgestellte Teile wurden vorerst zurückumgestellt.
+    * FPLedit wird wieder vollständig und ausschließlich für das .NET-Framework / Mono gebaut. Alle bereits auf netstandard umgestellte Teile wurden vorerst zurückumgestellt. Dies wird aber vorraussichtlich die letzte Version für klassiches .NET sein.
 """
