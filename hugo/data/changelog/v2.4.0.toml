@@ -1,0 +1,13 @@
+date="24.12.2020"
+version="2.4.0"
+
+content="""
+* Verwendung von .NET 5 auf allen Plattformen. Eine *Installation der Laufzeitumgebung* ist unter Windows und Linux nötig.
+* Entfallen der Unterstützung von alten Netzwerkfahrplandateien (100) und der Dateiformate von jTrainGraph 3.1x und 3.2x (010 bzw. 011). Alte Dateien können aber selbstverständlich weiterhin auf neue Formate aktualisiert werden!
+* Verbesserung der Geschwindigkeit und Reduzierung des Arbeitsspeicherverbrauchs beim Einlesen von Vorlagen.
+* Bessere Unterstützung von macOS, ohne die Installation von weiteren Abhängigkeiten.
+
+* **Behobene Fehler:**
+    * Behebt die häufigen Abstürze unter Windows, auch wenn die Ursache weiterhin unklar ist.
+    * Einige weitere kleinere Fehler wurden behoben.
+"""

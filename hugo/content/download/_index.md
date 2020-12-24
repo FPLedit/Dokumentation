@@ -38,17 +38,20 @@ table.download-table {
         <th>macOS</th>
     </tr>
     <tr>
-        <td colspan="3">
-            <a href="/files/fpledit-{{< version >}}.zip" class="downloadbtn"><i class="icon icon-download"></i> Aktuelle Version {{< version >}} für Windows, Linux &amp; macOS</a>
+        <td>
+            <a href="/files/fpledit-{{< version >}}-win-x64.zip" class="downloadbtn"><i class="icon icon-download"></i> FPLedit {{< version >}} für Windows (64 bit)</a><br>
         </td>
-        <!--<td>
-            <a href="/files/fpledit-{{< version >}}.zip" class="downloadbtn"><i class="icon icon-download"></i> Aktuelle Version {{< version >}} für macOS</a>
-        </td>-->
+        <td>
+            <a href="/files/fpledit-{{< version >}}-linux-x64.zip" class="downloadbtn"><i class="icon icon-download"></i> FPLedit {{< version >}} für Linux (64 bit)</a>
+        </td>
+        <td>
+            <a href="/files/fpledit-{{< version >}}-osx-x64.zip" class="downloadbtn"><i class="icon icon-download"></i> FPLedit {{< version >}} für macOS (64 bit)</a>
+        </td>
     </tr>
     <tr>
-        <td><a class="install-notes" href="install-windows/">Hinweise zur Installation</a></td>
-        <td><a class="install-notes" href="install-linux/">Hinweise zur Installation</a></td>
-        <td><a class="install-notes" href="install-macos/">Hinweise zur Installation</a></td>
+        <td><a class="install-notes" href="install-windows/">Hinweise zur Installation (Windows)</a></td>
+        <td><a class="install-notes" href="install-linux/">Hinweise zur Installation (Linux)</a></td>
+        <td><a class="install-notes" href="install-macos/">Hinweise zur Installation (macOS)</a></td>
     </tr>
     <tr>
         <td colspan="3">

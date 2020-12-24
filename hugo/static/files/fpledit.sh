@@ -1,13 +1,8 @@
 #!/bin/bash
 
-MONO=`which mono`
-FPLEDIT=FPLedit.exe
+FPLEDIT="./FPLedit"
 
-if [ -z "$MONO" ]; then
-	echo "Can't start fpledit. mono is not installed";
-fi
-
-$MONO $FPLEDIT --log-console $1 >./fpledit-error.log 2>&1
+$FPLEDIT --log-console $1 >./fpledit-error.log 2>&1
 
 result="$?"
 if [ "$result" -ne 0 ]; then

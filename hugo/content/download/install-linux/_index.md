@@ -4,29 +4,21 @@ title: FPLedit auf Linux
 nooffline: true
 ---
 
+
+
 FPLedit ist seit Version 2.0.0 recht gut mit Linux kompatibel und wird auch aktiv getestet. Dabei wird auf die Mono-Laufzeitumgebung und die Gtk3-Plattform aufgebaut. Seit Version 2.2.0 ist Linux (bis 2.2.3 unter Ubuntu, später unter Fedora 😀) sogar das Hauptsystem auf dem FPLedit entwickelt wird!
 
-## Abhängigkeiten installieren
-Für die Installation der Mono-Laufzeitumgebung auf Linux-Distributionen siehe die [ofizielle Seite des Mono-Projekts](http://www.mono-project.com/download/stable/#download-lin).
+## Abhängigkeiten installieren (.NET 5)
+Für die Installation der .NET 5-Runtime auf Linux-Distributionen siehe die [ofizielle Seite von Microsoft](https://docs.microsoft.com/en-us/dotnet/core/install/linux). Eine Installation ist damit auf den meisten Linux-Distributionen (Ubuntu, Fedora, Debian, openSUSE) in einer halbwegs aktuellen Version möglich sein. Es wird auf allen Plattformen in der Regel nur das Paket `dotnet-runtime-5.0` benötigt.
 
-{{< warning title="Unterstützte Mono-Versionen / .NET 5" >}}
-Regelmäßig wird FPLedit nur mit der jeweils aktuellen Mono-Version getestet, die in den Repositories des Projekts verfügbar sind. Pakete in den Repositories der einzelnen Linux-Distributionen sind ggf. *sehr* viel älter und enthalten möglicherweise Fehler.
+{{< warning title="Ausschließliche Unterstützung von .NET 5" >}}
+.NET 5 wird nach der Installation bei den meisten Distributionen über den Paketmanager aktuell gehalten und sollte insgesamt stabiler als das (für FPLedit bis einschließlich Version 2.3.0 verwendete) Mono-Framework sein. Andere .NET-Versionen werden daher prinzipbedingt nicht unterstützt, auch keine aktuelleren (z.B. das für 2021 angekündigte .NET 6.0). Dafür muss jeweils eine neue FPLedit-Version veröffentlicht werden.
 
-Bei älteren Versionen ist es ggf. nötig die Datei `lib/Eto.Wpf.dll` aus dem entpackten Programmverzeichnis zu löschen. Dies ist nötig, wenn FPLedit gar nicht startet.
-
-FPLedit ist aktuell explizit nicht mit .NET Core kompatibel. In Zukunft werde ich ggf. eine FPledit-Variante für .NET 5 anbieten.
+FPLedit 2.4.0 ist **ausdrücklich nicht mehr mit Mono kompatibel**!
 {{< /warning >}}
 
-Wenn Mono nur für FPLedit verwendet werden soll, genügt derzeit die Installation der folgenden Pakete (unter Ubuntu/anderen Debian-basierten Distros):
-
-```nohighlight
-mono-runtime mono-devel
-```
-
-Möglicherweise können in Zukunft weitere Abhängigkeiten hinzukommen.
-
 ## Installation
-Grundsätzlich reicht auch auf Linux das reine Entpacken des ZIP-Ordners. Die Datei `lib/Eto.Wpf.dll` im Programmverzeichnis kann und sollte auch gelöscht werden, da diese nur auf Windows benötigt wird und ggf. in bestimmten Situationen für Probleme sorgen kann. Um einen möglichst reibungslosen Betrieb von FPLedit unter Linux zu ermöglichen, ist vom FPLedit Team ein Shell-Skript entwickelt worden, das hier heruntergeladen werden kann: [/fpledit.sh](/files/fpledit.sh).
+Grundsätzlich reicht auch auf Linux das reine Entpacken des ZIP-Ordners. Das Programm kann mit dem Befehl `./FPLedit` im Programmverzeichnis gestartet werden.
 
 {{< include "/download/install-optional-general.md" >}}
 
