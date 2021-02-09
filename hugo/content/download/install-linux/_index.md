@@ -4,17 +4,17 @@ title: FPLedit auf Linux
 nooffline: true
 ---
 
-
-
 FPLedit ist seit Version 2.0.0 recht gut mit Linux kompatibel und wird auch aktiv getestet. Dabei wird auf die Mono-Laufzeitumgebung und die Gtk3-Plattform aufgebaut. Seit Version 2.2.0 ist Linux (bis 2.2.3 unter Ubuntu, später unter Fedora 😀) sogar das Hauptsystem auf dem FPLedit entwickelt wird!
 
 ## Abhängigkeiten installieren (.NET 5)
 Für die Installation der .NET 5-Runtime auf Linux-Distributionen siehe die [ofizielle Seite von Microsoft](https://docs.microsoft.com/en-us/dotnet/core/install/linux). Eine Installation ist damit auf den meisten Linux-Distributionen (Ubuntu, Fedora, Debian, openSUSE) in einer halbwegs aktuellen Version möglich sein. Es wird auf allen Plattformen in der Regel nur das Paket `dotnet-runtime-5.0` benötigt.
 
+Für die dynamische Bildfahrplanvorschau wird zusätzlich das Paket `libgdiplus` benötigt.
+
 {{< warning title="Ausschließliche Unterstützung von .NET 5" >}}
 .NET 5 wird nach der Installation bei den meisten Distributionen über den Paketmanager aktuell gehalten und sollte insgesamt stabiler als das (für FPLedit bis einschließlich Version 2.3.0 verwendete) Mono-Framework sein. Andere .NET-Versionen werden daher prinzipbedingt nicht unterstützt, auch keine aktuelleren (z.B. das für 2021 angekündigte .NET 6.0). Dafür muss jeweils eine neue FPLedit-Version veröffentlicht werden.
 
-FPLedit 2.4.0 ist **ausdrücklich nicht mehr mit Mono kompatibel**!
+FPLedit ab Version 2.4.0 ist **ausdrücklich nicht mehr mit Mono kompatibel**!
 {{< /warning >}}
 
 ## Installation

@@ -1,0 +1,8 @@
+date="09.02.2021"
+version="2.4.1"
+
+content="""
+* Einige Fehler im Fahrplaneditor und der Dynamischen Bildfahrplanvorschau unter macOS wurden behoben.
+* Das ausgewählte Gleis im Fahrplaneditor wird wieder gespeichert.
+* Ein Fehler bei der Verwendung von Umläufen aus jTrainGraph wurde behoben.
+"""
