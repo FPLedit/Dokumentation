@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Version information file for update check. -->
 <info product="manuelhu:fpledit">
-	<version>2.4.1</version>
+	<version>2.4.2</version>
 	<url>https://fahrplan.manuelhu.de/download/</url>
 	<!-- Short description: One full sentence -->
-	<description>Version 2.4.1 behebt einige Fehler. | Version 2.4.0 behebt einige schwerwiegende Fehler und kleinere Verbesserungen. | Version 2.3.0 unterstützt erstmals jTrainGraph 3.30 und 3.20 und bietet kleinere Verbesserungen und Features. Das volle Changelog finden Sie unter https://fahrplan.manuelhu.de/download/.</description>
+	<description>Version 2.4.2 behebt einige Fehler und enthält einige kleinere neue Funktionen. | Version 2.4.0 behebt einige schwerwiegende Fehler und kleinere Verbesserungen. Das volle Changelog finden Sie unter https://fahrplan.manuelhu.de/download/.</description>
 	<!-- This text will be displayed on every check for a new version -->
 	<!--<text></text>-->
 </info>

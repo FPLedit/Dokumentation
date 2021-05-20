@@ -41,6 +41,8 @@ Einige Darstellungseinstellungen lassen sich auch anpassen. Diese werden auch f�
 
 ![Dynamische Bildfahrplaneinstellungen](dynamische-einstellungen.png)
 
+<!-- TODO: virtuelle Strecken -->
+
 ## Tastenkombinationen
 
 Einige häufig verwendete Funktionen des Hauptprogramms lassen sich über Tastenkombinationen im Hauptfenster aufrufen:

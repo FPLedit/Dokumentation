@@ -15,6 +15,7 @@ title: "Tastaturkürzel in FPledit"
 | {{< kbd "Pos1" >}}                            | Setze Fokus auf Routen-Auswahlfeld
 | {{< kbd "R" >}}                               | Verschiebung der Netzgrafik zurücksetzen
 | {{< kbd "S" >}}                               | Verschiebung der Netzgrafik speichern (nur Netzwerk)
+| {{< kbd "+" >}} / {{< kbd "-" >}}             | Ansicht vergrößern/verkleinern
 | {{< kbd "Esc" >}}                             | Abbrechen des Hinzufügens einer neuen Station
 |                                               | **Linearer Streckeneditor:**
 | {{< kbd "Entf" >}}                            | Station löschen
@@ -38,7 +39,7 @@ title: "Tastaturkürzel in FPledit"
 |                                               | **Zugliste (sowohl Netzwerk als auch linear):**
 | {{< kbd "Entf" >}}                            | Ausgewählten Zug löschen
 | {{< kbd "Strg+C" >}}                          | Ausgewählten Zug kopieren oder verschieben
-| {{< kbd "Strg+B" >}}, {{< kbd "Enter" >}}    | Eigenschaften und Fahrplan des Zugs bearbeiten
+| {{< kbd "Strg+B" >}}, {{< kbd "Enter" >}}     | Eigenschaften und Fahrplan des Zugs bearbeiten
 | {{< kbd "Strg+N" >}}                          | Neuen Zug anlegen
 |                                               | **Zugliste (Netzwerk):**
 | {{< kbd "Strg+P" >}}                          | Laufweg des Zuges bearbeiten

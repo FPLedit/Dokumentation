@@ -1,0 +1,11 @@
+date="20.05.2021"
+version="2.4.2"
+
+content="""
+* In der Netzwerkdarstellung kann nun mit den Tasten +/- oder mit dem Mausrad die Ansicht vergrößert oder verkleinert werden.
+* In Streckennetzen ist nun das Anlegen von „virtuellen Strecken“ möglich, mit denen die dynamische Bildfahrplanvorschau nahezu beliebige Ausschnitte aus dem Streckennetz zeigen kann.
+* Ein Fehler bei der Verwendung unter neuen Versionen von glib2 unter Linux wurde behoben.
+* Kompatibilität mit jTrainGraph 3.4x
+* Behebt mehrere kleine Fehler bei Richtungsangaben im Aushangfahrplan
+* Behebt zwei Absturzursachen bei der Verwendung von jTrainGraph und Netzwerk-Fahrplänen
+"""
