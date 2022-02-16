@@ -4,7 +4,7 @@ title: FPLedit auf Linux
 nooffline: true
 ---
 
-FPLedit ist seit Version 2.0.0 recht gut mit Linux kompatibel und wird auch aktiv getestet. Dabei wird auf die Mono-Laufzeitumgebung und die Gtk3-Plattform aufgebaut. Seit Version 2.2.0 ist Linux (bis 2.2.3 unter Ubuntu, später unter Fedora 😀) sogar das Hauptsystem auf dem FPLedit entwickelt wird!
+FPLedit ist seit Version 2.0.0 recht gut mit Linux kompatibel und wird auch aktiv getestet. Dabei wird auf die .NET-Laufzeitumgebung und die Gtk3-Plattform aufgebaut. Seit Version 2.2.0 ist Linux sogar das Hauptsystem auf dem FPLedit entwickelt wird!
 
 ## Abhängigkeiten installieren (.NET 5)
 Für die Installation der .NET 5-Runtime auf Linux-Distributionen siehe die [ofizielle Seite von Microsoft](https://docs.microsoft.com/en-us/dotnet/core/install/linux). Eine Installation ist damit auf den meisten Linux-Distributionen (Ubuntu, Fedora, Debian, openSUSE) in einer halbwegs aktuellen Version möglich sein. Es wird auf allen Plattformen in der Regel nur das Paket `dotnet-runtime-5.0` benötigt.

@@ -22,7 +22,7 @@ Der Fahrplan ist die Grundlage für den Bahnbetrieb und muss vor der fahrt für 
 
 - Die Ausgabe kann mit eigenen [Vorlagen](/dev/templates) an die Bedürfnisse angepasst werden.
 
-- Unterstützung **mehrerer Betriebssystem**: Windows und Linux mit Hilfe von Mono
+- Unterstützung **mehrerer Betriebssysteme** auf Grund der Verwendung von .NET 5+: Windows, Linux (und macOS).
 
 ## Fahrplan-Ausgabeformate
 
@@ -33,7 +33,7 @@ Der Fahrplan ist die Grundlage für den Bahnbetrieb und muss vor der fahrt für 
 Das Dateiformat von FPLedit und jTrainGraph ist vollständig kompatibel. Somit können alle drei Formate aus der gleichen Datei generiert werden. Ob das Anlegen der Daten mit jTrainGraph oder FPLedit erfolgt, ist dabei egal. Die erweiterte Konfiguration der Ausgabe ist aber nur mit dem entsprechenden Programm möglich. **Netzwerk-Fahrpläne** können nur noch mit FPLedit erstellt werden.
 
 ## Systemvoraussetzungen
-FPLedit läuft auf allen Systemen, auf denen entweder Microsoft .NET ab Version 4.6.1 (installierbar ab Windows 7 SP1) oder ein aktuelles [Mono](http://www.mono-project.com/) installiert ist. Damit sollte dieses Programm auf **Windows und [Linux](/download/install-linux/)** (experimentell auch unter [macOS](/download/install-macos/)) laufen.
+FPLedit läuft auf allen Systemen, auf denen .NET 5 installierbar ist. Damit sollte dieses Programm auf **Windows (7/10+) und [Linux](/download/install-linux/)** (experimentell auch unter [macOS](/download/install-macos/)) laufen.
 
 ## Danke!
 Vielen Dank an alle, die dieses Programm verwenden: Ohne euch wäre die Arbeit hier nutzlos. Und auch ein noch größeres Dankeschön an alle Betatester, die bei der Behebung von Fehlern und dem Testen von neuen Funktionen helfen und Ideen für neue Funktionen beisteuern! Natürlich auch ein Danke an Moritz Scherzinger von jTrainGraph für die gute Kooperation beim gemeinsam verwendeten Dateiformat!

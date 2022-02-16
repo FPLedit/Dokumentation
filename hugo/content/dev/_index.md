@@ -17,7 +17,7 @@ Die API-Dokumentation befindet sich unter https://apidoc.fpledit.de/ (in Englisc
 
 > **Achtung**: Diese Anleitung ist zur Zeit auf dem Stand von FPLedit Version 2.2.0. Möglicherweise ist sie nicht 100%ig aktuell. In zukünftigen Versionen werden möglicherweise die Programmschnittstellen geändert. Die [API-Dokumentation](https://apidoc.fpledit.de/) ist in der Regel aktueller.
 
-FPLedit basiert auf .NET und ist in der Programmiersprache C# geschrieben, daher ist dies auch die am besten für die Erweiterungsentwicklung geeignete Sprache. Zur Entwicklung mit C# ist die kostenlose Entwicklungsumgebung [Visual Studio Community](https://www.visualstudio.com/de/) von Microsoft gut geeignet, aber auch Alternativen (z.B. das (kostenlose) [MonoDevelop](https://www.monodevelop.com/) und (kostenpflichtige) Rider für Linux) sind verwendbar.
+FPLedit basiert auf .NET und ist in der Programmiersprache C# geschrieben, daher ist dies auch die am besten für die Erweiterungsentwicklung geeignete Sprache. Zur Entwicklung mit C# ist die kostenlose Entwicklungsumgebung [Visual Studio Community](https://www.visualstudio.com/de/) von Microsoft gut geeignet, aber auch Alternativen (z.B. das (kostenlose) Visual Studio Code und (kostenpflichtige) Rider für Linux) sind verwendbar.
 
 Alle Erweiterungen müssen einen Verweis auf die Assembly `FPLedit.Shared.dll` enthalten. Alle im Folgenden verwendeten Typen stammen aus dieser Assembly. Im Regelfall sollten diese Typen ausreichen, um eine FPLedit-Erweiterung zu erstellen. Die anderen Erweiterungen stellen in der Regel keine öffentliche API bereit. Ausnahmen sind:
 
