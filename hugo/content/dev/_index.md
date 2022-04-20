@@ -1,5 +1,4 @@
 ---
-date: 2017-07-02T18:29:37+02:00
 title: Erweiterungen entwickeln
 weight: 80
 nooffline: true

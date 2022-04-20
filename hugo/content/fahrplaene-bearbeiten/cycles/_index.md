@@ -1,5 +1,4 @@
 ---
-date: 2019-01-06
 title: Zirkuläre Netze bearbeiten
 weight: 13
 offline_indent: 1

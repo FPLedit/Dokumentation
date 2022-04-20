@@ -1,5 +1,4 @@
 ---
-date: 2018-02-10T18:29:37+02:00
 title: Eigene Vorlagen erstellen
 nooffline: true
 ---
@@ -92,7 +91,7 @@ Die Fehlermeldung `no matching indexer found` weist darauf hin, dass eine nicht 
 
 ### Nullable<T>
 
-Nullable-Typen werden besonders behandelt. Sie sind im Javscript entweder gleich `null` oder haben ihren Wert ungleich `null`. `HasValue`/`Value` steht nicht zur Verfügung.
+Nullable-Typen werden besonders behandelt. Sie sind im Javascript entweder gleich `null` oder haben ihren Wert ungleich `null`. `HasValue`/`Value` steht nicht zur Verfügung.
 
 ```csharp
 // C#:

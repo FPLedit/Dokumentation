@@ -1,5 +1,4 @@
 ---
-date: 2016-10-05T18:29:37+02:00
 title: Netzwerk-Fahrpläne bearbeiten
 weight: 12
 offline_indent: 1

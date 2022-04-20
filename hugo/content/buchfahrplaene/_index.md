@@ -1,5 +1,4 @@
 ---
-date: 2017-01-17T18:29:37+02:00
 title: Buchfahrpläne
 weight: 30
 ---

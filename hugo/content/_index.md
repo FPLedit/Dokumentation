@@ -1,5 +1,4 @@
 ---
-date: 2016-03-08T21:07:13+01:00
 title: Startseite
 type: index
 weight: 1
@@ -9,7 +8,7 @@ offline_title: "Was ist FPLedit?"
 
 FPLedit ist ein freies Programm zum Erstellen von Fahrplänen. Dies ist vor allem für **betriebsorientierte Modellbahner** interessant, die auf ihrer Anlage einen vorbildgetreuen Betrieb durchführen wollen und dafür **ans Original angelehnte Fahrplanunterlagen** verwenden wollen. Die Vorlagen dafür werden in der Regel bei der DB bzw. DR gesucht. FPLedit ist dabei aber nicht so komplex (und teuer) wie andere, professionelle Fahrplansoftware für "echte" Verkehrsbetriebe.
 
-Der Fahrplan ist die Grundlage für den Bahnbetrieb und muss vor der fahrt für jeden Zug erstellt werden. Auch auf Modelleisenbahnanlagen kann der Betriebsspaß damit oftmals vergrößert werden - egal ob alleine oder mit anderen Mitstreitern!
+Der Fahrplan ist die Grundlage für den Bahnbetrieb und muss vor der Fahrt für jeden Zug erstellt werden. Auch auf Modelleisenbahnanlagen kann der Betriebsspaß damit oftmals vergrößert werden - egal ob alleine oder mit anderen Mitstreitern!
 
 ## Features
 - [Erstellen und Bearbeiten](/fahrplaene-bearbeiten/) von Fahrplänen bestehend aus einer einzelnen Strecke oder einem Streckennetz und den darauf verkehrenden Zügen.
@@ -26,7 +25,7 @@ Der Fahrplan ist die Grundlage für den Bahnbetrieb und muss vor der fahrt für 
 
 ## Fahrplan-Ausgabeformate
 
-Der Fahrplan ist die Grundlage für den Bahnbetrieb und muss vor der fahrt für jeden Zug erstellt werden. Bei den deutschen Eisenbahnen waren und sind zu diesem Zweck verschiedene Fahrplan-Formate im Einsatz, die an unterschiedliche Benutzergruppen gerichtet sind. Diese Seite soll als Entscheidungshilfe dienen, welcher Fahrplantyp zum Einsatz kommen soll.
+Der Fahrplan ist die Grundlage für den Bahnbetrieb und muss vor der Fahrt für jeden Zug erstellt werden. Bei den deutschen Eisenbahnen waren und sind zu diesem Zweck verschiedene Fahrplan-Formate im Einsatz, die an unterschiedliche Benutzergruppen gerichtet sind. Diese Seite soll als Entscheidungshilfe dienen, welcher Fahrplantyp zum Einsatz kommen soll.
 
 {{< include_mod "/include-index-web" "/include-index-tex" >}}
 

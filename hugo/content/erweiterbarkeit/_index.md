@@ -1,5 +1,4 @@
 ---
-date: 2016-10-05T18:29:37+02:00
 title: Erweiterbarkeit
 weight: 3
 ---

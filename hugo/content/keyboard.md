@@ -1,5 +1,8 @@
 ---
 title: "Tastaturkürzel in FPledit"
+# Only use for offline pdf
+_build:
+    render: false
 ---
 
 | Kürzel                                        | Aktion                                                                             |
