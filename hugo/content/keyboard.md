@@ -15,7 +15,8 @@ title: "Tastaturkürzel in FPledit"
 | {{< kbd "Pos1" >}}                            | Setze Fokus auf Routen-Auswahlfeld
 | {{< kbd "R" >}}                               | Verschiebung der Netzgrafik zurücksetzen
 | {{< kbd "S" >}}                               | Verschiebung der Netzgrafik speichern (nur Netzwerk)
-| {{< kbd "+" >}} / {{< kbd "-" >}}             | Ansicht vergrößern/verkleinern
+| {{< kbd "Plus" >}} / {{< kbd "Minus" >}}      | Ansicht vergrößern/verkleinern
+| {{< kbd "Ctrl" >}} + Mausrad                  | Ansicht vergrößern/verkleinern
 | {{< kbd "Esc" >}}                             | Abbrechen des Hinzufügens einer neuen Station
 |                                               | **Linearer Streckeneditor:**
 | {{< kbd "Entf" >}}                            | Station löschen
@@ -28,11 +29,11 @@ title: "Tastaturkürzel in FPledit"
 | {{< kbd "Pos1" >}}                            | Die erste Zeit auswählen (nur Linux)
 | {{< kbd "Tab" >}}                             | Wechsel zum nächsten Zeitfeld
 | {{< kbd "R" >}}                               | Rangierfahrten bearbeiten
-|                                               | *Linux*: Immer mit {{< kbd "Pos1" >}} beginnen und dann mit{{< break >}}{{< kbd "Tab" >}} durcharbeiten. Die Auswahl der Gleise ist nicht{{< break >}} mit der Tastatur möglich.
+|                                               | *Linux*: Immer mit {{< kbd "Pos1" >}} beginnen und dann mit{{< break >}}{{< kbd "Tab" >}} durcharbeiten. Die Auswahl der Gleise ist nicht mit der Tastatur möglich.
 |                                               | **Gesamt-Fahrplan-Editor (Netzwerk):**
-| {{< kbd "Strg+0" >}} | Zug-Auswahlfeld fokussieren
+| {{< kbd "Strg+0" >}}                          | Zug-Auswahlfeld fokussieren
 |                                               | **Gesamt-Fahrplan-Editor (linear):**
-| {{< kbd "R" >}} | Hier keine Funktion
+| {{< kbd "R" >}}                               | *Hier keine Funktion*
 |                                               | **Rangierfahrten:**
 | {{< kbd "Entf" >}}                            | Ausgewählte Rangierbewegung löschen
 | {{< kbd "Strg+N" >}}                          | Neue Rangierbewegung anlegen

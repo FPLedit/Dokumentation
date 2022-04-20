@@ -106,7 +106,9 @@ var pos = entity.Positions.GetPosition(route);
 var pos_print = pos != null ? pos.toFixed(1) : "";
 ```
 
-### Weiteres
+### Weitere Funktionen
+
+FPLedit stellt einige weitere nützliche Funktionen zur Entwicklung von Templates bereit.
 
 ```csharp
 // C#:
@@ -126,7 +128,9 @@ clr_typename(tt); // Gibt den .NET-Typnamen zurück. (hier: "Timetable")
 clr_typefullname(tt); // Gibt den vollen .NET-Typnamen zurück. (hier: "FPLedit.Shared.Timetable")
 ```
 
-Alle [Polyfills können auf GitHub](https://github.com/FPLedit/FPLedit/blob/develop/FPLedit/Templating/TemplatePolyfills.js) eingesehen werden und stehen auch in eigenen Templates zur Vefügung.
+Zur Vorbeugung von XSS stehen die Funktionen `safe_html`, `safe_css_str` und `safe_css_block` zur Verfügung.
+
+Alle [Polyfills können im Quellcode auf GitHub](https://github.com/FPLedit/FPLedit/blob/develop/FPLedit/Templating/TemplatePolyfills.js) eingesehen werden und stehen auch in eigenen Templates zur Vefügung.
 
 ## Template-Type spezifischer Code
 Jeder Template-Typ stellt weitere Hilfsklassen bereit, die in Templates verwendet werden können.

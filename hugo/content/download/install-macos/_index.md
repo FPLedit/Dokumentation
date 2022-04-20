@@ -1,5 +1,6 @@
 ---
 title: "FPLedit auf MacOS"
+nooffline: true
 ---
 
 Seit FPLedit 2.4.0 ist FPLedit erstmals auch nativ mit macOS kompatibel. Die macOS-Untersützung ist noch rudimentär und wenig getestet. Gestestet wurde bisher nur auf macOS 10.15.
@@ -22,7 +23,7 @@ xattr -c FPLedit.app
 chmod +x FPLedit.app/Contents/MacOS/FPLedit
 ```
 
-Ohne diese Befehle ist das Programm nicht nutzbar, da FPLedit nicht von Apple signiert wurde bzw. ich das Programmpaket auf meinem Linux-PC erstelle.
+Ohne diese Befehle ist das Programm nicht nutzbar, da FPLedit nicht von Apple signiert wurde.
 
 Anschließend kann FPLedit mit einem Doppelklick gestartet werden.
 

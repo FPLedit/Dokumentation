@@ -1,0 +1,12 @@
+date="20.04.2022"
+version="2.4.3"
+
+content="""
+* Enthält einen **Sicherheits-Fix** für das Erzeugen von Ausgaben über Templates. Durch bestimmte Eingaben in der Fahrplandatei konnte die erzeugte Ausgabe im Browser beliebig manipuliert werden.
+  Anwender, die [eigene Vorlagen erstellt](dev/templates) hatten (nicht nur auf Basis der mitgelieferten Standard-Vorlagen), sollten diese anpassen und die Änderungen aus FPLedit 2.4.3 integrieren.
+* Behebt mehrere kleine Fehler in der Netzwerk-Darstellung.
+* Behebt zwei Absturzursachen in Verbindung mit dem Anlegen und Zusammenführen von Strecken.
+* Behebt einen Fehler, der bei der Verwendung des Aushangfahrplanes mit verlinkten Zügen auftrat.
+* Behebt einen Fehler im Abstuzrzmelder, es wird nun nach einem Neustart korrekt die letzte Datei geöffnet.
+* Vorbereitungen für die Kompatibilität mit .NET 6; *FPLedit 2.4.3 wird die letzte Versions sein, die noch .NET 5 unterstützt.*
+"""

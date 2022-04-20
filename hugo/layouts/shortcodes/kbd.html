@@ -7,6 +7,10 @@
         {{- $part = "Entf" -}}
     {{- else if eq $part "Ctrl" -}}
         {{- $part = "Strg" -}}
+    {{- else if eq $part "Plus" -}}
+        {{- $part = "+" -}}
+    {{- else if eq $part "Minus" -}}
+        {{- $part = "-" -}}
     {{- else if eq $part "Shift" -}}
         {{- $part = "⇧ Shift" -}}
     {{- else if eq $part "Tab" -}}

@@ -23,7 +23,7 @@ Eine Station kann mit Gleisangaben versehen werden. Im unteren Teil des Stations
 
 ![Streckenfenster](netzeditor.png)
 
-Bei großen Streckennetzen kann die Verschiebe- und Zoomfunktion nützlich sein, um den Überblick zu behalten: Die Zeichenfläche kann mit der Maus verschoben werden; das Vergrößern und Verkleinern ist mit dem Mausrad oder mit den Tasten {{< kbd "+" >}} und {{< kbd "-" >}} möglich.
+Bei großen Streckennetzen kann die Verschiebe- und Zoomfunktion nützlich sein, um den Überblick zu behalten: Die Zeichenfläche kann mit der Maus verschoben werden; das Vergrößern und Verkleinern ist mit dem Mausrad oder mit den Tasten {{< kbd "Plus" >}} und {{< kbd "Minus" >}} möglich.
 
 ## Züge anlegen
 
