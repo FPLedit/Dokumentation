@@ -964,3 +964,19 @@ body.palette-primary-light-green a.downloadbtn:focus, body.palette-primary-light
 figcaption {
     font-style: italic;
 }
+table.download-table {
+	display: table;
+	font-size: 1em;
+	margin: 1em;
+	box-sizing: border-box;
+
+	td, th {
+		width: 33.3%;
+		text-align: center;
+	}
+}
+
+.install-notes {
+    font-weight: bold;
+    color: red;
+}
