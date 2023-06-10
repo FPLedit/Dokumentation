@@ -3,13 +3,13 @@ title: "FPLedit auf MacOS"
 nooffline: true
 ---
 
-Seit FPLedit 2.4.0 ist FPLedit erstmals auch nativ mit macOS kompatibel. Die macOS-Untersützung ist noch rudimentär und wenig getestet. Gestestet wurde bisher nur auf macOS 10.15.
+Seit FPLedit 2.4.0 ist FPLedit erstmals auch nativ mit macOS kompatibel. Die macOS-Untersützung ist noch rudimentär und wenig bis gar nicht getestet. Getestet wurde bisher nur auf macOS 10.15.
 
 ## Download des Paketes
 Auf der Download-Seite steht ein separates Programmpaket ausschließlich zur Installation unter macOS bereit.
 
 ## Abhängigkeiten installieren:
-Es müssen keine besonderen Abhängigkeiten installiert werden, da FPLedit für macOS die .NET 5 Runtime mit paketiert. Für die dynamische Bildfahrplanvorschau wird das [Homebrew](https://brew.sh/)-Paket `mono-libgdiplus` benötigt:
+Es müssen keine besonderen Abhängigkeiten installiert werden, da FPLedit für macOS die .NET 6 Runtime mit paketiert. Für die dynamische Bildfahrplanvorschau wird das [Homebrew](https://brew.sh/)-Paket `mono-libgdiplus` benötigt:
 
 ```shell
 brew install mono-libgdiplus

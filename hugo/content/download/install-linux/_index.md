@@ -5,13 +5,13 @@ nooffline: true
 
 FPLedit ist seit Version 2.0.0 recht gut mit Linux kompatibel und wird auch aktiv getestet. Dabei wird auf die .NET-Laufzeitumgebung und die Gtk3-Plattform aufgebaut. Seit Version 2.2.0 ist Linux sogar das Hauptsystem auf dem FPLedit entwickelt wird!
 
-## Abhängigkeiten installieren (.NET 5)
-Für die Installation der .NET 5-Runtime auf Linux-Distributionen siehe die [ofizielle Seite von Microsoft](https://docs.microsoft.com/en-us/dotnet/core/install/linux). Eine Installation ist damit auf den meisten Linux-Distributionen (Ubuntu, Fedora, Debian, openSUSE) in einer halbwegs aktuellen Version möglich sein. Es wird auf allen Plattformen in der Regel nur das Paket `dotnet-runtime-5.0` benötigt.
+## Abhängigkeiten installieren (.NET 6)
+Für die Installation der .NET 6-Runtime auf Linux-Distributionen siehe die [ofizielle Seite von Microsoft](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime?initial-os=linux). Eine Installation ist damit auf den meisten Linux-Distributionen (Ubuntu, Fedora, Debian, openSUSE) in einer halbwegs aktuellen Version möglich. Es wird auf allen Plattformen in der Regel nur das Paket `dotnet-runtime-6.0` benötigt.
 
-Für die dynamische Bildfahrplanvorschau wird zusätzlich das Paket `libgdiplus` benötigt.
+Für die dynamische Bildfahrplanvorschau wird zusätzlich das Paket `libgdiplus` benötigt, das bei den meisten Distributionen unter diesem oder einem ähnlichen Namen verfügbar ist und daher nicht mit FPLedit ausgeliefert werden.
 
-{{< warning title="Ausschließliche Unterstützung von .NET 5" >}}
-.NET 5 wird nach der Installation bei den meisten Distributionen über den Paketmanager aktuell gehalten und sollte insgesamt stabiler als das (für FPLedit bis einschließlich Version 2.3.0 verwendete) Mono-Framework sein. Andere .NET-Versionen werden daher prinzipbedingt nicht unterstützt, auch keine aktuelleren (z.B. das für 2021 angekündigte .NET 6.0). Dafür muss jeweils eine neue FPLedit-Version veröffentlicht werden.
+{{< warning title="Ausschließliche Unterstützung von .NET 6" >}}
+.NET 6 wird nach der Installation bei den meisten Distributionen über den Paketmanager aktuell gehalten und sollte insgesamt stabiler als das alte Mono-Framework sein. Andere .NET-Versionen werden daher prinzipbedingt nicht unterstützt, auch keine aktuelleren (z.B. das 2022 erschienene .NET 7.0). Dafür muss jeweils eine neue FPLedit-Version veröffentlicht werden.
 
 FPLedit ab Version 2.4.0 ist **ausdrücklich nicht mehr mit Mono kompatibel**!
 {{< /warning >}}

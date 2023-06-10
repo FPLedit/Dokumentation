@@ -17,9 +17,11 @@ Daneben kann für die einzelnen Bahnhöfe auf der Strecke eine Höchstgeschwindi
 
 Neue Geschwindigkeitswechsel (ohne Bahnhof und Fahrtzeiten) auf der freien Strecke können über die Schaltfläche `Hinzufügen` angelegt werden.
 
-Daneben können noch die neben einer Station anzuzeigenden Wellenlinien (Symbol für Streckensteigungen) ausgewählt werden. 1 Wellenlinie >= 10 ‰, 2 Wellenlinien >= 20 ‰ usw. Diese werden im Buchfahrplan, wenn auch möglicherweise nicht in allen Vorlagen, angezeigt.
+* Geschwindigkeit, die ab dem Punkt gilt.
+* Neben der Station anzuzeigende Wellenlinien (Symbol für Streckensteigungen): 1 Wellenlinie >= 10 ‰, 2 Wellenlinien >= 20 ‰ usw. Diese werden im Buchfahrplan, wenn auch möglicherweise nicht in allen Vorlagen, angezeigt.
+* Streckenrichtung, in der der Wechsel gilt. Ein Wechsel kann entweder in beiden Richtungen, oder nur in oder geegn die Richtung der Kilometrierung gelten.
 
-Bei Geschwindigkeitswechseln können alle Eigenschaften bearbeitet werden, bei Bahnhöfen nur die Geschwindigkeit. Die anderen Eigenschaften der Bahnhöfe können im Netz- oder Streckeneditor bearbeitet werden.
+Bei Geschwindigkeitswechseln können alle Eigenschaften bearbeitet werden, bei Bahnhöfen nur die Geschwindigkeit. Die Position und anderen Eigenschaften der Bahnhöfe können im Netz- oder Streckeneditor bearbeitet werden.
 
 ![Höchstgeschwindigkeitsfenster](hgsfenster.png)
 
@@ -32,7 +34,7 @@ Unter `Bearbeiten > Filterregeln` können Regeln angelegt werden, nach denen vor
 ## Anpassen von Buchfahrplänen
 Unter `Bearbeiten > Fahrplandarstellung` im Reiter `Buchfahrplan` kann das Aussehen des Buchfahrplans beeinflusst werden. Die Auswahlmöglichkeit einer Vorlage erlaubt es, die Darstellung des Buchfahrplans schnell an verschiedene Gegebenheiten anzupassen.
 
-Die Schriftart, die für die Fahrplan-Darstellung verwendet wird, kann aus allen auf dem System installierten Schriftarten ausgewählt werden. Danaben können noch besondere Werte wie z.B. `serif`, `sans-serif` verwendet werden.
+Die Schriftart, die für die Fahrplan-Darstellung verwendet wird, kann aus allen auf dem System installierten Schriftarten ausgewählt werden. Daneben können noch besondere Werte wie z.B. `serif`, `sans-serif` verwendet werden.
 
 Es kann außerdem ausgewählt werden, ob der beim Zug eingegebene Kommentar und/oder die Verkehrstage des Zuges angezeigt werden sollen.
 

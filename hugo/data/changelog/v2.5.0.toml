@@ -1,0 +1,17 @@
+date="15.06.2023"
+version="2.5.0"
+
+content="""
+* Ausschließliche Kompatibilität mit .NET 6. .NET 5 wird nun nicht mehr unterstützt.
+    * Die .NET 5 Runtime (Laufzeitumgebung) kann nun deinstalliert werden, wenn diese ausschließlich für FPLedit genutzt wurde.
+    * .NET 6 muss vor dem Update von FPLedit 2.4.x auf 2.5.0 manuell installiert (siehe Installationshinweise!) werden!
+    * *Das neuere .NET 7 wird nicht unterstützt*
+* Buchfahrplan: Geschwindigkeitsänderungen können nun auch nur für eine Richtung angelegt werden.
+* Buchfahrplan: Geschwindigkeitsänderungen werden nun richtig sortiert.
+* Bildfahrplan: mehrere Darstellungsverbesserungen bei Zugnamen.
+* Behoben: Folgezüge sind auswählbar und setzen Gültigkeitstage sowie -stationen nicht zurück (*Hinweis: Die Bearbeitung von Gültigkeitstagen usw. ist aktuell noch nicht möglich*).
+* Behoben: Fahrplaneditoren waren unter Linux nicht benutzbar (weder mit Maus noch mit Tastatur).
+* Behoben: mehrere potentielle Absturzursachen.
+"""
+
+# * Buchfahrplan: Geschwindigkeitsänderungen können nun optional eine Länge aufweisen.

@@ -5,8 +5,12 @@ nooffline: true
 
 Diese Anleitung beschreibt die Installation von FPLedit auf **Windows**.
 
-## Installation der Abhnhängigkeiten (.NET 5)
-Seit FPLedit Version 2.4.0 muss die .NET 5 RUntime installiert werden: [Download .NET 5 Runtime](https://dotnet.microsoft.com/download/dotnet/current/runtime?initial-os=windows). Das alte standardmäßig installierte .NET 4.x wir nun *nicht mehr unterstützt*. Diese Installation muss nur einmalig erfolgen und sollte auch automatisch über Microsoft Update (Option „Updates für andere Maicrosoft-Produkte installieren“ in Windows Update) aktualisiert werden.
+## Installation der Abhnhängigkeiten (.NET 6)
+Seit FPLedit Version 2.5.0 muss die *.NET 6 Runtime* installiert werden: [Download .NET 6 Runtime](https://dotnet.microsoft.com/download/dotnet/6.0/runtime?initial-os=windows).
+
+Diese Installation muss nur einmalig pro PC erfolgen und sollte anschließend automatisch über Microsoft Update (Option „Updates für andere Microsoft-Produkte installieren“ in Windows Update) aktualisiert werden.
+
+Das für ältere FPLedit-Versionen genutzte .NET 5 wird nun *nicht mehr unterstützt*; ebensowenig das mit Windows zusammen ausgelieferte .NET 4.x; und auch nicht das neuere .NET 7.
 
 ## Entpacken von FPLedit
 
@@ -17,7 +21,12 @@ Vor der Installation muss **unbedingt** die heruntergeladene ZIP-Datei für Wind
 {{< include "/download/install-optional-general.md" >}}
 
 ## Dateitypzuordnung
-
-Fahrplandateien (`.fpl`) können mit FPLedit bei Doppelklick geöffnet werden, indem sie per Rechtsmausklick auf die Datei in den `Eigenschaften` auf die Schaltfläche `Ändern` klicken und im anschließenden Dialog die ausführbare Datei von FPLedit (`FPLedit.exe` im Programmverzeichnis) auswählen.
+FPLedit speichert die Fahrplandaten in einem Dateiformat mit der Endung `.fpl`. Um alle solchen Dateien immer mit einem Doppelklick mit FPLedit öffnen zu können, gehen Sie wie folgt vor:
+1. Rechtsmausklick auf eine vorhandene `.fpl`-Datei, `Eigenschaften` auswählen.
+2. Schaltfläche `Ändern` neben der vorhandenen Dateitypzuordnung auswählen.
+3. Im anschließenden Dialog die ausführbare Datei von FPLedit (`FPLedit.exe` im Programmverzeichnis) auswählen
 
 {{< include "/download/update-general.md" >}}
+
+## Unterstützte Plattformen
+FPLedit sollte mit .NET 6 wohl noch unter Windows 7 und 8.1 laufen. Das kann sich aber jederzeit ändern, ich habe keine Möglichkeit mehr unter diesen (von Microsoft abgekündigten) Versionen zu testen. Getestet wird aktuell ausschließlich auf Windows 10 (64-bit).
