@@ -1,0 +1,27 @@
+FROM ubuntu:lunar
+
+USER root
+WORKDIR /root
+
+# configure system
+RUN apt-get update -qq && \
+	DEBIAN_FRONTEND="noninteractive" apt-get upgrade -y && \
+    ln -sf /usr/share/zoneinfo/UTC /etc/localtime && \
+    DEBIAN_FRONTEND="noninteractive" apt-get -y install vim wget curl make binutils dotnet-runtime-6.0 dotnet-sdk-6.0 \
+        pandoc texlive-xetex texlive-latex-extra texlive-latex-recommended && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY hugo /usr/bin/hugo
+RUN chmod +x /usr/bin/hugo
+
+ENV LC_ALL="en_US.utf8" \
+    LANGUAGE="en_US.utf8" \
+    LANG="en_US.utf8"
+
+RUN mkdir /work && chown ubuntu:ubuntu /work && chmod 755 /work
+
+USER ubuntu
+WORKDIR /work
+ENV HOME="/tmp/home"
+
+CMD /bin/bash

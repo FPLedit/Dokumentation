@@ -2,3 +2,6 @@
 
 # Ausgabeverzeichnis
 public/
+
+# Hugo-binary
+podman/hugo
