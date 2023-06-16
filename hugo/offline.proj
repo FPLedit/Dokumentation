@@ -48,7 +48,7 @@
   </Target>
 
   <Target Name="_OfflineDoc_HugoTransform" DependsOnTargets="_OfflineDoc_PrepareProperties">
-    <Exec Command="hugo -s $(OfflineDoc_SiteFolder) -d $(OfflineDoc_OutputFolder)" />
+    <Exec Command="hugo --noBuildLock -s $(OfflineDoc_SiteFolder) -d $(OfflineDoc_OutputFolder)" />
   </Target>
     
   <UsingTask TaskName="_OfflineDoc_EmbedOfflineFilesTask" TaskFactory="RoslynCodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >

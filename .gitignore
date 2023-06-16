@@ -3,5 +3,7 @@
 # Ausgabeverzeichnis
 public/
 
+.hugo_build.lock
+
 # Hugo-binary
 podman/hugo

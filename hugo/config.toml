@@ -36,7 +36,7 @@ pygmentsUseClasses = true
 	suffixes = [ "" ]
 	delimiter = ""
 [mediaTypes."text/latex"]
-	suffixes = [ ".tex" ]
+	suffixes = [ "" ]
 	delimiter = ""
 
 [outputFormats]
@@ -52,7 +52,7 @@ pygmentsUseClasses = true
 	protocol = "mod://"
 [outputFormats.tex]
 	mediaType = "text/latex"
-	baseName = "offline-latex"
+	baseName = "offline-latex.tex"
 	isHTML = false
 	protocol = "tex://"
 
@@ -151,3 +151,18 @@ pygmentsUseClasses = true
 	name   = "Datenschutzerklärung"
 	url    = "https://www.manuelhu.de/datenschutz.html"
 	weight = 1010
+
+
+# restrict needed features.
+[security]
+	enableInlineShortcodes = false
+	[security.exec]
+		allow = 'none'
+		osEnv = 'none'
+
+	[security.funcs]
+		getenv = ['^HUGO_']
+
+	[security.http]
+		methods = 'none'
+		urls = 'none'

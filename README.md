@@ -2,14 +2,15 @@
 
 ## Einrichtung der Umgebung
 
-Die Erzeugung der Dokumentation basiert aktuell auf einer (sehr alten) Version v0.69.2 von [hugo](https://github.com/gohugoio/hugo).
-Der Download kann hier erfolgen: [hugo_extended_0.69.2_Linux-64bit.tar.gz](https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_extended_0.69.2_Linux-64bit.tar.gz).
+Die Erzeugung der Dokumentation basiert aktuell auf einer alten Version v0.100.2 von [hugo](https://github.com/gohugoio/hugo).
+Der Download kann hier erfolgen: [hugo_extended_0.100.2_Linux-64bit.tar.gz](https://github.com/gohugoio/hugo/releases/download/v0.100.2/hugo_extended_0.100.2_Linux-64bit.tar.gz).
 
-Die alte Version von hugo entpacken und in das Verzeichnis `podman/` ablegen, und als `hugo` benennen. Mit der hier enthaltenen Checksummen-Datei kann überprüft werden, ob die richtige Version heruntergeladen wurde (diese Dokumentation benötigt zwingend die `-extended`-Version!)
+Diese Dokumentation benötigt zwingend die `-extended`-Version!
 
-Anschließend kann das Container-Image gebaut werden: Dieses enthält alle nötigen Tools:
+Dass Container-Image gebaut werden: Dieses enthält alle nötigen Tools:
 * dotnet als build-Tool (ehemals msbuild)
 * pandoc und texlive zur Generierung von PDF-Dokumentationen
+* hugo in der richtigen Version
 
 Dazu ausführen:
 ```shell
@@ -25,7 +26,7 @@ Mit dem erzeugten Containerabbild kann nun die Erzeugung der HTML und PDF-Ausgab
 [host]$ podman run -it --rm  --network=none --log-driver=none --userns=keep-id -v "$PWD":/work:ro -v "$PWD/public":/work/public:rw -v "$PWD/resources":/work/resources:rw --security-opt label=type:container_runtime_t localhost/fpledit-docbuild
 
 [cont]$ hugo version
-Hugo Static Site Generator v0.69.2-EC9DCF30/extended linux/amd64 BuildDate: 2020-04-24T07:57:53Z
+hugo v0.100.2-d25cb2943fd94ecf781412aeff9682d5dc62e284+extended linux/amd64 BuildDate=2022-06-08T10:25:57Z VendorInfo=gohugoio
 
 [cont]$ dotnet build ./offline.proj /p:OutputPath=/work/public
 ```

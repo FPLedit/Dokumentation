@@ -11,8 +11,14 @@ RUN apt-get update -qq && \
         pandoc texlive-xetex texlive-latex-extra texlive-latex-recommended && \
     rm -rf /var/lib/apt/lists/*
 
-COPY hugo /usr/bin/hugo
-RUN chmod +x /usr/bin/hugo
+ARG HUGO_VERSION="0.100.2"
+
+RUN wget -O /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz && \
+    mkdir /tmp/hugo && cd /tmp/hugo && \
+    tar -xzf /tmp/hugo.tar.gz && \
+    mv ./hugo /usr/bin/hugo && \
+    chmod 755 /usr/bin/hugo && \
+    rm -rf /tmp/hugo /tmp/hugo.tar.gz
 
 ENV LC_ALL="en_US.utf8" \
     LANGUAGE="en_US.utf8" \
