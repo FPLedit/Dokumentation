@@ -22,7 +22,7 @@ Mit dem Download akzeptieren Sie die oben genannten Bedingungen. <span class="in
     <tr>
         <td>
             <a href="/files/fpledit-{{< version >}}-win-x64.zip" class="downloadbtn"><i class="icon icon-download"></i> FPLedit {{< version >}} für Windows (64 bit)</a><br>
-            <a href="/files/fpledit-{{< version >}}-win-x86.zip" class="downloadbtn"><i class="icon icon-download"></i> FPLedit {{< version >}} für Windows (32 bit)</a><br>
+            <!--<a href="/files/fpledit-{{< version >}}-win-x86.zip" class="downloadbtn"><i class="icon icon-download"></i> FPLedit {{< version >}} für Windows (32 bit)</a><br>-->
         </td>
         <td>
             <a href="/files/fpledit-{{< version >}}-linux-x64.zip" class="downloadbtn"><i class="icon icon-download"></i> FPLedit {{< version >}} für Linux (64 bit)</a>
