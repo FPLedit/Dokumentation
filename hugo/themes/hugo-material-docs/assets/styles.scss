@@ -265,7 +265,6 @@ hr {
     margin-right: auto;
 }
 #toggle-drawer:checked~.main .drawer, .toggle-drawer .drawer {
-    -webkit-transform: translateZ(0);
     transform: translateZ(0);
 }
 .no-csstransforms3d #toggle-drawer:checked~.main .drawer, .no-csstransforms3d .toggle-drawer .drawer {
@@ -637,27 +636,21 @@ h1 .article .headerlink {
     font-style: normal;
 }
 .bar {
-    -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    transition: opacity .2s cubic-bezier(.75, 0, .25, 1), -webkit-transform .4s cubic-bezier(.75, 0, .25, 1);
+    transition: opacity .2s cubic-bezier(.75, 0, .25, 1);
     transition: opacity .2s cubic-bezier(.75, 0, .25, 1), transform .4s cubic-bezier(.75, 0, .25, 1);
-    transition: opacity .2s cubic-bezier(.75, 0, .25, 1), transform .4s cubic-bezier(.75, 0, .25, 1), -webkit-transform .4s cubic-bezier(.75, 0, .25, 1);
 }
 #toggle-search:checked~.header .bar, .toggle-search .bar {
-    -webkit-transform: translate3d(0, -56px, 0);
     transform: translate3d(0, -56px, 0);
 }
 .no-csstransforms3d #toggle-search:checked~.header .bar, .toggle-search .bar {
 	transform: none;
 }
 .bar.search .button-reset {
-    transition: opacity .4s cubic-bezier(.1, .7, .1, 1), -webkit-transform .4s cubic-bezier(.1, .7, .1, 1);
     transition: opacity .4s cubic-bezier(.1, .7, .1, 1), transform .4s cubic-bezier(.1, .7, .1, 1);
-    transition: opacity .4s cubic-bezier(.1, .7, .1, 1), transform .4s cubic-bezier(.1, .7, .1, 1), -webkit-transform .4s cubic-bezier(.1, .7, .1, 1);
     opacity: 0;
 }
 .bar.search.non-empty .button-reset {
-    -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
 }
@@ -747,7 +740,6 @@ h1 .article .headerlink {
         width: 100%;
         height: 100%}
     .drawer {
-        -webkit-transform: translate3d(-262px, 0, 0);
         transform: translate3d(-262px, 0, 0);
         transition: transform .25s cubic-bezier(.4, 0, .2, 1);
     }

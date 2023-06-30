@@ -13,5 +13,3 @@ content="""
 * Behoben: Fahrplaneditoren waren unter Linux nicht benutzbar (weder mit Maus noch mit Tastatur).
 * Behoben: mehrere potentielle Absturzursachen.
 """
-
-# * Buchfahrplan: Geschwindigkeitsänderungen können nun optional eine Länge aufweisen.
