@@ -1,6 +1,7 @@
 ---
 title: Update von .NET 5 zu .NET 6 zwischen FPLedit 2.4.x und 2.5.x
 nooffline: true
+excludesitemap: true
 ---
 
 FPLedit bis einschließlich Version 2.4.3 beaut auf der .NET 5-Laufzeit von Microsoft auf. Ab Version 2.5.0 benötigt FPLedit nun die Version 6.0 dieser Laufzeitumgebung.

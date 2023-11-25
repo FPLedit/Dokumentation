@@ -1,6 +1,7 @@
 ---
 title: Upgrade-Hinweise betreffend `libgdiplus` zwischen FPLedit 2.5.1 und 2.6.0
 nooffline: true
+excludesitemap: true
 ---
 
 FPLedit kommt ab Verison 2.6.0 auf nicht-Windows-Systemen (Linux oder macOS) ohne eine vorherige Installation von `libgdiplus` aus. Diese Bibliothek wurde vorher für die dynamische Bildfahrplanvorschau genutzt.

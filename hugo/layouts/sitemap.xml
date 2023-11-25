@@ -1,10 +1,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {{ range .Site.Pages }}
+  {{- if not (eq .Permalink "") -}}
+  {{- if not .Params.excludesitemap -}}
   <url>
     <loc>{{ .Permalink }}</loc>
     <lastmod>{{ safeHTML ( now.Format "2006-01-02" ) }}</lastmod>
     <changefreq>monthly</changefreq>{{ if ge .Sitemap.Priority 0.0 }}
     <priority>{{ .Sitemap.Priority }}</priority>{{ end }}
   </url>
+  {{- end -}}
+  {{- end -}}
   {{ end }}
 </urlset>
