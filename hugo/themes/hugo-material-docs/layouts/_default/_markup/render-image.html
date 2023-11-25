@@ -1,4 +1,3 @@
-<!--<figure>-->
-    <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" title="{{ .Text }}" />
-<!--    <figcaption>{{ .Text }}</figcaption>
-</figure>-->
+{{- if .IsBlock -}}<figure>{{- end -}}
+<img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" title="{{ .Text }}" /><figcaption>{{ .Text }}</figcaption>
+{{- if .IsBlock -}}</figure>{{- end -}}

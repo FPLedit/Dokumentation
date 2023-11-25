@@ -1,7 +1,8 @@
 {{- $slug := .Get 0 }}
+{{- $orig_page := .Page -}}
 {{- $page := $.Site.GetPage $slug -}}
 {{- with $page -}}
-    {{ .Content | markdownify }}
+    {{ .Content | $orig_page.RenderString (dict "display" "block") }}
 {{- else -}}
     {{ errorf "include: Page %s not found" $slug }}
 {{- end -}}

@@ -58,6 +58,9 @@ pygmentsUseClasses = true
 
 [markup]
 	[markup.goldmark]
+	  [markup.goldmark.parser]
+	    autoHeadingIDType = "github-ascii"
+	    wrapStandAloneImageWithinParagraph = false
 		[markup.goldmark.renderer]
 			unsafe = true
 
