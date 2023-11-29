@@ -20,7 +20,7 @@ Eine Station kann mit Gleisangaben versehen werden. Im unteren Teil des Stations
 
 **Hinweis**: Schon vor der Erstellung des Streckennetzes sollte man sich Gedanken zum Aufbau des Netzes machen. Strecken können nachträglich nicht mehr zusammengefügt oder getrennt werden. Aus diesem Grund sollten zusammengehörende Strecken auch immer zusammenhängend anglegt werden und nicht aus Teilstrecken zusammengestückelt werden!
 
-![Streckenfenster](netzeditor.png)
+![Bearbeitung des Streckennetzes](netzeditor.png)
 
 Bei großen Streckennetzen kann die Verschiebe- und Zoomfunktion nützlich sein, um den Überblick zu behalten: Die Zeichenfläche kann mit der Maus verschoben werden; das Vergrößern und Verkleinern ist mit dem Mausrad oder mit den Tasten {{< kbd "Plus" >}} und {{< kbd "Minus" >}} möglich.
 
@@ -28,12 +28,17 @@ Bei großen Streckennetzen kann die Verschiebe- und Zoomfunktion nützlich sein,
 
 Wenn ein Streckennetz angelegt wurde, ist der Menüpunkt `Bearbeiten > Züge bearbeiten` nicht mehr ausgegraut. In diesem Fenster lassen sich die Züge, die im Streckennetz verkehren, bearbeiten. Züge haben im Gegensatz zu früheren Versionen einen Laufweg, der für jeden Zug seperat angelegt werden kann. Daher haben Züge auch keine Richtung mehr und die entsprechenden Teilung entfällt.
 
-Durch einen Klick auf `Neuer Zug` ({{< kbd "Strg+N" >}}) öffnet sich ein Fenster, in dem der Laufweg des Zuges eingestellt werden kann. Dies geschieht durch Klicks auf die Startstation und die Endstation (in dieser Reihenfolge!), was zu einer roten Markierung des Laufweges führt, und einer anschließenden Bestätigung mit `Weiter >>`.
-Anschließend öffnet sich ein Fenster in dem man Name, Verkehrstage und erweiterte Eigenschaften des Zuges auswählen kann. Den selben Dialog erreicht man auch mit einem Klick auf `Zug bearbeiten` ({{< kbd "Strg+B" >}}), damit lassen sich dann nachträglich diese Eigenschaften bearbeiten.
-
-Die erweitereten Eigenschaften enthalten das Triebfahrzeug, die Mindestbremshundertstel und Last. Das Triebfahrzeug lässt sich dabei aus einer Liste aller in dieser Fahrplandatei verwendeten Triebfahrzeuge auswählen oder selbst eingeben. Diese drei Angaben sind nicht verpflichtend und werden im Buchfahrplan angzeigt. Unten links kann ein Folgezug ausgewählt werden. Damit können Umläufe generiert werden. Diese werden in jTrainGraph im Bildfahrplan angezeigt.
+Durch einen Klick auf `Neuer Zug` ({{< kbd "Strg+N" >}}) öffnet sich ein Fenster, in dem der Laufweg des Zuges eingestellt werden kann. Dies geschieht durch Klicks auf die Startstation und die Endstation (in dieser Reihenfolge!), was zu einer roten Markierung des Laufweges führt, und einer anschließenden Bestätigung mit `Weiter >>`. Anschließend öffnet sich das Fenster zum Bearbeiten des neuen Zuges (siehe den nächsten Abschnitt).
 
 Züge lassen sich natürlich auch mit dem entsprechenden Button bzw. mit {{< kbd "Del" >}} löschen.
+
+## Zug bearbeiten
+
+Nach dem Erstellen oder mit der Funktion `Zug bearbeiten` ({{< kbd "Strg+B" >}}) öffnet sich ein Fenster in dem man Name, Verkehrstage und erweiterte Eigenschaften des Zuges auswählen kann.
+
+Die erweitereten Eigenschaften enthalten das Triebfahrzeug, die Mindestbremshundertstel und Last. Das Triebfahrzeug lässt sich dabei aus einer Liste aller in dieser Fahrplandatei verwendeten Triebfahrzeuge auswählen oder selbst eingeben. Diese drei Angaben sind nicht verpflichtend und werden im Buchfahrplan angzeigt.
+
+Unten links können ein oder mehrere Folgezüge eingetragen werden (z.B. verschiedene Übergänge an unterschiedlichen Verkehrstagen). Damit können Umläufe generiert werden. Diese werden in jTrainGraph im Bildfahrplan angezeigt.
 
 Bei der Bearbeitung der Verkehrstage eines Zuges können neben den Auswahlboxen unten die folgenden Tastenkürzel verwendet werden:
 
@@ -43,9 +48,9 @@ Bei der Bearbeitung der Verkehrstage eines Zuges können neben den Auswahlboxen 
 * {{< kbd "Strg+S" >}} Verkehrt nur Sonntags
 * {{< kbd "Strg+0" >}} Keine Tage anwählen
 
-![Zugfenster](zugfenster.png)
+![Bearbeitung eines Netzwerk-Zuges](zugfenster.png)
 
-## Fahrplan eines Zuges bearbeiten
+### Fahrplan eines Zuges bearbeiten
 
 Nachdem die Züge angelegt wurden, kann der Fahrplan jedes einzelnen Zuges bearbeitet werden. Dazu klickt man im Zugfenster mit dem zu bearbeitenden Zug ausgewählt auf `Zug bearbeiten` ({{< kbd "Strg+B" >}}). Im sich nun öffnenden Fahrplaneditor können die Fahrtzeiten des Zuges bearbeitet werden. In der linken Spalte sind die Stationen des Laufweges angezeigt, daneben können Ankunfts- und Abfahrtszeiten bearbeitet werden.
 
@@ -64,7 +69,7 @@ In jeder Zeile können Abfahrts- und Ankunftsgleis ausgewählt werden. Diese wer
 
 Mit einem Klick auf die Schaltfläche `Rangierfahrten` können die Rangierfahrten des aktuellen Zuges am aktuell ausgewählten Bahnhof bearbeitet werden. Dies ist nur möglich, wenn, wie oben beschrieben, Gleise angelegt wurden. Rangierfahrten bestehen dabei aus Zeitangabe, Start- und Zeilgleis. `Alle Wagen` gibt an, ob das Startgleis nach der Rangierfahrt wieder frei ist.
 
-![Rangierfenster](../rangierfenster.png)
+![Rangierfahrten bearbeiten oder anlegen](rangierfenster.png)
 
 ## Laufweg eines Zuges nachträglich ändern
 
@@ -72,7 +77,7 @@ Natürlich lässt sich der Laufweg eines Zuges auch nachträglich bearbeiten. Da
 
 Das Entfernen von Stationen aus der Mitte des Laufweges ist nicht möglich, genausowenig wie das Erstellen verzweigter Laufwege.
 
-![Laufweg bearbeiten](laufwegfenster.png)
+![Laufweg eines Zuges nachträglich bearbeiten](laufwegfenster.png)
 
 {{< include "inc_kopieren.md" >}}
 

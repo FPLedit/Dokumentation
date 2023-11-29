@@ -28,7 +28,7 @@ Um jTrainGraph direkt aus FPLedit zu starten, benutzen Sie `jTrainGraph > jTrain
 ## Konfiguration
 Die Einstellungen befinden sich unter `jTrainGraph > Einstellungen`. Der java-Pfad ist der Pfad zur Programmdatei von Java. Unter Windows sollte dieser normalerweise `javaw.exe` (bzw. `java` unter Linux) lauten. In manchen Fällen muss aber auch der absolute Pfad angegeben werden. Es kann auch der `Erkennen`-Button genutzt werden, um auf Windows automatisch den Java-Pfad herauszufinden.
 
-Der Pfad zur jTrainGraph-Datei lautet bei Installation im gleichen Verzeichnis `jTrainGraph_341.jar` (341 durch die jeweils aktuelle Version ersetzen). Ebenfalls muss der Pfad hier angepasst werden, wenn die Installation nicht im gleichen Verzeichnis erfolgt ist.
+Der Pfad zur jTrainGraph-Datei lautet bei Installation im gleichen Verzeichnis `jTrainGraph_342.jar` (342 durch die jeweils aktuelle Version ersetzen). Ebenfalls muss der Pfad hier angepasst werden, wenn die Installation nicht im gleichen Verzeichnis erfolgt ist.
 
 Weiter muss ausgewählt werden, welche Version von jTrainGraph verwendet wird. Damit wird die Zielversion von jTrainGraph entsprechend verwendet.
 
@@ -36,7 +36,7 @@ In den neuesten Versionen bietet jTrainGraph eine exe-Version an. Bei der Konfig
 
 Wenn die Konfiguration nicht korrekt erfolgt ist, warnt das Programm sowohl beim Speichern der Einstellungen als auch beim Versuch, jTrainGraph über das Menü zu starten.
 
-![Einstellungen](einstellungen.png)
+![Einstellungen für das Öffnen von Fahrplänen in jTrainGraph](einstellungen.png)
 
 ## Kompatibilitätsmatrix
 | FPLedit Version | ist kompatibel mit | jTrainGraph Versionen       |
@@ -46,6 +46,6 @@ Wenn die Konfiguration nicht korrekt erfolgt ist, warnt das Programm sowohl beim
 | 2.0.0           | &rarr;             | 2.02, 2.03, 3.03            |
 | 2.1.x, 2.2.x    | &rarr;             | 2.02, 2.03, 3.03, 3.11      |
 | 2.3.x           | &rarr;             | 3.11, 3.2x, 3.3x            |
-| 2.4.x           | &rarr;             | 3.3x, 3.4x (ab 2.4.2)       |
+| 2.4.x – 2.6.x   | &rarr;             | 3.3x, 3.4x (ab 2.4.2)       |
 
 {{% beta %}}

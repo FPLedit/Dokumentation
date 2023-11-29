@@ -23,7 +23,7 @@ Nach dem Programmstart erscheint zuerst das Haptfenster. Über die verschiedenen
 
 Unter dem Menü ist direkt im Hauptfenster das Strecken-Bearbeitungstool angeordnet. Hier kann auf einfache graphische Weise die Strecke oder das Streckennetz des Fahrplans bearbeitet werden. Mehr zu den verschiedenen Bearbeitungsmöglichkeiten im Kapitel zu Fahrplänen. Mit der Maus kann hier die Ansicht verschoben werden.
 
-![Hauptfenster nach einigen Aktionen](hauptfenster.png)
+![Hauptfenster nach einigen Aktionen, zentral das Streckennetz](hauptfenster.png)
 
 * Menüpunkt `Bearbeiten`: Hier gibt es die Möglichkeit, den Fahrplan nach eigenen Wünschen zu erzeugen und anzupassen. Die Reihenfolge entspricht der empfohlenen Bearbeitungsreihenfolge. Die hier befindlichen Dialoge dienen ausschließlich der Dateneingabe.
     * Der Menüpunkt `Bearbeiten > Rückgängig` können fast alle zuletzt angewendete Aktionen rückgängig gemacht werden.
@@ -39,8 +39,6 @@ Mit dem Menüpunkt `Vorschau > Dynamischer Bildfahrplan` steht ein Werkzeug bere
 Einige Darstellungseinstellungen lassen sich auch anpassen. Diese werden auch für den von jTrainGraph generierten Bildfahrplan übernommen. Ein Export oder Druck der dynamischen Vorschau ist nicht möglich.
 
 ![Dynamische Bildfahrplaneinstellungen](dynamische-einstellungen.png)
-
-<!-- TODO: virtuelle Strecken -->
 
 ## Tastenkombinationen
 

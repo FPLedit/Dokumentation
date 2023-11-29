@@ -7,7 +7,7 @@ Zur Zeit wird kein vollständiger Buchfahrplan generiert, an einigen Stellen ist
 
 Dieser Buchfahrplan ist zwar schon recht nah am Vorbild, es fehlt aber trotzdem noch einiges bzw. das Format ist stark vereinfacht:
 
-![Quelle der Daten: Buchfahrplanheft 698/3 - Ersatzfahrplan](bfpl.png)
+![Beispiel-Buchfahrplan, Quelle der Daten: Buchfahrplanheft 698/3 - Ersatzfahrplan](bfpl.png)
 
 Um den Buchfahrplan als Vorschau anzuzeigen, verwenden Sie `Vorschau > Buchfahrplan`.
 
@@ -23,7 +23,7 @@ Neue Geschwindigkeitswechsel (ohne Bahnhof und Fahrtzeiten) auf der freien Strec
 
 Bei Geschwindigkeitswechseln können alle Eigenschaften bearbeitet werden, bei Bahnhöfen nur die Geschwindigkeit. Die Position und anderen Eigenschaften der Bahnhöfe können im Netz- oder Streckeneditor bearbeitet werden.
 
-![Höchstgeschwindigkeitsfenster](hgsfenster.png)
+![Angabe der Höchstgeschwindigkeiten für den Buchfahrplan](hgsfenster.png)
 
 In den Namen der Geschwindigkeitswechsel können Sonderzeichen verwendet werden, die in Buchfahrplänen eine besondere Bedeutung haben. Zum Verwenden im Plan bitte hier in der Dokumentation Kopieren ({{< kbd "Strg+C" >}}) und im Namenstextfeld einfügen ({{< kbd "Strg+V" >}}).
 
@@ -40,7 +40,7 @@ Es kann außerdem ausgewählt werden, ob der beim Zug eingegebene Kommentar und/
 
 Weiterführend kann die Plandarstellung mit CSS (= Cascading Style Sheets) angepasst werden, da er ja im HTML-Format exportiert wird. Mit CSS können nahezu alle Aspekte der Plandarstellung geändert werden. Zur Aktivierung und Verwendung von CSS gibt es auf [dieser Unterseite](/dev/css/) aber eine ausführlichere Anleitung.
 
-![Buchfahrplaneinstellungen](bfpl-darstellung.png)
+![Anpassung der Buchfahrplaneinstellungen](bfpl-darstellung.png)
 
 ## Buchfahrpläne exportieren und drucken
 {{< include "/include-export" >}}

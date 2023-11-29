@@ -18,7 +18,7 @@ Durch einen Klick auf `Neue Station` ({{< kbd "Strg+N" >}}) kann man durch Einga
 
 Eine Station kann mit Gleisangaben versehen werden. Im unteren Teil des Stationseditors kann der schematische Gleisplan editiert werden. Mit einem Klick auf die entsprechenden Schlatflächen können Gleise hinzugefügt, verschoben und auch wieder entfernt werden. Mit einem Doppelklick auf den Gleisnamen kann dieser bearbeitet werden. Am Rand können die Standardgleise in die entsprechende Richtung verschoben werden.
 
-![Streckenfenster](lin-streckenfenster.png)
+![Bearbeiten der linearen Strecke](lin-streckenfenster.png)
 
 ## Züge anlegen
 
@@ -26,9 +26,11 @@ Wenn eine Strecke angelegt wurde, ist der Menüpunkt `Bearbeiten > Züge bearbei
 
 Die Züge sind nach Fahrtrichtung geordnet, diese kann nachträglich auch nicht mehr geändert werden! Durch einen Klick auf `Neuer Zug` ({{< kbd "Strg+N" >}}) bei der jeweiligen Fahrtrichtung, in dem die Daten des Zuges festgelegt werden können. Den selben Dialog erreicht man auch mit einem Klick auf `Zug bearbeiten` ({{< kbd "Strg+B" >}}), damit lassen sich dann nachträglich Züge bearbeiten. Züge lassen sich natürlich auch mit dem entsprechenden Button bzw. mit {{< kbd "Del" >}} löschen.
 
-![Zugfenster](lin-zugfenster.png)
+![Bearbeiten der Züge auf der linearen Strecke](lin-zugfenster.png)
 
-Im Zugfenster kann man Name, Verkehrstage und erweiterte Eigenschaften des Zuges eingeben. Die erweitereten Eigenschaften enthalten das Triebfahrzeug, die Mindestbremshundertstel und Last. Das Triebfahrzeug lässt sich dabei aus einer Liste aller in dieser Fahrplandatei verwendeten Triebfahrzeuge auswählen oder selbst eingeben. Diese drei Angaben sind nicht verpflichtend und werden im Buchfahrplan angzeigt. Unten links kann ein Folgezug ausgewählt werden. Damit können Umläufe generiert werden. Diese werden in jTrainGraph im Bildfahrplan angezeigt.
+Im Zugfenster kann man Name, Verkehrstage und erweiterte Eigenschaften des Zuges eingeben. Die erweitereten Eigenschaften enthalten das Triebfahrzeug, die Mindestbremshundertstel und Last. Das Triebfahrzeug lässt sich dabei aus einer Liste aller in dieser Fahrplandatei verwendeten Triebfahrzeuge auswählen oder selbst eingeben. Diese drei Angaben sind nicht verpflichtend und werden nur im Buchfahrplan angzeigt.
+
+Unten links können ein oder mehrere Folgezüge eingetragen werden (z.B. verschiedene Übergänge an unterschiedlichen Verkehrstagen). Damit können Umläufe generiert werden. Diese werden in jTrainGraph im Bildfahrplan angezeigt.
 
 In jeder Zeile können Abfahrts- und Ankunftsgleis ausgewählt werden. Diese werden an den entsprechenden Stellen in den Fahrplänen angezeigt.
 
@@ -40,7 +42,7 @@ Bei der Bearbeitung der Verkehrstage eines Zuges können neben den Auswahlboxen 
 * {{< kbd "Strg+S" >}} Verkehrt nur Sonntags
 * {{< kbd "Strg+0" >}} Keine Tage anwählen
 
-![Zugfenster](lin-zugeditor.png)
+![Bearbeitung eines (linearen) Zuges](lin-zugeditor.png)
 
 Mit einem Klick auf die Schaltfläche `Rangierfahrten` können die Rangierfahrten des aktuellen Zuges am aktuell ausgewählten Bahnhof bearbeitet werden. Dies ist nur möglich, wenn, wie oben beschrieben, Gleise angelegt wurden. Rangierfahrten bestehen dabei aus Zeitangabe, Start- und Zeilgleis. `Alle Wagen` gibt an, ob das Startgleis nach der Rangierfahrt wieder frei ist.
 
@@ -59,7 +61,7 @@ Bei Ankünften kann festgelegt werden, ob der Zug vor der Trapeztafel halten mus
 
 [^1]: Dies ist das Signal für Bedarfshalt bei den schwedischen Eisenbahnen. Ein Reisender kann die Scheibe von Hand in Richtung des Zuges drehen, damit der Zug anhalten wird.
 
-![Fahrplan bearbeiten](lin-fahrplanfenster.png)
+![Fahrplan eines linearen Zuges bearbeiten](lin-fahrplanfenster.png)
 
 {{< include "inc_kopieren.md" >}}
 

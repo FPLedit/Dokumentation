@@ -8,5 +8,5 @@ content="""
 * Behebt zwei Absturzursachen in Verbindung mit dem Anlegen und Zusammenführen von Strecken.
 * Behebt einen Fehler, der bei der Verwendung des Aushangfahrplanes mit verlinkten Zügen auftrat.
 * Behebt einen Fehler im Abstuzrzmelder, es wird nun nach einem Neustart korrekt die letzte Datei geöffnet.
-* Vorbereitungen für die Kompatibilität mit .NET 6; *FPLedit 2.4.3 wird die letzte Versions sein, die noch .NET 5 unterstützt.*
+* Vorbereitungen für die Kompatibilität mit .NET 6; *FPLedit 2.4.3 wird die letzte Version sein, die noch .NET 5 unterstützt.*
 """

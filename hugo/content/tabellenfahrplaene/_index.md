@@ -20,7 +20,7 @@ Bei den Kursbüchern der deutschen Eisenbahnen war und ist es oft üblich, dass 
 
 Weiterführend kann die Plandarstellung mit CSS (= Cascading Style Sheets) angepasst werden, da er ja im HTML-Format exportiert wird. Mit CSS können nahezu alle Aspekte der Plandarstellung geändert werden. Zur Aktivierung und Verwendung von CSS gibt es auf [dieser Unterseite](/dev/css/) aber eine ausführlichere Anleitung.
 
-![Kursbuch-Darstellung](kfpl-darstellung.png)
+![Anpassung der Kursbuch-Darstellung](kfpl-darstellung.png)
 
 Unter `Bearbeiten > Filterregeln` können Regeln angelegt werden, nach denen vor der Ausgabe die Züge und Bahnhöfe gefiltert werden. Damit könnten z.B. alle Güterzüge und Anschlussstellen aus dem Kursbuchfahrplan ausgeblendet werden.
 

@@ -1,0 +1,18 @@
+date="30.11.2023"
+version="2.6.1"
+
+content="""
+* **Bekannte Bugs:**
+    * Windows: bei Auswahlfeldern in Listendarstellungen (z.B. Gleisauswahl im Fahrplan / bei Rangierfahrten) können manche Werte nicht mit der Maus angewählt werden. Diese können aber immer mit der Tastatur (Pfeiltasten hoch/runter) erreicht und ausgewählt werden.
+* Die Menüleiste zur Bearbeitung von Streckennetzen wird nun standardmäßig mit Symbolen – statt wie bisher mit Texten – dargestellt.
+  Dieses Verhalten kann in den Programmeinstellungen umkonfiguriert werden.
+* Strecken im Streckennetz können nun getrennt werden.
+* Anlegen und Bearbeiten von komplexen Folgezügen ist nun möglich (z.B. Übergang nur an bestimmten Tagen).
+* Experimenteller [GTFS-Export](/gtfs/). Die entsprechende Erweiterung ist standardmäßig nicht aktiviert.
+* Entfernt alten Code für die Bildfahrplandarstellung auf nicht-Windows-Systemen, für zukünftige bessere Kompatibilität.    
+  Unter Linux und macOS kann das bisher benötigte Paket [`libgdiplus` entfernt werden](update-remove-libgdiplus/).
+* Behoben: In der neuen Bildfahrplandarstellung (seit Version 2.5.0) werden unter Linux wieder mehr Schriftarten unterstützt.
+* Behoben: Einige kleinere Probleme und Absturzursachen, insbesondere auch bei der Verwendung unter Linux.
+* Behoben: Diverse Darstellungsfehler in der dynamischen Bildfahrplanvorschau.
+* Geschwindigkeits-Verbesserungen für komplexe Netzwerke.
+"""
