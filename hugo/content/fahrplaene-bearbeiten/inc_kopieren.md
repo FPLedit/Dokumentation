@@ -11,7 +11,7 @@ Züge eines Fahrplans können auch kopiert werden. Dazu reicht ein Klick auf `Zu
 ![Zug kopieren](../kopierfenster.png)
 
 ## Züge verschieben
-Um einen Zug zeitlich zu verschieben, dient ebenfalls die Funktion `Zug kopieren`, hier muss nur die entsprechende Option ausgewählt und eine zeitliche Verschiebung in Minuten angegeben werden.
+Um einen Zug zeitlich zu verschieben, dient ebenfalls die Funktion `Zug kopieren`, hier muss nur die entsprechende Option ausgewählt und eine zeitliche Verschiebung in Minuten angegeben werden. Ebenfalls kann hier eine erste Station ausgewählt werden, dann werden nur alle Fahrtzeiten ab dieser Station verändert – alle vorherigen Zeiten bleiben dann unverändert. Ohne explizite Auswahl werden aber immer alle Zeiten eines Zuges verschoben.
 
 ![Zug verschieben](../verschiebefenster.png)
 

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Version information file for update check. -->
 <info product="manuelhu:fpledit">
-	<version>2.6.1</version>
+	<version>2.6.2</version>
 	<url>https://fahrplan.manuelhu.de/download/</url>
 	<!-- Short description: One full sentence -->
-	<description>Versionen 2.6.1 und 2.6.0 enthalten einige wichtige Fehlerkorrekturen und neue Funktionen. Das volle Changelog und Installationshinweise finden Sie unter https://fahrplan.manuelhu.de/download/.</description>
+	<description>Die Version 2.6.2 enthält einige wichtige Fehlerkorrekturen und neue Funktionen. Das volle Changelog und Installationshinweise finden Sie unter https://fahrplan.manuelhu.de/download/.</description>
 	<!-- This text will be displayed on every check for a new version -->
 	<!--<text></text>-->
 </info>

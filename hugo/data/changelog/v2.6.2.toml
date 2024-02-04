@@ -1,0 +1,15 @@
+date="05.02.2024"
+version="2.6.2"
+
+content="""
+* Bestätigungsabfrage vor dem Löschen von Zügen oder Stationen.
+* Fahrplan-Editor: Anzeige der Kilometrierung entlang des Laufwegs des Zuges zur Orientierung.
+* Das Mehrfach-Verschieben und Mehrfach-Löschen von Zügen ist nun möglich.
+* Diverse Verbesserungen des Kursbuch-Exports in komplexen Netzen (Daretellung mit senrechten Linien und Wellenlinien).
+* Das Verschieben von einem Teil eines Zuges ist nun möglich (Verschieben aller Zeiten nur ab einer bestimmten Staion).
+* Behoben: Probleme und Abstürze mit virtuellen Strecken.
+* Behoben: Vertauschung von Filtern für Stationen und Züge.
+* Behoben: Problem bei der Erzeugung von Aushangfahrplänen in Netzwerk-Fahrplänen.
+* Behoben: Bei Auswahlfeldern in Listendarstellungen (z.B. Gleisauswahl im Fahrplan / bei Rangierfahrten) konnten manche Werte nicht mit der Maus angewählt werden. (Problem betraf nur Windows).
+* Behoben: Probleme beim Auswählen der letzten Zeilen in Tabellen mit der Maus (Problem betraf nur Linux).
+"""
