@@ -7,8 +7,9 @@ Mit dem Kursbuch-/Tabellenfahrplanmodul können Fahrpläne generiert werden, die
 
 Um den Kursbuch/Tabellenfahrplan als Vorschau anzuzeigen, verwenden Sie `Vorschau > Kursbuch`. Es wird für jede im Netzwerkfahrplan angelegte Strecke eine eigne Kursbuchtabelle ausgegeben.
 
-Dieser Kursbuchfahrplan  ist zwar schon recht nah am Vorbild, es fehlt aber trotzdem noch einiges bzw. das Format ist stark vereinfacht:
+Dieser Kursbuchfahrplan ist zwar schon recht nah am Vorbild, es fehlt aber trotzdem noch einiges bzw. das Format ist stark vereinfacht:
 
+<!-- TODO: new image -->
 ![Beispiel-Kursbuchfahrplan](kfpl.png)
 
 ## Anpassen des Tabellenfahrplans

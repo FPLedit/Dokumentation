@@ -45,4 +45,6 @@ Weiterführend kann die Plandarstellung mit CSS (= Cascading Style Sheets) angep
 ## Buchfahrpläne exportieren und drucken
 {{< include "/include-export" >}}
 
+Die Druckaugabe ist für die Papiergröße A5 optimiert (Format der Vorbild-Buchfahrpläne). Die im Browser angegebenen Druckränder werden ignoriert. Speichert man den Fahrplan als PDF-Datei, so ist es nützlich, dass viele PDF-Reader zwei A5-Seiten zusammen auf eine A4-Seite drucken können – dann hat man die richtige Größe, wenn man die A4-Seite in der Mitte auseinanderschneidet bzw. faltet.
+
 {{% beta %}}
