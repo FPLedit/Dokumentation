@@ -1,0 +1,10 @@
+date="03.12.2024"
+version="2.6.4"
+
+content="""
+* Kilometrierungen mit mehr als einer Nachkommastelle sind nun möglich.
+* Behoben: Einstellung "Höhe pro Stunde" wurde nicht übernommen.
+* Behoben: Absturz beim Entfernen von Stationen bei linearen Fahrplänen.
+* Behoben: Verschieben von Stationen in linearen Fahrplänen erzeugt beschädigte Fahrplandateien.
+    * Bereits beschädigte Dateien werden nicht automatisch repariert. Eine Reparatur ist aber womöglich durch manuelles zweimaliges Ändern der betroffenen Kilometrierungen möglich. Dies ist aber vermutlich nicht allgemein anwendbar.
+"""

@@ -5,6 +5,7 @@ content="""
 * Geschwindigkeitsverbesserungen beim Umgang mit großen Dateien und Streckennetzen.
 * Behoben: Sortierung von Zügen im Kursbuch/Tabellenfahrplan war nicht nachvollziehbar.
 * Behoben: Ein mit Version 2.6.2 eingeführter Fehler bei der Erstellung von Aushangfahrplänen.
+* Behoben: Fehlermeldungen bei der Benutzung der ZLB-Vorlage für Buchfahrpläne.
 * Behoben: Absturz bei der Bearbeitung von Zügen mit beschädigten Zugläufen.
 * Behoben: Verschieben von Stationen in Netzwerken erzeugt beschädigte Zugläufe.
     * Bereits beschädigte Zugläufe werden nicht automatisch repariert. Eine Reparatur ist aber durch einmaliges Öffnen der Funktion „Laufweg bearbeiten“ und anschließender Bestätigung (ohne manuelle Änderungen am Laufweg!) möglich. Dies muss für alle betroffenen Züge händisch und einzeln durchgeführt werden.
